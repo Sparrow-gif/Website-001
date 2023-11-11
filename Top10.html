@@ -1,0 +1,368 @@
+<!DOCTYPE html> <!-----PT Serif--Roboto--Lato--Open Sans--Poppins--Edu TAS Beginner--Lora--Slabo 27px--Bitter--Domine-->
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="utf-8"/>
+  <base href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Domine:wght@500&family=Edu+TAS+Beginner&family=Lato:ital,wght@1,300&family=Lora&family=Open+Sans:wght@300&family=PT+Serif&family=Roboto:wght@300&family=Slabo+27px&display=swap" rel="stylesheet">
+  <title>   </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title> Food_Factory </title>
+    <style>
+         * {
+          margin:0px;
+          padding:0px;
+          -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+          font-family: Domine;
+          text-transform:capitalize;                     
+        }  
+ header {
+       display:-webkit-box;
+       display:-ms-flexbox;
+       display:flex;
+       -webkit-box-pack:justify;
+       -ms-flex-pack:justify;
+       justify-content:space-between;
+       -webkit-box-align:center;
+       -ms-flex-align:center;
+       align-items:center;
+       position:sticky;
+       z-index:99;
+       top:0px;
+       background:#13d48a ; /* #ebe6fa; */
+       padding:2px;      
+       -webkit-user-select:none;
+       -moz-user-select:none;
+       -ms-user-select:none;
+     }
+header > h2{
+          font-size:25px;
+          color:white;
+          text-indent:10px;
+          font-family: sans-serif;
+          -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+        }
+         
+  header > span {
+      padding: 0px 10px;
+      font-size:30px;
+      cursor:pointer;           
+      background: ;
+      color:white;  
+      -webkit-transition-duration:0.3s;  
+      -o-transition-duration:0.3s;  
+       transition-duration:0.3s;
+      }
+.sidenav {
+        height:100vh;
+        width:0;
+        position: fixed;
+        z-index: ;
+        top: 0;
+        right: 0;
+        background-color: #ebe6fa;
+        overflow: scroll;
+       -webkit-transition: 0.5s;
+       -o-transition: 0.5s;
+       transition: 0.5s;
+       padding-top: 40px;
+       text-align:center;  
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;        
+     }
+
+.sidenav a {
+       padding: 15px ;
+       text-decoration: none;
+       font-size: 16px;
+       color: #4b10eb;
+       display: block;
+       -webkit-transition: 0.3s;
+       -o-transition: 0.3s;
+       transition: 0.3s;
+       margin-bottom:6px;
+    }
+
+.sidenav a:hover{
+  color: #f1f1f1;
+  background:#2576e8;
+}
+ .sidenav > .active {
+          color: #f1f1f1;
+          background:#6e0cf7;
+        }
+.sidenav .closebtn {
+  position: absolute;
+  top:5px;
+  right: 10px;
+  font-size: 20px;
+  margin-left: 50px;
+  padding:-0px 12px;
+  background: #6e0cf7;
+  color:white;  
+  border-radius: ;
+}
+
+    .scroll-container {
+        width: 100%;
+        overflow-x: auto;
+        display:flex;        
+        background:silver;
+        padding:10px;
+        position:relative ;
+       white-space: nowrap;
+      }
+ .scroll-container::-webkit-scrollber {
+         display:none;
+      }
+ .scroll-container > .scroll-item {
+         background:#ebe6fa ;
+         text-align:center;
+         min-width: 100px;
+         text-decoration:none;
+         padding: 10px;
+         border: 1px solid #ddd;
+         margin-right: 10px;
+         border-radius:8px;
+         overflow:scroll;
+       }
+  .scroll-container::-webkit-scrollbar{  width: 5px; }
+
+  .scroll-container::-webkit-scrollbar-track{  background: #d3ede1;}
+
+   .scroll-container::-webkit-scrollbar-thumb{
+    background-color: #4acf36;
+    border-radius: 10px;
+    border: 3px none #FFFFFF;
+      }
+
+    section {
+           margin:0 auto ;
+           width:100%;
+           height:auto;
+           padding:10px ;
+      }
+   section > h2 {
+         padding: 10px ;
+         color: ;
+      }
+    section > #queen {
+          margin: 10px auto ;
+          padding:5px;
+          width:100%;
+          min-height:200px;
+          max-height:230px;
+          border:1px solid green;
+          border-radius:8px;
+          position:relative;
+       }
+    section > #queen > img {
+            width:100%;
+            max-height:220px;
+            background-size:cover ;
+            background-position:center;
+            position:relative;
+            z-index:-1;
+            overflow:hidden;
+            user-select:none;
+            filter:blur(2px) ;
+      }
+   section > #queen > p {
+          position:absolute;
+          text-align:center;
+          width:90%;
+          top:50%;
+          left:50%;
+          transform:translate(-50%,-50%) ;
+          color: #6bf274;
+          z-index:10;
+      }
+   
+   section > #queen > p > span {
+          display:block;
+          color:aqua ;
+          padding:5px;
+          text-align:right;
+      }
+
+
+    footer {
+         margin:0 auto;
+         background:#122029;
+         color:white;    
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         padding:5px;
+         text-transform:capitalize;
+         overflow:hidden;
+         -webkit-user-select:none;
+         -moz-user-select:none;
+         -ms-user-select:none;         
+       }
+   footer > h3 > i{
+        font-size:24px;
+        text-indent:20px;
+        padding:5px;
+     }  
+   .sneha {
+        padding:10px;
+        color:white;
+       }
+   .sneha > a{
+        text-decoration:none;
+        color:white;
+        display:block;      
+        margin:3px;  
+        font-size:14px
+        }
+   select {
+        margin:10px;
+        float:right;
+        width:40%;
+        height:40px;
+        outline:none;
+        border:2px solid #253330; 
+        border-radius:30px;
+        text-align:center;
+        font-size:16px;
+        font-weight:600px;
+        -webkit-transition:all 0.3s;
+        -o-transition:all 0.3s;
+        transition:all 0.3s;
+        background:white;
+        outline:2px solid white; 
+        text-transform:capitalize;
+       }
+
+
+   </style>
+  </head>
+  <body>
+        <header>              
+           <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#" target="_self" >Home</a>
+                <a href="#" target="_self" >About us </a>
+                <a href="#" target="_self" > Stories </a>
+                <a href="#" target="_self" > Videos </a>
+                <a href="#" target="_self" > more categorise </a>
+                <a href="#" class="active" target="_srlf" >Contact us</a>
+          </div>
+                <h2 class="animate__animated animate__jackInTheBox animate__infinite animate__slow"> Quotes World  </h2>
+                <span onclick="openNav()">&#9776;</span>
+     </header>
+
+         <section class="scroll-container">
+               <a class="scroll-item" href="Top10.html" target="_self"> Top 10 Quotes </a>     
+               <a class="scroll-item" href="Testinsapps.html" target="_self"> Quotes </a>
+               <a class="scroll-item" href="#" target="_self"> Stories </a>
+               <a class="scroll-item" href="#" target="_self"> facts </a>
+               <a class="scroll-item" href="#" target="_self"> education </a>
+               <a class="scroll-item" href="#" target="_self"> biography </a>
+               <a class="scroll-item" href="#" target="_self"> gaming </a>
+               <a class="scroll-item" href="#" target="_self"> Life-Style </a>
+               <a class="scroll-item" href="#" target="_self"> Trending </a>
+               <a class="scroll-item" href="#" target="_self"> entertainment  </a>
+               <a class="scroll-item" href="#" target="_self"> cricket team </a>
+               <a class="scroll-item" href=" https://www.amazon.in/?&ext_vrnc=hi&tag=googinhydmabk-21&ref=pd_sl_7lvdlypdab_e&adgrpid=58666170373&hvpone=&hvptwo=&hvadid=678717150657&hvpos=&hvnetw=g&hvrand=12194758838993204611&hvqmt=e&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=9299083&hvtargid=kwd-10573980&hydadcr=28228_2379650  " target="_self"> E-commerce </a>
+               <a class="scroll-item" href="#" target="_self"> health </a>
+               <a class="scroll-item" href="#" target="_self"> More...</a>
+          <!-- Add more items as needed -->
+  </section>
+       
+        <section>
+                      <h2> Today's Top 10 Quotes </h2>
+
+                 <div id="queen">   <!---Quotes 01----->
+                      <img src="Img2.jpeg" alt="">
+                      <p>  “Everybody is a genius. But if you judge a 
+                            fish by its ability to climb a tree, it will 
+                            live its whole life believing that it is stupid.” 
+                        <span> — Albert Einstein   </span>
+                      </p>
+                </div>       
+
+                 <div id="queen">   <!---Quotes 02----->
+                      <img src="Images/abhimanyu.jpeg" alt="">
+                      <p> hello World </p>
+                </div>       
+
+                <div id="queen">   <!---Quotes 03----->
+                      <img src="images/ima1.jpeg" alt="">
+                      <p> hello World </p>
+                </div>       
+
+                <div id="queen">   <!---Quotes 04----->
+                      <img src="images/Ima2.jpeg" alt="">
+                      <p> hello World </p>
+                </div>       
+
+                 <div id="queen">   <!---Quotes 05----->
+                      <img src="images/Ima3.jpeg " alt="">
+                      <p> hello World </p>
+                </div>       
+
+                <div id="queen">   <!---Quotes 06----->
+                      <img src="images/Ima2.jpeg" alt="">
+                      <p> hello World </p>
+                </div>       
+    
+                <div id="queen">   <!---Quotes 07----->
+                      <img src="Img2.jpeg" alt="">
+                      <p> hello World </p>
+                </div>       
+
+                 <div id="queen">   <!---Quotes 08----->
+                      <img src="images/Ima1.jpeg  " alt="">
+                      <p> hello World </p>
+                </div>       
+
+                <div id="queen">   <!---Quotes 09----->
+                      <img src="images/Ima2.jpeg" alt="">
+                      <p> hello World </p>
+                </div>       
+  
+       </section>
+       
+       <footer>   <!------footer Section------->
+       <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes World </h2>          
+      <select>
+           <option> English</option>
+           <option> hindi   </option>
+           <option> Bengali </option>
+           <option> gujrati </option>
+           <option> tamil  </option>
+           <option> telugu  </option>
+           <option> odiya  </option>           
+     </select>
+    <div class="sneha">
+        <a href="#" target="_self"><p> Terms & privacy </p></a>
+        <a href="#" target="_self"><p> policy </p></a>
+        <a href="#" target="_self"><p> 2023® </p></a>
+        <a href="#" target="_self"><p> Food-factory LLC</p></a>
+   </div>
+  </footer>
+
+  </body>
+   <script>
+         function openNav() {
+         document.getElementById("mySidenav").style.width = "60%";
+           }
+         function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+           } ;
+   </script>
+</hyml>
