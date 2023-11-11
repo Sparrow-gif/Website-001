@@ -1,1 +1,821 @@
+<!DOCTYPE html> <!-----PT Serif--Roboto--Lato--Open Sans--Poppins--Edu TAS Beginner--Lora--Slabo 27px--Bitter--Domine-->
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="utf-8"/>
+  <base href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Domine:wght@500&family=Edu+TAS+Beginner&family=Lato:ital,wght@1,300&family=Lora&family=Open+Sans:wght@300&family=PT+Serif&family=Roboto:wght@300&family=Slabo+27px&display=swap" rel="stylesheet">
+  <title>   </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title> Food_Factory </title>
+    <style>
+        * {
+          margin:0px;
+          padding:0px;
+          -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+          font-family: Domine;
+          text-transform:capitalize;                     
+        }  
+ header {
+       display:-webkit-box;
+       display:-ms-flexbox;
+       display:flex;
+       -webkit-box-pack:justify;
+       -ms-flex-pack:justify;
+       justify-content:space-between;
+       -webkit-box-align:center;
+       -ms-flex-align:center;
+       align-items:center;
+       position:sticky;
+       z-index:99;
+       top:0px;
+       background:#eb8334 ; /* #ebe6fa; */
+       padding:2px;      
+       -webkit-user-select:none;
+       -moz-user-select:none;
+       -ms-user-select:none;
+     }
+header > h2{
+          font-size:25px;
+          color:white;
+          text-indent:10px;
+          font-family: sans-serif;
+          -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+        }
+         
+  header > span {
+      padding: 0px 10px;
+      font-size:30px;
+      cursor:pointer;           
+      background: ;
+      color:white;  
+      -webkit-transition-duration:0.3s;  
+      -o-transition-duration:0.3s;  
+       transition-duration:0.3s;
+      }
+.sidenav {
+        height:100vh;
+        width:0;
+        position: fixed;
+        z-index:99;
+        top: 0;
+        right: 0;
+        background-color:#2a0a91;
+        overflow: scroll;
+       -webkit-transition: 0.5s;
+       -o-transition: 0.5s;
+       transition: 0.5s;
+       padding-top: 40px;
+       text-align:center;  
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;        
+     }
+
+.sidenav a {
+       padding: 15px ;
+       text-decoration: none;
+       font-size: 16px;
+       color: #eb8334;
+       display: block;
+       -webkit-transition: 0.3s;
+       -o-transition: 0.3s;
+       transition: 0.3s;
+       margin-bottom:6px;
+    }
+
+.sidenav a:hover{
+  color: #f1f1f1;
+  background:#2576e8;
+}
+ .sidenav > .active {
+          color: #f1f1f1;
+          background:#6e0cf7;
+        }
+.sidenav .closebtn {
+  position: absolute;
+  top:5px;
+  right: 10px;
+  font-size: 20px;
+  margin-left: 50px;
+  padding:-0px 12px;
+  background: #6e0cf7;
+  color:white;  
+  border-radius: ;
+}
+
+
+     .scroll-container {
+        width: 100%;
+        overflow-x: auto;
+        display:flex;        
+        background: #ebe6fa;
+        padding:5px;
+        position:relative ;
+       white-space: nowrap;
+      }
+ .scroll-container::-webkit-scrollber {
+         display:none;
+      }
+ .scroll-container > .scroll-item {
+         background:#ebe6fa ;
+         text-align:center;
+         min-width: 100px;
+         text-decoration:none;
+         padding: 5px;
+         border: 1px solid #ed7213;
+         margin-right: 10px;
+         border-radius:8px;
+         overflow:scroll;
+       }
+   .scroll-container::-webkit-scrollbar{  width: 5px; }
+
+   .scroll-container::-webkit-scrollbar-track{  background: #d3ede1;}
+
+   .scroll-container::-webkit-scrollbar-thumb{
+          background-color: #4acf36;
+          border-radius: 10px;
+          border: 3px none #FFFFFF;
+           }
+
+           /* blur background Section */
+      #bg {
+       position: ;       
+       margin:0 ;
+       padding:0 ;
+       z-index: ;
+       user-select:none;
+       height:100vh;
+      }
+   #bg >#blur >  h1{
+       font-size:30px;
+       text-transform:uppercase;
+       margin:0 auto ;
+       color:black;
+       z-index: ;
+    } 
+    #bg > #blur > p {
+       margin-top:20px ;
+       color:white; 
+      font-size:18px;
+     }
+    #bg > #background {
+         height:100vh;
+         width:100%;
+         background-image:url('images/raadha1.jpeg');    
+         background-size:cover;
+         background-position:center;
+         filter:blur(2px) ;
+         Position:relative;
+         z-index:;
+       }
+    #bg > #blur {
+       position:absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-50%) ;
+       z-index:1;
+       width:90%;
+    /*   width:50%; */
+       padding:10px 10px ;  
+    /*  text-align:center;  */
+     /*  border:2px inset white; */
+     /*  border-radius:4px;       */
+     /* font-weight:bold;     */    
+     }
+   #bg >  #blur a {
+        position: ;
+       display:inline-block;
+       padding:10px ;
+       width:80%;
+       font-size:18px;
+       text-decoration:none;
+       color: White ;
+       background:coral;
+       margin-top:20px ;
+       text-align:center;    
+           
+    }
+
+        /*  Image Slider Css*/
+    #w3-content {
+        margin:10px auto;
+        width:95%;         
+        height:30vh;
+        overflow:hidden;     
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;     
+        position:relative;    
+         z-index:-1 ;
+      }
+ #w3-content > img {
+      height:100%;     
+      width:100%;      
+    }
+     .wrapper {
+           position:relative;
+           z-index:-1 ;
+           background:coral;
+           text-align:center;
+           padding:10px;
+           -webkit-user-select:none;
+           -moz-user-select:none;
+           -ms-user-select:none;         
+         }
+    .wrapper > span {
+            font-size: 20px;
+            color:white;
+         }
+         /* Quotes body Css */
+    #quotes {
+           background:#fcfafa ;
+           display: ;
+           margin: 0 auto ;
+           overflow:hidden;
+           height:auto;
+           width:100%;
+           padding:10px;    
+           gap:10px;
+           display:grid;
+           grid-template-columns:repeat(auto-fit,minmax(min(21rem,100%),1fr)) ;      
+         }
+    #quotes > div {
+            border:4px solid;
+            border-image-source:url(images/ima4.jpeg) ;    
+            border-image-slice:30;
+            border-image-repeat: round ;
+            border-image-outset: ;
+            border-image-width:2 ;                        
+            height: auto;
+            width: 100% ;  
+            border-radius:5px;
+            box-sizing:border-box;
+         }
+    #quotes > div > h4 {
+            text-align:center;
+            padding:5px 0px;
+            color:#313ae8 ;
+         }
+    #quotes > div > h4::selection {
+            color:white ;
+            background:#fa9e61 ;            
+         }
+    #quotes > div > h3 {
+            text-align:right;
+            padding: 0px 5px ;
+            color :#ed6a13; /* #313ae8 ; */
+         }
+            /* All Sections Css */
+  
+     #footbg {
+       position:relative ;       
+       margin:0 ;
+       padding:0 ;
+       z-index:1;
+       user-select:none;
+      }
+   #footbg >#blur >  h1{
+       font-size:30px;
+       text-transform:uppercase;
+       margin:0 auto ;
+       color:black;
+       z-index: ;
+    } 
+    #footbg > #blur > p {
+       margin-top:20px ;
+       color:white; 
+      font-size:18px;
+     }
+    #footbg > #background {
+         height:80vh;
+         width:100%;
+         background-image:url('images/raadha3.jpeg');    
+         background-size:cover;
+         background-position:center;
+         filter:blur(2px) ;
+         Position: ;
+         z-index:;
+       }
+    #footbg > #blur {
+       position:absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-50%) ;
+       z-index:1;
+       color: ;
+       width:90%;
+    /*   width:50%; */
+       padding:130px 10px ;  
+    /*  text-align:center;  */
+     /*  border:2px inset white; */
+     /*  border-radius:4px;       */
+     /* font-weight:bold;     */    
+     }
+   
+   #footbg > #blur > a {
+        position: ;
+       display:inline-block;
+       padding:10px ;
+       width:80%;
+       font-size:18px;
+       text-decoration:none;
+       color: White ;
+       background:coral;
+       margin-top:20px ;
+       text-align:center;    
+       animation: heart 1s linear infinite ;        
+    }
+
+     #about {
+             height:auto ;
+             padding:20px ;
+             background: #ace8ba;
+             display:grid;
+             gap:10px;
+             display:grid;
+             grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
+             place-items:center;
+             overflow:hidden;
+             text-transform:capitalize ;
+          }
+      #about > .abbg {
+            margin:0 auto ;
+            width:100%;
+            height:200px;
+            border:0.5px solid black;
+            overflow:hidden;
+            border-radius:10px;
+            background-image:url('Img2.jpeg') ;
+            background-size:cover;
+            background-position:center;
+          }     
+       #about > .abhe > h2  {
+               padding:10px;
+               font-family: domine ;
+               font-size:30px;
+               color: ;
+          }
+       #about > .abhe > p  {
+               padding:10px;
+               font-family: Open Sans;
+               font-size:20px;
+               font-weight: ;               
+          }
+
+        #gettouch {
+          margin:0 auto ;
+          padding:30px;    
+          background:#40ed91 ;    
+          -webkit-user-select:none;
+          -moz-user-select:none;
+          -ms-user-select:none;          
+       }
+  #gettouch > form {
+        margin:0 auto ;
+        width:100%;
+       }
+   #gettouch > form > label {
+        width:100%;
+        display:block;
+      }
+   #gettouch > form >  input {
+        width:100%;
+        padding:5px;
+        display:block;
+        margin:5px auto ;
+        border:none;
+        border-radius:4px;
+      }
+  #gettouch > form >  textarea {
+        width:100%;
+        border:none;
+        border-radius:4px;
+        padding:5px;
+      }
+  #gettouch > form >   .btn {
+        border:1px solid #092580;
+        background:#caa5f2;
+        color: #770ceb ;
+        width:50%;
+        border-radius:8px;
+        margin:10px auto ;
+        transition-duration:0.3s;
+       }
+  #gettouch > form >   .btn:active {
+          transform:scale(0.90) ;
+       }
+
+
+   .contact {
+        background:#c00fdb;
+        height:auto;
+        text-align:center;
+        padding:10px;
+        margin:0 auto ;
+        width:100%;
+        overflow:scroll;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;        
+     }
+  .contact > h1 {
+           -webkit-animation: heartBeat;
+              animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+           -webkit-animation-duration: 2s;
+              animation-duration: 2s;
+              color:aqua ;
+        }
+   .contact > #apps {
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-box-pack:Space-around;
+            -ms-flex-pack:Space-around;
+            justify-content:Space-around;
+            -webkit-box-align:center;
+            -ms-flex-align:center;
+            align-items:center;
+         }
+   .contact > #apps > a {
+            border-radius:8px;
+            font-size:22px;
+            background:#3b62c4 ;
+            padding:8px 15px;
+            border:1px solid #3b3bc4;
+            color:white;
+            cursor:pointer;
+         -webkit-transition-duration:0.3s;
+         -o-transition-duration:0.3s;
+            transition-duration:0.3s;
+         -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         }
+   .contact > #apps > a:hover {
+           background:white;
+           color:#6e9eeb ;
+           -webkit-transform:skewY(10deg);
+           -ms-transform:skewY(10deg);
+           transform:skewY(10deg);
+           z-index: ;
+       }
+          /*  Footer Css Section */
+footer {
+         margin:0 auto;
+         background:#122029;
+         color:white;    
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         padding:5px;
+         text-transform:capitalize;
+         overflow:hidden;
+         -webkit-user-select:none;
+         -moz-user-select:none;
+         -ms-user-select:none;         
+       }
+   footer > h3 > i{
+        font-size:24px;
+        text-indent:20px;
+        padding:5px;
+     }  
+   .sneha {
+        padding:10px;
+        color:white;
+       }
+   .sneha > a{
+        text-decoration:none;
+        color:white;
+        display:block;      
+        margin:3px;  
+        font-size:14px
+        }
+   select {
+        margin:10px;
+        float:right;
+        width:40%;
+        height:40px;
+        outline:none;
+        border:2px solid #253330; 
+        border-radius:30px;
+        text-align:center;
+        font-size:16px;
+        font-weight:600px;
+        -webkit-transition:all 0.3s;
+        -o-transition:all 0.3s;
+        transition:all 0.3s;
+        background:white;
+        outline:2px solid white; 
+        text-transform:capitalize;
+       }
+  hr { 
+     width:100%;
+     z-index:-1;
+     }
+    #topButton {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #007BFF;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          padding: 5px 10px;
+          font-size: 16px;
+          cursor: pointer;
+          z-index:99 ;
+          font-size:1.50rem;
+            }
+
+
+   @Keyframes  heart {
+             50% {transform:scale(0.80); }
+        }
+  @media only screen and (min-width:600px) {         
+          body {
+                
+             }
+      }
+
+   </style>
+</head>
+<body>
+    <header>              
+           <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#" class="active" target="_self" >Home</a>
+                <a href="#" target="_self" >About us </a>
+                <a href="#" target="_self" > Stories </a>
+                <a href="#" target="_self" > Videos </a>
+                <a href="#" target="_self" > more categorise </a>
+                <a href="#" target="_self" > E-commerce </a>
+                <a href="#" target="_srlf" >Contact us</a>
+          </div>
+                <h2 class="animate__animated animate__jackInTheBox animate__infinite animate__slow"> Quotes World  </h2>
+                <span onclick="openNav()">&#9776;</span>
+     </header>
+
+      
+     <section class="scroll-container">
+          <a class="scroll-item" href="#" target="_self"> Top 10 Quotes </a>     
+          <a class="scroll-item" href="#" target="_self"> Quotes </a>
+          <a class="scroll-item" href="#" target="_self"> videos </a>
+          <a class="scroll-item" href="#" target="_self"> facts </a>
+          <a class="scroll-item" href="#" target="_self"> entertainment </a>
+          <a class="scroll-item" href="#" target="_self"> Health </a>
+          <a class="scroll-item" href="#" target="_self"> education </a>
+          <a class="scroll-item" href="#" target="_self"> Life-Style </a>
+          <a class="scroll-item" href="#" target="_self"> Trending </a>
+          <a class="scroll-item" href="#" target="_self"> Biography  </a>
+          <a class="scroll-item" href="#" target="_self"> cricket team </a>
+          <a class="scroll-item" href=" https://www.amazon.in/?&ext_vrnc=hi&tag=googinhydmabk-21&ref=pd_sl_7lvdlypdab_e&adgrpid=58666170373&hvpone=&hvptwo=&hvadid=678717150657&hvpos=&hvnetw=g&hvrand=12194758838993204611&hvqmt=e&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=9299083&hvtargid=kwd-10573980&hydadcr=28228_2379650  " target="_self"> E-commerce </a>
+          <a class="scroll-item" href="#" target="_self"> Gameing</a>
+          <a class="scroll-item" href="#" target="_self"> More...</a>
+          <!-- Add more items as needed -->
+     </section>
+
+
+                <!------Blur Background Section------>
+      <section id="bg">
+            <div id="background">  </div>
+            <div id="blur"> 
+               <h1> Discover The Wisdom Of Lord Krishna </h1>
+               <p> Discover The Whisdom Of Sri Krishna's Teaching
+                   Through Powerful Quotes. Expand Your Consciousness
+                   And Find Inner Peace. </p>
+               <a href="#w3-content"> Explore Now  </a>
+        </div> 
+     </section>
+
+
+                    <!----- Image Slider section----->
+      <div id="w3-content">
+            <img class="mySlides" src="images/raadha3.jpeg" style="width:100%">
+            <img class="mySlides" src="images/raadha2.jpg" style="width:100%">
+            <img class="mySlides" src="images/raadha1.jpeg" style="width:100%">
+     </div>
+
+                <!------Auto Type Text------->
+         <div class="wrapper">
+              <span> <span class="multiText"> </span></span>
+        </div>
+
+
+                <!--------Quotes Body Section------->
+        <section id="quotes">
+                <div class="box1" data-aos="fade-up"> 
+                    <h4> Hello World </h4>
+                    <h3> Lod krishna </h3>
+                 <hr/>
+                    <h4> Hello World </h4>
+                    <h3> Lod krishna </h3>
+              </div>
+
+                <div class="box2" data-aos="fade-up"> 
+                    <h4> Hello World </h4>
+                    <h3> Lod krishna </h3>
+                 <hr/>
+                    <h4> Hello World </h4>
+                    <h3> Lod krishna </h3>
+              </div>
+
+                <div class="box3" data-aos="fade-up"> 
+                    <h4> Hello World </h4>
+                    <h3> Lod krishna </h3>
+                 <hr/>
+                    <h4> Hello World </h4>
+                    <h3> Lod krishna </h3>
+              </div>
+
+               <div class="box4" data-aos="fade-up"> 
+                    <h4> Hello World </h4>
+                    <h3> Lod krishna </h3>
+                 <hr/>
+                    <h4> Hello World </h4>
+                    <h3> Lod krishna </h3>
+              </div>
+
+                <div class="box5" data-aos="fade-up"> 
+                    <h4> Hello World </h4>
+                    <h3> Lod krishna </h3>
+                 <hr/>
+                    <h4> Hello World </h4>
+                    <h3> Lod krishna </h3>
+              </div>
+
+        </section>
+
+
+          <!------Blur Background Section------>
+      <section id="footbg">
+            <div id="background">  </div>
+            <div id="blur"> 
+               <h1 style="color:#8d2cf5;text-shadow:2px 2px 4px ;"> Discover More Enlightening Wisdom...</h1>
+               <p> Discover a wide Range of inspiring quotes by lod sri krishna to uplift
+                   your spirit and motivate yourself in every aspect Of life. Your collection
+                   offers timeless Wishdom and guidance for personal growth, relationship and spirituality. 
+              </p>
+               <a href="#gettouch"> Explore More </a>
+        </div> 
+     </section>
+
+                     <!-------About Page------->
+      <section id="about">
+                 <div class="abbg" data-aos=zoom-out">  </div>
+                 <div class="abhe">
+                      <h2> About us </h2>
+                      <p> Welcome to Quotes, your destination for Shri Krishna Quotes in Kolkata, WB. 
+                          We are passionate about spreading the wisdom and teachings of Shri Krishna
+                          through our carefully curated collection of quotes. 
+                      </p> 
+                      <p> At Quotes, we believe in the power of words to inspire and uplift.
+                          Our team of dedicated enthusiasts handpicks the most profound and 
+                          insightful quotes from the teachings of Shri Krishna, ensuring that 
+                          each quote resonates with our audience on a spiritual level. 
+                          Whether you are seeking guidance, motivation, or simply a moment 
+                          of reflection, our collection of Shri Krishna Quotes is here to 
+                          enlighten your mind and nourish your soul. 
+                      </p>
+                </div>
+         </section>
+      
+         
+                         <!-----Contact Us Section------->
+             <div id="gettouch">
+             <form>
+                 <h2> Contact Us Today </h2>
+                 <p> Complete the form below to get in
+                     touch with us. We are ready to assist
+                     you with help bring your vision to life. </p>
+                  
+                 <label for ="Name"> Name </label>
+                 <input type="Text" name="name" required>
+        
+                 <label for ="email"> Email </label>
+                 <input type="email" name="email" required>
+        
+                 <label for ="text"> Message </label>
+                 <textarea name="w3review" rows="7" cols="50" required ></textarea>
+
+                 <input class="btn" type="submit" value="Submit">
+            </form>
+      </div>
+
+
+      <section class="contact"> <!-------contact Section--------->
+                <h1 class="animate__animated animate__infinite"> Follow Us </h1>
+             <div id="apps"> 
+                  <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                  <a href="#"> <i class="fa-brands fa-instagram "></i> </a>
+                  <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                  <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+                  <a href="#"> <i class="fa-brands fa-whatsapp"></i> </a>
+                  <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
+            </div>
+     </section>
+
+    <footer>   <!------footer Section------->
+       <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes World </h2>          
+      <select>
+           <option> English</option>
+           <option> hindi   </option>
+           <option> Bengali </option>
+           <option> gujrati </option>
+           <option> tamil  </option>
+           <option> telugu  </option>
+           <option> odiya  </option>           
+     </select>
+    <div class="sneha">
+        <a href="#" target="_self"><p> Terms & privacy </p></a>
+        <a href="#" target="_self"><p> policy </p></a>
+        <a href="#" target="_self"><p> 2023® </p></a>
+        <a href="#" target="_self"><p> Food-factory LLC</p></a>
+   </div>
+  </footer>
+                 <!----Go To Top Button------>
+     <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
+
+
+
+    <script> <!---javascript Section------>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "60%";
+}
+   function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} ;
+
+
+        /* Image Slider JavaScript */
+      var myIndex = 0;
+      carousel();
+
+     function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+     }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 1500); // Change image every 2 seconds
+     };
+            
+            /* Go To Top Button */
+      window.onscroll = function () {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("topButton").style.display = "block";
+  } else {
+    document.getElementById("topButton").style.display = "none";
+  }
+};
+
+// Scroll to the top when the button is clicked
+document.getElementById("topButton").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+           
+</script>
+                 
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+             AOS.init({
+                      offset: 150, // offset (in px) from the original trigger point
+                      delay: 0, // values from 0 to 3000, with step 50ms
+                      duration: 400, // values from 0 to 3000, with step 50ms
+                      easing: 'ease', // default easing for AOS animations
+                      once: false, // whether animation should happen only once - while scrolling down
+                      mirror: false, // whether elements should animate out while scrolling past them
+                      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+                 });
+         </script>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+   <script>          
+      var typed = new Typed('.multiText', {
+      strings: ["Raadhe Raadhe.", "Jai Shri Krishna.", " राधे राधे.", "जय श्री कृष्णा", "রাধে রাধে.","জয় শ্রী কৃষ্ণ।",],
+      loop: true, 
+      typeSpeed: 150 , 
+      backSpead: 80 , 
+      startDelay: 500, 
+      backDelay: 1000, 
+     });
+   </script>
+</body>
+</html>
+
 
