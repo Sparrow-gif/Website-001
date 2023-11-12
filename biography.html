@@ -98,9 +98,9 @@ header > h2{
   color: #f1f1f1;
   background:#2576e8;
 }
- .sidenav > .active {
-          color: #f1f1f1;
-          background:#6e0cf7;
+  .sidenav > .active {
+        color: white;
+        background:#6e0cf7;
         }
 .sidenav .closebtn {
   position: absolute;
@@ -136,7 +136,11 @@ header > h2{
          margin-right: 10px;
          border-radius:8px;
          overflow:scroll;
-       }
+         }
+  .scroll-container > #active {
+        color: white;
+        background:#6e0cf7;
+        }
   .scroll-container::-webkit-scrollbar{  width: 5px; }
 
   .scroll-container::-webkit-scrollbar-track{  background: #d3ede1;}
@@ -192,7 +196,7 @@ header > h2{
        font-size:18px;
        text-decoration:none;
        color: White ;
-       background:coral;
+       background:#427bf5;
        margin-top:20px ;
        text-align:center;
     }
@@ -311,9 +315,9 @@ header > h2{
                 <a href="#" target="_self" >Home</a>
                 <a href="#" target="_self" >About us </a>
                 <a href="#" target="_self" > Stories </a>
-                <a href="#" target="_self" > Videos </a>
+                <a href="#" class="active" target="_self" > biography </a>
                 <a href="#" target="_self" > more categorise </a>
-                <a href="#" class="active" target="_srlf" >Contact us</a>
+                <a href="#" target="_self" >Contact us</a>
           </div>
                 <h2 class="animate__animated animate__jackInTheBox animate__infinite animate__slow"> Quotes World  </h2>
                 <span onclick="openNav()">&#9776;</span>
@@ -325,7 +329,7 @@ header > h2{
                <a class="scroll-item" href="#" target="_self"> Stories </a>
                <a class="scroll-item" href="#" target="_self"> facts </a>
                <a class="scroll-item" href="#" target="_self"> education </a>
-               <a class="scroll-item" href="biography.html" target="_self"> biography </a>
+               <a class="scroll-item" id="active" href="biography.html" target="_self"> biography </a>
                <a class="scroll-item" href="#" target="_self"> gaming </a>
                <a class="scroll-item" href="#" target="_self"> Life-Style </a>
                <a class="scroll-item" href="#" target="_self"> Trending </a>
@@ -342,10 +346,11 @@ header > h2{
         <section id="section">
           <div id="background">  </div>
           <div id="blur"> 
-              <h1> inspire your soul with shri krishna Quotes </h1>
-              <p> Discover The Whisdom Of Sri Krishna's Teaching
-                  Through Powerful Quotes. Enlighten Your Mind
-                  And Find Inner Peace. </p>
+              <h1> Discover Your Amazing Life Stories / biography </h1>
+              <p> uncover the extraordinary moment that shaped
+                  into who you are today. let us  help you tell
+                  your unique biographies. 
+             </p>
               <a href="#searchInput"> Explore Now  </a>
         </div> 
      </section>
