@@ -161,6 +161,7 @@ header > h2{
        text-transform:uppercase;
        margin:0 auto ;
        color: #e3e35f;
+       text-shadow: 2px 2px 8px #e3e35f;
     } 
  #section > #blur > p {
        margin-top:20px ;
@@ -219,22 +220,22 @@ header > h2{
         }
 
     #container {
+         background:#cbd7f7;
          margin:0 auto ;
          width:100%;
          gap:10px;
          display:grid;
-         grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;      
+         grid-template-columns:repeat(auto-fit,minmax(min(30rem,100%),1fr)) ;      
           }
      #container > div {
             background:#cbd7f7;
             height:auto ;    
             padding:10px;     
-            margin:0 auto;   
+            margin:0 auto ;
+            width:100%;
+            box-shadow:6px 6px 11px #a6a6a6,-6px -6px 11px #ffffff;
          }
-     #container > h2{
-           padding:10px ;
-         }
-     .books { padding:10px; }
+     
      #container > div > h2 {
            text-indent:0px;
            padding:10px;
@@ -255,6 +256,7 @@ header > h2{
            border-radius:5px;
            cursor:pointer ;
            animation:scale 1s linear infinite;
+           box-shadow:5px 5px 10px #b3bdd9,-5px -5px 10px #e3f1ff;
         }
      #page > a {
            text-decoration:none;
@@ -263,11 +265,13 @@ header > h2{
 
    #contentable {
           margin:0 auto ;
-          padding:10px;
+          padding:20px;
           user-select:none;
+          width:100% ;
         }
-   #contentable >h2, p {
-            padding:10px;
+   #contentable >h2 {
+            color:#c542f5 ;
+            text-shadow: 2px 2px 8px #c542f5;
         }
    #contentable > table{
          border:1px solid black;
@@ -284,7 +288,18 @@ header > h2{
          cursor:pointer ;
       }
 
-
+    #intro {
+         background:#cbd7f7;
+         margin:0 auto ;
+         width:100%;
+         padding:20px;
+        }
+     #intro > h2 {
+          color:#5971f7 ;
+         }
+     #intro > p {
+        color:  ;
+       }
    #about {
          margin:10px auto ;
          width:100%;
@@ -299,10 +314,10 @@ header > h2{
        }
    #about > img {
            padding:10px;
-           height:220px;
+           height:230px;
            min-width:100%;
            max-width:400px
-           margin:0 auto ;
+           margin:0 auto ;         
        }
 
     footer {
@@ -313,7 +328,7 @@ header > h2{
          -moz-user-select:none;    
          -ms-user-select:none;    
          user-select:none;  
-         padding:5px;
+         padding:10px;
          text-transform:capitalize;
          overflow:hidden;
          -webkit-user-select:none;
@@ -326,7 +341,7 @@ header > h2{
         padding:5px;
      }  
    .sneha {
-        padding:10px;
+        padding:0px;
         color:white;
        }
    .sneha > a{
@@ -383,7 +398,6 @@ header > h2{
                 <a href="#" target="_self" > Stories </a>
                 <a href="#" target="_self" > biography </a>
                 <a href="#" class="active" target="_self" > Education </a>
-                <a href="#" target="_self" > more categorise </a>
                 <a href="#" target="_self" >Contact us</a>
           </div>
                 <h2 class="animate__animated animate__jackInTheBox animate__infinite animate__slow"> Quotes World  </h2>
@@ -393,10 +407,9 @@ header > h2{
          <section class="scroll-container">
                <a class="scroll-item" href="Top10.html" target="_self"> Top 10 Quotes </a>     
                <a class="scroll-item" href="Index.html" target="_self"> Quotes </a>
-               <a class="scroll-item" href="#" target="_self"> Stories </a>
-               <a class="scroll-item" href="#" target="_self"> blogs </a>
                <a class="scroll-item" href="education.html" id="active"  target="_self"> education </a>
                <a class="scroll-item" href="biography.html" target="_self"> biography </a>
+               <a class="scroll-item" href="#" target="_self"> blogs </a>              
                <a class="scroll-item" href="#" target="_self"> gaming </a>
                <a class="scroll-item" href="#" target="_self"> Life-Style </a>
                <a class="scroll-item" href="#" target="_self"> Trending </a>
@@ -498,109 +511,173 @@ header > h2{
         </table>
      </section>
   
+
+      <section id="intro">
+          <h2> Best Study Websites for Students </h2>
+          <p class="books"> Sometimes, textbooks aren’t sufficient to keep oneself updated and interested, 
+             which results in outdated information. Hence, it is necessary to always be on 
+             the lookout for updated material. There are many websites for study. Some of 
+             the study websites for students are free, while others are paid. No matter what 
+             their price is, these online learning platforms for students are certainly a 
+             great reason to invest in your education. Below, we’ve mentioned the best study 
+             sites for students to refer to when upskilling themselves.   
+         </p>
+      </section>
           <!-------Stydy Container------------>
 
-    <div id="container">
-      <h2> Best Study Websites for Students </h2>
-     <p class="books"> Sometimes, textbooks aren’t sufficient to keep oneself updated and interested, 
-           which results in outdated information. Hence, it is necessary to always be on 
-           the lookout for updated material. There are many websites for study. Some of 
-           the study websites for students are free, while others are paid. No matter what 
-           their price is, these online learning platforms for students are certainly a 
-           great reason to invest in your education. Below, we’ve mentioned the best study 
-           sites for students to refer to when upskilling themselves.   
-       </p>
-
+    <div id="container">      
        <div id="website1">     <!----Biography 1------->                     
-           <h2> Khan Academy </h2>
+           <h2> 1) Khan Academy </h2>
            <img src="Images/Img1.jpeg">
            <p>
-               Rabindranath Tagore (1861–1941), the luminous polymath from Calcutta, India,
-               left an indelible mark on literature, art, and education. Born into a distinguished
-               family, with his father Debendranath Tagore and mother Sarada Devi, Rabindranath's
-               early poetic brilliance blossomed into a prolific literary career. At 16, he published 
-               his first collection, foreshadowing a lifetime of creative exploration.
+               Encouraging all students to visit Khan Academy is a commendable initiative. 
+               The platform offers a diverse range of free courses, making high-quality 
+               education accessible to learners worldwide. Whether you're looking to 
+               strengthen your understanding of specific subjects, prepare for exams, or 
+               explore new topics, Khan Academy provides valuable resources, including 
+               video lessons and practice exercises. Take advantage of this educational
+               tool to enhance your learning experience and empower yourself academically. 
            <p/>         
           <button id="page"> <a href="#"> Go To Official page </a></button> 
       </div>
 
        <div id="website2">  <!-----Biography 2----->
-           <h2> Coursera </h2>
+           <h2> 2) Coursera </h2>
            <img src="images/cliffs.gif">
            <p>
-
+              Many students use Coursera because it offers a wide range of online courses and
+              specializations from top universities and organizations. It provides flexibility 
+              in learning, allowing students to access courses at their own pace and from 
+              anywhere with an internet connection. Additionally, Coursera often provides 
+              certificates upon course completion, which can be valuable for enhancing resumes 
+              and demonstrating skills to employers. The platform's reputation for quality content 
+              and the ability to learn from experts in various fields also contribute to its popularity 
+              among students.
            <p>         
-           <button id="page"> <a href="#"> Go To Official page </a></button> 
+           <button id="page"> <a href="https://www.coursera.org" target="_self"> Go To Official page </a></button> 
       </div>
 
        <div id="website3"> <!----Biography 3----->
-           <h2> study.com  </h2>
+           <h2> 3) study.com  </h2>
            <img src="images/img2.jpeg">
            <p> 
-
+              Study.com is a comprehensive online learning platform that offers a
+              variety of courses, video lessons, and study resources across multiple 
+              subjects. Whether you're looking for help with academic subjects, 
+              test preparation, or professional development, Study.com can be a 
+              valuable resource. Check out the website to explore the diverse range 
+              of courses and educational materials tailored to various learning needs.
           </p>
           <button id="page"> <a href="#"> Go To Official page </a></button> 
       </div>
 
        <div id="website4"> <!----Biography 4----->
-           <h2> unacademy </h2>
+           <h2> 4) unacademy </h2>
            <img src="images/img2.jpeg">
            <p> 
-
+              Unacademy is considered a popular online learning platform. It offers a diverse range of 
+              courses taught by educators from various fields, providing learners with flexibility and 
+              accessibility. The platform often includes interactive live classes, allowing students to 
+              engage with educators in real-time. Additionally, Unacademy frequently incorporates adaptive
+              learning techniques and personalized study plans to cater to individual learning styles.
+              The availability of recorded lessons further enhances the flexibility of learning schedules.
+              The platform's user-friendly interface and a variety of courses spanning academic subjects, 
+              competitive exams, and skill development contribute to its reputation as a comprehensive 
+              online learning destination.
           </p>
           <button id="page"> <a href="#"> Go To Official page </a></button> 
       </div>
 
         <div id="website5"> <!----Biography 5----->
-           <h2> Duolingo </h2>
+           <h2> 5) Duolingo </h2>
            <img src="images/img2.jpeg">
            <p> 
-
+              Duolingo's popularity increase day by day. it offers a gamified and interactive approach to language learning, making it engaging 
+              and enjoyable for users. The platform uses a variety of exercises, including speaking, listening, and translation tasks, to reinforce 
+              language skills.Duolingo is accessible to a wide audience as it's free to use with optional in-app purchases.
+              The app is also available on multiple platforms, including smartphones and web browsers, enhancing its accessibility.
+              Duolingo's effectiveness is supported by its data-driven approach, which adapts lessons based on a user's performance. 
+              This personalized learning experience helps users progress at their own pace.
           </p>
           <button id="page"> <a href="#"> Go To Official page </a></button> 
       </div>
 
        <div id="website6"> <!----Biography 6----->
-           <h2> Codeacademy </h2>
+           <h2> 6) Codeacademy </h2>
            <img src="images/img2.jpeg">
            <p> 
-
+              this platform offers an interactive and hands-on approach to coding. Codecademy provides a variety of coding courses
+              that allow learners to write and test code directly in their web browser. This interactive learning experience is engaging 
+              and helps students apply what they learn immediately.<br>
+              The platform covers a wide range of programming languages and technologies, making it versatile for different learning needs.
+              It often includes projects and real-world applications to reinforce coding skills, providing practical experience alongside 
+              theoretical knowledge.Additionally, Codecademy offers a user-friendly interface, progress tracking, and instant feedback on 
+              coding exercises. This combination of interactivity, variety in course offerings, and user-friendly features contributes to
+              the platform's popularity among students for learning coding and programming skills.
           </p>
           <button id="page"> <a href="#"> Go To Official page </a></button> 
       </div>
 
       <div id="website7"> <!----Biography 7----->
-           <h2> byju's </h2>
+           <h2> 7) byju's </h2>
            <img src="images/img2.jpeg">
            <p> 
-
+              While BYJU'S is a popular online learning platform with a comprehensive approach to education,
+              the choice of learning resources is subjective. It's recommended that students explore various
+              platforms, including BYJU'S, to find the one that best suits their learning preferences, goals,
+              and subjects of interest. Each student may have different learning styles, and trying out
+              different platforms can help determine what works best for individual needs.
           </p>
           <button id="page"> <a href="#"> Go To Official page </a></button> 
       </div>
 
        <div id="website8"> <!----Biography 8----->
-           <h2> maritnation </h2>
+           <h2> 8) maritnation </h2>
            <img src="images/img2.jpeg">
            <p> 
-
+              Students may find Meritnation appealing for various reasons. The platform offers a broad array 
+              of study materials, including interactive lessons, quizzes, and solutions that assist with 
+              homework and exam preparation. Meritnation's coverage spans a diverse range of subjects, 
+              making it a versatile resource for learners. The incorporation of interactive elements, 
+              such as animations and quizzes, contributes to an engaging learning experience.
+              Additionally, the platform may provide personalized learning plans and adaptive assessments,
+              tailoring content to individual learning styles. With a focus on exam preparation 
+              and a user-friendly interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
           </p>
           <button id="page"> <a href="#"> Go To Official page </a></button> 
       </div>
 
        <div id="website9"> <!----Biography 9----->
-           <h2> google scholar  </h2>
+           <h2> 9) google scholar  </h2>
            <img src="images/img2.jpeg">
            <p> 
-
+              It indexes a vast range of scholarly literature, including articles, theses, books,
+              conference papers, and patents, providing a comprehensive repository for academic research.
+              Google Scholar features a simple and user-friendly interface, making it accessible for 
+              students and researchers of all levels.It is freely accessible, eliminating financial 
+              barriers for students. This open access nature contributes to its widespread use.
+              The majority of content comes from peer-reviewed journals and reputable sources,
+              ensuring the quality and reliability of the information. Users can view citation 
+              counts for articles, offering insights into the impact and significance of specific research.
+              Google Scholar often provides direct links to full-text articles through institutional 
+              repositories or publisher websites, enhancing accessibility. Users can set up alerts for
+              specific keywords or authors, staying updated on the latest research in their field.
           </p>
           <button id="page"> <a href="#"> Go To Official page </a></button> 
       </div>
 
       <div id="website10"> <!----Biography 10----->
-           <h2> vedantu </h2>
+           <h2> 10) vedantu </h2>
            <img src="images/img2.jpeg">
            <p> 
-
+              Vedantu offers a wide range of courses covering various subjects and grades. The platform provides study materials, 
+              practice tests, and performance analysis, ensuring a holistic learning experience.
+              Vedantu offers live classes where students can interact with experienced teachers in real-time. 
+              This interactive format allows for immediate clarification of doubts and fosters better understanding.
+              Vedantu provides a flexible schedule, allowing students to choose classes at times convenient for them.
+              This flexibility is particularly beneficial for students with varied schedules or commitments.
           </p>
           <button id="page"> <a href="#"> Go To Official page </a></button> 
       </div>
