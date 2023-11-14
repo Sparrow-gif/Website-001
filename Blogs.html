@@ -201,7 +201,44 @@ header > h2{
        margin-top:20px ;
        text-align:center;
     }
-        
+    #inttro {
+          margin:0 auto ;
+          padding:20px 40px;
+          background:#deed9a ;
+          font-family:Roboto;
+      }
+     #inttro > #intotext::first-letter{
+            font-size: 200%;
+            color: #8A2BE2;
+      }
+
+
+    #blogvdos {
+            margin:0 auto ;
+            padding:10px;
+            gap:10px;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(min(30rem,100%),1fr)) ;
+          }
+   #blogvdos > iframe {
+          height:auto;
+          width:100%;
+          border:1px solid black;
+          margin:0 auto;
+       }
+     #blogpost {
+          margin:0 auto ;
+          padding:10px;
+          gap:10px;
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
+        }
+    #blogpost > img {
+           height:250px;
+           width: 100%;
+           border:1px solid blue;
+         }
+
 
     footer {
          margin:0 auto;
@@ -267,7 +304,7 @@ header > h2{
           z-index:99 ;
           font-size:1.50rem;
             }
-      #topBtn {          
+      #ytb {          
           position: fixed;
           bottom:80px;
           right: 10px;
@@ -328,12 +365,38 @@ header > h2{
                   into who you are today. let us  help you tell
                   your unique biographies. 
              </p>
-              <a href="#searchInput"> Explore Now  </a>
+              <a href="#blogvdos"> Explore Now  </a>
         </div> 
      </section>
-
+  
+             <!----Blog Introduced Section----->
+     <section id="inttro">
+               <p id="intotext" style="font-family:Poppins;">  
+                   Introducing Blog, a dynamic Youtube video creator based in Jhargram, WB.
+                   With a passion for creating engaging and informative content, Blog is 
+                   dedicated to helping businesses and individuals amplify their online
+                   presence through captivating videos. From product reviews and tutorials to 
+                   entertaining vlogs, Blog's expertise lies in delivering visually appealing 
+                   and compelling videos that resonate with audiences. Whether you're looking 
+                   to boost brand awareness, drive traffic, or simply entertain your viewers, 
+                   Blog is your go-to partner for professional and impactful video content creation. 
+                   Elevate your online presence with Blog and unlock the power of visual storytelling today.
+              </p>
+    </section>
                    
-       
+     <section id="blogvdos">            
+            <iframe src="">   </iframe>            
+            <iframe src="">   </iframe>            
+            <iframe src="">   </iframe>
+    </section>
+
+     <section id ="blogpost">
+            <img src="" alt="img1">
+            <img src="" alt="img2">
+            <img src="" alt="img3">
+            <img src="" alt="img4">
+    </section>
+      
        <footer>   <!------footer Section------->
        <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes World </h2>          
       <select>
@@ -353,8 +416,8 @@ header > h2{
    </div>
   </footer>
      
-        <!----Go To Top Button------>
-     <a href="#" style="text-decoration:none;color:White;"> <button id="topBtn"> <i class="fa-brands fa-youtube"></i> </a> </button> </a>
+        <!----Go To Top Button------>     
+     <a href="#" style="text-decoration:none;color:White;"> <button id="ytb"> <i class="fa-brands fa-youtube"></i> </a> </button> </a>
      <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
 
   </body>
