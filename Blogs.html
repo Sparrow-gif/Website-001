@@ -79,7 +79,8 @@ header > h2{
        text-align:center;  
         -webkit-user-select:none;
         -moz-user-select:none;
-        -ms-user-select:none;        
+        -ms-user-select:none;    
+      
      }
 
 .sidenav a {
@@ -92,6 +93,7 @@ header > h2{
        -o-transition: 0.3s;
        transition: 0.3s;
        margin-bottom:6px;
+       font-family:lora;    
     }
 
 .sidenav a:hover{
@@ -241,6 +243,33 @@ header > h2{
            border:none;
          }
 
+
+   #ourwork {
+          padding:20px;
+          margin:0 auto ;
+          background: #5e41f0;
+         }
+   #ourwork > h2 {
+            text-align:center;
+            color:white;
+            margin:20px 0px 40px 0px;
+         }
+   #ourwork > .grid {
+            margin:0 auto ;
+            gap:30px;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;         
+         }
+   #ourwork > .grid > div {
+           height:auto;
+           width:100%;
+           padding:10px;
+           background: #0e0636;
+           color:#ecebf2 ;
+           font-family:lato;
+           margin:50px auto;
+           text-align:center;
+        }
 
     footer {
          margin:0 auto;
@@ -403,6 +432,25 @@ header > h2{
             <img src="images/Tube3.jpeg" alt="img4">
     </section>
       
+
+       <section id="ourwork">    <!----our work container------->
+              <h2> Our work </h2>
+              <div class="grid">
+                    <div class="b1">
+                         <h2> Engaging video content creation </h2>
+                         <p> created captivating and informative video content gor a video bloging website,attracting and retaining a large audience </p>
+                   </div>
+                    <div class="b1"> 
+                         <h2> optimized video SEO strategies </h2>
+                         <p> implemented effective SEO technique to optimize video blog posts, resulting in higher visibility and increase organic traffic  </p>
+                   </div>
+.                   <div class="b1"> 
+                         <h2> Social media promotion </h2>
+                         <p> developed and executed social media marketing campaigns to promote the video bloging website, increasing brand awareness and user engagement </p>
+                   </div>
+             </div>
+      </section>
+
        <footer>   <!------footer Section------->
        <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes World </h2>          
       <select>
@@ -444,7 +492,7 @@ header > h2{
          function closeNav() {
          document.getElementById("mySidenav").style.width = "0";
            } ;
-    
+   
 
           /* Go To Top Button */
 
