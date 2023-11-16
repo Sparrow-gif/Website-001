@@ -200,6 +200,7 @@ header > h2{
        background:red;
        margin-top:20px ;
        text-align:center;
+       cursor:pointer;
     }
     #inttro {
           margin:0 auto ;
@@ -366,7 +367,11 @@ header > h2{
                   into who you are today. let us  help you tell
                   your unique biographies. 
              </p>
-              <a href="#blogvdos"> Explore Now  </a>
+              <a href="#blogvdos" id="soundButton"> Explore Now  </a>
+              <audio id="myAudio">
+                   <source src="shooting-sound-fx-159024.mp3" type="audio/mp3">
+                   Your browser does not support the audio element.
+             </audio>
         </div> 
      </section>
   
@@ -422,7 +427,16 @@ header > h2{
      <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
 
   </body>
+
    <script>
+
+         const soundButton = document.getElementById('soundButton');
+         const audio = document.getElementById('myAudio');
+
+         soundButton.addEventListener('click', () => {
+         audio.play();
+         });
+
           //navigation javascript
          function openNav() {
          document.getElementById("mySidenav").style.width = "60%";
