@@ -444,31 +444,7 @@ header > h2{
          function closeNav() {
          document.getElementById("mySidenav").style.width = "0";
            } ;
-
-
-    //search input javascript
-
-         document.getElementById('searchInput').addEventListener('input', function () {
-  const filter = this.value.toLowerCase();
-  const items = document.querySelectorAll('#container div');
-
-  items.forEach(function (item) {
-    const name = item.dataset.name.toLowerCase();
-
-    if (name.includes(filter)) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
-  });
-
-  // Show all items when the search bar is cleared
-  if (filter === '') {
-    items.forEach(function (item) {
-      item.style.display = 'block';
-    });
-  }
-});
+    
 
           /* Go To Top Button */
 
