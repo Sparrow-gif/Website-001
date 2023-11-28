@@ -6,8 +6,7 @@
   <base href="#">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Domine:wght@500&family=Edu+TAS+Beginner&family=Lato:ital,wght@1,300&family=Lora&family=Open+Sans:wght@300&family=PT+Serif&family=Roboto:wght@300&family=Slabo+27px&display=swap" rel="stylesheet">
-  <title>   </title>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Domine:wght@500&family=Edu+TAS+Beginner&family=Lato:ital,wght@1,300&family=Lora&family=Open+Sans:wght@300&family=PT+Serif&family=Roboto:wght@300&family=Slabo+27px&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,7 +66,7 @@ header > h2{
         height:100vh;
         width:0;
         position: fixed;
-        z-index: ;
+        z-index:999;
         top: 0;
         right: 0;
         background-color: #ebe6fa;
@@ -158,6 +157,8 @@ header > h2{
        margin:0 ;
        padding:0 ;
        user-select:none;
+       object-fit:fill;
+       overflow:hidden;
       }
  #section >#blur >  h1{
        font-size:30px;
@@ -177,9 +178,12 @@ header > h2{
          background-size:cover;
          background-position:center;
          filter:blur(0px) ;
+         object-fit:fill;
+         overflow:hidden;
        }
   #section > #blur {
        position:absolute ;
+   /* backdrop-filter:blur(1px) ; */
        top:50%;
        left:50%;
        transform:translate(-50%,-50%) ;
@@ -203,7 +207,12 @@ header > h2{
        margin-top:20px ;
        text-align:center;
        cursor:pointer;
+       transition-duration:0.3s;
     }
+  #section >  #blur a:active {
+         transform:scale(0.90) ;
+         border-radius:10px;
+     }
     #inttro {
           margin:0 auto ;
           padding:20px 20px;
@@ -222,7 +231,7 @@ header > h2{
             padding:10px;
             gap:10px;
             display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(min(30rem,100%),1fr)) ;
+            grid-template-columns:repeat(auto-fit,minmax(min(25rem,100%),1fr)) ;
           }
    #blogvdos > iframe {
           min-height:250px;
@@ -242,6 +251,8 @@ header > h2{
            height:250px;
            width: 100%;
            border:none;
+         /*  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%); */ 
+           
          }
 
 
@@ -249,6 +260,7 @@ header > h2{
           padding:20px;
           margin:0 auto ;
           background: #5e41f0;
+          user-select:none;
          }
    #ourwork > h2 {
             text-align:center;
@@ -268,7 +280,7 @@ header > h2{
            background: #0e0636;
            color:#ecebf2 ;
            font-family:PT Serif;
-           margin:50px auto;
+           margin:20px auto;
            text-align:center;
         }
 
@@ -278,6 +290,7 @@ header > h2{
            background:#5e41f0 ;
            padding:20px ;
            color:white;
+           user-select:none;
          }
     .aboutus > h2 {
            margin-bottom:40px;
@@ -292,7 +305,37 @@ header > h2{
             border:1px solid black ;
             min-height:220px ;
             margin:20px auto ;
+            width:100%;
          }
+
+   .contact {
+          padding:10px;
+          background:#bdf2b6 ;
+        }
+  .contact > form {
+          margin:0 auto;
+          width:90%;
+        }
+  .contact > form > label {
+          display:block;
+          padding:5px 0px;       
+        }
+  .contact > form > input {
+          display:block;
+          font-size:18px;
+          padding:5px;
+          width:100%;
+       }
+   .contact > form > #send {
+           width:40%;
+           border-radius:10px;
+           outline:none;
+           border:0px solid black;
+           background:coral ;
+           color: #f2f0e9 ;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
     footer {
          margin:0 auto;
          background:#122029;
@@ -354,7 +397,7 @@ header > h2{
           padding: 5px 10px;
           font-size: 16px;
           cursor: pointer;
-          z-index:99 ;
+          z-index:90 ;
           font-size:1.50rem;
             }
       #ytb {          
@@ -368,10 +411,39 @@ header > h2{
           padding: 5px 10px;
           font-size: 16px;
           cursor: pointer;
-          z-index:99 ;
+          z-index:90;
           font-size:1.50rem;
             }
 
+
+@media only screen and (min-width: 500px) {       
+     
+    #section > #blur { 
+                 width:60%;
+                 position:absolute;                 
+             }
+    #inttro > p {
+            width:80%;
+            margin:0 auto;
+             }
+      #blogvdos > iframe { width:70%; }
+      .aboutus > h2{
+          margin:0 auto ;
+          width:80%;
+        }
+     .aboutus > p{
+          margin:0 auto ;
+          width:80%;
+        }
+    .aboutus > iframe {
+         margin:0 auto ;
+         width:80%;
+       }
+   .contact > form {
+          margin:0 auto ;
+          width:60%;
+        }
+    }
 
    </style>
   </head>
@@ -393,7 +465,7 @@ header > h2{
          <section class="scroll-container">
                <a class="scroll-item" href="Top10.html" target="_self"> Top 10 Quotes </a>     
                <a class="scroll-item" href="Index.html" target="_self"> Quotes </a>
-               <a class="scroll-item" href="#" target="_self"> Stories </a>
+               <a class="scroll-item" href="#" target="_self"> web Stories </a>
                <a class="scroll-item" id="active" href="#" target="_self"> blogs </a>
                <a class="scroll-item" href="#" target="_self"> education </a>
                <a class="scroll-item" href="biography.html" target="_self"> biography </a>
@@ -420,7 +492,7 @@ header > h2{
              </p>
               <a href="#blogvdos" id="soundButton"> Explore Now  </a>
               <audio id="myAudio">
-                   <source src="shooting-sound-fx-159024.mp3" type="audio/mp3">
+                   <source src="Btnsnd.mp3" type="audio/mp3">
                    Your browser does not support the audio element.
              </audio>
         </div> 
@@ -466,7 +538,7 @@ header > h2{
                          <h2> optimized video SEO strategies </h2>
                          <p> implemented effective SEO technique to optimize video blog posts, resulting in higher visibility and increase organic traffic  </p>
                    </div>
-.                   <div class="b1"> 
+                    <div class="b1"> 
                          <h2> Social media promotion </h2>
                          <p> developed and executed social media marketing campaigns to promote the video bloging website, increasing brand awareness and user engagement </p>
                    </div>
@@ -489,8 +561,29 @@ header > h2{
 
             <iframe src="">   </iframe>
       </section>
-     
-       
+                
+
+         <!-------contact us form----------->
+      <section class="contact">
+            <form action="send.php" method="post">
+                 <h2> contact us </h2>
+                 <p> reach out to us using the contact form below. 
+                     we are here to help and answer any questions
+                     you may have. we look forward to connecting with you!
+                </p>
+                 
+                 <label for="name"> name </label>
+                 <input type="text" name="name" required>
+
+                 <label for="email"> email </label>
+                 <input type="email" name="email" required>
+
+                 <label for="msg"> message </label>
+                 <textarea rows="4" cols="40" name="msg" required></textarea>
+
+                 <input id="send" type="submit" value="submit">
+           </form>
+     </section>
 
        <footer>   <!------footer Section------->
        <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes World </h2>          
@@ -528,7 +621,7 @@ header > h2{
 
           //navigation javascript
          function openNav() {
-         document.getElementById("mySidenav").style.width = "60%";
+         document.getElementById("mySidenav").style.width = "80%";
            }
          function closeNav() {
          document.getElementById("mySidenav").style.width = "0";
@@ -551,6 +644,6 @@ document.getElementById("topButton").addEventListener("click", function () {
   document.documentElement.scrollTop = 0;
 });
 
-
+          
    </script>
 </hyml>
