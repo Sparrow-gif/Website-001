@@ -35,7 +35,7 @@
        -ms-flex-align:center;
        align-items:center;
        position:sticky;
-       z-index:99;
+       z-index:999;
        top:0px;
        background:#13d48a ; /* #ebe6fa; */      
        padding:2px;      
@@ -66,7 +66,7 @@ header > h2{
         height:100vh;
         width:0;
         position: fixed;
-        z-index:999;
+        z-index:99;
         top: 0;
         right: 0;
         background-color:#FfEAEC;
@@ -79,7 +79,7 @@ header > h2{
         -webkit-user-select:none;
         -moz-user-select:none;
         -ms-user-select:none;    
-      
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      }
 
 .sidenav a {
@@ -131,6 +131,7 @@ header > h2{
       }
  .scroll-container > .scroll-item {
          text-align:center;
+         transition-duration:0.3s;
          min-width: 100px;
          text-decoration:none;
          padding:6px;
@@ -141,6 +142,10 @@ header > h2{
          background:white ;
          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
        }
+  .scroll-container > .scroll-item:hover {
+          color: white;
+          background:#6e0cf7;
+          }
   .scroll-container > #active {
         color: white;
         background:#6e0cf7;
@@ -458,9 +463,11 @@ header > h2{
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#" target="_self" >Home</a>
                 <a href="#" target="_self" >About us </a>
-                <a href="#" target="_self" > Stories </a>
-                <a href="#" class="active" target="_self" > biography </a>
-                <a href="#" target="_self" > more categorise </a>
+                <a href="#" target="_self" > poetry </a>
+                <a href="#" class="active" target="_self" > krishna Quotes </a>
+                <a href="#" target="_self" > bloges </a>
+                <a href="#" target="_self" > biography </a>
+                <a href="#" target="_self" > web story </a>
                 <a href="#" target="_self" >Contact us</a>
           </div>
                 <h2 class="animate__animated animate__jackInTheBox animate__infinite animate__slow"> Quotes World  </h2>
@@ -468,20 +475,19 @@ header > h2{
      </header>
 
          <section class="scroll-container">
-               <a class="scroll-item" href="Top10.html" target="_self"> Top 10 Quotes </a>     
+               <a class="scroll-item" href="Top10.html" target="_self"> daily Quotes </a>     
                <a class="scroll-item" href="Index.html" target="_self"> Quotes </a>
-               <a class="scroll-item" href="#" target="_self"> web Stories </a>
+               <a class="scroll-item" href="#" target="_self"> Stories </a>
                <a class="scroll-item" id="active" href="#" target="_self"> blogs </a>
-               <a class="scroll-item" href="#" target="_self"> education </a>
+               <a class="scroll-item" href="#" target="_self"> poetry </a>
                <a class="scroll-item" href="biography.html" target="_self"> biography </a>
                <a class="scroll-item" href="#" target="_self"> gaming </a>
-               <a class="scroll-item" href="#" target="_self"> Life-Style </a>
-               <a class="scroll-item" href="#" target="_self"> Trending </a>
-               <a class="scroll-item" href="#" target="_self"> entertainment  </a>
-               <a class="scroll-item" href="#" target="_self"> cricket team </a>
-               <a class="scroll-item" href=" https://www.amazon.in/?&ext_vrnc=hi&tag=googinhydmabk-21&ref=pd_sl_7lvdlypdab_e&adgrpid=58666170373&hvpone=&hvptwo=&hvadid=678717150657&hvpos=&hvnetw=g&hvrand=12194758838993204611&hvqmt=e&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=9299083&hvtargid=kwd-10573980&hydadcr=28228_2379650  " target="_self"> E-commerce </a>
+               <a class="scroll-item" href="#" target="_self"> education </a>
+               <a class="scroll-item" href="#" target="_self"> cricket </a>
+               <a class="scroll-item" href=" https://www.amazon.in" target="_self"> Life-Style </a>
                <a class="scroll-item" href="#" target="_self"> health </a>
-               <a class="scroll-item" href="#" target="_self"> More...</a>
+               <a class="scroll-item" href="#" target="_self"> web Stories </a>
+               <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
   </section>
           
@@ -616,6 +622,9 @@ header > h2{
   </body>
 
    <script>
+          function notevel() {
+                 window.alert("Sorry..Content Not Evelable Right Now") ;
+             };
 
          const soundButton = document.getElementById('soundButton');
          const audio = document.getElementById('myAudio');
