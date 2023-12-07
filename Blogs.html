@@ -119,10 +119,11 @@ header > h2{
 
     .scroll-container {
         width: 100%;
+        overflow-x: auwidth: 100%;
         overflow-x: auto;
         display:flex;        
         background:white;
-        padding:4px;
+        padding:5px;
         position:relative ;
         white-space: nowrap;
       }
@@ -130,35 +131,34 @@ header > h2{
          display:none;
       }
  .scroll-container > .scroll-item {
+         background:#ebe6fa ;
          text-align:center;
-         transition-duration:0.3s;
          min-width: 100px;
          text-decoration:none;
-         padding:6px;
+         padding:5px;
          border: 1px solid #ddd;
-         margin-right: 10px;         
-         overflow:scroll;
+         margin-right: 10px;
          border-radius:8px;
-         background:white ;
-         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-       }
-  .scroll-container > .scroll-item:hover {
-          color: white;
-          background:#6e0cf7;
-          }
-  .scroll-container > #active {
+         overflow:scroll;
+         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;       
+   }
+    .scroll-container > #active {
         color: white;
         background:#6e0cf7;
         }
-  .scroll-container::-webkit-scrollbar{  width: 0.2px; }
+   .scroll-container > .scroll-item:hover {
+          color: white;
+          background:#6e0cf7;
+       }
+   .scroll-container::-webkit-scrollbar{  width:2px; }
 
-  .scroll-container::-webkit-scrollbar-track{  background: ;}
+   .scroll-container::-webkit-scrollbar-track{  background: ;}
 
    .scroll-container::-webkit-scrollbar-thumb{
-    background-color: #4acf36;
-    border-radius: 10px;
-    border: 3px none #FFFFFF;
-      }
+          background-color: #4acf36;
+          border-radius:0px;
+          border:1px none #FFFFFF;
+           }
    
      #section {
        position:relative;       
