@@ -122,25 +122,24 @@ header > h2{
         width: 100%;
         overflow-x: auto;
         display:flex;        
-        background: ;
-        padding:4px;
+        background:white;
+        padding:5px;
         position:relative ;
-       white-space: nowrap;
-        
+        white-space: nowrap;
       }
  .scroll-container::-webkit-scrollber {
          display:none;
       }
  .scroll-container > .scroll-item {
-         background:white;
+         background:#ebe6fa ;
          text-align:center;
          min-width: 100px;
          text-decoration:none;
-         padding:6px;
-         overflow:scroll;         
+         padding:5px;
+         border: 1px solid #ddd;
          margin-right: 10px;
          border-radius:8px;
-         transition-duration:0.3s;
+         overflow:scroll;
          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;       
    }
     .scroll-container > #active {
@@ -151,14 +150,14 @@ header > h2{
           color: white;
           background:#6e0cf7;
        }
-   .scroll-container::-webkit-scrollbar{  width: 5px; }
+   .scroll-container::-webkit-scrollbar{  width:2px; }
 
    .scroll-container::-webkit-scrollbar-track{  background: ;}
 
    .scroll-container::-webkit-scrollbar-thumb{
           background-color: #4acf36;
-          border-radius: 10px;
-          border: 3px none #FFFFFF;
+          border-radius:0px;
+          border:1px none #FFFFFF;
            }
 
            /* blur background Section */
