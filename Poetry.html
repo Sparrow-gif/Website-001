@@ -68,10 +68,10 @@ header > h2{
         height:100vh;
         width:0;
         position: fixed;
-        z-index: ;
+        z-index:99;
         top: 0;
         right: 0;
-        background-color: #ebe6fa;
+        background-color:#FFEAEC;
         overflow: scroll;
        -webkit-transition: 0.5s;
        -o-transition: 0.5s;
@@ -80,14 +80,15 @@ header > h2{
        text-align:center;  
         -webkit-user-select:none;
         -moz-user-select:none;
-        -ms-user-select:none;        
+        -ms-user-select:none;    
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      }
 
 .sidenav a {
        padding: 15px ;
        text-decoration: none;
        font-size: 16px;
-       color: #4b10eb;
+       color: black;
        display: block;
        -webkit-transition: 0.3s;
        -o-transition: 0.3s;
@@ -98,10 +99,12 @@ header > h2{
 .sidenav a:hover{
   color: #f1f1f1;
   background:#2576e8;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-  .sidenav > .active {
-        color: white;
-        background:#6e0cf7;
+ .sidenav > .active {
+          color: #f1f1f1;
+          background:#6e0cf7;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
 .sidenav .closebtn {
   position: absolute;
