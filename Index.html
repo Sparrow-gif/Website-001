@@ -65,10 +65,10 @@ header > h2{
       }
 .sidenav {
         height:100vh;
-        width:0;height:100vh;
+        width:0;
         width:0;
         position: fixed;
-        z-index:99;
+        z-index:999;
         top: 0;
         right: 0;
         background-color:#FFEAEC;
@@ -179,7 +179,7 @@ header > h2{
        padding:0 ;
        z-index: ;
        user-select:none;
-       height:100vh;
+       height:75vh;
       }
    #bg >#blur >  h1{
        font-size:30px;
@@ -194,13 +194,13 @@ header > h2{
       font-size:18px;
      }
     #bg > #background {
-         height:100vh;
+         height:75vh;
          width:100%;
-         background-image:url('images/raadha1.jpeg');    
+         background-image:url('images/Spider.jpg');    
          background-size:cover;
          background-position:center;
          background-attachment:fixed;
-         filter:blur(2px) ;
+         filter:blur(0.5px) ;
          Position:relative;
          z-index:;
        }
@@ -229,14 +229,14 @@ header > h2{
        background:coral;
        margin-top:20px ;
        text-align:center;    
-           
+       text-shadow: 1px 1px 3px #666666; 
     }
 
         /*  Image Slider Css*/
     #w3-content {
         margin:10px auto;
         width:95%;         
-        height:30vh;
+        min-height:220px;        
         overflow:hidden;     
         -webkit-user-select:none;
         -moz-user-select:none;
@@ -244,6 +244,36 @@ header > h2{
         position:relative;    
          z-index:-1 ;
       }
+  
+  .content {
+        height:auto;
+        padding:10px;        
+        margin:0 auto;
+        width:95%;
+        background: #F0F8EA;
+      }
+   .content > h2 {
+       text-align:center;
+       color: #E4572E;
+       text-shadow: 1px 1px 3px #666666;
+     }
+   .content > p {
+        color: blue;
+        font-size:16px;            
+       overflow:scroll;    
+        font-family:Lora;
+      }
+  .more-text {
+       display: none;
+       transition-duration:0.3s;
+     }
+ .read-more {
+      text-decoration:none;
+      cursor:pointer;
+      ;}
+  .show-content > .more-text {
+      display: block;
+    }
  #w3-content > img {
       height:100%;     
       width:100%;      
@@ -264,7 +294,7 @@ header > h2{
          }
          /* Quotes body Css */
     #quotes {
-           background:##F6FEDB ;
+           background:#F6FEDB ;
            display: ;
            margin: 0 auto ;
            overflow:hidden;
@@ -562,7 +592,7 @@ footer {
           padding: 5px 10px;
           font-size: 16px;
           cursor: pointer;
-          z-index:99 ;
+          z-index:9;
           font-size:1.50rem;
             }
 
@@ -570,8 +600,8 @@ footer {
    @Keyframes  heart {
              50% {transform:scale(0.80); }
         }
-  @media only screen and (min-width:800px) {         
-                                     
+  @media only screen and (min-width:600px) {         
+    #bg { height:100vh;  }                    
     #bg > #blur {   width:60%;  }
    #gettouch > form { width:70%;}
       }
@@ -631,7 +661,7 @@ footer {
       <section id="bg">
             <div id="background">  </div>
             <div id="blur"> 
-               <h1> Discover The Wisdom Of Lord Krishna </h1>
+               <h1> Discover The Wisdom Of Lord sri Krishna </h1>
                <p> Discover The Whisdom Of Sri Krishna's Teaching
                    Through Powerful Quotes. Expand Your Consciousness
                    And Find Inner Peace. </p>
@@ -644,12 +674,51 @@ footer {
       
            <!----Google Ads close------->
 
+        <!----Shri krishna life story------->
+      <div class="content">
+             <h2> _Story of lod shri krishna_ </h2>
+         <p>
+            The life story of Lord Krishna is vast and captivating, encompassing various stages and remarkable events.
+            Born in Mathura to King Vasudeva and Queen Devaki, Krishna's life began amidst prophecy and peril.
+            To escape the wrath of King Kansa, his uncle, Krishna was transported to Gokul, where he was raised by 
+            Yashoda and Nanda. His childhood was marked by playful antics, charming the Gopis, and performing miraculous feats.
+       </br>
+            As Krishna matured, his valor and wisdom shone. He played a pivotal role in the Mahabharata,
+            advising Arjuna on the battlefield of Kurukshetra through the sacred scripture, the Bhagavad Gita. 
+            His teachings encompassed duty, righteousness, and the path to spiritual fulfillment.      
+        </p>
+
+  <p class="more-text" style="display: none;">
+            Krishna's interactions with Radha and the Gopis depicted the purest form of love and devotion. 
+            His divine romance with Radha symbolizes the union of the individual soul with the divine.
+       </br>
+            Later in life, Krishna established the city of Dwarka and reigned as its king. He married
+            Rukmini and had eight principal queens known as the Ashtabharya. His life in Dwarka was filled
+            with various events, including the abduction of Rukmini's brother, Rukmi, and numerous other adventures.
+       </br>
+            Krishna's teachings emphasized the importance of performing one's duty without attachment to the
+            fruits of actions. His divine play and miracles, such as lifting the Govardhan Hill, destroying 
+            demons, and protecting devotees, showcased his divine nature and purpose.
+       </br>
+            The Bhagavata Purana and Mahabharata extensively detail Krishna's life, narrating his childhood,
+            youth, role in the Mahabharata, and his philosophical teachings. His life story continues to
+            inspire millions, illustrating the essence of righteousness, love, and the path to spiritual enlightenment.
+       </br>
+            This summary captures the essence of Lord Krishna's multifaceted life, but to delve deeper
+            into the intricacies of his story, one would need to explore the rich tapestry of texts
+            and scriptures dedicated to him..
+       </p>
+
+     <a href="#" class="read-more"> Read more...</a>
+  </div>
+        <!----Shri krishna life story-close------->
+
 
                     <!----- Image Slider section----->
       <div id="w3-content">
-            <img class="mySlides" src="images/raadha3.jpeg" style="width:100%">
-            <img class="mySlides" src="images/raadha2.jpg" style="width:100%">
-            <img class="mySlides" src="images/raadha1.jpeg" style="width:100%">
+            <img class="mySlides" src="images/Spider.jpg" style="width:100%;height:220px;">
+            <img class="mySlides" src="images/Trees.jpg" style="width:100%;height:220px">
+            <img class="mySlides" src="images/Butterfly.jpg" style="width:100%;height:220px">
      </div>
 
                 <!------Auto Type Text------->
@@ -1173,6 +1242,15 @@ function openNav() {
    function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 } ;
+      //Show-hide content
+   document.querySelectorAll('.read-more').forEach(function(item) {
+  item.addEventListener('click', function(e) {
+    e.preventDefault();
+    var content = this.previousElementSibling;
+    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    this.textContent = content.style.display === 'none' ? 'Read more..' : 'Read less--';
+  });
+});
 
 
         /* Image Slider JavaScript */
@@ -1224,7 +1302,7 @@ document.getElementById("topButton").addEventListener("click", function () {
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
    <script>          
       var typed = new Typed('.multiText', {
-      strings: ["&#129434;Raadhe Raadhe&#129434;", "&#127804;Jai Shri Krishna&#127804;", "&#9728;राधे राधे.&#9728; ", "जय श्री कृष्णा", "&#128081;রাধে রাধে &#128081; .","&#128329; জয় শ্রী কৃষ্ণ &#128329;",],
+      strings: ["&#129434;Raadhe Raadhe&#129434;", "&#127804;Jai Shri Krishna&#127804;", "&#9728;राधे राधे.&#9728; ", "जय श्री कृष्णा", "&#128081;রাধে রাধে &#128081;","&#128329; জয় শ্রী কৃষ্ণা  &#128329;",],
       loop: true, 
       typeSpeed: 150 , 
       backSpead: 80 , 
@@ -1234,4 +1312,3 @@ document.getElementById("topButton").addEventListener("click", function () {
    </script>
 </body>
 </html>
-
