@@ -454,7 +454,7 @@ active  background-color: #ccc;
    </style>
   </head>
   <body>
-        <header>              
+        <header id="navbar">              
            <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#" target="_self" > Home</a>
@@ -862,6 +862,18 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 };
+
+     //change Navigation background
+   window.addEventListener('scroll', function() {
+       const navbar = document.getElementById('navbar');
+       const scrolled = window.scrollY;
+
+       if (scrolled > 30) {
+       navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
+     } else {
+       navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
+     }
+  });
 
    </script>
 </hyml>
