@@ -327,7 +327,7 @@ header > h2{
    </style>
   </head>
   <body>
-        <header>              
+        <header id="navbar">              
            <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="Index.html" target="_self" > Home</a>
@@ -548,6 +548,17 @@ document.getElementById("topButton").addEventListener("click", function () {
   document.documentElement.scrollTop = 0;
 });
 
+ //change Navigation background
+   window.addEventListener('scroll', function() {
+       const navbar = document.getElementById('navbar');
+       const scrolled = window.scrollY;
+
+       if (scrolled > 30) {
+       navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
+     } else {
+       navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
+     }
+  });
 
    </script>
 </hyml>
