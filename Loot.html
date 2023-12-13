@@ -42,6 +42,7 @@
        -webkit-user-select:none;
        -moz-user-select:none;
        -ms-user-select:none;
+       transition-duration:0.3s;
      }
 header > h2{
           font-size:25px;
@@ -63,6 +64,7 @@ header > h2{
       -webkit-transition-duration:0.3s;  
       -o-transition-duration:0.3s;  
        transition-duration:0.3s;
+       text-shadow: 1px 1px 3px #666666;
       }
 .sidenav {
         height:100vh;
@@ -107,16 +109,6 @@ header > h2{
           background:#6e0cf7;
           box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
- #cold {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-     }
-  #cold > a {
-        font-size:20px;
-        padding:10px 15px;
-        border-radius:50%;
-     }
 .sidenav .closebtn {
   position: absolute;
   top:5px;
@@ -128,7 +120,16 @@ header > h2{
   color:white;  
   border-radius: ;
 }
-
+  #cold {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+     }
+  #cold > a {
+        font-size:20px;
+        padding:10px 15px;
+        border-radius:50%;
+     }
     .scroll-container {
         width: 100%;
         overflow-x: auto;
@@ -213,6 +214,7 @@ header > h2{
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-shadow: 1px 1px 3px #666666; 
 }
 
   .product-card  button:active {
@@ -296,8 +298,8 @@ header > h2{
             }
     .telegram {
           position: fixed;
-          bottom: 100px;
-          right: 20px;
+          bottom: 80px;
+          right: 10px;
           background-color: #007BFF;
           color: white;
           border: none;
@@ -311,10 +313,10 @@ header > h2{
    </style>
   </head>
   <body>
-        <header>              
+        <header id="navbar">              
            <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#" target="_self" > Home</a>
+                <a href="#" class="active" target="_self" >Home</a>
                 <a href="#" target="_self" > About us </a>
                 <a href="#" target="_self" > Blogs </a>
                 <a href="#" target="_self" > Poetry </a>
@@ -322,7 +324,7 @@ header > h2{
                 <a href="#" target="_blank" > E-commerce </a>
                 <a href="#" target="_blank" > Cricket </a>
                 <a href="#" target="_blank" > health </a>                
-                <a href="#" target="_self" > Contact us</a>
+                <a href="#" target="_self" >Contact us</a>
                 <div id="cold">
                     <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
                     <a href="#"> <i class="fa-brands fa-instagram "></i> </a>
@@ -346,16 +348,16 @@ header > h2{
                <a class="scroll-item" href="Biography.html" target="_self"> biography </a>               
                <a class="scroll-item" href="Games.html" target="_self"> games </a>
                <a class="scroll-item" id="active" href="Loot.html" target="_self"> loot Offers </a>                
-               <a class="scroll-item" href="https://www.amazon.in" target="_blank"> Life-Style </a>
-               <a class="scroll-item" href="#" target="_blank"> cricket </a>
-               <a class="scroll-item" href="#" target="_blank"> health </a>
+               <a class="scroll-item" href="https://www.amazon.in" target="_self"> Life-Style </a>
+               <a class="scroll-item" href="#" target="_self"> cricket </a>
+               <a class="scroll-item" href="#" target="_self"> health </a>
                <a class="scroll-item" href="Web.html" target="_self"> web Story </a>                
                <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
   </section>
           
       
-           <button class="telegram"> <i class="fa-solid fa-telegram"> </i> </button>
+           <button class="telegram"> <i class="fa-brands fa-telegram"></i> </button>
 
            <!-----Main Body------>
         <section id="section">
@@ -436,12 +438,23 @@ header > h2{
   }
 };
 
-// Scroll to the top when the button is clicked
+    // Scroll to the top when the button is clicked
+
 document.getElementById("topButton").addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+      //change Navigation background
+   window.addEventListener('scroll', function() {
+       const navbar = document.getElementById('navbar');
+       const scrolled = window.scrollY;
 
+       if (scrolled > 30) {
+       navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
+     } else {
+       navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
+     }
+  });
 
    </script>
 </hyml>
