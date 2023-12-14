@@ -103,17 +103,24 @@ header > h2{
 .sidenav a:hover{
   color: #f1f1f1;
   background:#2576e8;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
  .sidenav > .active {
           color: #f1f1f1;
           background:#6e0cf7;
+         -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
           box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
 #cold {
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
+        -ms-flex-pack:distribute;
         justify-content:space-around;
-        align-items:center;
+        -webkit-box-align:center;
+        -ms-flex-align:center;
+         align-items:center;
      }
   #cold > a {
         font-size:20px;
