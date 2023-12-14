@@ -620,9 +620,12 @@ footer {
 
 
    @Keyframes  heart {
-             50% {transform:scale(0.80); }
+             50% {
+              -webkit-transform:scale(0.80);
+                  -ms-transform:scale(0.80);
+                      transform:scale(0.80); }
         }
-  @media only screen and (min-width:600px) {         
+  @media only screen and (min-width:800px) {         
     #bg { height:100vh;  }                    
     #bg > #blur {   width:60%;  }
    #gettouch > form { width:70%;}
