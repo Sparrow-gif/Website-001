@@ -365,7 +365,10 @@ header > h2{
        margin:0 ;
        padding:0 ;
        z-index:1;
-       user-select:none;
+       -webkit-user-select:none;
+          -moz-user-select:none;
+           -ms-user-select:none;
+               user-select:none;
       }
    #footbg >#blur >  h1{
        font-size:30px;
@@ -385,6 +388,7 @@ header > h2{
          background-image:url('images/raadha3.jpeg');    
          background-size:cover;
          background-position:center;
+        -webkit-filter:blur(2px) ;
          filter:blur(2px) ;
          Position: ;
          z-index:;
@@ -393,7 +397,9 @@ header > h2{
        position:absolute;
        top:50%;
        left:50%;
-       transform:translate(-50%,-50%) ;
+       -webkit-transform:translate(-50%,-50%) ;
+           -ms-transform:translate(-50%,-50%) ;
+               transform:translate(-50%,-50%) ;
        z-index:1;
        color: ;
        width:90%;
@@ -416,6 +422,7 @@ header > h2{
        background:coral;
        margin-top:20px ;
        text-align:center;    
+      -webkit-animation: heart 1s linear infinite ;    
        animation: heart 1s linear infinite ;        
     }
 
