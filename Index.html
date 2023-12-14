@@ -193,6 +193,9 @@ header > h2{
        margin:0 ;
        padding:0 ;
        z-index: ;
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
        user-select:none;
        height:75vh;
       }
@@ -216,6 +219,7 @@ header > h2{
          background-position:center;
          background-attachment:fixed;
          filter:blur(0.5px) ;
+         -webkit-filter:blur(0.5px) ;
          Position:relative;
          z-index:;
        }
@@ -223,6 +227,9 @@ header > h2{
        position:absolute;
        top:50%;
        left:50%;
+      -webkit-transform:translate(-50%,-50%) ;
+          -ms-transform:translate(-50%,-50%) ;
+              transform:translate(-50%,-50%) ;
        transform:translate(-50%,-50%) ;
        z-index:1;
        width:90%;
