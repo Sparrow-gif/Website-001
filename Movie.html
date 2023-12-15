@@ -303,7 +303,21 @@ header > h2{
            text-decoration:none;
            color:white ;
         }
-
+    .recommend {
+          margin:10px auto;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          width:95%;
+          padding:10px 10px;
+        }
+    .recommend > h3{
+           padding:10px 0px;
+        }
+    .recommend > a{
+          text-decoration:none;
+          color: green;
+          cursor:pointer;
+          display:block;
+        }
 
     footer {     
          width:100%;         
@@ -438,7 +452,7 @@ header > h2{
            <!-----Main Body------>
           <main style="padding:15px;">             <!-------heading------->
                 <div class="heading">
-                     <h2> Top 10 Hindi Movie Download Websites 2023 (all time) </h2>
+                     <h2> best Movie Download Websites 2023 (all time) </h2>
                      <p> Updated on : Dec 06, 2023 </p>
                </div>
                              <!-------heading logo------->
@@ -483,7 +497,7 @@ header > h2{
 
                  <!------content table-------->
                <section id="contentable">
-                     <h2> Here The List of Top 10 Hindi Movie Download Websites </h2>  
+                     <h2> Here The List of best Movie Download Websites </h2>  
                     <table>
                        <tr> 
                           <th> sl. no </th>
@@ -711,11 +725,22 @@ header > h2{
     <!-- Add more div elements as needed -->
   </div>
 
+</main>
+
    <!----Go To Top Button------>
        <button id="topButton" class="fa-solid fa-arrow-up"> </button>
        <button class="telegram"><i class="fa-brands fa-telegram"></i> </button>
 
-         </main>
+       
+   <!------recomended section-------->
+         <div class="recommend">
+              <h3> our Recommended Top pages </h3>
+              <a href="Movie.html" target="_self" id="dnl"> Top 10 Movie Download Websites </a>
+              <a href="#" target="_self">  self paytm cash Earning Games  </a>
+              <a href="#" target="_self"> 2023®  </a>
+              <a href="#" target="_self"> Quotes planet </a>
+        </div>
+   
          
     <footer>   <!------footer Section------->
        <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes planet </h2>          
@@ -771,11 +796,15 @@ header > h2{
 };
 
 // Scroll to the top when the button is clicked
-document.getElementById("topButton").addEventListener("click", function () {
+  document.getElementById("topButton").addEventListener("click", function () {
   document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  document.documentElement.scrollTop = 0;  
 });
-
+   //link click scrolling 
+  document.getElementById("dnl").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;  
+ });
 
      var acc = document.getElementsByClassName("accordion");
 var i;
@@ -791,6 +820,6 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 };
-
+            
    </script>
 </hyml>
