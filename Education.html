@@ -244,7 +244,8 @@ header > h2{
         }
 
     #container {
-         background:#cbd7f7;
+         background: ;
+         padding:6px;
          margin:0 auto ;
          width:100%;
          gap:10px;
@@ -252,23 +253,41 @@ header > h2{
          grid-template-columns:repeat(auto-fit,minmax(min(30rem,100%),1fr)) ;      
           }
      #container > div {
-            background:#cbd7f7;
+            background: #FFFFFF;
             height:auto ;    
-            padding:10px;     
+            padding:0px;     
             margin:0 auto ;
             width:100%;
-            box-shadow:6px 6px 11px #a6a6a6,-6px -6px 11px #ffffff;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
          }
      
      #container > div > h2 {
            text-indent:0px;
-           padding:10px;
+           padding:10px 5px;
+           color:#3772FF;
        }
-      #container > div > img {
-            width:100%;
-            height:220px;       
-            margin:0 auto;     
+    #container > div > #hvr {
+            width:95%;
+            margin:0 auto;
+            min-height:210px;
+            max-height:380px;
+            overflow:hidden;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            object-fit:cover ;
         }
+      
+      #container > div > #hvr > img {
+            width:100%;
+            height:100%;       
+            margin:0 auto;    
+            object-fit: cover;
+            transition-duration:0.3s;
+            background-size:cover;
+            background-position:center;
+        }
+    #container > div > #hvr > img:hover {
+         transform:scale(1.15) ;
+       }
     #container > div > p {
            font-size:18px;
            padding:10px;
