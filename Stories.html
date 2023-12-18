@@ -182,7 +182,7 @@ header > h2{
           background: #ede7d8;
        }
    #askqtn > .accordion {
-         background-color: #eee;
+         background-color:#eee;
          margin:8px auto;
          color: #444;
          cursor: pointer;
@@ -196,8 +196,8 @@ header > h2{
          transition: 0.4s;
          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
       }
-    .active, .accordion:hover {
-             background-color: #ccc;
+   #askqtn > .accordion:hover {
+             background-color: red;
            }
 
      .accordion:after {
@@ -207,19 +207,24 @@ header > h2{
             float: right;
             margin-left: 5px;
          }
-    .active:after {
+    .accordion > .active:after {
            content: "\2212";
          }
 
       .panel {
-           padding: 0 18px;
+           padding: 0 10px;
            background-color: white;
            max-height: 0;
            overflow: hidden;
            transition: max-height 0.2s ease-out;
         }
+     .panel > p {
+            padding: 8px 10px;
+            color: ;
+            font-family: Poppins;
+            font-size: 4.50vw;
+               }
 
-     
     footer {
          margin:0 auto;
          background:#122029;
@@ -252,6 +257,7 @@ header > h2{
         font-size:14px
         }
    select {
+        cursor:pointer;
         margin:10px;
         float:right;
         width:40%;
