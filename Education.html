@@ -173,7 +173,68 @@ header > h2{
           border-radius:0px;
           border:1px none #FFFFFF;
            }
-    
+    #section {
+       position:relative;       
+       margin:0 ;
+       padding:0 ;
+       user-select:none;
+       object-fit:fill;
+       overflow:hidden;
+      }
+ #section >#blur >  h1{
+       font-size:30px;
+       text-transform:uppercase;
+       margin:0 auto ;
+       color: #e3e35f;
+    } 
+ #section > #blur > p {
+       margin-top:20px ;
+       color:white; 
+      font-size:18px;
+     }
+ #section > #background {
+         height:70vh;
+         width:100%;
+         background-image:url('images/starr.jpeg');    
+         background-size:cover;
+         background-position:center;
+         background-attachment:fixed;
+         filter:blur(0px) ;
+         object-fit:fill;
+         overflow:hidden;
+       }
+  #section > #blur {
+       position:absolute ;
+   /* backdrop-filter:blur(1px) ; */
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-50%) ;
+       z-index: 5 ;
+       width:90%;
+    /*   width:50%; */
+       padding: 10px ;  
+    /*  text-align:center;  */
+     /*  border:2px inset white; */
+     /*  border-radius:4px;       */
+     /* font-weight:bold;     */    
+     }
+ #section >  #blur a {
+       display:inline-block;
+       padding:10px ;
+       width:80%;
+       font-size:18px;
+       text-decoration:none;
+       color: White ;
+       background:red;
+       margin-top:20px ;
+       text-align:center;
+       cursor:pointer;
+       transition-duration:0.3s;
+    }
+  #section >  #blur a:active {
+         transform:scale(0.90) ;
+         border-radius:10px;
+     }
   .contest > #banner {
        /*  background-image:url('image/Spider.jpg'); */
        /* background-size:cover; */
@@ -381,7 +442,7 @@ header > h2{
     @Keyframes scale {
          50%{ transform:scale(0.85); }
            }
-
+        
 
    </style>
   </head>
@@ -430,7 +491,22 @@ header > h2{
           <!-- Add more items as needed -->
   </section>
           
-                 
+                 <!-------100vh background ------>
+        <section id="section">
+          <div id="background">  </div>
+          <div id="blur"> 
+              <h1> Discover Your Amazing Life Stories / biography </h1>
+              <p> uncover the extraordinary moment that shaped
+                  into who you are today. let us  help you tell
+                  your unique biographies. 
+             </p>
+              <a href="#blogvdos" id="soundButton"> Explore Now  </a>
+              <audio id="myAudio">
+                   <source src="Btnsnd.mp3" type="audio/mp3">
+                   Your browser does not support the audio element.
+             </audio>
+        </div> 
+     </section>
            <!-----Main Body------>
           <main style="padding:15px;">             <!-------heading------->
                 <div class="heading">
