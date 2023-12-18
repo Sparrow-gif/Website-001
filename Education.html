@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <title> Loot_Page </title>
+  <title> Education_Page </title>
     <style>
          * {
           margin:0px;
@@ -22,8 +22,12 @@
           -webkit-box-sizing:border-box;
           box-sizing:border-box;
           font-family: Domine;
-          text-transform:capitalize;                     
+          text-transform:capitalize;                           
         }  
+   html {
+       scroll-behavior:smooth;
+       scroll-padding:2.50em;
+      }
  header {
        display:-webkit-box;
        display:-ms-flexbox;
@@ -35,14 +39,13 @@
        -ms-flex-align:center;
        align-items:center;
        position:sticky;
-       z-index:99;
+       z-index:999;
        top:0px;
        background:#13d48a; /* #ebe6fa; */
        padding:2px;      
        -webkit-user-select:none;
        -moz-user-select:none;
        -ms-user-select:none;
-       transition-duration:0.3s;
      }
 header > h2{
           font-size:25px;
@@ -68,7 +71,6 @@ header > h2{
       }
 .sidenav {
         height:100vh;
-        width:height:100vh;
         width:0;
         position: fixed;
         z-index:99;
@@ -104,7 +106,11 @@ header > h2{
   background:#2576e8;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
- 
+ .sidenav > .active {
+          color: #f1f1f1;
+          background:#6e0cf7;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
 .sidenav .closebtn {
   position: absolute;
   top:5px;
@@ -167,63 +173,181 @@ header > h2{
           border-radius:0px;
           border:1px none #FFFFFF;
            }
-
-
-   #askqtn {
-          margin:0 auto ;
-          padding:14px;
-          user-select:none;
-          width:100% ;
-          height:auto;
-          background: #ede7d8;
+    .head-logo > a{
+           padding: 10px 10px;
+           text-decoration:none;   
+           font-size:20px;   
+           cursor:pointer;   
+           color:white;  
+           border-radius:50%;
+           margin: 0px 4px ;
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
        }
-   #askqtn > .accordion {
-         background-color:#eee;
-         margin:8px auto;
-         color: #444;
-         cursor: pointer;
-         padding: 18px;
-         width: 100%;
-         border:none;
-         border-radius:8px;
-         text-align: left;
-         outline: none;
-         font-size: 4.10vw;
-         transition: 0.4s;
+   .head-logo > a:nth-child(1) {
+         color:white;
+         background: #266DD3;
+       }
+   .head-logo > a:nth-child(2) {
+         color:white;
+         background: #F75C03 ;
+       }
+   .head-logo > a:nth-child(3) {
+         color:white;
+         background: #7BB2D9 ;
+       }
+   .head-logo > a:nth-child(4) {
+         color:white;
+         background: #31D843 ;
+       }
+   .head-logo > a:nth-child(5) {
+         color:white;
+         background: #F42B03 ;
+       }
+  .contest > #banner {
+       /*  background-image:url('image/Spider.jpg'); */
+       /* background-size:cover; */
+       /*  background-position:center; */
+       /*  background-attachment: ; */
+         min-height:220px;
+         max-height:350px;
+         width:100%;
+         margin:10px auto;
          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-     }
- #askqtn > .accordion:hover {
-             background-color: #FFFCF2;
-                color: #FF5A5F;
-           }
+       }
+  .contest > #banner > img {
+         width:100%;
+         min-height:220px;
+         max-height:350px;
+         background-size:cover;
+         background-position:center;
+      }
+    #contentable {
+          margin:0 auto ;
+          padding:0px;
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+          width:100% ;
+        }
+   #contentable >h2 {         
+            color:#c542f5 ;
+            text-shadow: 2px 2px 8px #c542f5;
+        }
+   #contentable > table{
+         border:1px solid black;
+         padding:0px;
+         width:100%;
+         margin:20px auto;
+         text-align:center;
+         font-family:Roboto ;
+       }
+  table > tr, th, td {
+         border:1px solid black;
+         padding:7px;     
+         font-family:Roboto ;
+       }
+  #contentable > table > a{
+         cursor:pointer ;
+      }
 
-     .accordion:after {
-            content: '\002B';
-            color: #777;
-            font-weight: bold;
-            float: right;
-            margin-left: 5px;
+     #container {
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         background: ;
+         margin:0 auto ;
+         width:100%;
+         gap:10px;
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;      
+          }
+     #container > div {
+            background: #FFFFFF;
+            height:auto ;    
+            padding:5px;     
+            margin:0 auto ;
+            width:100%;
+      -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
          }
-    .active:after {
-           content: "\2212";
-         }
+     
+     #container > div > h2{
+           text-indent:0px;
+           padding:5px 0px 3px 0px;
+           color: #29BF12;
+       }
+     #container > div > #des{
+           text-indent:0px;
+           padding:8px 5px;
+           color: #5E239D;
+       }
+      #container > div > #hvr {
+            width:100%;
+            min-height:210px;
+            max-height:380px;
+           overflow:hidden;
+        }
+      #container > div > #hvr > img {
+            width:100%;
+            height:100%;       
+            margin:0 auto;    
+            transition-duration:0.3s;
+            background-size:cover;
+            background-position:center;
+        }
+    #container > div > #hvr > img:hover {
+         transform:scale(1.15) ;
+       }
+    #container > div > p {
+           font-size:16px;
+           padding:0px;
+           font-family:Roboto ;
+           font-weight:bold;
+        }
+     #page {
+           padding:10px;
+           border:none;
+           background: #FF9914;
+           border-radius:5px;
+           cursor:pointer ;
+           animation:scale 1s linear infinite;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+        }
+     #page > a {
+           text-decoration:none;
+           color:white ;
+        }
+    .recommend {
+          margin:10px auto;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          width:95%;
+          padding:10px 10px;
+          background: #F7F7FF;
+        }
+    .recommend > h3{
+           padding:10px 0px;
+        }
+    .recommend > a{
+          user-select:none;
+          text-decoration:none;
+          color: green;
+          padding:5px;
+          cursor:pointer;
+          display:block;
+          font-family:Roboto ;
+          font-weight: ;
+        }
 
-      .panel {
-           padding: 0 10px;
-           background-color: #FAFFFD;
-           max-height: 0;
-           overflow: hidden;
-           transition: max-height 0.2s ease-out;
-           box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-     }
-     .panel > p {
-            padding: 8px 10px;
-            color: ;
-            font-family: Poppins;
-            font-size: 4.50vw;
-               }
-
-    footer {
+    footer {     
+         width:100%;         
          margin:0 auto;
          background:#122029;
          color:white;    
@@ -231,12 +355,9 @@ header > h2{
          -moz-user-select:none;    
          -ms-user-select:none;    
          user-select:none;  
-         padding:5px;
+         padding:0px;
          text-transform:capitalize;
-         overflow:hidden;
-         -webkit-user-select:none;
-         -moz-user-select:none;
-         -ms-user-select:none;         
+         overflow:hidden;                       
        }
    footer > h3 > i{
         font-size:24px;
@@ -244,7 +365,7 @@ header > h2{
         padding:5px;
      }  
    .sneha {
-        padding:10px;
+        padding:5px;
         color:white;
        }
    .sneha > a{
@@ -255,7 +376,6 @@ header > h2{
         font-size:14px
         }
    select {
-        cursor:pointer;
         margin:10px;
         float:right;
         width:40%;
@@ -272,23 +392,42 @@ header > h2{
         background:white;
         outline:2px solid white; 
         text-transform:capitalize;
-       }
-    #topButton {
+       }    
+   #topButton {
           display: none;
           position: fixed;
           bottom: 20px;
           right: 20px;
-          background-color: #007BFF;
+          background-color: #FF5400;
           color: white;
           border: none;
           border-radius: 50%;
-          padding: 5px 10px;
+          padding: 10px 10px;
           font-size: 16px;
           cursor: pointer;
-          z-index:1 ;
+          z-index:9;
           font-size:1.50rem;
             }
-    
+    .telegram {          
+          position: fixed;
+          bottom: 80px;
+          right: 20px;
+          background-color: #4BB3FD;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          padding: 6px 10px;
+          font-size: 16px;
+          cursor: pointer;
+          z-index:9;
+          font-size:1.50rem;
+            }
+
+    @Keyframes scale {
+         50%{ transform:scale(0.85); }
+           }
+
+
    </style>
   </head>
   <body>
@@ -313,21 +452,21 @@ header > h2{
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
                </div>
           </div>
-                <h2 class="animate__animated animate__jackInTheBox animate__infinite animate__slow"> Quotes World  </h2>
+                <h2 class="animate__animated animate__jackInTheBox animate__infinite animate__slow"> Quotes planet </h2>
                 <span onclick="openNav()">&#9776;</span>
      </header>
 
-         <section class="scroll-container">
+       <section class="scroll-container">
                <a class="scroll-item" href="Top10.html" target="_self"> Daily Quotes </a>     
                <a class="scroll-item" href="Index.html" target="_self"> K.Quotes </a>
-               <a class="scroll-item" id="active" href="Stories.html" target="_self"> K.Stories </a>
+               <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
                <a class="scroll-item" href="Blogs.html" target="_self"> blogs </a>
                <a class="scroll-item" href="Poetry.html" target="_self"> poetry </a>               
                <a class="scroll-item" href="Education.html" target="_self"> education </a>
                <a class="scroll-item" href="Biography.html" target="_self"> biography </a>               
                <a class="scroll-item" href="Games.html" target="_self"> games </a>
-               <a class="scroll-item" href="Loot.html" target="_self"> loot Offers </a>  
-               <a class="scroll-item" href="Movie.html" target="_self"> web series </a>           
+               <a class="scroll-item" href="Loot.html" target="_self"> loot Offers </a>    
+               <a class="scroll-item" id="active" href="Movie.html" target="_self"> Movies </a>                                        
                <a class="scroll-item" href="https://www.amazon.in" target="_self"> Life-Style </a>
                <a class="scroll-item" href="#" target="_self"> cricket </a>
                <a class="scroll-item" href="#" target="_self"> health </a>
@@ -336,63 +475,295 @@ header > h2{
           <!-- Add more items as needed -->
   </section>
           
-      
-       <!-----Main / Body--section------>
-       <main id="askqtn">
-                          <!-------accordion 01-------->
-             <button class="accordion"> which are the best education website for students </button>
-             <div class="panel">
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-                         <!-------accordion 02-------->
-            <button class="accordion"> best education website for free </button>
-            <div class="panel">
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           </div>
-                           <!-------accordion 03-------->
-            <button class="accordion"> how to website are help to learning </button>
-            <div class="panel">
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           </div>
+                 
+           <!-----Main Body------>
+          <main style="padding:15px;">             <!-------heading------->
+                <div class="heading">
+                     <h2> best Movie Download Websites 2023 (all time) </h2>
+                     <p> Updated on : Dec 06, 2023 </p>
+               </div>
+                             <!-------heading logo------->
+                <div class="head-logo">
+                     <a href="#" class="fa-brands fa-telegram" title="telegram"> </a>
+                     <a href="#" class="fa-brands fa-instagram" title="Instagram"> </a>
+                     <a href="#" class="fa-brands fa-twitter" title="twitter"> </a>
+                     <a href="#" class="fa-brands fa-whatsapp" title="whatsapp"> </a>
+                     <a href="#" class="fa-brands fa-youtube" title="YouTube"> </a>
+               </div>
+                             <!-------main div------->
+                <div class="contest">
+                     <div id="banner"> <img src="images/Trees.jpg"> </div><!-------headind banner------->
+                          
+                     <div id="cont"> <!-------headind paragraph------->
+                          <p class="texts" style="font-family:PT Serif;">  
+                               Movies play a huge role in our lives. They're not just fun but also teach us things
+                               and make us feel connected to different places and people. When we watch movies, we
+                               can understand others better and feel what they feel. They also show us cool stuff 
+                               about history and different cultures. Movies are like a big canvas where people show 
+                               their talents in acting, directing, and making stories. They help us relax when life 
+                               gets stressful and let us take a break from reality for a bit. Sometimes, they make 
+                               us think about important stuff too, like what's right and wrong.
+                    <br/> <br/>
+                               Beyond their emotional impact, films serve as educational tools, illuminating historical
+                               events, cultural nuances, and scientific discoveries. They encapsulate human experiences,
+                               preserving stories for posterity and serving as historical documentation. Moreover, movies 
+                               act as conduits for creativity, showcasing the talents of actors, directors, writers, and 
+                               technicians, inspiring others to explore their creative potential. The influence of movies
+                               extends to shaping popular culture, language, and even fashion, contributing to the cultural 
+                               fabric of societies worldwide.
+                    <br/> <br/>
+                               We can watch movies in lots of places, like Netflix, Zee5, zee Cinema, Hulu, or Disney+. Some people 
+                               also use websites like Netflix or Amazon Prime to download or watch movies. These 
+                               websites have a bunch of movies and shows that we can enjoy whenever we want. Movies
+                               don't just entertain us; they also help the economy by making jobs and bringing in 
+                               money to places where they're made. Overall, movies are a big part of our lives, 
+                               making us laugh, think, and feel connected to each other.
+                         </p>
+                    </div>
+               </div>
 
-                        <!-------accordion 04-------->
-             <button class="accordion"> which are the best education website for students </button>
-             <div class="panel">
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-                         <!-------accordion 05-------->
-            <button class="accordion"> best education website for free </button>
-            <div class="panel">
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           </div>
-                           <!-------accordion 06-------->
-            <button class="accordion"> how to website are help to learning </button>
-            <div class="panel">
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           </div>
+                 <!------content table-------->
+               <section id="contentable">
+                     <h2> Here The List of best Movie Download Websites </h2>  
+                    <table>
+                       <tr> 
+                          <th> sl. no </th>
+                          <th> site name </th>
+                          <th> link </th>
+                      </tr>
+                       <tr>      <!-------site 01------->
+                          <th> 01 </th>
+                          <th> Bollyflix </th>
+                          <th> <a href="#website1"> Go To </a></th>
+                      </tr>
+                       <tr>      <!-------site 02------->
+                          <th> 02 </th>
+                          <th> hdhub4u </th>
+                          <th> <a href="#website2"> Go To </a></th>
+                      </tr>
+                       <tr>      <!-------site 03------->
+                          <th> 03 </th>
+                          <th> vegamovies </th>
+                          <th> <a href="#website3"> Go To </a></th>
+                      </tr>
+                       <tr>      <!-------site 04------->
+                          <th> 04 </th>
+                          <th> downloadhub </th>
+                          <th> <a href="#website4"> Go To </a></th>
+                      </tr>
+                       <tr>      <!-------site 05------->
+                          <th> 05 </th>
+                          <th> 9xflix </th>
+                          <th> <a href="#website5"> Go To </a></th>
+                      </tr>
+                       <tr>      <!-------site 06------->
+                          <th> 06 </th>
+                          <th> Codeacademy </th>
+                          <th> <a href="#website6"> Go To </a></th>
+                      </tr>
+                       <tr>      <!-------site 07------->
+                          <th> 07 </th>
+                          <th> byju's </th>
+                          <th> <a href="#website7"> Go To </a></th>
+                      </tr>
+                       <tr>      <!-------site 08------->
+                          <th> 08 </th>
+                          <th> maritnation </th>
+                          <th> <a href="#website8"> Go To </a></th>
+                      </tr>
+                       <tr>      <!-------site 09------->
+                          <th> 09 </th>
+                          <th> bolly4u </th>
+                          <th> <a href="#website9"> Go To </a></th>
+                      </tr>
+                       <tr>      <!-------site 10------->
+                          <th> 10 </th>
+                          <th> Moviesnation </th>
+                          <th> <a href="#website10"> Go To </a></th>
+                      </tr>
+                </table>
+              </section>
+                
+                
+  <div id="container">      
+       <div id="website1">     <!----Biography 1------->                     
+           <h2> 1) Bollyflix </h2>
+           <div id="hvr"> <img src="Images/Spider.jpg"> </div>
+           <h4 id="des"> Description </h4>
+           <p>
+               Bollyflix is a popular streaming platform known for 
+               its vast collection of Bollywood movies, TV shows,
+               and regional Indian content. Offering a wide range 
+               of genres, from classic films to the latest releases, 
+               Bollyflix attracts audiences with its diverse selection 
+               and user-friendly interface, making it a go-to destination 
+               for Bollywood enthusiasts worldwide. 
+           <p/>         
+          <button id="page"> <a href="#"> Go To Official page </a></button> 
+      </div>
 
-                       <!-------accordion 07-------->
-             <button class="accordion"> which are the best education website for students </button>
-             <div class="panel">
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-                         <!-------accordion 08-------->
-            <button class="accordion"> best education website for free </button>
-            <div class="panel">
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           </div>
-                           <!-------accordion 09-------->
-            <button class="accordion"> how to website are help to learning </button>
-            <div class="panel">
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           </div>
+       <div id="website2">  <!-----Biography 2----->
+           <h2> 2) hdhub4u </h2>
+           <div id="hvr"> <img src="Images/Butterfly.jpg"> </div>
+           <h4 id="des"> Description </h4>
+           <p>
+              HDHub4u is a website known for hosting a variety of movies and 
+              TV shows available for streaming and download in high-definition 
+              quality. It offers a wide array of content spanning different 
+              genres and languages, catering to diverse entertainment preferences.
+              However, please note that accessing copyrighted content from such 
+              websites may not always be legal and could pose risks.
+           <p>         
+           <button id="page"> <a href="https://www.coursera.org" target="_self"> Go To Official page </a></button> 
+      </div>
 
-     </main>
+       <div id="website3"> <!----Biography 3----->
+           <h2> 3) vegamovies  </h2>
+           <div id="hvr"> <img src="Images/Spider.jpg"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              Vegamovies is an online platform known for its vast collection of movies,
+              TV shows, web series, and more. It offers a diverse range of content across 
+              different genres and languages. Users appreciate its easy-to-use interface 
+              and the ability to stream or download quality entertainment. Vegamovies
+              remains a popular choice for many looking for a wide selection of content to enjoy.
+          </p>
+          <button id="page"> <a href="#"> Go To Official page </a></button> 
+      </div>
+
+       <div id="website4"> <!----Biography 4----->
+           <h2> 4) downloadhub </h2>
+           <div id="hvr"> <img src="Images/Trees.jpg"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              Downloadhub is a well-known online platform recognized for offering a wide array of
+              movies, TV shows, and web series for downloading or streaming. It's popular for its 
+              extensive collection spanning various genres and languages, catering to diverse
+              audience preferences. Downloadhub has gained traction for its user-friendly 
+              interface and accessibility, making it a go-to destination for individuals 
+              seeking entertainment options.
+          </p>
+          <button id="page"> <a href="#"> Go To Official page </a></button> 
+      </div>
+
+        <div id="website5"> <!----Biography 5----->
+           <h2> 5) 9xflix </h2>
+           <div id="hvr"> <img src="Images/Butterfly.jpg"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              9xflix is an online platform celebrated for its comprehensive library of movies, 
+              TV series, and web content available for streaming and downloading. This platform
+              caters to a wide range of genres and languages, appealing to diverse entertainment
+              preferences. Known for its user-friendly interface, 9xflix has garnered attention 
+              among audiences looking for a varied selection of quality entertainment options.
+          </p>
+          <button id="page"> <a href="#"> Go To Official page </a></button> 
+      </div>
+
+       <div id="website6"> <!----Biography 6----->
+           <h2> 6) Codeacademy </h2>
+           <div id="hvr"> <img src="Images/Spider.jpg"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              this platform offers an interactive and hands-on approach to coding. Codecademy provides a variety of coding courses
+              that allow learners to write and test code directly in their web browser. This interactive learning experience is engaging 
+              and helps students apply what they learn immediately.<br>
+              The platform covers a wide range of programming languages and technologies, making it versatile for different learning needs.
+              It often includes projects and real-world applications to reinforce coding skills, providing practical experience alongside 
+              theoretical knowledge.Additionally, Codecademy offers a user-friendly interface, progress tracking, and instant feedback on 
+              coding exercises. This combination of interactivity, variety in course offerings, and user-friendly features contributes to
+              the platform's popularity among students for learning coding and programming skills.
+          </p>
+          <button id="page"> <a href="#"> Go To Official page </a></button> 
+      </div>
+
+      <div id="website7"> <!----Biography 7----->
+           <h2> 7) byju's </h2>
+           <div id="hvr"> <img src="Images/Butterfly.jpg"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              While BYJU'S is a popular online learning platform with a comprehensive approach to education,
+              the choice of learning resources is subjective. It's recommended that students explore various
+              platforms, including BYJU'S, to find the one that best suits their learning preferences, goals,
+              and subjects of interest. Each student may have different learning styles, and trying out
+              different platforms can help determine what works best for individual needs.
+          </p>
+          <button id="page"> <a href="#"> Go To Official page </a></button> 
+      </div>
+
+       <div id="website8"> <!----Biography 8----->
+           <h2> 8) maritnation </h2>
+           <div id="hvr"> <img src="Images/Spider.jpg"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              Students may find Meritnation appealing for various reasons. The platform offers a broad array 
+              of study materials, including interactive lessons, quizzes, and solutions that assist with 
+              homework and exam preparation. Meritnation's coverage spans a diverse range of subjects, 
+              making it a versatile resource for learners. The incorporation of interactive elements, 
+              such as animations and quizzes, contributes to an engaging learning experience.
+              Additionally, the platform may provide personalized learning plans and adaptive assessments,
+              tailoring content to individual learning styles. With a focus on exam preparation 
+              and a user-friendly interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+          <button id="page"> <a href="#"> Go To Official page </a></button> 
+      </div>
+
+       <div id="website9"> <!----Biography 9----->
+           <h2> 9) bolly4u </h2>
+           <div id="hvr"> <img src="Images/Trees.jpg"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              Bolly4u is an online platform renowned for its extensive collection of Bollywood movies, 
+              Hollywood films, TV shows, and web series available for download. It's recognized for 
+              offering a diverse range of content across various genres and languages. With its
+              user-friendly interface, Bolly4u attracts users seeking access to a broad selection 
+              of entertainment options, making it a notable choice in the online entertainment landscape.
+          </p>
+          <button id="page"> <a href="#"> Go To Official page </a></button> 
+      </div>
+
+      <div id="website10"> <!----Biography 10----->
+           <h2> 10) Moviesnation </h2>
+           <div id="hvr"> <img src="Images/Trees.jpg"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              Moviesnation is a notable online platform known for its wide array of movies, TV series, 
+              and web content available for streaming or downloading. It stands out for its diverse 
+              collection across different genres and languages, catering to a broad audience base.
+              With a user-friendly interface, Moviesnation has gained popularity among entertainment 
+              enthusiasts seeking quality content, making it a favored destination for accessing a 
+              variety of entertainment options.
+          </p>
+          <button id="page"> <a href="#"> Go To Official page </a></button> 
+      </div>
+    <!-- Add more div elements as needed -->
+  </div>
+
+</main>
+
+   <!----Go To Top Button------>
+       <button id="topButton" class="fa-solid fa-arrow-up"> </button>
+       <button class="telegram"><i class="fa-brands fa-telegram"></i> </button>
+
        
-
-       
-       <footer>   <!------footer Section------->
-       <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes World </h2>          
+   <!------recomended section-------->
+         <div class="recommend">
+              <h3> our Recommended Top pages </h3>
+              <a href="Movie.html" target="_self" id="dnl"> Top 10 Movie Download Websites </a>
+              <a href="Index.html" target="_self"> Words of Lord Krishna that will brighten your life </a>
+              <a href="Poetry.html" target="_self">  love to read poetry </a>
+              <a href="Stories.html" target="_self"> Stories in the life of Lord Krishna </a>
+              <a href="Education.html" target="_self"> Top 10 useful education Websites for students </a>
+              <a href="Biography.html" target="_self"> Life stories of great people's </a>
+              <a href="#" target="_self">  self paytm cash Earning Games  </a>
+              
+        </div>
+   
+         
+    <footer>   <!------footer Section------->
+       <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes planet </h2>          
       <select>
            <option> English</option>
            <option> hindi   </option>
@@ -402,19 +773,17 @@ header > h2{
            <option> telugu  </option>
            <option> odiya  </option>           
      </select>
-    <div class="sneha">
-        <a href="#" target="_self"><p> Terms & privacy </p></a>
-        <a href="#" target="_self"><p> policy </p></a>
-        <a href="#" target="_self"><p> 2023® </p></a>
-        <a href="#" target="_self"><p> Food-factory LLC</p></a>
-   </div>
-  </footer>
-     
-        <!----Go To Top Button------>
-     <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
-
+     <div class="sneha">
+          <a href="#" target="_self"><p> Terms & privacy </p></a>
+          <a href="#" target="_self"><p> policy </p></a>
+          <a href="#" target="_self"><p> 2023® </p></a>
+          <a href="#" target="_self"><p> Quotes planet </p></a>
+    </div>
+ </footer>
+             
   </body>
    <script>
+          
           //navigation javascript
          function openNav() {
          document.getElementById("mySidenav").style.width = "80%";
@@ -423,24 +792,9 @@ header > h2{
          document.getElementById("mySidenav").style.width = "0";
            } ;
 
-          /* Go To Top Button */
+     //change Navigation background
 
-      window.onscroll = function () {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    document.getElementById("topButton").style.display = "block";
-  } else {
-    document.getElementById("topButton").style.display = "none";
-  }
-};
-
-    // Scroll to the top when the button is clicked
-
-document.getElementById("topButton").addEventListener("click", function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
-      //change Navigation background
-   window.addEventListener('scroll', function() {
+       window.addEventListener('scroll', function() {
        const navbar = document.getElementById('navbar');
        const scrolled = window.scrollY;
 
@@ -450,9 +804,30 @@ document.getElementById("topButton").addEventListener("click", function () {
        navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
      }
   });
+      
+        /* Go To Top Button */
 
-         var acc = document.getElementsByClassName("accordion");
-         var i;
+      window.onscroll = function () {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("topButton").style.display = "block";
+  } else {
+    document.getElementById("topButton").style.display = "none";
+  }
+};
+
+// Scroll to the top when the button is clicked
+  document.getElementById("topButton").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;  
+});
+   //link click scrolling 
+  document.getElementById("dnl").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;  
+ });
+
+     var acc = document.getElementsByClassName("accordion");
+var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
@@ -465,5 +840,6 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 };
+            
    </script>
 </hyml>
