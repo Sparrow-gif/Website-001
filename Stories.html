@@ -194,7 +194,7 @@ header > h2{
          text-align: left;
          outline: none;
          backdrop-filter:blur(20px) ;
-         font-size: 4.10vw;
+         font-size:16px;
          transition: 0.4s;
          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
      }
@@ -221,13 +221,30 @@ header > h2{
            overflow: hidden;
            transition: max-height 0.2s ease-out;
            box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-     }
+           gap:10px;
+           display:grid;
+           grid-template-columns:repeat(auto-fit,minmax(min(10rem,100%),1fr)) ;
+           place-items:center;
+       }
+    .panel > video {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            height: 220px;
+            margin:8px 0px 6px 0px;
+            width:100%;
+            border-radius:8px;
+           }
      .panel > p {
             padding: 8px 10px;
             color: ;
             font-family: Poppins;
-            font-size: 4.50vw;
+            font-size: 16px;
+            min-height: ;
+            max-height:260px;
+            overflow:scroll;
                }
+     .panel > p::-webkit-scrollbar{ display:none; }
+
+
 
     footer {
          margin:0 auto;
@@ -294,7 +311,14 @@ header > h2{
           z-index:1 ;
           font-size:1.50rem;
             }
-    
+
+
+    @media only screen and (min-width: 480px) {
+        body {
+          background: ;
+          }
+        
+    }
    </style>
   </head>
   <body>
@@ -348,63 +372,75 @@ header > h2{
                           <!-------accordion 01-------->
              <button class="accordion"> the batting ceremony of Lord krishna </button>
              <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
                          <!-------accordion 02-------->
             <button class="accordion"> krishna kills trnavarta </button>
             <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
            </div>
                            <!-------accordion 03-------->
             <button class="accordion"> krishna show wholl universe on his mouth </button>
             <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
            </div>
 
                         <!-------accordion 04-------->
              <button class="accordion"> Bakasura killed </button>
              <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
                          <!-------accordion 05-------->
             <button class="accordion"> killing of agasura </button>
             <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
            </div>
                            <!-------accordion 06-------->
             <button class="accordion"> bramha steals boys and calves </button>
             <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
            </div>
 
                        <!-------accordion 07-------->
              <button class="accordion">  The killing of Dhenuka </button>
              <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
                          <!-------accordion 08-------->
             <button class="accordion"> krishna lifts govinda hills  </button>
             <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
            </div>
                            <!-------accordion 09-------->
             <button class="accordion"> krishna saves nanda from the serpent </button>
             <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
            </div>
                           <!-------accordion 10-------->
              <button class="accordion"> krishna slays shankachuda </button>
              <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
                          <!-------accordion 11-------->
             <button class="accordion"> the killing of keshi </button>
             <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
            </div>
                          <!-------accordion 12-------->
             <button class="accordion"> krishna kills vyomasura </button>
             <div class="panel">
+                 <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
            </div>
 
