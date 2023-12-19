@@ -394,6 +394,72 @@ header > h2{
            height:240px;
          }
     
+    #askqtn {           
+          margin:0 auto ;
+          padding:14px;
+          user-select:none;
+          width:100% ;
+          height:auto;
+          background: #ede7d8 ;
+       }
+   #askqtn > .accordion {
+         font-family: slabo ;
+         text-transform:capitalize;
+         background-color:#eee;
+         margin:10px auto;
+         color: #444;
+         cursor: pointer;
+         padding: 18px;
+         width: 100%;
+         border:none;
+         border-radius:8px;
+         text-align: left;
+         outline: none;
+         backdrop-filter:blur(20px) ;
+         font-size:16px;
+         transition: 0.4s;
+         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+     }
+ #askqtn > .accordion:hover {
+             background: #FFFCF2;
+             color: #FF5A5F;
+           }
+
+     .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+         }
+    .active:after {
+           content: "\2212";
+         }
+
+      .panel {
+           font-family: Roboto;
+           padding: 0 10px;
+           background-color: #FAFFFD;
+           max-height: 0;
+           overflow: hidden;
+           transition: max-height 0.2s ease-out;
+           box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+           gap:10px;
+           display:grid;
+           grid-template-columns:repeat(auto-fit,minmax(min(10rem,100%),1fr)) ;
+           place-items:center;
+       }    
+     .panel > p {
+            padding: 8px 10px;
+            color: ;
+            font-family: Poppins;
+            font-size: 16px;
+            min-height: ;
+            max-height:260px;
+            overflow:scroll;
+               }
+     .panel > p::-webkit-scrollbar{ display:none; }
+
 
     footer {     
          width:100%;         
@@ -811,6 +877,29 @@ header > h2{
                  <img src="images/Butterfly.jpg">
             </div>
      </section>
+    
+    <!------------------>
+       <section id="askqtn">
+             <h1> frequency asked questions </h1>
+             <!-------accordion 01-------->
+             <button class="accordion"> the batting ceremony of Lord krishna </button>
+             <div class="panel">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+                         <!-------accordion 02-------->
+            <button class="accordion"> krishna kills trnavarta </button>
+            <div class="panel">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+                           <!-------accordion 03-------->
+            <button class="accordion"> krishna show wholl universe on his mouth </button>
+            <div class="panel">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+    </section>
 
 
    <!------recomended section-------->
