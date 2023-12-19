@@ -76,7 +76,7 @@ header > h2{
         z-index:99;
         top: 0;
         right: 0;
-        background-color:#FFEAEC;
+        background-color:#FFFFFF;
         overflow: scroll;
        -webkit-transition: 0.5s;
        -o-transition: 0.5s;
@@ -281,6 +281,7 @@ header > h2{
        }
   #contentable > table > a{
          cursor:pointer ;
+         font-family:Domine;
       }
 
      #container {
@@ -311,18 +312,19 @@ header > h2{
      #container > div > h2{
            text-indent:0px;
            padding:5px 0px 3px 0px;
-           color: #29BF12;
+           color: #29BF12 ;           
        }
      #container > div > #des{
            text-indent:0px;
            padding:8px 5px;
-           color: #5E239D;
+           color: #5E2BFF;
+           font-family: ;
        }
       #container > div > #hvr {
             width:100%;
             min-height:210px;
-            max-height:380px;
-           overflow:hidden;
+            max-height:360px;
+            overflow:hidden;
         }
       #container > div > #hvr > img {
             width:100%;
@@ -344,7 +346,7 @@ header > h2{
      #page {
            padding:10px;
            border:none;
-           background: #FF9914;
+           background: #B33951;
            border-radius:5px;
            cursor:pointer ;
            animation:scale 1s linear infinite;
@@ -374,6 +376,24 @@ header > h2{
           font-family:Roboto ;
           font-weight: ;
         }
+    #about {
+          margin:0 auto;
+          width:100%;
+          padding:10px;
+          gap:10px;
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;              
+          font-family: ;
+        }
+    #about > div > p {
+           padding:10px;
+           font-family:Slabo ;
+           }
+    #about > div > img {
+           width:100%;
+           height:240px;
+         }
+    
 
     footer {     
          width:100%;         
@@ -514,12 +534,12 @@ header > h2{
                      <p> Updated on : Dec 08, 2023 </p>
                </div>
                              
-                             <!-------main div------->
+                             <!-------sub-main div------->
                 <div class="contest">
                      <div id="banner"> <img src="images/Trees.jpg"> </div><!-------headind banner------->
                           
                      <div id="cont"> <!-------headind paragraph------->
-                          <p class="texts" style="font-family:PT Serif;">  
+                          <p class="texts" style="font-family:Slabo ;">  
                                Movies play a huge role in our lives. They're not just fun but also teach us things
                                and make us feel connected to different places and people. When we watch movies, we
                                can understand others better and feel what they feel. They also show us cool stuff 
@@ -615,13 +635,11 @@ header > h2{
            <div id="hvr"> <img src="Images/Spider.jpg"> </div>
            <h4 id="des"> Description </h4>
            <p>
-               Bollyflix is a popular streaming platform known for 
-               its vast collection of Bollywood movies, TV shows,
-               and regional Indian content. Offering a wide range 
-               of genres, from classic films to the latest releases, 
-               Bollyflix attracts audiences with its diverse selection 
-               and user-friendly interface, making it a go-to destination 
-               for Bollywood enthusiasts worldwide. 
+              While BYJU'S is a popular online learning platform with a comprehensive approach to education,
+              the choice of learning resources is subjective. It's recommended that students explore various
+              platforms, including BYJU'S, to find the one that best suits their learning preferences, goals,
+              and subjects of interest. Each student may have different learning styles, and trying out
+              different platforms can help determine what works best for individual needs.
            <p/>         
           <button id="page"> <a href="#"> Go To Official page </a></button> 
       </div>
@@ -675,11 +693,16 @@ header > h2{
            <div id="hvr"> <img src="Images/Butterfly.jpg"> </div>
            <h4 id="des"> Description </h4>
            <p> 
-              9xflix is an online platform celebrated for its comprehensive library of movies, 
-              TV series, and web content available for streaming and downloading. This platform
-              caters to a wide range of genres and languages, appealing to diverse entertainment
-              preferences. Known for its user-friendly interface, 9xflix has garnered attention 
-              among audiences looking for a varied selection of quality entertainment options.
+              Students may find Meritnation appealing for various reasons. The platform offers a broad array 
+              of study materials, including interactive lessons, quizzes, and solutions that assist with 
+              homework and exam preparation. Meritnation's coverage spans a diverse range of subjects, 
+              making it a versatile resource for learners. The incorporation of interactive elements, 
+              such as animations and quizzes, contributes to an engaging learning experience.
+              Additionally, the platform may provide personalized learning plans and adaptive assessments,
+              tailoring content to individual learning styles. With a focus on exam preparation 
+              and a user-friendly interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
           </p>
           <button id="page"> <a href="#"> Go To Official page </a></button> 
       </div>
@@ -770,15 +793,34 @@ header > h2{
    <!----Go To Top Button------>
        <button id="topButton" class="fa-solid fa-arrow-up"> </button>
        
-       
+   <!----About section------>
+     <section id="about">
+             <div>
+                 <h1> About Us  </h1>
+                 <p>  Education is a leading source for our website suggestions, catering to the needs of students, educators,
+                      and parents alike. Our platform is dedicated to providing valuable resources and recommendations to enhance
+                      the learning experience for all.
+                <br/> <br/>
+                      we are committed to helping individuals make informed decisions about their educational journey. With a focus
+                      on quality and relevance, Education strives to be the go-to destination for reliable and insightful information
+                      on educational websites. 
+                </p>
+            </div>
+     
+             <div>
+                 <img src="images/Butterfly.jpg">
+            </div>
+     </section>
+
+
    <!------recomended section-------->
          <div class="recommend">
               <h3> our Recommended Top pages </h3>
-              <a href="Movie.html" target="_self" id="dnl"> Top 10 Movie Download Websites </a>
+              <a href="Movie.html" target="_self"> Top 10 Movie Download Websites </a>
               <a href="Index.html" target="_self"> Words of Lord Krishna that will brighten your life </a>
               <a href="Poetry.html" target="_self">  love to read poetry </a>
               <a href="Stories.html" target="_self"> Stories in the life of Lord Krishna </a>
-              <a href="Education.html" target="_self"> Top 10 useful education Websites for students </a>
+              <a href="Education.html" target="_self" id="dnl"> Top 10 useful education Websites for students </a>
               <a href="Biography.html" target="_self"> Life stories of great people's </a>
               <a href="#" target="_self">  self paytm cash Earning Games  </a>
               
