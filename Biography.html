@@ -145,33 +145,34 @@ header > h2{
          display:none;
       }
  .scroll-container > .scroll-item {
+         font-family: Slabo;
          background:#ebe6fa ;
          text-align:center;
          min-width: 100px;
          text-decoration:none;
          padding:5px;
-         border: 1px solid #ddd;
+         border: none;
          margin-right: 10px;
-         border-radius:8px;
+         border-radius:10px;
          overflow:scroll;
-         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;       
+         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;       
    }
     .scroll-container > #active {
         color: white;
-        background:#6e0cf7;
+        background:#885eeb;
         }
    .scroll-container > .scroll-item:hover {
           color: white;
-          background:#6e0cf7;
+          background:#885eeb;
        }
    .scroll-container::-webkit-scrollbar{  width:2px; }
 
    .scroll-container::-webkit-scrollbar-track{  background: ;}
 
    .scroll-container::-webkit-scrollbar-thumb{
-          background-color: #4acf36;
+        /*  background-color: #4acf36;
           border-radius:0px;
-          border:1px none #FFFFFF;
+          border:1px none #FFFFFF;*/
            }
    
      #section {
@@ -213,16 +214,25 @@ header > h2{
      /* font-weight:bold;     */    
      }
  #section >  #blur a {
+       font-family: ;
        display:inline-block;
        padding:10px ;
-       width:80%;
+       width:70%;
        font-size:18px;
        text-decoration:none;
-       color: White ;
-       background:#427bf5;
+       color: #427bf5 ;
+       border:2px solid #427bf5 ;
+       background: ;
        margin-top:20px ;
        text-align:center;
+       transition-duration:0.4s;
+       user-select:none;
     }
+#section >  #blur a:hover{ 
+        background: #427bf5 ;
+        color: white ;
+        border-radius: 10px;
+      }
    .search-container {
          position: relative;
          display: inline-block;
@@ -281,53 +291,42 @@ header > h2{
          -ms-user-select:none;    
          user-select:none;  
          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+         gap:10px;
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(min(10rem,100%),1fr)) ;
          }
      
-     #container > div > h2{
-           text-indent:0px;
-           padding:5px 0px 3px 0px;
-           color: #29BF12;
-       }
-     #container > div > #des{
+     #container > #website1 > #paragraph > h4{
            text-indent:0px;
            padding:8px 5px;
            color: #5E239D;
        }
-      #container > div > #hvr {
-            width:100%;
-            min-height:210px;
-            max-height:380px;
+      #container > #website1 > #hvr {
+            width:100%;   
+            min-height:210px ;         
+            max-height:340px;
             overflow:hidden;
         }
-    #container > div > #hvr > img {
+    #container > #website1 > #hvr > img {
             width:100%;
             height:100%;       
             margin:0 auto;    
             transition-duration:0.3s;
             background-size:cover;
             background-position:center;
+            object-fit:cover;
         }
-    #container > div > #hvr > img:hover {
-         transform:scale(1.15) ;
+    #container > #website1 > #hvr > img:hover {
+         transform:scale(1.20) ;
        }
-    #container > div > p {
+    #container > #website1 > #paragraph > p {
            font-size:16px;
            padding:0px;
            font-family:Roboto ;
-           font-weight:bold;
-        }
-     #page {
-           padding:10px;
-           border:none;
-           background: #FF9914;
-           border-radius:5px;
-           cursor:pointer ;
-           animation:scale 1s linear infinite;
-           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
-        }
-     #page > a {
-           text-decoration:none;
-           color:white ;
+           font-weight: ;
+           min-height:180px ;         
+           max-height:350px;
+           overflow: scroll;
         }
 
 
@@ -396,7 +395,30 @@ header > h2{
           z-index:99 ;
           font-size:1.50rem;
             }
+/* Media Query for Tablets Ipads portrait mode */
 
+        @media (min-width: 768px) and (max-width: 1020px){
+
+            body {
+                background-color: blue;
+            }
+        }
+         
+
+      /* Media Query for Laptops and Desktops */
+
+        @media (min-width: 1020px){
+
+            body {
+                background-color: green;
+            }
+         #container > div {
+               gap:20px;
+               display:grid;
+               grid-template-columns: repeat(auto-fit,minmax(min(5rem,100%),1fr)) ;      
+             }
+      }
+      
    </style>
   </head>
   <body>
