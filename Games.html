@@ -24,7 +24,7 @@
           font-family: Domine;
           text-transform:capitalize;                     
         }  
-  body {background: #252c38 ;color:white;}
+  body {   }
   html {
        scroll-behavior:smooth;
        scroll-padding:2.50em;
@@ -192,9 +192,9 @@ header > h2{
     } 
  #section > #blur > p {
        margin-top:20px ;
-       color:white; 
-      font-size:18px;
-      Font-family:Bitter ;
+       color: white; 
+       font-size:18px;
+       Font-family:Bitter ;
      }
  #section > #background {
          height:85vh;
@@ -291,25 +291,35 @@ header > h2{
          margin:10px auto ;
          width:100%;
          padding:10px;
-         background:#3d4045 ;
-         color:white;
+         background: ;
+         color: ;
+         gap:10px;
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
        }
-   #about > h2{
+   #about > #aboutpera > h2{
           padding:5px;
        }
-   #about > p {
+   #about >  #aboutpera > p {
            padding:10px;
            Font-family:Bitter ;
            font-size:20px;
+           min-height:230px;
+           max-height:360px;
+           overflow:scroll;
+           color:black;
        }
-   #about > img {
+   #about > #aboutimg  {
            padding:10px;
            min-height:230px;
-           min-width:100%;
-           max-width:400px
+           max-height:360px ;
+           width:100%;           
            margin:0 auto ;         
        }
-  
+     #about > #aboutimg > img {
+            width:100%;
+            height:100%;
+       }
 
     footer {
          margin:0 auto;
@@ -375,9 +385,10 @@ header > h2{
           z-index:99 ;
           font-size:1.50rem;
             }
-  @Keyframes scale {
-         60%{ transform:scale(0.88); }
+  @Keyframes {
+         
            }
+    
    </style>
   </head>
   <body>
@@ -483,8 +494,9 @@ header > h2{
 
        
       <section id="about">
-            <h2> About us </h2>
-            <p> Welcome to Games, your ultimate destination for game reviews. Based in Kolkata, WB, 
+          <div id="aboutpera">
+               <h2> About us </h2>
+               <p> Welcome to Games, your ultimate destination for game reviews. Based in Kolkata, WB, 
                 we are passionate about providing honest and insightful reviews
                 of the latest games in the industry. <br> <br>
    
@@ -497,7 +509,10 @@ header > h2{
                casual gamer or a hardcore enthusiast, Games is here to 
                guide you through the ever-evolving world of gaming.
             </p>
+         </div>
+          <div id="aboutimg">
              <img src="images/Rays.jpeg">
+         </div>
       </section>
        
 
