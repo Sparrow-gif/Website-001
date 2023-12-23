@@ -163,9 +163,9 @@ header > h2{
    .scroll-container::-webkit-scrollbar-track{  background: ;}
 
    .scroll-container::-webkit-scrollbar-thumb{
-          background-color: #4acf36;
+       /*   background-color: #4acf36;
           border-radius:0px;
-          border:1px none #FFFFFF;
+          border:1px none #FFFFFF; */
            }
       
 
@@ -200,7 +200,7 @@ header > h2{
      }
  #askqtn > .accordion:hover {
              background-color: #FFFCF2;
-                color: #FF5A5F;
+             color: #FF5A5F;
            }
 
      .accordion:after {
@@ -215,13 +215,15 @@ header > h2{
          }
 
       .panel {
+           margin:0 auto;
+           width:100%;
            padding: 0 10px;
            background-color: #FAFFFD;
            max-height: 0;
            overflow: hidden;
            transition: max-height 0.2s ease-out;
            box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-           gap:10px;
+           gap:20px;
            display:grid;
            grid-template-columns:repeat(auto-fit,minmax(min(10rem,100%),1fr)) ;
            place-items:center;
