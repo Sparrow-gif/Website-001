@@ -149,7 +149,8 @@ header > h2{
          border-radius:8px;
          overflow:scroll;
          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;       
-   }
+     }
+    .scroll-container > .scroll-item::-webkit-scrollbar{ display:none; }
     .scroll-container > #active {
         color: white;
         background:#6e0cf7;
@@ -225,7 +226,7 @@ header > h2{
            box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
            gap:20px;
            display:grid;
-           grid-template-columns:repeat(auto-fit,minmax(min(10rem,100%),1fr)) ;
+           grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
            place-items:center;
        }
     .panel > video {
