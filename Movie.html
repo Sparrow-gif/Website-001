@@ -328,6 +328,29 @@ header > h2{
            text-decoration:none;
            color:white ;
         }
+
+      aside {
+           padding:10px;
+           overflow: hidden;
+           user-select:none;
+        }
+    aside > #howvdo {
+         margin:0 auto;
+         gap:10px;
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;               
+        }
+    aside > #howvdo > video {
+           margin:10px auto;
+           width:310px;
+           min-height:220px;
+           max-height:280px;
+           border:0px solid black;
+           border-radius:8px;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         }
+
+
     .recommend {
           margin:10px auto;
           box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -750,10 +773,20 @@ header > h2{
        <button id="topButton" class="fa-solid fa-arrow-up"> </button>
        <button class="telegram"><i class="fa-brands fa-telegram"></i> </button>
 
-       
+
+   <!-----How to Download Tutorial----->
+       <aside>
+            <div id="how"> <h2> #How to Download Movies </h2> </div>
+            <div id="howvdo">  
+                <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>  
+                <video src="video.mp4" controls> Sorry your browser does not support embedding videos. </video>
+           </div>
+      </aside>
+
+
    <!------recomended section-------->
          <div class="recommend">
-              <h3> our Recommended Top pages </h3>
+              <h3> our Recommended Top articles </h3>
               <a href="Movie.html" target="_self" id="dnl"> Top 10 Movie Download Websites </a>
               <a href="Index.html" target="_self"> Words of Lord Krishna that will brighten your life </a>
               <a href="Poetry.html" target="_self">  love to read poetry </a>
