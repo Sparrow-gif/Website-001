@@ -149,17 +149,18 @@ header > h2{
          display:none;
       }
  .scroll-container > .scroll-item {
+         font-family: Slabo;
          background:#ebe6fa ;
          text-align:center;
          min-width: 100px;
          text-decoration:none;
          padding:5px;
-         border: 1px solid #ddd;
+         border: none;
          margin-right: 10px;
-         border-radius:8px;
+         border-radius:10px;
          overflow:scroll;
-         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;       
-   }
+         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+       }
     .scroll-container > #active {
         color: white;
         background:#6e0cf7;
@@ -224,20 +225,26 @@ header > h2{
        width:80%;
        font-size:18px;
        text-decoration:none;
-       color: White ;
-       background:#f26680;
+       color: #f26680 ;
+       border:4px solid #f26680 ;
+       background: ;
        margin-top:20px ;
        text-align:center;
- }
-         
+       transition:0.3s;
+    }
+   #section >  #blur a:hover{ 
+        background: #f26680 ;
+        color: white ;
+        border-radius: 6px;
+      }
    #contentable {
           margin:0 auto ;
-          padding:20px;
+          padding:10px;
           user-select:none;
           width:100% ;
         }
    #contentable >h2 {
-            color:#c542f5 ;
+            color: ;
             text-shadow: ;
             font-family: ;
             font-size:2rem;
@@ -292,6 +299,70 @@ header > h2{
   main > #img-con:hover .text {
           opacity:0;
        }
+   
+
+     #container {
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         padding:10px ;
+         background: ;
+         margin:0 auto ;
+         width:100%;
+         gap:10px;
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(min(31rem,100%),1fr)) ;      
+          }
+     #container > div {
+            background: #FFFFFF;
+            height:auto ;    
+            padding:5px;     
+            margin:0 auto ;
+            width:100%;
+      -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+         gap:10px;
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(min(16rem,100%),1fr)) ;
+         }
+     
+     #container > #website1 > #paragraph > h4{
+           text-indent:0px;
+           padding:8px 5px;
+           color: #5E239D;
+       }
+      #container > #website1 > #hvr {
+            width:95%;   
+            min-height:210px ;         
+            max-height:340px;
+            overflow:hidden;
+            margin:0 auto;
+        }
+    #container > #website1 > #hvr > img {
+            width:100%;
+            height:100%;       
+            margin:0 auto;    
+            transition-duration:0.3s;
+            background-size:cover;
+            background-position:center;
+            object-fit:cover;
+        }
+    #container > #website1 > #hvr > img:hover {
+         transform:scale(1.20) ;
+       }
+    #container > #website1 > #paragraph > p {
+           font-size:16px;
+           padding:0px;
+           font-family:Roboto ;
+           font-weight: ;
+           min-height:180px ;         
+           max-height:350px;
+           overflow: scroll;
+        }
 
    
    #about {
@@ -402,8 +473,11 @@ header > h2{
           min-height: 230px;
           overflow: scroll;
         }
-       
-      
+       #container > div {
+            width:90%; 
+            padding:20px;
+          }
+       #about > #aboutimg { width:80%; }
       }
 
       
@@ -482,7 +556,7 @@ header > h2{
     <main>  
          <div id="img-con"> <!---Box01------>
           <img src="Images/biography.jpeg">
-          <a class="text" href="#Survival" target="self">
+          <a class="text" href="#container" target="self">
                <p> Hello World </p>
           </a>
        </div>
@@ -511,10 +585,57 @@ header > h2{
      
   
       
-       <!-------All Games Container------------>
+       <!-------Games Container------------>
+     <!--------Main section--------->
+   <div id="container">     
+       <!------Biography container------>
+       <div id="website1"> <!----Biography 1----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="Images/Spider.jpg"> 
+          </div>
 
-    
-       <!-- Add more div elements as needed -->
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Elon Mask </h4>
+           <p> 
+              Students may find Meritnation appealing for various reasons. The platform offers a broad array 
+              of study materials, including interactive lessons, quizzes, and solutions that assist with 
+              homework and exam preparation. Meritnation's coverage spans a diverse range of subjects, 
+              making it a versatile resource for learners. The incorporation of interactive elements, 
+              such as animations and quizzes, contributes to an engaging learning experience.
+              Additionally, the platform may provide personalized learning plans and adaptive assessments,
+              tailoring content to individual learning styles. With a focus on exam preparation 
+              and a user-friendly interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+         </div>
+      </div>
+
+       <div id="website1"> <!----Biography 1----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="Images/Spider.jpg"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Mukesh Ambani </h4>
+           <p> 
+              Students may find Meritnation appealing for various reasons. The platform offers a broad array 
+              of study materials, including interactive lessons, quizzes, and solutions that assist with 
+              homework and exam preparation. Meritnation's coverage spans a diverse range of subjects, 
+              making it a versatile resource for learners. The incorporation of interactive elements, 
+              such as animations and quizzes, contributes to an engaging learning experience.
+              Additionally, the platform may provide personalized learning plans and adaptive assessments,
+              tailoring content to individual learning styles. With a focus on exam preparation 
+              and a user-friendly interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+         </div>
+      </div>
+    <!-- Add more div elements as needed -->
+  </div>  <!--------games section close--------->
   
 
        
