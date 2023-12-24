@@ -352,7 +352,7 @@ header > h2{
          width:100%;
          gap:10px;
          display:grid;
-         grid-template-columns:repeat(auto-fit,minmax(min(31rem,100%),1fr)) ;      
+         grid-template-columns:repeat(auto-fit,minmax(min(30rem,100%),1fr)) ;      
           }
      .container > div {
             background: #FFFFFF;
@@ -367,7 +367,7 @@ header > h2{
          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
          gap:10px;
          display:grid;
-         grid-template-columns:repeat(auto-fit,minmax(min(16rem,100%),1fr)) ;
+         grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
          }
      
      .container > #website1 > #paragraph > h4{
@@ -406,11 +406,12 @@ header > h2{
      .container > #website1 > #paragraph > a {
             text-decoration:none;
             color: white;
-            background: coral ;
-            padding:10px 30px ;
+            background: #5F00BA ;
+            padding:10px 20px ;
             border-radius:8px;
             cursor:pointer;
             margin-bottom:10px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
        }
 
    
@@ -444,6 +445,28 @@ header > h2{
             width:100%;
             height:100%;
        }
+
+      .recommend {
+          margin:10px auto;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          width:95%;
+          padding:10px 10px;
+          background: #F7F7FF;
+        }
+    .recommend > h3{
+           padding:10px 0px;
+        }
+    .recommend > a{
+          user-select:none;
+          text-decoration:none;
+          color: green;
+          padding:5px;
+          cursor:pointer;
+          display:block;
+          font-family:Roboto ;
+          font-weight: ;
+        }
+
 
     footer {
          margin:0 auto;
@@ -523,7 +546,7 @@ header > h2{
           overflow: scroll;
         }
        .container > div {
-            width:90%; 
+            width:100%; 
             padding:20px;
           }
        #about > #aboutimg { width:80%; }
@@ -660,7 +683,7 @@ header > h2{
               recognize that preferences vary, and students often choose online
               learning platforms based on their specific requirements and learning preferences.
           </p>
-          <a href="#"> download </a> <!-----downlode button------->
+          <a href="#"> download on google play </a> <!-----downlode button------->
          </div>
       </div>
 
@@ -677,7 +700,7 @@ header > h2{
               It's important to recognize that preferences vary, and students often choose online
               learning platforms based on their specific requirements and learning preferences.
           </p>
-            <a href="#"> download </a> <!-----downlode button------->
+            <a href="#"> download on google play </a> <!-----downlode button------->
          </div>
       </div>
     <!-- Add more div elements as needed -->
@@ -700,7 +723,7 @@ header > h2{
               recognize that preferences vary, and students often choose online
               learning platforms based on their specific requirements and learning preferences.
           </p>
-          <a href="#"> download </a> <!-----downlode button------->
+          <a href="#"> download on google play </a> <!-----downlode button------->
          </div>
       </div>
 
@@ -717,7 +740,7 @@ header > h2{
               It's important to recognize that preferences vary, and students often choose online
               learning platforms based on their specific requirements and learning preferences.
           </p>
-            <a href="#"> download </a> <!-----downlode button------->
+            <a href="#"> download on google play </a> <!-----downlode button------->
          </div>
       </div>
     <!-- Add more div elements as needed -->
@@ -738,7 +761,7 @@ header > h2{
               recognize that preferences vary, and students often choose online
               learning platforms based on their specific requirements and learning preferences.
           </p>
-          <a href="#"> download </a> <!-----downlode button------->
+          <a href="#"> download on google play </a> <!-----downlode button------->
          </div>
       </div>
 
@@ -755,7 +778,7 @@ header > h2{
               It's important to recognize that preferences vary, and students often choose online
               learning platforms based on their specific requirements and learning preferences.
           </p>
-            <a href="#"> download </a> <!-----downlode button------->
+            <a href="#"> download on google play </a> <!-----downlode button------->
          </div>
       </div>
     <!-- Add more div elements as needed -->
@@ -776,7 +799,7 @@ header > h2{
               recognize that preferences vary, and students often choose online
               learning platforms based on their specific requirements and learning preferences.
           </p>
-          <a href="#"> download </a> <!-----downlode button------->
+          <a href="#"> download on google play </a> <!-----downlode button------->
          </div>
       </div>
 
@@ -793,7 +816,7 @@ header > h2{
               It's important to recognize that preferences vary, and students often choose online
               learning platforms based on their specific requirements and learning preferences.
           </p>
-            <a href="#"> download </a> <!-----downlode button------->
+            <a href="#"> download on google play </a> <!-----downlode button------->
          </div>
       </div>
     <!-- Add more div elements as needed -->
@@ -823,6 +846,20 @@ header > h2{
          </div>
       </section>
        
+
+       <!------recomended section-------->
+         <div class="recommend">
+              <h3> our Recommended Top articles </h3>
+              <a href="Movie.html" target="_self"> Top 10 Movie Download Websites </a>
+              <a href="Index.html" target="_self"> Words of Lord Krishna that will brighten your life </a>
+              <a href="Poetry.html" target="_self">  love to read poetry </a>              
+              <a href="Stories.html" target="_self"> Stories in the life of Lord Krishna </a>
+              <a href="Education.html" target="_self"> Top 10 useful education Websites for students </a>
+              <a href="Biography.html" target="_self"> Life stories of great people's </a>
+              <a href="#" target="_self">  self paytm cash Earning Games  </a>
+              <a href="#" target="_self" id="dnl" > Most Downloaded & played games in India 2024  </a>
+        </div>
+
 
        <footer>   <!------footer Section------->
        <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes World </h2>          
@@ -872,7 +909,12 @@ document.getElementById("topButton").addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
-
+   
+   //link click scrolling 
+  document.getElementById("dnl").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;  
+ });
 
      var acc = document.getElementsByClassName("accordion");
 var i;
