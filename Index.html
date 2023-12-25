@@ -75,7 +75,9 @@ header > h2{
         z-index:999;
         top: 0;
         right: 0;
-        background-color:#FFEAEC;
+        background:transparent;
+        backdrop-filter:blur(4px) ;
+        background-color: ;
         overflow: scroll;
        -webkit-transition: 0.5s;
        -o-transition: 0.5s;
@@ -250,15 +252,15 @@ header > h2{
        width:80%;
        font-size:18px;
        text-decoration:none;
-       color: #63C132 ;
-       background: ;
-       margin-top:20px ;
+       color: #ffffff ;
+       background: #F03A47;
+       margin-top:10px ;
        text-align:center;    
        text-shadow: 1px 1px 3px #666666; 
-       border:3px solid #F03A47;
+       border:0px solid #F03A47;
        transition:0.3s;
     }
-   #bg >  #blur a:hover { background: #F03A47;color:#ffffff; }
+   #bg > #blur a:hover { background: ;color: ; }
 
 
      .head-logo > a{
@@ -356,6 +358,7 @@ header > h2{
             text-align:center;
             padding:5px 0px;
             color:#313ae8 ;
+            font-family:PT Serif;
          }
     #quotes > div > h4::after{ 
          content:" ";
@@ -368,6 +371,7 @@ header > h2{
             background:#5F00BA ;           
           }
     #quotes > div > h3 {
+            font-family:Roboto;
             text-align:right;
             padding: 0px 5px ;
             color :#ed6a13; /* #313ae8 ; */
@@ -711,7 +715,8 @@ footer {
      </div>
                 
          <div class="som">
-               <p> Sri Krishna's quotes hold immense value in daily life, serving as guiding beacons for navigating 
+              <p style="font-family:Lora;"> 
+                   Sri Krishna's quotes hold immense value in daily life, serving as guiding beacons for navigating 
                    life's complexities. His teachings, found in the Bhagavad Gita, resonate across ages, offering 
                    wisdom on duty, righteousness, and the path to inner peace. Embracing concepts like selflessness, 
                    devotion, and detached action, his words inspire a balanced approach to challenges, encouraging 
@@ -1270,7 +1275,6 @@ document.getElementById("topButton").addEventListener("click", function () {
      }
   });
 </script>
-                 
-       
+                        
 </body>
 </html>
