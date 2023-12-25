@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <title> Index_Page </title>
+  <title> Sri Krishna Quotes </title>
     <style>
         * {
           margin:0px;
@@ -157,18 +157,18 @@ header > h2{
          display:none;
       }
  .scroll-container > .scroll-item {
+         font-family: Slabo;
          background:#ebe6fa ;
          text-align:center;
          min-width: 100px;
          text-decoration:none;
          padding:5px;
-         border: 1px solid #ddd;
+         border: none;
          margin-right: 10px;
-         border-radius:8px;
-         overflow:scroll; 
- -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;       
-   }
+         border-radius:10px;
+         overflow:scroll;
+        -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;       
+       }
     .scroll-container > #active {
         color: white;
         background:#6e0cf7;
@@ -197,7 +197,8 @@ header > h2{
       -moz-user-select:none;
       -ms-user-select:none;
        user-select:none;
-       height:75vh;
+       max-height:88vh;
+       min-height:520px;
       }
    #bg >#blur >  h1{
        font-size:30px;
@@ -212,12 +213,13 @@ header > h2{
       font-size:18px;
      }
     #bg > #background {
-         height:75vh;
+         min-height:520px;
+         max-height:88vh;
          width:100%;
-         background-image:url('images/Spider.jpg');    
+         background-image:url('images/.jpg');    
          background-size:cover;
          background-position:center;
-         background-attachment:fixed;
+         background-attachment: ;
          filter:blur(0.5px) ;
          -webkit-filter:blur(0.5px) ;
          Position:relative;
@@ -233,6 +235,7 @@ header > h2{
        transform:translate(-50%,-50%) ;
        z-index:1;
        width:90%;
+       backdrop-filter:blur(2px) ;
     /*   width:50%; */
        padding:10px 10px ;  
     /*  text-align:center;  */
@@ -247,112 +250,123 @@ header > h2{
        width:80%;
        font-size:18px;
        text-decoration:none;
-       color: White ;
-       background:coral;
+       color: #63C132 ;
+       background: ;
        margin-top:20px ;
        text-align:center;    
        text-shadow: 1px 1px 3px #666666; 
+       border:3px solid #F03A47;
+       transition:0.3s;
     }
+   #bg >  #blur a:hover { background: #F03A47;color:#ffffff; }
+
+
+     .head-logo > a{
+           padding: 10px 10px;
+           text-decoration:none;   
+           font-size:20px;   
+           cursor:pointer;   
+           color:white;  
+           border-radius:50%;
+           margin: 0px 4px ;
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         transition-duration:0.3s;
+         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
+       }
+  .head-logo > a:hover{ transform:scale(1.20)}
+   .head-logo > a:nth-child(1) {
+         color:white;
+         background: #266DD3;
+       }
+   .head-logo > a:nth-child(2) {
+         color:white;
+         background: #F75C03 ;
+       }
+   .head-logo > a:nth-child(3) {
+         color:white;
+         background: #7BB2D9 ;
+       }
+   .head-logo > a:nth-child(4) {
+         color:white;
+         background: #31D843 ;
+       }
+   .head-logo > a:nth-child(5) {
+         color:white;
+         background: #F42B03 ;
+       }
 
         /*  Image Slider Css*/
     #w3-content {
+       border-radius:4px;
         margin:10px auto;
-        width:95%;         
-        min-height:220px;        
+        width:100%;         
+        min-height:180px;    
+        max-height:220px;    
         overflow:hidden;     
         -webkit-user-select:none;
         -moz-user-select:none;
         -ms-user-select:none;     
         position:relative;    
          z-index:-1 ;
+       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       }
   
-  .content {
-        height:auto;
-        padding:10px;        
-        margin:0 auto;
-        width:95%;
-        background: #F0F8EA;
-      }
-   .content > h2 {
-       text-align:center;
-       color: #E4572E;
-       text-shadow: 1px 1px 3px #666666;
-     }
-   .content > p {
-        color: blue;
-        font-size:16px;            
-       overflow:scroll;    
-        font-family:Lora;
-      }
-  .more-text {
-       display: none;
-      webkit-transition-duration:0.3s;
-          -o-transition-duration:0.3s;
-             transition-duration:0.3s;
-     }
- .read-more {
-      text-decoration:none;
-      cursor:pointer;
-      }
-  .show-content > .more-text {
-      display: block;
-    }
+  
  #w3-content > img {
       height:100%;     
-      width:100%;      
+      width:100%;     
+      background-size:cover;
+      background-position:center; 
     }
-     .wrapper {
-           position:relative;
-           z-index:-1 ;
-           background:coral;
-           text-align:center;
-           padding:10px;
-           -webkit-user-select:none;
-           -moz-user-select:none;
-           -ms-user-select:none;         
-         }
-    .wrapper > span {
-            font-size: 20px;
-            color:white;
-         }
+     
          /* Quotes body Css */
     #quotes {
-           background:#F6FEDB ;
+           background:#F4FFF8;
            display: ;
            margin: 0 auto ;
            overflow:hidden;
            height:auto;
            width:100%;
            padding:10px;    
-           gap:15px;
-           display:grid;
-           grid-template-columns:repeat(auto-fit,minmax(min(31rem,100%),1fr)) ;      
-         }
+         /*  gap:15px; */
+         /*  display:grid;*/
+         /*  grid-template-columns:repeat(auto-fit,minmax(min(31rem,100%),1fr)) ;  */
+           }
     #quotes > div {
-          /*  border:4px solid;
-            border-image-source:url(images/ima4.jpeg) ;    
-            border-image-slice:30;
-            border-image-repeat: round ;
-            border-image-outset: ;
-            border-image-width:2 ;   */                 
+         /*   border:4px solid; */
+         /*   border-image-source:url(images/ima4.jpeg) ; */
+          /*  border-image-slice:30; */
+         /*   border-image-repeat: round ; */
+         /*   border-image-outset: ; */
+         /*   border-image-width:2 ;    */               
             height: auto;
             width: 100% ;  
             border-radius:5px;
             -webkit-box-sizing:border-box;
             box-sizing:border-box;
-            background: #F0F2A6;
+            background: #F2F79E ;
             padding:3px 5px;
+            margin: 10px auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
          }
     #quotes > div > h4 {
             text-align:center;
             padding:5px 0px;
             color:#313ae8 ;
          }
+    #quotes > div > h4::after{ 
+         content:" ";
+        }
+     #quotes > div > h4::before{ 
+         content:" ";
+        }
     #quotes > div > h4::selection {
-            color:white ;
-            background:#fa9e61 ;            
-         }
+            color: #FFFFFF;
+            background:#5F00BA ;           
+          }
     #quotes > div > h3 {
             text-align:right;
             padding: 0px 5px ;
@@ -383,7 +397,8 @@ header > h2{
       font-size:18px;
      }
     #footbg > #background {
-         height:80vh;
+         min-height:380px;
+         max-height:80vh;
          width:100%;
          background-image:url('images/raadha3.jpeg');    
          background-size:cover;
@@ -429,7 +444,7 @@ header > h2{
      #about {
              height:auto ;
              padding:20px ;
-             background: #ace8ba;
+             background: #F0EDEE;
              display:grid;
              gap:10px;
              display:grid;
@@ -441,31 +456,31 @@ header > h2{
       #about > .abbg {
             margin:0 auto ;
             width:100%;
-            height:200px;
+            height:220px;
             border:0.5px solid black;
             overflow:hidden;
             border-radius:10px;
-            background-image:url('Img2.jpeg') ;
+            background-image:url('Images/Trees.jpg') ;
             background-size:cover;
             background-position:center;
           }     
        #about > .abhe > h2  {
-               padding:10px;
+               padding:6px 8px;
                font-family: domine ;
                font-size:30px;
                color: ;
           }
        #about > .abhe > p  {
-               padding:10px;
+               padding:4px;
                font-family: Open Sans;
                font-size:20px;
-               font-weight: ;               
+               font-weight: ;                           
           }
 
         #gettouch {
           margin:0 auto ;
           padding:30px;    
-          background:#40ed91 ;    
+          background:#D9DBF1 ;    
           -webkit-user-select:none;
           -moz-user-select:none;
           -ms-user-select:none;          
@@ -485,6 +500,7 @@ header > h2{
         margin:5px auto ;
         border:none;
         border-radius:4px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
       }
   #gettouch > form >  textarea {
         width:100%;
@@ -493,15 +509,17 @@ header > h2{
         padding:5px;
       }
   #gettouch > form > .btn {
-        border:1px solid #092580;
-        background:#caa5f2;
-        color: #770ceb ;
+        border:0px solid #092580;
+        background:#5995ED;
+        color: #FFFFFF ;
         width:50%;
-        border-radius:8px;
+         padding:6px;
+        border-radius:6px;
         margin:10px auto ;
         -webkit-transition-duration:0.3s;
              -o-transition-duration:0.3s;
-                transition-duration:0.3s;       
+                transition-duration:0.3s;      
+         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
        }
   #gettouch > form > .btn:active {
           -webkit-transform:scale(0.90) ;
@@ -509,59 +527,7 @@ header > h2{
                   transform:scale(0.90) ;
        }
 
-
-   .contact {
-        background: ;
-        height:auto;
-        text-align: ;
-        padding:10px;
-        margin:0 auto ;
-        width:100%;
-        overflow:scroll;
-        -webkit-user-select:none;
-        -moz-user-select:none;
-        -ms-user-select:none;        
-     }
-  .contact > h1 {
-          /* -webkit-animation: heartBeat; 
-            animation: heartBeat; 
-          -webkit-animation-duration: 2s;
-              animation-duration: 2s; */
-              color: black ;
-        }
-   .contact > #apps {
-            display:-webkit-box;
-            display:-ms-flexbox;
-            display:flex;
-            -webkit-box-pack:Space-around;
-            -ms-flex-pack:Space-around;
-            justify-content:Space-around;
-            -webkit-box-align:center;
-            -ms-flex-align:center;
-            align-items:center;
-         }
-   .contact > #apps > a {
-            border-radius:50%;
-            font-size:22px;
-            background:#3b62c4 ;
-            padding:4px 10px;
-            border:1px solid #3b3bc4;
-            color:white;
-            cursor:pointer;
-         -webkit-transition-duration:0.3s;
-         -o-transition-duration:0.3s;
-            transition-duration:0.3s;
-         -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-         }
-   .contact > #apps > a:hover {
-           background:white;
-           color:#6e9eeb ;
-           -webkit-transform:scale(1.10);
-           -ms-transform:scale(1.10);
-           transform:sclae(1.10);
-           z-index: ;
-       }
+   
           /*  Footer Css Section */
 footer {
          margin:0 auto;
@@ -639,14 +605,15 @@ footer {
                   -ms-transform:scale(0.80);
                       transform:scale(0.80); }
         }
-  @media only screen and (min-width:800px) {         
-    #bg { height:100vh;  }                    
+  @media only screen and (min-width:600px) {         
+                        
     #bg > #blur {   width:60%;  }
     #w3-content {
          margin:10px auto;
          width:70%;
         }
-   .content > p { margin:0 auto; width:70%;}
+    #quotes > div { width:70%;  }
+   #about > .abhe > p  {  max-height:220px; overflow:scroll; }
    #gettouch > form { width:70%;}
       }
 
@@ -709,7 +676,7 @@ footer {
                <p> Discover The Whisdom Of Sri Krishna's Teaching
                    Through Powerful Quotes. Expand Your Consciousness
                    And Find Inner Peace. </p>
-               <a href="#w3-content"> Explore Now  </a>
+               <a href="#heading"> Explore Now  </a>
         </div> 
      </section>
 
@@ -718,43 +685,21 @@ footer {
       
            <!----Google Ads close------->
 
-        <!----Shri krishna life story------->
-      <div class="content">
-             <h2> _Story of lod shri krishna_ </h2>
-         <p>
-            The life story of Lord Krishna is vast and captivating, encompassing various stages and remarkable events.
-            Born in Mathura to King Vasudeva and Queen Devaki, Krishna's life began amidst prophecy and peril.
-            To escape the wrath of King Kansa, his uncle, Krishna was transported to Gokul, where he was raised by 
-            Yashoda and Nanda. His childhood was marked by playful antics, charming the Gopis, and performing miraculous feats.
-       </br>
-            As Krishna matured, his valor and wisdom shone. He played a pivotal role in the Mahabharata,
-            advising Arjuna on the battlefield of Kurukshetra through the sacred scripture, the Bhagavad Gita. 
-            His teachings encompassed duty, righteousness, and the path to spiritual fulfillment.      
-        </p>
-
-  <p class="more-text" style="display: none;">
-            Krishna's interactions with Radha and the Gopis depicted the purest form of love and devotion. 
-            His divine romance with Radha symbolizes the union of the individual soul with the divine.
-       </br>
-            Later in life, Krishna established the city of Dwarka and reigned as its king. He married
-            Rukmini and had eight principal queens known as the Ashtabharya. His life in Dwarka was filled
-            with various events, including the abduction of Rukmini's brother, Rukmi, and numerous other adventures.
-       </br>
-            Krishna's teachings emphasized the importance of performing one's duty without attachment to the
-            fruits of actions. His divine play and miracles, such as lifting the Govardhan Hill, destroying 
-            demons, and protecting devotees, showcased his divine nature and purpose.
-       </br>
-            The Bhagavata Purana and Mahabharata extensively detail Krishna's life, narrating his childhood,
-            youth, role in the Mahabharata, and his philosophical teachings. His life story continues to
-            inspire millions, illustrating the essence of righteousness, love, and the path to spiritual enlightenment.
-       </br>
-            This summary captures the essence of Lord Krishna's multifaceted life, but to delve deeper
-            into the intricacies of his story, one would need to explore the rich tapestry of texts
-            and scriptures dedicated to him..
-       </p>
-
-     <a href="#" class="read-more"> Read more...</a>
-  </div>
+     <!----Shri krishna life story------->
+           <main style="padding:10px;">             <!-------heading------->
+                <div class="heading" id="heading">
+                     <h2> Krishna Quotes: Best Lord Krishna Quotes From Srimad Bhagavad Gita </h2>
+                     <p> Updated on : nov 22, 2023 </p>
+               </div>
+                             <!-------heading logo------->
+                <div class="head-logo">
+                     <a href="#" class="fa-brands fa-telegram" title="telegram"> </a>
+                     <a href="#" class="fa-brands fa-instagram" title="Instagram"> </a>
+                     <a href="#" class="fa-brands fa-twitter" title="twitter"> </a>
+                     <a href="#" class="fa-brands fa-whatsapp" title="whatsapp"> </a>
+                     <a href="#" class="fa-brands fa-youtube" title="YouTube"> </a>
+               </div>
+     
         <!----Shri krishna life story-close------->
 
 
@@ -764,16 +709,22 @@ footer {
             <img class="mySlides" src="images/Trees.jpg" style="width:100%;height:220px">
             <img class="mySlides" src="images/Butterfly.jpg" style="width:100%;height:220px">
      </div>
-
-                <!------Auto Type Text------->
-         <div class="wrapper">
-              <span> <span class="multiText"> </span></span>
-        </div>
-
-
+                
+         <div class="som">
+               <p> Sri Krishna's quotes hold immense value in daily life, serving as guiding beacons for navigating 
+                   life's complexities. His teachings, found in the Bhagavad Gita, resonate across ages, offering 
+                   wisdom on duty, righteousness, and the path to inner peace. Embracing concepts like selflessness, 
+                   devotion, and detached action, his words inspire a balanced approach to challenges, encouraging 
+                   one to fulfill responsibilities with unwavering dedication while surrendering the fruits of actions. 
+                   Applying these teachings nurtures a resilient mindset, fostering harmony, compassion, and spiritual 
+                   growth amidst life's trials and triumphs. Integrating Sri Krishna's profound guidance illuminates 
+                   a path towards a purposeful and fulfilling existence. 
+              </p>
+         </div>
+    </main>
                 <!--------Quotes Body Section------->
         <section id="quotes">
-                <div class="box1" data-aos="fade-up"> 
+                <div class="box1"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -781,7 +732,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box2" data-aos="fade-up"> 
+                <div class="box2"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -789,7 +740,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box3" data-aos="fade-up"> 
+                <div class="box3"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -797,7 +748,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box4" data-aos="fade-up"> 
+               <div class="box4"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -805,7 +756,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box5" data-aos="fade-up"> 
+                <div class="box5"> 
                     <h4> "The soul is not born, it never dies; nor once in existence, it never ceases. The soul is birthless, eternal, immortal and ageless." </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -813,7 +764,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box6" data-aos="fade-up"> 
+               <div class="box6"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -821,7 +772,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box7" data-aos="fade-up"> 
+                <div class="box7"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -829,7 +780,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box8" data-aos="fade-up"> 
+                <div class="box8"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -837,7 +788,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box9" data-aos="fade-up"> 
+               <div class="box9"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -845,7 +796,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-              <div class="box10" data-aos="fade-up"> 
+              <div class="box10"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -853,7 +804,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box11" data-aos="fade-up"> 
+                <div class="box11"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -861,7 +812,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box12" data-aos="fade-up"> 
+                <div class="box12"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -869,7 +820,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box12" data-aos="fade-up"> 
+               <div class="box12"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -877,7 +828,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-              <div class="box13" data-aos="fade-up"> 
+              <div class="box13"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -885,7 +836,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box14" data-aos="fade-up"> 
+                <div class="box14"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -893,7 +844,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box15" data-aos="fade-up"> 
+                <div class="box15"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -901,7 +852,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box16" data-aos="fade-up"> 
+               <div class="box16"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -909,7 +860,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box17" data-aos="fade-up"> 
+               <div class="box17"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -917,7 +868,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box18" data-aos="fade-up"> 
+                <div class="box18"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -925,7 +876,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box19" data-aos="fade-up"> 
+                <div class="box19"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -933,7 +884,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box20" data-aos="fade-up"> 
+               <div class="box20"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -941,7 +892,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-              <div class="box21" data-aos="fade-up"> 
+              <div class="box21"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -949,7 +900,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box22" data-aos="fade-up"> 
+                <div class="box22"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -957,7 +908,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box23" data-aos="fade-up"> 
+                <div class="box23"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -965,7 +916,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box24" data-aos="fade-up"> 
+               <div class="box24"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -973,7 +924,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-              <div class="box25" data-aos="fade-up"> 
+              <div class="box25"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -981,7 +932,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box26" data-aos="fade-up"> 
+                <div class="box26"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -989,7 +940,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box27" data-aos="fade-up"> 
+                <div class="box27"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -997,7 +948,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box28" data-aos="fade-up"> 
+               <div class="box28"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1005,7 +956,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-              <div class="box29" data-aos="fade-up"> 
+              <div class="box29"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1013,7 +964,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box30" data-aos="fade-up"> 
+                <div class="box30"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1021,7 +972,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box31" data-aos="fade-up"> 
+                <div class="box31"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1029,7 +980,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box32" data-aos="fade-up"> 
+               <div class="box32"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1037,7 +988,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box33" data-aos="fade-up"> 
+                <div class="box33"> 
                     <h4> "The soul is not born, it never dies; nor once in existence, it never ceases. The soul is birthless, eternal, immortal and ageless." </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1045,7 +996,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box34" data-aos="fade-up"> 
+               <div class="box34"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1053,7 +1004,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box35" data-aos="fade-up"> 
+                <div class="box35"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1061,7 +1012,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box36" data-aos="fade-up"> 
+                <div class="box36"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1069,7 +1020,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box37" data-aos="fade-up"> 
+               <div class="box37"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1077,7 +1028,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-              <div class="box38" data-aos="fade-up"> 
+              <div class="box38"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1085,7 +1036,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box39" data-aos="fade-up"> 
+                <div class="box39"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1093,7 +1044,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box40" data-aos="fade-up"> 
+                <div class="box40"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1101,7 +1052,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-              <div class="box41" data-aos="fade-up"> 
+              <div class="box41"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1109,7 +1060,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box42" data-aos="fade-up"> 
+                <div class="box42"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1117,7 +1068,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box43" data-aos="fade-up"> 
+                <div class="box43"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1125,7 +1076,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box44" data-aos="fade-up"> 
+               <div class="box44"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1133,7 +1084,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box45" data-aos="fade-up"> 
+                <div class="box45"> 
                     <h4> "The soul is not born, it never dies; nor once in existence, it never ceases. The soul is birthless, eternal, immortal and ageless." </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1141,7 +1092,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box46" data-aos="fade-up"> 
+               <div class="box46"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1149,7 +1100,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box47" data-aos="fade-up"> 
+                <div class="box47"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1157,7 +1108,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-                <div class="box48" data-aos="fade-up"> 
+                <div class="box48"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1165,7 +1116,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-               <div class="box49" data-aos="fade-up"> 
+               <div class="box49"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1173,7 +1124,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-              <div class="box50" data-aos="fade-up"> 
+              <div class="box50"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
                  <hr/>
@@ -1198,14 +1149,14 @@ footer {
 
                      <!-------About Page------->
       <section id="about">
-                 <div class="abbg" data-aos=zoom-out">  </div>
+                 <div class="abbg">  </div>
                  <div class="abhe">
                       <h2> About us </h2>
-                      <p> Welcome to Quotes, your destination for Shri Krishna Quotes in Kolkata, WB. 
+                      <p> Welcome to our Quotes page, your destination for Shri Krishna Quotes in Kolkata, WB. 
                           We are passionate about spreading the wisdom and teachings of Shri Krishna
                           through our carefully curated collection of quotes. 
-                      </p> 
-                      <p> At Quotes, we believe in the power of words to inspire and uplift.
+                      </br> 
+                      </br> At Quotes, we believe in the power of words to inspire and uplift.
                           Our team of dedicated enthusiasts handpicks the most profound and 
                           insightful quotes from the teachings of Shri Krishna, ensuring that 
                           each quote resonates with our audience on a spiritual level. 
@@ -1219,7 +1170,7 @@ footer {
          
                          <!-----Contact Us Section------->
              <div id="gettouch">
-             <form action="submit.php" method="post">
+             <form action="index.html" method="post">
                  <h2> Contact Us Today </h2>
                  <p> Complete the form below to get in
                      touch with us. We are ready to assist
@@ -1237,19 +1188,7 @@ footer {
                  <input class="btn" type="submit" value="Submit">
             </form>
       </div>
-
-
-      <section class="contact"> <!-------contact Section--------->
-                <h1 class="animate__animated animate__infinite"> Follow Us </h1>
-             <div id="apps"> 
-                  <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
-                  <a href="#"> <i class="fa-brands fa-instagram "></i> </a>
-                  <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
-                  <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
-                  <a href="#"> <i class="fa-brands fa-whatsapp"></i> </a>
-                  <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
-            </div>
-     </section>
+      
   
            <!----Google Ads------->
       
@@ -1286,16 +1225,7 @@ function openNav() {
    function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 } ;
-      //Show-hide content
-   document.querySelectorAll('.read-more').forEach(function(item) {
-  item.addEventListener('click', function(e) {
-    e.preventDefault();
-    var content = this.previousElementSibling;
-    content.style.display = content.style.display === 'none' ? 'block' : 'none';
-    this.textContent = content.style.display === 'none' ? 'Read more..' : 'Read less--';
-  });
-});
-
+      
 
         /* Image Slider JavaScript */
       var myIndex = 0;
@@ -1341,29 +1271,6 @@ document.getElementById("topButton").addEventListener("click", function () {
   });
 </script>
                  
-       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-         <script>
-             AOS.init({
-                      offset: 150, // offset (in px) from the original trigger point
-                      delay: 0, // values from 0 to 3000, with step 50ms
-                      duration: 400, // values from 0 to 3000, with step 50ms
-                      easing: 'ease', // default easing for AOS animations
-                      once: false, // whether animation should happen only once - while scrolling down
-                      mirror: false, // whether elements should animate out while scrolling past them
-                      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-                 });
-         </script>
-
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-   <script>          
-      var typed = new Typed('.multiText', {
-      strings: ["&#129434;Raadhe Raadhe&#129434;", "&#127804;Jai Shri Krishna&#127804;", "&#9728;राधे राधे.&#9728; ", "जय श्री कृष्णा", "&#128081;রাধে রাধে &#128081;","&#128329; জয় শ্রী কৃষ্ণা  &#128329;",],
-      loop: true, 
-      typeSpeed: 150 , 
-      backSpead: 80 , 
-      startDelay: 500, 
-      backDelay: 1000, 
-     });
-   </script>
+       
 </body>
 </html>
