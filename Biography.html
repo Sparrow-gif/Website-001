@@ -72,10 +72,11 @@ header > h2{
         width:height:100vh;
         width:0;
         position: fixed;
-        z-index:99;
+        z-index:999;
         top: 0;
         right: 0;
-        background-color:#FFEAEC;
+        background:transparent;
+        backdrop-filter:blur(6px) ;
         overflow: scroll;
        -webkit-transition: 0.5s;
        -o-transition: 0.5s;
@@ -192,12 +193,13 @@ header > h2{
       font-size:18px;
      }
  #section > #background {
-         height:90vh;
+         min-height:520px;
+         max-height:90vh;
          width:100%;
-         background-image:url('images/biography.jpeg');    
+         background-image:url('images/butterfly.jpg');    
          background-size:cover;
          background-position:center;
-         filter:blur(2px) ;
+         filter:blur(0px) ;
        }
   #section > #blur {
        position:absolute ;
@@ -206,6 +208,7 @@ header > h2{
        transform:translate(-50%,-50%) ;
        z-index: 9 ;
        width:90%;
+       backdrop-filter:blur(4px) ;
     /*   width:50%; */
        padding: 10px ;  
     /*  text-align:center;  */
@@ -227,11 +230,12 @@ header > h2{
        text-align:center;
        transition-duration:0.4s;
        user-select:none;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
 #section >  #blur a:hover{ 
         background: #427bf5 ;
         color: white ;
-        border-radius: 10px;
+        border-radius: 4px;
       }
    .search-container {
          position: relative;
@@ -243,9 +247,66 @@ header > h2{
          border: 1px solid #ccc;
          border-radius: 20px;
          overflow:hidden;
-         margin:20px 10px;
-         
+         margin:20px 10px;         
        }
+
+    .head-logo > a{
+           padding: 10px 10px;
+           text-decoration:none;   
+           font-size:20px;   
+           cursor:pointer;   
+           color:white;  
+           border-radius:50%;
+           margin: 0px 4px ;
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         transition-duration:0.3s;
+         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
+       }
+  .head-logo > a:hover{ transform:scale(1.20)}
+   .head-logo > a:nth-child(1) {
+         color:white;
+         background: #266DD3;
+       }
+   .head-logo > a:nth-child(2) {
+         color:white;
+         background: #F75C03 ;
+       }
+   .head-logo > a:nth-child(3) {
+         color:white;
+         background: #7BB2D9 ;
+       }
+   .head-logo > a:nth-child(4) {
+         color:white;
+         background: #31D843 ;
+       }
+   .head-logo > a:nth-child(5) {
+         color:white;
+         background: #F42B03 ;
+       }
+  .contest > #banner {
+       /*  background-image:url('image/Spider.jpg'); */
+       /* background-size:cover; */
+       /*  background-position:center; */
+       /*  background-attachment: ; */
+         min-height:220px;
+         max-height:320px;
+         width:100%;
+         margin:10px auto;
+         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+       }
+  .contest > #banner > img {
+         width:100%;
+         min-height:220px; 
+         max-height:320px; 
+         background-size:cover;
+         background-position:center;
+       /*  aspect-ratio: 2/1.20; */
+         object-fit:cover;
+      }
+
 
     #searchInput {    
         border:none;
@@ -272,7 +333,7 @@ header > h2{
          -moz-user-select:none;    
          -ms-user-select:none;    
          user-select:none;  
-         padding:10px ;
+         padding:14px ;
          background: ;
          margin:0 auto ;
          width:100%;
@@ -283,8 +344,8 @@ header > h2{
      #container > div {
             background: #FFFFFF;
             height:auto ;    
-            padding:5px;     
-            margin:0 auto ;
+            padding:8px;     
+            margin:20px auto ;
             width:100%;
       -webkit-user-select:none;    
          -moz-user-select:none;    
@@ -299,15 +360,18 @@ header > h2{
      #container > #website1 > #paragraph > h4{
            text-indent:0px;
            padding:8px 5px;
-           color: #5E239D;
+           color: #FCAB10;
        }
       #container > #website1 > #hvr {
             width:100%;   
             min-height:210px ;         
             max-height:340px;
             overflow:hidden;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         }
     #container > #website1 > #hvr > img {
+            border:none;
+            outline:none;
             width:100%;
             height:100%;       
             margin:0 auto;    
@@ -323,10 +387,7 @@ header > h2{
            font-size:16px;
            padding:0px;
            font-family:Roboto ;
-           font-weight: ;
-           min-height:180px ;         
-           max-height:350px;
-           overflow: scroll;
+           font-weight: ;           
         }
 
 
@@ -392,16 +453,40 @@ header > h2{
           padding: 5px 10px;
           font-size: 16px;
           cursor: pointer;
-          z-index:99 ;
+          z-index:10 ;
           font-size:1.50rem;
             }
+     #paytm {
+          position: fixed;
+          bottom: 200px;
+          right: 10px;
+          background: transparent;
+          color: #8447FF;
+          border: none;
+          border-radius: 50%;
+          padding: 10px 10px;
+          font-size: 10vw;
+          cursor: pointer;
+          z-index:10 ;    
+          box-shadow: #8447FF 0px 0px 10px;
+      }
 /* Media Query for Tablets Ipads portrait mode */
 
-        @media (min-width: 768px) and (max-width: 1020px){
+        @media (min-width: 600px) {
 
             body {
-                background-color: blue;
+                background-color: ;
+            }   
+         aside {
+               margin:0 auto;
+               width: 80%;
             }
+         #container > #website1 > #hvr { width: ;  }
+         #container > #website1 > #paragraph > p  {
+               min-height:180px ;         
+               max-height:350px;
+               overflow: scroll;
+                }
         }
          
 
@@ -410,7 +495,7 @@ header > h2{
         @media (min-width: 1020px){
 
             body {
-                background-color: green;
+                background-color: ;
             }
          #container > div {
                gap:20px;
@@ -475,9 +560,44 @@ header > h2{
                   into who you are today. let us  help you tell
                   your unique biographies. 
              </p>
-              <a href="#searchInput"> Explore Now  </a>
+              <a href="#hed"> Explore Now  </a>
         </div> 
      </section>
+
+
+       <!--------Headind Section--------->
+      <aside id="hed" style="padding:15px;">             <!-------heading------->
+                <div class="heading">
+                     <h2> Biographies of great people that are very important to know </h2>
+                     <p> Updated on : Dec 02, 2023 </p>
+               </div>
+                             <!-------heading logo------->
+                <div class="head-logo">
+                     <a href="#" class="fa-brands fa-telegram" title="telegram"> </a>
+                     <a href="#" class="fa-brands fa-instagram" title="Instagram"> </a>
+                     <a href="#" class="fa-brands fa-twitter" title="twitter"> </a>
+                     <a href="#" class="fa-brands fa-whatsapp" title="whatsapp"> </a>
+                     <a href="#" class="fa-brands fa-youtube" title="YouTube"> </a>
+               </div>
+                             <!-------main div------->
+                <div class="contest">
+                     <div id="banner"> <img src="images/Img1.jpeg"> </div><!-------headind banner------->
+                          
+                     <div id="cont"> <!-------headind paragraph------->
+                          <p class="texts" style="font-family:PT Serif;">  
+                               Biographies of great people are crucial because they provide invaluable insights into the lives, struggles, 
+                               accomplishments, and mindsets of those who've made significant impacts in various fields. These stories offer
+                               inspiration, teaching us about resilience, determination, and the ability to overcome challenges. Understanding 
+                               their journeys helps us learn from their successes and failures, gain different perspectives, and apply their
+                               wisdom to our own lives. Moreover, biographies often offer historical context, helping us comprehend the broader
+                               societal, cultural, and historical factors that shaped these individuals and their contributions to the world. 
+                               Ultimately, studying the lives of great people can motivate us to pursue our aspirations, instilling a 
+                               sense of possibility and empowerment.
+                         </p>
+                    </div>
+               </div>
+       </aside>
+
 
                    <!----Search Input------->
          <div class="search-container">
@@ -490,7 +610,8 @@ header > h2{
      <!--------Main section--------->
    <div id="container">     
        <!------Biography container------>
-       <div id="website1"> <!----Biography 1----->
+             <!----Biography 1----->
+       <div id="website1" data-name="Elon mask"> 
            
            <div id="hvr"> <!-----image Container----->
                <img src="Images/Spider.jpg"> 
@@ -499,12 +620,7 @@ header > h2{
            <div id="paragraph"> <!-----Peragraph Container----->
            <h4> Elon Mask </h4>
            <p> 
-              Students may find Meritnation appealing for various reasons. The platform offers a broad array 
-              of study materials, including interactive lessons, quizzes, and solutions that assist with 
-              homework and exam preparation. Meritnation's coverage spans a diverse range of subjects, 
-              making it a versatile resource for learners. The incorporation of interactive elements, 
-              such as animations and quizzes, contributes to an engaging learning experience.
-              Additionally, the platform may provide personalized learning plans and adaptive assessments,
+              the platform may provide personalized learning plans and adaptive assessments,
               tailoring content to individual learning styles. With a focus on exam preparation 
               and a user-friendly interface, Meritnation aims to cater to the diverse needs of students.
               It's important to recognize that preferences vary, and students often choose online
@@ -512,8 +628,8 @@ header > h2{
           </p>
          </div>
       </div>
-
-       <div id="website1"> <!----Biography 1----->
+                <!----Biography 2----->
+       <div id="website1" data-name="Mukesh ambani" > 
            
            <div id="hvr"> <!-----image Container----->
                <img src="Images/Spider.jpg"> 
@@ -522,19 +638,165 @@ header > h2{
            <div id="paragraph"> <!-----Peragraph Container----->
            <h4> Mukesh Ambani </h4>
            <p> 
-              Students may find Meritnation appealing for various reasons. The platform offers a broad array 
-              of study materials, including interactive lessons, quizzes, and solutions that assist with 
-              homework and exam preparation. Meritnation's coverage spans a diverse range of subjects, 
-              making it a versatile resource for learners. The incorporation of interactive elements, 
-              such as animations and quizzes, contributes to an engaging learning experience.
-              Additionally, the platform may provide personalized learning plans and adaptive assessments,
-              tailoring content to individual learning styles. With a focus on exam preparation 
-              and a user-friendly interface, Meritnation aims to cater to the diverse needs of students.
+              interface, Meritnation aims to cater to the diverse needs of students.
               It's important to recognize that preferences vary, and students often choose online
               learning platforms based on their specific requirements and learning preferences.
           </p>
          </div>
       </div>
+
+       <!----Biography 3----->
+       <div id="website1" data-name="Sachin Tendulkar" > 
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="Images/Spider.jpg"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Sachin Tendulkar </h4>
+           <p> 
+              interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+         </div>
+      </div>
+
+       <!----Biography 4----->
+       <div id="website1" data-name="Ratan Tata" > 
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="Images/Spider.jpg"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Ratan Tata </h4>
+           <p> 
+              interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+         </div>
+      </div>
+
+       <!----Biography 5----->
+       <div id="website1" data-name="Jawaharlal Nehru" > 
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="Images/Spider.jpg"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Jawaharlal Nehru </h4>
+           <p> 
+              interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+         </div>
+      </div>
+
+       <!----Biography 6----->
+       <div id="website1" data-name="Mahatma Gandhi" > 
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="Images/Spider.jpg"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Mahatma Gandhi </h4>
+           <p> 
+              interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+         </div>
+      </div>
+
+       <!----Biography 7----->
+       <div id="website1" data-name="A.P.J. Abdul Kalam" > 
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="Images/Spider.jpg"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> A.P.J. Abdul Kalam </h4>
+           <p> 
+              interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+         </div>
+      </div>
+
+       <!----Biography 8----->
+       <div id="website1" data-name="Indira Gandhi" > 
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="Images/Spider.jpg"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Indira Gandhi </h4>
+           <p> 
+              interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+         </div>
+      </div>
+
+       <!----Biography 9----->
+       <div id="website1" data-name="Nelson Mandela" > 
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="Images/Spider.jpg"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Nelson Mandela </h4>
+           <p> 
+              interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+         </div>
+      </div>
+
+       <!----Biography 10----->
+       <div id="website1" data-name="Steve Jobs" > 
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="Images/Spider.jpg"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Steve Jobs </h4>
+           <p> 
+              interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+         </div>
+      </div>
+
+        <!----Biography 11----->
+       <div id="website1" data-name="Dr.B.R. Ambedkar" > 
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="Images/Spider.jpg"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Dr. B.R. Ambedkar </h4>
+           <p> 
+              interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+         </div>
+      </div>    
     <!-- Add more div elements as needed -->
   </div><!--------Main section close--------->
 
@@ -554,12 +816,13 @@ header > h2{
         <a href="#" target="_self"><p> Terms & privacy </p></a>
         <a href="#" target="_self"><p> policy </p></a>
         <a href="#" target="_self"><p> 2023® </p></a>
-        <a href="#" target="_self"><p> Food-factory LLC</p></a>
+        <a href="#" target="_self"><p> Quotes world </p></a>
    </div>
   </footer>
      
         <!----Go To Top Button------>
      <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
+     <a href="#" id="paytm" class="fa-solid fa-gift fa-bounce"> </a>
 
   </body>
    <script>
@@ -622,6 +885,29 @@ document.getElementById("topButton").addEventListener("click", function () {
        navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
      }
   });
+
+      
+          document.getElementById('searchInput').addEventListener('input', function () {
+          const filter = this.value.toLowerCase();
+          const items = document.querySelectorAll('#container div');
+
+  items.forEach(function (item) {
+    const name = item.dataset.name.toLowerCase();
+
+    if (name.includes(filter)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+
+  // Show all items when the search bar is cleared
+  if (filter === '') {
+    items.forEach(function (item) {
+      item.style.display = 'block';
+    });
+  }
+});
 
    </script>
 </hyml>
