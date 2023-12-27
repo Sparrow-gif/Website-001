@@ -1307,7 +1307,7 @@ footer {
       <!---Artical2----->
           <div class="article">
              <img src="article2.jpg" alt="Article 2 Image">
-             <h3><a href="article2.html"> Words of Lord Krishna that will brighten your life </a></h3>
+             <h3><a href="article2.html" Id="dnl"> Words of Lord Krishna that will brighten your life </a></h3>
          </div>
 
      <!---Artical3----->
@@ -1428,7 +1428,13 @@ document.getElementById("topButton").addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+ //link click scrolling 
+  document.getElementById("dnl").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;  
+ });
 
+      
     //change Navigation background
    window.addEventListener('scroll', function() {
        const navbar = document.getElementById('navbar');
