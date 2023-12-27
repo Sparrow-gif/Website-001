@@ -493,7 +493,47 @@ header > h2{
                font-weight: ;                           
           }
 
-        #gettouch {
+    .recommended-articles {
+             width: 100%;
+             margin: 0 auto;
+             padding:20px  ;   
+            box-sizing:border-box;
+        }
+
+   .article {
+         margin:0 auto;
+         width: 85% ;
+         border: 0px solid #ccc;
+         padding: 10px ;
+         margin-bottom: 10px;
+         display: flex;
+         flex-direction: column;
+         box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+         }
+
+   .article img {
+        max-width: 100%;
+        height: auto;  
+        object-fit: cover;
+        aspect-ratio:1/0.70;
+         }
+
+     .article h3 {
+           margin-top: 0;
+           transition-duration:0.3s;
+      }
+
+      .article h3 a {
+            text-decoration: none;
+            color: #333;
+      }
+
+     .article h3 a:hover {
+          text-decoration: underline;
+      }
+
+    
+      #gettouch {
           margin:0 auto ;
           padding:20px;    
           background:#D9DBF1 ;    
@@ -656,6 +696,18 @@ footer {
    #about > .abhe > p  {  max-height:220px; overflow:scroll; }
    #gettouch > form { width:80%;}
       }
+
+
+  @media only screen and (min-width:600px) {
+      .recommended-articles {
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: column ;
+            }
+      .article { width:70%; }
+   }
+
 
   @media only screen and (min-width:990px) {         
                         
@@ -1241,6 +1293,48 @@ footer {
                 </div>
          </section>
       
+
+     <!-----Recomended Article Section-------->
+         <section class="recommended-articles">
+             <h2> our Recommended top Articles </h2>
+       <!---Artical1----->
+          <div class="article">
+              <img src="article1.jpg" alt="Article 1 Image">
+              <h3><a href="article1.html"> Top Movie Download Websites </a></h3>
+         </div>
+
+      <!---Artical2----->
+          <div class="article">
+             <img src="article2.jpg" alt="Article 2 Image">
+             <h3><a href="article2.html"> Words of Lord Krishna that will brighten your life </a></h3>
+         </div>
+
+     <!---Artical3----->
+          <div class="article">
+             <img src="article3.jpg" alt="Article 3 Image">
+             <h3><a href="#"> love to read poetry </a></h3>
+         </div>
+
+    <!---Artical4----->
+          <div class="article">
+             <img src="article4.jpg" alt="Article 4 Image">
+             <h3><a href="#"> Stories in the life of Lord Krishna </a></h3>
+         </div>
+
+     <!---Artical5----->
+          <div class="article">
+             <img src="article5.jpg" alt="Article 5 Image">
+             <h3><a href="#"> Top 10 useful education Websites for students </a></h3>
+         </div>
+
+    <!---Artical6----->
+          <div class="article">
+             <img src="article6.jpg" alt="Article 6 Image">
+             <h3><a href="#"> Life stories of great people's </a></h3>
+         </div>
+    <!-- You can add more articles using the same structure -->
+  </section>
+
          
                          <!-----Contact Us Section------->
           <div id="gettouch" class="comment-section">
