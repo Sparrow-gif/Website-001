@@ -26,7 +26,7 @@
         }  
   html {
        scroll-behavior:smooth;
-       scroll-padding:2.50em;
+       scroll-padding:3em;
       }
  header {
        display:-webkit-box;
@@ -91,7 +91,7 @@ header > h2{
         -ms-user-select:none;    
        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      }
-
+   .sidenav::-webkit-scrollbar{ display: ;}   /* SIDENAV scrollbar */
 .sidenav a {
        padding: 15px ;
        text-decoration: none;
@@ -173,6 +173,7 @@ header > h2{
          overflow:scroll;
         -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;       
        }
+	  .scroll-container > .scroll-item::-webkit-scrollbar{ display: none;}
     .scroll-container > #active {
         color: white;
         background:#6e0cf7;
@@ -201,8 +202,8 @@ header > h2{
       -moz-user-select:none;
       -ms-user-select:none;
        user-select:none;
-       max-height:90vh;
-       min-height:calc(100vh - 50px) ;
+       min-height:70vh;       
+	   overflow:hidden;
       }
    #bg >#blur >  h1{
        font-size:30px;
@@ -217,8 +218,7 @@ header > h2{
       font-size:18px;
      }
     #bg > #background {
-         min-height: calc(100vh - 50px);
-         max-height:90vh;
+         min-height:70vh; 
          width:100%;
          background-image: linear-gradient(to right, #9796f0, #fbc7d4);
        /*  background-image:url('images/.jpg');    */
@@ -305,26 +305,27 @@ header > h2{
 
         /*  Image Slider Css*/
     #w3-content {
-       border-radius:4px;
-        margin:10px auto;
-        width:100%;         
-        min-height:180px;    
-        max-height:220px;    
-        overflow:hidden;     
+         border-radius:4px;
+         margin:10px auto;
+         width:100%;         
+          
+         overflow: hidden;     
         -webkit-user-select:none;
         -moz-user-select:none;
         -ms-user-select:none;     
-        position:relative;    
+         position:relative;    
          z-index:-1 ;
-       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		 resize: both;
       }
   
   
  #w3-content > img {
-      height:100%;     
+      height:40vh;     
       width:100%;     
       background-size:cover;
       background-position:center; 
+	  object-fit: fill ;
     }
      
          /* Quotes body Css */
@@ -344,7 +345,7 @@ header > h2{
            margin:0 auto;
            width:100%;
            min-height:260px ;
-           max-heightautot ;
+           max-height:460px ;
            object-fit: fill;
            background-size:cover;
            background-position:center; 
@@ -492,7 +493,8 @@ header > h2{
                padding:4px;
                font-family: Open Sans;
                font-size:20px;
-               font-weight: ;                           
+               font-weight: ;     
+               overflow:auto;			   
           }
 
     .recommended-articles {
@@ -660,6 +662,7 @@ footer {
         background:white;
         outline:2px solid white; 
         text-transform:capitalize;
+		cursor:pointer;
        }
   hr { 
      width:100%;
@@ -702,18 +705,22 @@ footer {
               width: 100%;
               display: flex;
               flex-wrap: wrap;
-              flex-direction: column ;
+              flex-direction: ;
             }
-      .article { width:70%; }
+      .article { width:380px; }
 
-   #about > .abhe > p  {  max-height:220px; overflow:scroll; }
+   #about > .abhe > p  {  max-height:220px; overflow: auto; }
    #gettouch > form { width:80%;}
       }
 
 
 
-  @media only screen and (min-width:990px) {         
-                        
+  @media only screen and (min-width:800px) {         
+                  html {
+				   margin:0 auto;
+				   width:70%;
+				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   }       
     #bg > #blur {   width:60%;  }
     #w3-content {
          margin:10px auto;
@@ -765,14 +772,13 @@ footer {
                <a class="scroll-item" href="Blogs.html" target="_self"> blogs </a>
                <a class="scroll-item" href="Poetry.html" target="_self"> poetry </a>               
                <a class="scroll-item" href="Education.html" target="_self"> education </a>
-               <a class="scroll-item" href="Biography.html" target="_self"> biography </a>   
-               <a class="scroll-item" href="Laws.html" target="_self"> The Laws </a>           
-               <a class="scroll-item" href="Loot.html" target="_self"> games </a>    
-               <a class="scroll-item" href="Movie.html" target="_self"> Movies </a>      
-               <a class="scroll-item" href="Games.html" target="_self"> loot Offers </a>                 
-               <a class="scroll-item" href="https://www.amazon.in" target="_blank"> Life-Style </a>
-               <a class="scroll-item" href="#" target="_blank"> cricket </a>
-               <a class="scroll-item" href="#" target="_blank"> health </a>
+               <a class="scroll-item" href="Biography.html" target="_self"> biography </a>               
+               <a class="scroll-item" href="Games.html" target="_self"> games </a>
+               <a class="scroll-item" href="Loot.html" target="_self"> loot Offers </a>    
+               <a class="scroll-item" href="Movie.html" target="_self"> Movies </a>                                        
+               <a class="scroll-item" href="https://www.amazon.in" target="_self"> Life-Style </a>
+               <a class="scroll-item" href="#" target="_self"> cricket </a>
+               <a class="scroll-item" href="#" target="_self"> health </a>
                <a class="scroll-item" href="Web.html" target="_self"> web Story </a>                
                <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
@@ -815,9 +821,9 @@ footer {
 
                     <!----- Image Slider section----->
       <div id="w3-content">
-            <img class="mySlides" src="images/Spider.jpg" style="width:100%;height:220px;">
-            <img class="mySlides" src="images/Trees.jpg" style="width:100%;height:220px">
-            <img class="mySlides" src="images/Butterfly.jpg" style="width:100%;height:220px">
+            <img class="mySlides" src="Lod1.webp" style="width:100%;height:280px;">
+            <img class="mySlides" src="Lod2.jpg" style="width:100%;height:280px">
+            <img class="mySlides" src="Lod7.webp" style="width:100%;height:280px">
      </div>
                 
          <div class="som">
@@ -859,7 +865,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-    <!---Images1---> <img src="images/trees.jpg" alt="image01">
+    <!---Images1---> <img src="Lod1.webp" alt="image01">
 
                <div class="box4"> 
                     <h4> Hello World </h4>
@@ -909,7 +915,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
     
-   <!---Images2---> <img src="images/trees.jpg" alt="image02">
+   <!---Images2---> <img src="Lod2.jpg" alt="image02">
 
               <div class="box10"> 
                     <h4> Hello World </h4>
@@ -943,7 +949,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-  <!---Images3---> <img src="images/trees.jpg" alt="image03">
+  <!---Images3---> <img src="Lod3.jpg" alt="image03">
 
               <div class="box13"> 
                     <h4> Hello World </h4>
@@ -977,7 +983,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
    
-   <!---Images4---> <img src="images/trees.jpg" alt="image04">
+   <!---Images4---> <img src="Lod4.jpg" alt="image04">
 
                <div class="box17"> 
                     <h4> Hello World </h4>
@@ -1019,7 +1025,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-    <!---Images5---> <img src="images/trees.jpg" alt="image05">
+    <!---Images5---> <img src="Lod5.webp" alt="image05">
 
                 <div class="box22"> 
                     <h4> Hello World </h4>
@@ -1061,7 +1067,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-  <!---Images6---> <img src="images/trees.jpg" alt="image06">
+  <!---Images6---> <img src="Lod6.jpg" alt="image06">
 
                 <div class="box27"> 
                     <h4> Hello World </h4>
@@ -1087,7 +1093,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-   <!---Images7---> <img src="images/trees.jpg" alt="image07">
+   <!---Images7---> <img src="Lod7.webp" alt="image07">
 
                 <div class="box30"> 
                     <h4> Hello World </h4>
@@ -1300,8 +1306,9 @@ footer {
       
 
      <!-----Recomended Article Section-------->
+	     <h2 Style="padding:10px;"> our Recommended top Articles </h2>
          <section class="recommended-articles">
-             <h2> our Recommended top Articles </h2>
+             
        <!---Artical1----->
           <div class="article">
               <img src="article1.jpg" alt="Article 1 Image">
