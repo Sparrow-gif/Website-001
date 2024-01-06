@@ -26,7 +26,7 @@
         }  
   html {
        scroll-behavior:smooth;
-       scroll-padding:2.50em;
+       scroll-padding:3em;
       }
  header {
        display:-webkit-box;
@@ -39,9 +39,9 @@
        -ms-flex-align:center;
        align-items:center;
        position:sticky;
-       z-index:999;
+       z-index:99;
        top:0px;
-       background:#13d48a ; /* #ebe6fa; */      
+       background:#13d48a ; /* #ebe6fa; */
        padding:2px;      
        -webkit-user-select:none;
        -moz-user-select:none;
@@ -64,8 +64,8 @@ header > h2{
       color:white;  
       -webkit-transition-duration:0.3s;  
       -o-transition-duration:0.3s;  
-       transition-duration:0.3s;
-       text-shadow: 1px 1px 3px #666666;
+      transition-duration:0.3s;
+     text-shadow: 1px 1px 3px #666666;
       }
 .sidenav {
         height:100vh;
@@ -135,8 +135,9 @@ header > h2{
 
     .scroll-container {
         width: 100%;
-        overflow-x: auwidth: 100%;
         overflow-x: auto;
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;        
         background:white;
         padding:5px;
@@ -147,17 +148,19 @@ header > h2{
          display:none;
       }
  .scroll-container > .scroll-item {
+         font-family: Slabo;
          background:#ebe6fa ;
          text-align:center;
          min-width: 100px;
          text-decoration:none;
          padding:5px;
-         border: 1px solid #ddd;
+         border: none;
          margin-right: 10px;
-         border-radius:8px;
+         border-radius:10px;
          overflow:scroll;
-         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;       
-   }
+        -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;       
+       }
+	  .scroll-container > .scroll-item::-webkit-scrollbar{ display: none;}
     .scroll-container > #active {
         color: white;
         background:#6e0cf7;
@@ -171,9 +174,9 @@ header > h2{
    .scroll-container::-webkit-scrollbar-track{  background: ;}
 
    .scroll-container::-webkit-scrollbar-thumb{
-          background-color: #4acf36;
+         /* background-color: #4acf36;
           border-radius:0px;
-          border:1px none #FFFFFF;
+          border:1px none #FFFFFF; */
            }
    
      #section {
@@ -196,9 +199,9 @@ header > h2{
       font-size:18px;
      }
  #section > #background {
-         height:100vh;
+         height:70vh;
          width:100%;
-         background-image:url('images/starr.jpeg');    
+         background-image:url('BLOG/BLOG2.jpg');    
          background-size:cover;
          background-position:center;
          background-attachment:fixed;
@@ -252,35 +255,69 @@ header > h2{
 
 
     #blogvdos {
+	        background-color:#F9F9ED;
             margin:0 auto ;
             padding:10px;
             gap:10px;
             display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(min(25rem,100%),1fr)) ;
+            grid-template-columns:repeat(auto-fit,minmax(min(30rem,100%),1fr)) ;
           }
    #blogvdos > iframe {
-          min-height:250px;
+          min-height:260px;
           width:100%;
           border:1px solid black;
           margin:0 auto;
        }
-     #blogpost {
-          background: #611f1a ;
-          margin:0 auto ;
-          padding:10px;
-          gap:10px;
-          display:grid;
-          grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
-        }
-    #blogpost > img {
-           height:250px;
-           width: 100%;
+  
+    #blogvdos > img {
+           width: 60%;
+		   margin:0 auto;
+           aspect-ratio: 1/0.60 ;
            border:none;
-         /*  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%); */ 
+		   border-radius:6px;       
+        /*  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%); */
            
          }
 
-
+          fieldset {
+          padding:10px;
+		  margin:0 auto;
+       }
+     fieldset >  div {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        align-content:center;
+        padding:20pxpx;
+        margin:0px auto ;
+		padding:10px;
+		width:100%;
+        border-bottom:0.80px solid silver;
+      }
+     fieldset >  div > a { 
+         text-decoration: none; 
+         color: black;
+         Font-size:18px;
+         cursor:pointer;
+         transition-duration:0.3s;     
+       }
+    fieldset >  div > a:hover { 
+         text-decoration: underline; 
+         color: ;
+         Font-size:20px;
+         padding:6px;
+      }
+     fieldset >  div > img {
+         object-fit:cover;
+         width:80px;
+         height: 60px;
+         border:none;
+         outline:none;
+         border-radius:6px;
+       }
+	  aside >  #blok { display:none;}
+		
+		
    #ourwork {
           padding:20px;
           margin:0 auto ;
@@ -328,38 +365,107 @@ header > h2{
          }
    .aboutus > iframe {
             border:1px solid black ;
-            min-height:220px ;
+            min-height:260px ;
             margin:20px auto ;
             width:100%;
          }
 
-   .contact {
-          padding:10px;
-          background:#bdf2b6 ;
-        }
-  .contact > form {
-          margin:0 auto;
-          width:90%;
-        }
-  .contact > form > label {
-          display:block;
-          padding:5px 0px;       
-        }
-  .contact > form > input {
-          display:block;
-          font-size:18px;
-          padding:5px;
-          width:100%;
+    #gettouch {
+          margin:0 auto ;
+          padding:20px;    
+          background: ;    
+          -webkit-user-select:none;
+          -moz-user-select:none;
+          -ms-user-select:none;      
+         text-transform: capitalize ;    
        }
-   .contact > form > #send {
-           width:40%;
-           border-radius:10px;
-           outline:none;
-           border:0px solid black;
-           background:coral ;
-           color: #f2f0e9 ;
-         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        }
+  #gettouch > form {
+        user-select:none;
+        margin:0 auto ;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        gap:6px;
+       }
+   #gettouch > form > h2 {
+         color:#5E239D;
+         font-size:2rem;
+         font-family: lato ;
+         font-weight:600;
+       }
+   #gettouch > form > label {
+        width:100%;
+        display:block;
+        Font-family:roboto;
+        font-size:20px ;
+      }
+   #gettouch > form >  input {
+        width:100%;
+        padding:8px;
+        font-size:18px;
+        display:block;
+        margin:0px auto ;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        Font-family:roboto;
+         }
+  #gettouch > form >  textarea {
+        width:100%;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        padding:8px;
+        font-size:18px;
+        Font-family:slabo;
+      }
+	  
+	   #gettouch > form > .btn {
+        Font-family:Roboto;
+        font-size:16px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        width:80%;
+        margin:10px auto;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        -webkit-transition-duration:0.3s;
+             -o-transition-duration:0.3s;
+                transition-duration:0.3s;      
+         }
+  #gettouch > form > .btn:hover {
+        background-color: #45a049;
+       }
+  #gettouch > form > .btn:active {
+          -webkit-transform:scale(0.90) ;
+              -ms-transform:scale(0.90) ;
+                  transform:scale(0.90) ;
+       }
+  #comments {
+         margin-top: 20px;
+         Font-family:slabo;
+       }
+   
+  .comment {
+        background-color: #e6f7ff;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        Font-family:slabo;
+     }
+	    .didit > #community {
+       background-color: #e6f7ff;
+       padding: 7px;
+       margin:10px auto;
+       Font-family:slabo;
+       overflow:hidden;
+     }
+      .didit {
+          min-height: auto ;
+          max-height: auto ;
+          overflow:auto;
+		  padding:10px;
+       }
 
     footer {
          margin:0 auto;
@@ -442,35 +548,67 @@ header > h2{
             }
 
 
-@media only screen and (min-width: 500px) {       
+@media only screen and (min-width: 767px) {       
      
-    #section > #blur { 
+   
+    }
+	
+          
+	   @media only screen and (min-width:768px) { 
+	           html {
+				   margin:0 auto;
+				   width:90%;
+				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   }  
+			  #section > #blur { 
                  width:60%;
                  position:absolute;                 
-             }
-    #inttro > p {
-            width:80%;
-            margin:0 auto;
-             }
-      #blogvdos > iframe { width:70%; }
-      .aboutus > h2{
-          margin:0 auto ;
-          width:80%;
-        }
-     .aboutus > p{
-          margin:0 auto ;
-          width:80%;
-        }
-    .aboutus > iframe {
-         margin:0 auto ;
-         width:80%;
-       }
-   .contact > form {
-          margin:0 auto ;
-          width:60%;
-        }
-    }
+                 }
+              #inttro > p {
+                   width:80%;
+                   margin:0 auto;
+              }
+             #blogvdos > iframe { width:90%; height:100%;}
+            .aboutus > h2{
+                   margin:0 auto ;
+                   width:80%;
+               }
+              .aboutus > p{
+                    margin:0 auto ;
+                     width:80%;
+               }
+             .aboutus > iframe {
+                    margin:0 auto ;
+                    width:80%;
+               }
+          #gettouch { margin:0 auto; width:70%;}
+	   }
+	   
+	   
+	    @media only screen and (min-width:992px) { 
+		       html {
+				   margin:0 auto;
+				   width:70%;
+				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   }    
+       #blogvdos > iframe {margin:0 auto; width:90%;}			
 
+	     aside >  #blok { display:block;}
+	    #blak { display:none;}
+        .flow {
+		     display:flex;
+			 justify-Content:center;
+			 gap:10px;
+	     	}				
+       		 .flow > main { width:70%; }
+			 .flow > aside { width:30%; }
+			 
+		     .aboutus > iframe {
+                    margin:20px auto ;
+                    width:60%;
+               }
+		  #gettouch { margin:0 auto; width:50%;}
+		}
    </style>
   </head>
   <body>
@@ -495,7 +633,7 @@ header > h2{
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
                </div>
           </div>
-                <h2 class="animate__animated animate__jackInTheBox animate__infinite animate__slow"> Quotes World  </h2>
+                <h2> Quotes World  </h2>
                 <span onclick="openNav()">&#9776;</span>
      </header>
 
@@ -508,10 +646,11 @@ header > h2{
                <a class="scroll-item" href="Education.html" target="_self"> education </a>
                <a class="scroll-item" href="Biography.html" target="_self"> biography </a>               
                <a class="scroll-item" href="Games.html" target="_self"> games </a>
-               <a class="scroll-item" href="Loot.html" target="_self"> loot Offers </a>                
-               <a class="scroll-item" href="https://www.amazon.in" target="_blank"> Life-Style </a>
-               <a class="scroll-item" href="#" target="_blank"> cricket </a>
-               <a class="scroll-item" href="#" target="_blank"> health </a>
+               <a class="scroll-item" href="Loot.html" target="_self"> loot Offers </a>    
+               <a class="scroll-item" href="Movie.html" target="_self"> Movies </a>                                        
+               <a class="scroll-item" href="https://www.amazon.in" target="_self"> Life-Style </a>
+               <a class="scroll-item" href="#" target="_self"> cricket </a>
+               <a class="scroll-item" href="#" target="_self"> health </a>
                <a class="scroll-item" href="Web.html" target="_self"> web Story </a>                
                <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
@@ -549,21 +688,76 @@ header > h2{
                    Elevate your online presence with Blog and unlock the power of visual storytelling today.
               </p>
     </section>
-                   
-     <section id="blogvdos">            
+          
+    <section class="flow">		  
+        <main id="blogvdos">            
             <iframe src="https://www.youtube.com/embed/wgSRVUHLojo">   </iframe>            
             <iframe src="https://www.youtube.com/embed/TFBnMxL_K0Y">   </iframe>            
             <iframe src="https://www.youtube.com/embed/KcmrYjC09j0">   </iframe>
-    </section>
+     
+            <img src='BLOG/BLOG4.jpg' alt="img1">
+            <img src='BLOG/BLOG5.webp' alt="img2">
+            <img src='BLOG/BLOG6.webp' alt="img3">
+            <img src='BLOG/BLOG7.webp' alt="img4">
+        </main>
+		
+         <aside Style="background-color:#E8E9EB; height:auto; ">
+		         <fieldset style="border:none;">
+                <legend style="border:none;"><h2 Style="color:#3454D1;">  Related posts </h2></legend>
+           
+                  <div> <!-----Post 1------>
+                       <a href="#"> hello world </a>
+                       <img src="#" alt="img1">
+                 </div>
 
-     <section id ="blogpost">
-            <img src="images/Tube1.jpeg" alt="img1">
-            <img src="images/Tube2.jpeg" alt="img2">
-            <img src="images/Tube4.jpeg" alt="img3">
-            <img src="images/Tube3.jpeg" alt="img4">
-    </section>
-      
+                 <div> <!-----Post 2------>
+                      <a href="#"> hello world </a>
+                     <img src="#" alt="img1">
+                    </div>
 
+                  <div> <!-----Post 3------>
+                     <a href="#"> hello world </a>
+                    <img src="#" alt="img1">
+                  </div>
+
+                  <div> <!-----Post 4------>
+                  <a href="#"> hello world </a>
+                 <img src="#" alt="img1">
+                  </div>
+
+                   <div> <!-----Post 5------>
+               <a href="#"> hello world </a>
+               <img src="#" alt="img1">
+                  </div>
+
+                 <div> <!-----Post 6----->
+                   <a href="#"> Cyber security tips </a>
+                  <img src="BLOG/CYBER1.jpg" alt="img1">
+               </div>
+  
+                <div> <!-----Post 7------>
+                   <a href="#"> hello world </a>
+                  <img src="#" alt="img1">
+               </div>
+
+              <div> <!-----Post 8----->
+                <a href="#"> hello world </a>
+                 <img src="#" alt="img1">
+                </div>
+             </fieldset>  
+			 
+			     <!----COMMENT Section------>
+				  <div class="didit" id="blok">
+                       <h3 style="font-family:Roboto;"> Recent Comments  </h3>
+                       <div id="comments"> </div> <!----messages-04----->
+                       <div id="community"> <b> sudip:- </b> Great </div> <!----messages-03----->
+                       <div id="community"> <b> sneha:- </b> wows  </div> <!----messages-02---->
+                       <div id="community"> <b> ajoy :- </b> best </div> <!----messages-01----->
+                 </div>
+		<aside>  <!---------aside section close here ------------>
+    </section>
+	
+	
        <section id="ourwork">    <!----our work container------->
               <h2> Our work </h2>
               <div class="grid">
@@ -596,34 +790,42 @@ header > h2{
                    bring your vision to life and connect
               </p>
 
-            <iframe src="">   </iframe>
+            <iframe src="" id="nana">   </iframe>
       </section>
                 
+				
+				    <!----COMMENT Section------>
+				  <div class="didit" id="blak">
+                       <h3 style="font-family:Roboto;"> Recent Comments  </h3>
+                       <div id="comments"> </div> <!----messages-04----->
+                       <div id="community"> <b> sudip:- </b> Great </div> <!----messages-03----->
+                       <div id="community"> <b> sneha:- </b> wows  </div> <!----messages-02---->
+                       <div id="community"> <b> ajoy :- </b> best </div> <!----messages-01----->
+                 </div>
 
-         <!-------contact us form----------->
-      <section class="contact">
-            <form action="submit.php" method="post">
-                 <h2> contact us </h2>
-                 <p> reach out to us using the contact form below. 
-                     we are here to help and answer any questions
-                     you may have. we look forward to connecting with you!
-                </p>
+       <!----Comment Section------->
+        <div id="gettouch" class="comment-section">
+             <form action="#" method="post" id="comment-form">
+                 <h2> leave a comment </h2>
                  
-                 <label for="name"> name </label>
-                 <input type="text" name="name" required>
+                 <label for ="text"> Message </label>
+                 <textarea id="comment" name="w3review" rows="4" cols="40" placeholder="Your Comment*" required></textarea>
+                 
+                 <label for ="Name"> Name </label>
+                 <input type="text" id="name" placeholder="Your Name*" required>
+        
+                 <label for ="email"> Email </label>
+                 <input type="email" id="email" placeholder="Your email*" required>
+        
+                 
+                 <button class="btn" type="submit" value="Submit"> submit </button>
+             </form>         
+        </div>
 
-                 <label for="email"> email </label>
-                 <input type="email" name="email" required>
 
-                 <label for="msg"> message </label>
-                 <textarea rows="4" cols="40" name="msg" required></textarea>
-
-                 <input id="send" type="submit" value="submit">
-           </form>
-     </section>
 
        <footer>   <!------footer Section------->
-       <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes World </h2>          
+       <h2> Quotes World </h2>          
       <select>
            <option> English</option>
            <option> hindi   </option>
@@ -696,5 +898,28 @@ document.getElementById("topButton").addEventListener("click", function () {
      }
   });
  
+ 
+            //Contact us 
+      document.getElementById('comment-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const commentText = document.getElementById('comment').value;
+  const email = document.getElementById('email').value;
+  if (name && commentText) {
+    addComment(name, commentText, email);
+    document.getElementById('comment-form').reset();
+	 alert("submitted");
+  } else {
+    alert('Please fill in all fields.');
+  }
+});
+
+function addComment(name, commentText) {
+  const commentsSection = document.getElementById('comments');
+  const commentDiv = document.createElement('div');
+  commentDiv.classList.add('comment');
+  commentDiv.innerHTML = `<strong>${name}:</strong> ${commentText}`;
+  commentsSection.appendChild(commentDiv);
+}
    </script>
 </hyml>
