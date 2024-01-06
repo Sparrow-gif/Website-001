@@ -37,34 +37,31 @@
        position:sticky;
        z-index:99;
        top:0px;
-       background:#13d48a; /* #ebe6fa; */
+       background:#13d48a ; /* #ebe6fa; */
        padding:2px;      
        -webkit-user-select:none;
        -moz-user-select:none;
        -ms-user-select:none;
-       transition-duration:0.3s;
      }
-header > h2{
+  header > h2{
           font-size:25px;
           color:white;
           text-indent:10px;
           font-family: sans-serif;
           -webkit-animation-duration: 6s;
           animation-duration: 6s;
-          position:relative;
-          z-index:-9;
         }
          
   header > span {
       padding: 0px 10px;
-      font-size:30px;
+      font-size:1.80rem;
       cursor:pointer;           
       background: ;
       color:white;  
       -webkit-transition-duration:0.3s;  
       -o-transition-duration:0.3s;  
-       transition-duration:0.3s;
-       text-shadow: 1px 1px 3px #666666;
+      transition-duration:0.3s;
+     text-shadow: 1px 1px 3px #666666;
       }
 .sidenav {
         height:100vh;
@@ -130,9 +127,11 @@ header > h2{
         padding:10px 15px;
         border-radius:50%;
      }
-    .scroll-container {
+   .scroll-container {
         width: 100%;
         overflow-x: auto;
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;        
         background:white;
         padding:5px;
@@ -143,17 +142,19 @@ header > h2{
          display:none;
       }
  .scroll-container > .scroll-item {
+         font-family: Slabo;
          background:#ebe6fa ;
          text-align:center;
          min-width: 100px;
          text-decoration:none;
          padding:5px;
-         border: 1px solid #ddd;
+         border: none;
          margin-right: 10px;
-         border-radius:8px;
+         border-radius:10px;
          overflow:scroll;
-         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;       
-   }
+        -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;       
+       }
+	  .scroll-container > .scroll-item::-webkit-scrollbar{ display: none;}
     .scroll-container > #active {
         color: white;
         background:#6e0cf7;
@@ -167,9 +168,9 @@ header > h2{
    .scroll-container::-webkit-scrollbar-track{  background: ;}
 
    .scroll-container::-webkit-scrollbar-thumb{
-          background-color: #4acf36;
+         /* background-color: #4acf36;
           border-radius:0px;
-          border:1px none #FFFFFF;
+          border:1px none #FFFFFF; */
            }
    
      #section {
@@ -179,43 +180,64 @@ header > h2{
        background:#f4f7f0 ;
        gap:10px;
        display:grid;
-       grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
+       grid-template-columns:repeat(auto-fit,minmax(min(10rem,100%),1fr)) ;
+	   text-transform:capitalize;
       }
     .product-card {
-  border: 1px solid #ccc;
-  background:#dfe0dc ;
-  border-radius: 8px;
-  padding: 20px;
-  margin:10px auto;
-  width:90%;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+          border: 1px solid #ccc;
+          background:#dfe0dc ;
+          border-radius: 8px;
+          padding: 20px;
+          margin:10px auto;
+          width:100%;
+		/*  max-height:480px;  */
+		  overflow:hidden;
+          text-align: center;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          text-transform:capitalize;
+          }
+		.product-card::-webkit-scrollbar{ display:none;}
+    .product-card > h2 { 
+	            text-transform:capitalize; 
+				color:red;
+				font-size:20px;
+	                  }
+					  
+	     .product-card > #Des {
+	          height: ;
+ 		      text-overflow: ellipsis;
+			  overflow:hidden;
+			  white-space:nowrap;
+			  color: ;
+	  }
+	  
+	  #Des::-webkit-scrollbar{ display: noe;}
+	  
+    .product-card img {
+         width: 100%;
+         aspect-ratio:1/1.20;
+         border-radius: 8px;
+         margin-bottom: 10px;
+         transition: transform 0.3s ease;
+       }
 
-.product-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease;
-}
-
-.product-card .price {
-  font-weight: bold;
-  color: #2ecc71;
-}
+     .product-card .price {
+           font-weight: bold;
+           color: #2ecc71;
+       }
 
   .product-card  button {
-  background-color: #2ecc71;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-shadow: 1px 1px 3px #666666; 
-}
+           background-color: #2ecc71;
+           color: white;
+           border: none;
+           border-radius: 4px;
+           padding: 8px 16px;
+           font-size: 16px;
+           cursor: pointer;
+           transition: background-color 0.3s ease;
+           text-shadow: 1px 1px 3px #666666; 
+           text-transform:capitalize;
+      }
 
   .product-card  button:active {
   background-color: #27ae60;
@@ -310,7 +332,34 @@ header > h2{
           z-index:1 ;
           font-size:1.50rem;
            }
-   </style>
+		   
+		   
+		     @media only screen and (max-width:767px) { 
+	  
+	  }
+	  
+	  
+	   @media only screen and (min-width:768px) { 
+	           html {
+				   margin:0 auto;
+				   width:90%;
+				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   }  
+               #section  {
+			       gap:10px;
+                  display:grid;
+                  grid-template-columns:repeat(auto-fit,minmax(min(12rem,100%),1fr)) ;
+	          }
+	   
+	   
+	   @media only screen and (min-width:992px) { 
+		       html {
+				   margin:0 auto;
+				   width:70%;
+				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   }    
+		   
+    </style>
   </head>
   <body>
         <header id="navbar">              
@@ -334,7 +383,7 @@ header > h2{
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
                </div>
           </div>
-                <h2 class="animate__animated animate__jackInTheBox animate__infinite animate__slow"> Quotes World  </h2>
+                <h2> Quotes World  </h2>
                 <span onclick="openNav()">&#9776;</span>
      </header>
 
@@ -347,7 +396,8 @@ header > h2{
                <a class="scroll-item" href="Education.html" target="_self"> education </a>
                <a class="scroll-item" href="Biography.html" target="_self"> biography </a>               
                <a class="scroll-item" href="Games.html" target="_self"> games </a>
-               <a class="scroll-item" id="active" href="Loot.html" target="_self"> loot Offers </a>                
+               <a class="scroll-item" id="active" href="Loot.html" target="_self"> loot Offers </a>    
+               <a class="scroll-item" href="Movie.html" target="_self"> Movies </a>                                        
                <a class="scroll-item" href="https://www.amazon.in" target="_self"> Life-Style </a>
                <a class="scroll-item" href="#" target="_self"> cricket </a>
                <a class="scroll-item" href="#" target="_self"> health </a>
@@ -362,11 +412,14 @@ header > h2{
            <!-----Main Body------>
         <section id="section">
                <div class="product-card">
-                   <img src="images/img2.jpeg" alt="Product Image">
-                   <h2>Product Name</h2>
-                   <p class="price">$99.99</p>
-                   <p>Description of the product goes here.</p>
-                   <button>Add to Cart</button>
+                   <img src="LOOT/LOOT1.jpg" alt="Product Image">
+                   <h2> Oneshine Chunky sole pink sneakers </h2>
+                   <p class="price"> 400 </p>
+                   <p id="Des"> a pair of casual sneaker made with high quality synthetic leather thar ensure 
+				                comfort throughout the day and avoid any breakage.these are your everyday pair 
+                                of sneakers with added comfort.								
+				  </p>
+                   <button> BUY now </button>
               </div>
 
                <div class="product-card">
@@ -397,7 +450,7 @@ header > h2{
                    
        
        <footer>   <!------footer Section------->
-       <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes World </h2>          
+       <h2> Quotes World </h2>          
       <select>
            <option> English</option>
            <option> hindi   </option>
