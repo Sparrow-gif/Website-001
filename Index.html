@@ -67,7 +67,7 @@ header > h2{
       transition-duration:0.3s;
      text-shadow: 1px 1px 3px #666666;
       }
-.sidenav {
+  .sidenav {
         height:100vh;
         width:0;
         width:0;
@@ -307,8 +307,8 @@ header > h2{
     #w3-content {
          border-radius:4px;
          margin:10px auto;
-         width:100%;         
-          
+         width:100%;  
+         height:40vh;		 
          overflow: hidden;     
         -webkit-user-select:none;
         -moz-user-select:none;
@@ -321,7 +321,7 @@ header > h2{
   
   
  #w3-content > img {
-      height:40vh;     
+      height:100%;     
       width:100%;     
       background-size:cover;
       background-position:center; 
@@ -341,16 +341,15 @@ header > h2{
          /*  display:grid;*/
          /*  grid-template-columns:repeat(auto-fit,minmax(min(31rem,100%),1fr)) ;  */
            }
-    #quotes > img {
+    #quotes > main > img {
            margin:0 auto;
            width:100%;
-           min-height:260px ;
-           max-height:460px ;
+           aspect-ratio: 1/1;
            object-fit: fill;
            background-size:cover;
            background-position:center; 
           }
-    #quotes > div {
+    #quotes > main > div {
          /*   border:4px solid; */
          /*   border-image-source:url(images/ima4.jpeg) ; */
           /*  border-image-slice:30; */
@@ -368,29 +367,39 @@ header > h2{
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
          }
     
-    #quotes > div > h4 {
+    #quotes > main > div > h4 {
             text-align:center;
             padding:5px 0px;
             color:#313ae8 ;
             font-family:PT Serif;
          }
-    #quotes > div > h4::after{ 
+    #quotes > main > div > h4::after{ 
          content:" ";
         }
-     #quotes > div > h4::before{ 
+     #quotes > main > div > h4::before{ 
          content:" ";
         }
-    #quotes > div > h4::selection {
+    #quotes > main > div > h4::selection {
             color: #FFFFFF;
             background:#5F00BA ;           
           }
-    #quotes > div > h3 {
+    #quotes > main > div > h3 {
             font-family:Roboto;
             text-align:right;
             padding: 0px 5px ;
             color :#ed6a13; /* #313ae8 ; */
          }
             /* All Sections Css */
+  
+  
+      aside {
+		   margin:0 auto;
+		   padding:10px;
+		   width:100%;
+		   height:auto;
+		   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;    
+		  }
+  
   
      #footbg {
        position:relative ;       
@@ -691,15 +700,22 @@ footer {
                   -ms-transform:scale(0.80);
                       transform:scale(0.80); }
         }
-  @media only screen and (min-width:600px) {         
+		
+		 @media only screen and (max-width:765px) { 
+		 
+		 }
+		 
+		 
+  @media only screen and (min-width:768px) {         
                         
     #bg > #blur {   width:70%;  }
     #w3-content {
          margin:10px auto;
          width:80%;
         }
-    #quotes > img { width:70%; margin:0px 15% auto; }
-    #quotes > div { width:80%; }
+		
+    #quotes > main > img { width:70%; margin:0px 15% auto; object-fit:fill; }
+    #quotes > main > div { width:80%; }
      
      .recommended-articles {
               width: 100%;
@@ -715,7 +731,7 @@ footer {
 
 
 
-  @media only screen and (min-width:800px) {         
+  @media only screen and (min-width:992px) {         
                   html {
 				   margin:0 auto;
 				   width:70%;
@@ -726,10 +742,18 @@ footer {
          margin:10px auto;
          width:70%;
         }
-    #quotes > img { width:60%; margin:0px 20% auto; }
-    #quotes > div { width:70%; }
+		
+		  #quotes { 
+	        display:flex;
+			gap:10px;
+	  }
+	    #quotes > main { width:65%;}
+		#quotes > aside { width:34%;}
+		
+    #quotes > main > img { width:60%; margin:0px 20% auto; object-fit: fill; }
+    #quotes > main > div { width:90%; }
    #about > .abhe > p  {  max-height:220px; overflow:scroll; }
-   #gettouch > form { width:70%;}
+   #gettouch > form { width:60%;}
       }
 
    </style>
@@ -821,9 +845,9 @@ footer {
 
                     <!----- Image Slider section----->
       <div id="w3-content">
-            <img class="mySlides" src="Lod1.webp" style="width:100%;height:280px;">
-            <img class="mySlides" src="Lod2.jpg" style="width:100%;height:280px">
-            <img class="mySlides" src="Lod7.webp" style="width:100%;height:280px">
+            <img class="mySlides" src="INDEX/Lod5.png">
+            <img class="mySlides" src="INDEX/Lod2.jpg">
+            <img class="mySlides" src="INDEX/Lod7.webp">
      </div>
                 
          <div class="som">
@@ -841,6 +865,7 @@ footer {
     </main>
                 <!--------Quotes Body Section------->
         <section id="quotes">
+		     <main>
                 <div class="box1"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
@@ -865,7 +890,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-    <!---Images1---> <img src="Lod1.webp" alt="image01">
+    <!---Images1---> <img src="INDEX/Lod1.webp" alt="image01">
 
                <div class="box4"> 
                     <h4> Hello World </h4>
@@ -915,7 +940,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
     
-   <!---Images2---> <img src="Lod2.jpg" alt="image02">
+   <!---Images2---> <img src="INDEX/Lod3.jpg" alt="image02">
 
               <div class="box10"> 
                     <h4> Hello World </h4>
@@ -949,7 +974,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-  <!---Images3---> <img src="Lod3.jpg" alt="image03">
+  <!---Images3---> <img src="INDEX/Lod4.webp" alt="image03">
 
               <div class="box13"> 
                     <h4> Hello World </h4>
@@ -983,7 +1008,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
    
-   <!---Images4---> <img src="Lod4.jpg" alt="image04">
+   <!---Images4---> <img src="INDEX/Lod6.jpg" alt="image04">
 
                <div class="box17"> 
                     <h4> Hello World </h4>
@@ -1025,7 +1050,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-    <!---Images5---> <img src="Lod5.webp" alt="image05">
+    <!---Images5---> <img src="INDEX/Lod8.webp" alt="image05">
 
                 <div class="box22"> 
                     <h4> Hello World </h4>
@@ -1067,7 +1092,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-  <!---Images6---> <img src="Lod6.jpg" alt="image06">
+  <!---Images6---> <img src="INDEX/Lod9.jpg" alt="image06">
 
                 <div class="box27"> 
                     <h4> Hello World </h4>
@@ -1093,7 +1118,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-   <!---Images7---> <img src="Lod7.webp" alt="image07">
+   <!---Images7---> <img src="INDEX/Lod10.jpg" alt="image07">
 
                 <div class="box30"> 
                     <h4> Hello World </h4>
@@ -1127,7 +1152,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-   <!---Images8---> <img src="images/trees.jpg" alt="image08">
+   <!---Images8---> <img src="INDEX/Lod11.jpg" alt="image08">
 
                <div class="box34"> 
                     <h4> Hello World </h4>
@@ -1177,7 +1202,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-  <!---Images9---> <img src="images/trees.jpg" alt="image10">
+  <!---Images9---> <img src="INDEX/Lod12.webp" alt="image10">
 
                 <div class="box40"> 
                     <h4> Hello World </h4>
@@ -1227,7 +1252,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-   <!---Images11---> <img src="images/trees.jpg" alt="image11">
+   <!---Images11---> <img src="INDEX/Lod13.webp" alt="image11">
 
                <div class="box46"> 
                     <h4> Hello World </h4>
@@ -1268,8 +1293,16 @@ footer {
                     <h4> Hello World </h4>
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>   
-       </section>
-
+       </main>
+	   
+	   
+	   <!----------ASIDE SECTION----------------->
+	     <aside>
+		      <video src="#">  </video>
+		 </aside>
+		 
+		 
+      </section>
 
           <!------Blur Background Section------>
       <section id="footbg">
@@ -1311,7 +1344,7 @@ footer {
              
        <!---Artical1----->
           <div class="article">
-              <img src="article1.jpg" alt="Article 1 Image">
+              <img src="INDEX/Lod13.webp" alt="Article 1 Image">
               <h3><a href="#"> Top Movie Download Websites </a></h3>
          </div>
 
@@ -1323,7 +1356,7 @@ footer {
 
      <!---Artical3----->
           <div class="article">
-             <img src="article3.jpg" alt="Article 3 Image">
+             <img src="INDEX/CYBER1.jpg" alt="Article 3 Image">
              <h3><a href="#"> cyber security </a></h3>
          </div>
 
