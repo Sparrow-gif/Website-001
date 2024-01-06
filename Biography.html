@@ -28,7 +28,7 @@
        scroll-behavior:smooth;
        scroll-padding:2.50em;
       }
- header {
+  header {
        display:-webkit-box;
        display:-ms-flexbox;
        display:flex;
@@ -47,7 +47,7 @@
        -moz-user-select:none;
        -ms-user-select:none;
      }
-header > h2{
+  header > h2{
           font-size:25px;
           color:white;
           text-indent:10px;
@@ -58,14 +58,14 @@ header > h2{
          
   header > span {
       padding: 0px 10px;
-      font-size:30px;
+      font-size:1.80rem;
       cursor:pointer;           
       background: ;
       color:white;  
       -webkit-transition-duration:0.3s;  
       -o-transition-duration:0.3s;  
-       transition-duration:0.3s;
-       text-shadow: 1px 1px 3px #666666;
+      transition-duration:0.3s;
+     text-shadow: 1px 1px 3px #666666;
       }
 .sidenav {
         height:100vh;
@@ -136,6 +136,8 @@ header > h2{
     .scroll-container {
         width: 100%;
         overflow-x: auto;
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;        
         background:white;
         padding:5px;
@@ -156,24 +158,25 @@ header > h2{
          margin-right: 10px;
          border-radius:10px;
          overflow:scroll;
-         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;       
-   }
+        -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;       
+       }
+	  .scroll-container > .scroll-item::-webkit-scrollbar{ display: none;}
     .scroll-container > #active {
         color: white;
-        background:#885eeb;
+        background:#6e0cf7;
         }
    .scroll-container > .scroll-item:hover {
           color: white;
-          background:#885eeb;
+          background:#6e0cf7;
        }
    .scroll-container::-webkit-scrollbar{  width:2px; }
 
    .scroll-container::-webkit-scrollbar-track{  background: ;}
 
    .scroll-container::-webkit-scrollbar-thumb{
-        /*  background-color: #4acf36;
+         /* background-color: #4acf36;
           border-radius:0px;
-          border:1px none #FFFFFF;*/
+          border:1px none #FFFFFF; */
            }
    
      #section {
@@ -194,10 +197,10 @@ header > h2{
        font-size:18px;
      }
  #section > #background {    
-         min-height: 90Vh;     
-         max-height: 90vh;
+         min-height: 70Vh;     
+         max-height: 70vh;
          width:100%;
-         background-image:url('images/butterfly.jpg');    
+         background-image:url('BIO/BIO1.jpg');    
          background-size:cover;
          background-position:center;
          filter:blur(0px) ;
@@ -466,7 +469,7 @@ header > h2{
           border: none;
           border-radius: 50%;
           padding: 10px 10px;
-          font-size: 10vw;
+          font-size: 30px;
           cursor: pointer;
           z-index:10 ;    
           box-shadow: #8447FF 0px 0px 10px;
@@ -493,18 +496,32 @@ header > h2{
 
       /* Media Query for Laptops and Desktops */
 
-        @media (min-width: 1020px){
-
-            body {
-                background-color: ;
-            }
-         #container > div {
-               gap:20px;
-               display:grid;
-               grid-template-columns: repeat(auto-fit,minmax(min(5rem,100%),1fr)) ;      
-             }
-      }
-      
+            @media only screen and (max-width:767px) { 
+	  
+	  }
+	  
+	  
+	   @media only screen and (min-width:768px) { 
+	           html {
+				   margin:0 auto;
+				   width:90%;
+				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   }  
+	   }
+	   
+	   
+	   @media only screen and (min-width:992px) { 
+		       html {
+				   margin:0 auto;
+				   width:70%;
+				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   }   
+              #container > div {
+                  gap:20px;
+                  display:grid;
+                  grid-template-columns: repeat(auto-fit,minmax(min(5rem,100%),1fr)) ;      
+                }				   
+		}
    </style>
   </head>
   <body>
@@ -529,12 +546,12 @@ header > h2{
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
                </div>
           </div>
-                <h2 class="animate__animated animate__jackInTheBox animate__infinite animate__slow"> Quotes World  </h2>
+                <h2> Quotes World  </h2>
                 <span onclick="openNav()">&#9776;</span>
      </header>
 
          <section class="scroll-container">
-               <a class="scroll-item" href="Top10.html" target="_self"> Daily Quotes </a>     
+              <a class="scroll-item" href="Top10.html" target="_self"> Daily Quotes </a>     
                <a class="scroll-item" href="Index.html" target="_self"> K.Quotes </a>
                <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
                <a class="scroll-item" href="Blogs.html" target="_self"> blogs </a>
@@ -542,10 +559,11 @@ header > h2{
                <a class="scroll-item" href="Education.html" target="_self"> education </a>
                <a class="scroll-item" id="active" href="Biography.html" target="_self"> biography </a>               
                <a class="scroll-item" href="Games.html" target="_self"> games </a>
-               <a class="scroll-item" href="Loot.html" target="_self"> loot Offers </a>                
+               <a class="scroll-item" href="Loot.html" target="_self"> loot Offers </a>    
+               <a class="scroll-item" href="Movie.html" target="_self"> Movies </a>                                        
                <a class="scroll-item" href="https://www.amazon.in" target="_blank"> Life-Style </a>
-               <a class="scroll-item" href="https://www.sportskeeda.com/" target="_blank"> cricket </a>
-               <a class="scroll-item" href="https://www.thehealthsite.com/" target="_blank"> health </a>
+               <a class="scroll-item" href="https://www.sportskeeda.com" target="_blank"> cricket </a>
+               <a class="scroll-item" href="https://www.thehealthsite.com" target="_blank"> health </a>
                <a class="scroll-item" href="Web.html" target="_self"> web Story </a>                
                <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
@@ -820,7 +838,7 @@ header > h2{
 
        
        <footer>   <!------footer Section------->
-       <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes World </h2>          
+       <h2> Quotes World </h2>          
       <select>
            <option> English</option>
            <option> hindi   </option>
@@ -840,7 +858,7 @@ header > h2{
      
         <!----Go To Top Button------>
      <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
-     <a href="#" id="paytm" class="fa-solid fa-gift fa-bounce"> </a>
+     <a href="Paytm.html" id="paytm" class="fa-solid fa-gift fa-bounce"> </a>
 
   </body>
    <script>
