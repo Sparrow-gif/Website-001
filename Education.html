@@ -28,7 +28,7 @@
        scroll-behavior:smooth;
        scroll-padding:2.55em;
       }
- header {
+  header {
        display:-webkit-box;
        display:-ms-flexbox;
        display:flex;
@@ -39,35 +39,33 @@
        -ms-flex-align:center;
        align-items:center;
        position:sticky;
-       z-index:999;
+       z-index:99;
        top:0px;
-       background:#13d48a; /* #ebe6fa; */
+       background:#13d48a ; /* #ebe6fa; */
        padding:2px;      
        -webkit-user-select:none;
        -moz-user-select:none;
        -ms-user-select:none;
      }
-header > h2{
+  header > h2{
           font-size:25px;
           color:white;
           text-indent:10px;
           font-family: sans-serif;
           -webkit-animation-duration: 6s;
           animation-duration: 6s;
-          position:relative;
-          z-index:-9;
         }
          
   header > span {
       padding: 0px 10px;
-      font-size:30px;
+      font-size:1.80rem;
       cursor:pointer;           
       background: ;
       color:white;  
       -webkit-transition-duration:0.3s;  
       -o-transition-duration:0.3s;  
-       transition-duration:0.3s;
-       text-shadow: 1px 1px 3px #666666;
+      transition-duration:0.3s;
+     text-shadow: 1px 1px 3px #666666;
       }
 .sidenav {
         height:100vh;
@@ -132,9 +130,11 @@ header > h2{
         padding:10px 15px;
         border-radius:50%;
      }
-    .scroll-container {
+   .scroll-container {
         width: 100%;
         overflow-x: auto;
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;        
         background:white;
         padding:5px;
@@ -145,17 +145,19 @@ header > h2{
          display:none;
       }
  .scroll-container > .scroll-item {
+         font-family: Slabo;
          background:#ebe6fa ;
          text-align:center;
          min-width: 100px;
          text-decoration:none;
          padding:5px;
-         border: 1px solid #ddd;
+         border: none;
          margin-right: 10px;
-         border-radius:8px;
+         border-radius:10px;
          overflow:scroll;
-         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;       
-   }
+        -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;       
+       }
+	  .scroll-container > .scroll-item::-webkit-scrollbar{ display: none;}
     .scroll-container > #active {
         color: white;
         background:#6e0cf7;
@@ -169,9 +171,9 @@ header > h2{
    .scroll-container::-webkit-scrollbar-track{  background: ;}
 
    .scroll-container::-webkit-scrollbar-thumb{
-          background-color: #4acf36;
+         /* background-color: #4acf36;
           border-radius:0px;
-          border:1px none #FFFFFF;
+          border:1px none #FFFFFF; */
            }
     #section {
        position:relative;       
@@ -529,7 +531,28 @@ header > h2{
          50%{ transform:scale(0.85); }
            }
         
-
+        
+		    @media only screen and (max-width:767px) { 
+	  
+	      }
+	  
+	  
+	   @media only screen and (min-width:768px) { 
+	           html {
+				   margin:0 auto;
+				   width:90%;
+				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   }  
+	   }
+	   
+	   
+	   @media only screen and (min-width:992px) { 
+		       html {
+				   margin:0 auto;
+				   width:70%;
+				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   }    
+		}
    </style>
   </head>
   <body>
@@ -554,7 +577,7 @@ header > h2{
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
                </div>
           </div>
-                <h2 class="animate__animated animate__jackInTheBox animate__infinite animate__slow"> Quotes planet </h2>
+                <h2> Quotes planet </h2>
                 <span onclick="openNav()">&#9776;</span>
      </header>
 
@@ -917,7 +940,7 @@ header > h2{
    
          
     <footer>   <!------footer Section------->
-       <h2 class="animate__animated animate__zoomInDown animate__infinite animate__slow"><i class="fa-solid fa-burger"></i> Quotes planet </h2>          
+       <h2> Quotes planet </h2>          
       <select>
            <option> English</option>
            <option> hindi   </option>
