@@ -188,6 +188,7 @@
   border-radius:0px;
   font-size: 16px;
   width:88%;
+  font-family: Poppins;
   }
 
 #searchBtn {
@@ -208,15 +209,17 @@
        position:relative;       
        margin:0 ;
        padding:10px;
-       background:#f4f7f0 ;
+       background:#FFFBFC ;
        gap:10px;
        display:grid;
        grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
-	   text-transform:capitalize;
+       text-transform:capitalize;
       }
     .product-card {
-          border: 1px solid #ccc;
-          background:#dfe0dc ;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          border: ;
+          font-family: Poppins;
+          background:#FFFFFA ;
           border-radius: 8px;
           padding: 20px;
           margin:10px auto;
@@ -230,8 +233,9 @@
 		.product-card::-webkit-scrollbar{ display:none;}
     .product-card > h2 { 
 	            text-transform:capitalize; 
-				color:red;
-				font-size:20px;
+		    color:red;
+		    font-size:18px;
+                    font-family: slabo;
 	                  }
 					  
 	     .product-card > #Des {
@@ -241,6 +245,7 @@
                      width:auto;
                      white-space:wrap;
 	             color: ;
+                     font-family: Open Sans;
 	      }
           .product-card > #Des:hover { overflow:visible; }
 	  
@@ -258,15 +263,18 @@
      .product-card .price {
            font-weight: bold;
            color: #2ecc71;
+           font-family: Poppins;
        }
 
   .product-card > button {
+           box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
            background-color: #2ecc71;
            color: white;
            border: none;
            border-radius: 4px;
            padding: 8px 16px;
            font-size: 16px;
+           font-family: Lato;
            cursor: pointer;
            transition-duration: 0.3s;
            text-shadow: 1px 1px 3px #666666; 
@@ -275,6 +283,8 @@
   .product-card > button > a {
         text-decoration:none;
         color:white;
+        font-family:roboto;
+        font-weight:bold;
       } 
   .product-card  button:active {
   background-color: #27ae60;
@@ -457,7 +467,7 @@
         <section id="section">
                         
     <!----productp01-------->
-                   <div data-name="shoes" class="product-card" id="pcard">
+               <div data-name="shoes" class="product-card" id="pcard">
                    <img src="LOOT/LOOT1.jpg" alt="Product Image">
                    <h2> Oneshine Chunky sole pink sneakers </h2>
                    <p class="price"> price- ₹400 </p>
@@ -470,28 +480,40 @@
               </div>
      <!----productp02-------->
                <div data-name="shirt" class="product-card" id="pcard">
-                   <img src="images/img1.jpeg" alt="Product Image">
-                   <h2>Product Name</h2>
-                   <p class="price"> price-$99.99</p>
-                   <p>Description of the product goes here.</p>
+                   <img src="LOOT/LOOT1.jpg" alt="Product Image">
+                   <h2> Oneshine Chunky sole pink sneakers </h2>
+                   <p class="price"> price- ₹400 </p>
+                   <p id="Des"> 
+                        a pair of casual sneaker made with high quality synthetic leather thar ensure 
+		        comfort throughout the day and avoid any breakage.these are your everyday pair 
+                        of sneakers with added comfort.								
+                  </p>
                    <button><a href="#"> Add to Cart </a></button>
-              </div>        
+              </div>
      <!----productp03-------->
-                <div data-name="t-shirt" class="product-card" id="pcard">
-                   <img src="images/img2.jpeg" alt="Product Image">
-                   <h2>Product Name</h2>
-                   <p class="price">$99.99</p>
-                   <p>Description of the product goes here.</p>
+                <div data-name="t-shirts" class="product-card" id="pcard">
+                   <img src="LOOT/LOOT1.jpg" alt="Product Image">
+                   <h2> Oneshine Chunky sole pink sneakers </h2>
+                   <p class="price"> price- ₹400 </p>
+                   <p id="Des"> 
+                        a pair of casual sneaker made with high quality synthetic leather thar ensure 
+		        comfort throughout the day and avoid any breakage.these are your everyday pair 
+                        of sneakers with added comfort.								
+                  </p>
                    <button><a href="#"> Add to Cart </a></button>
               </div>
      <!----productp04------->
                <div data-name="pants" class="product-card" id="pcard">
-                   <img src="images/img1.jpeg" alt="Product Image">
-                   <h2>Product Name</h2>
-                   <p class="price">$99.99</p>
-                   <p>Description of the product goes here.</p>
+                   <img src="LOOT/LOOT1.jpg" alt="Product Image">
+                   <h2> Oneshine Chunky sole pink sneakers </h2>
+                   <p class="price"> price- ₹400 </p>
+                   <p id="Des"> 
+                        a pair of casual sneaker made with high quality synthetic leather thar ensure 
+		        comfort throughout the day and avoid any breakage.these are your everyday pair 
+                        of sneakers with added comfort.								
+                  </p>
                    <button><a href="#"> Add to Cart </a></button>
-              </div>    
+              </div>
        </section>
 
                    
