@@ -758,7 +758,7 @@ footer {
 
    </style>
 </head>
-<body>
+<body oncontextmenu="return false">
            <!----Google Ads------->
       
            <!----Google Ads close------->
@@ -774,7 +774,7 @@ footer {
                 <a href="#" target="_blank" > E-commerce </a>
                 <a href="#" target="_blank" > Cricket </a>
                 <a href="#" target="_blank" > health </a>                
-                <a href="#" target="_self" > Contact us</a>
+                <a href="Contact us.html" target="_self" > Contact us</a>
                 <div id="cold">
                     <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
                     <a href="#"> <i class="fa-brands fa-instagram "></i> </a>
@@ -1395,22 +1395,23 @@ footer {
          
                          <!-----Contact Us Section------->
           <div id="gettouch" class="comment-section">
-             <form action="#" method="post" id="comment-form">
+             <form action="#" method="post" id="myForm"> <!--id comment-form--->
                  <h2> Contact Us Today </h2>
                  <p style="Font-family:lora;"> Complete the form below to get in
                      touch with us. We are ready to assist
                      you with help bring your vision to life. </p>
                   
                  <label for ="Name"> Name </label>
-                 <input type="text" id="name" placeholder="Your Name" required>
-        
-                 <label for ="email"> Email </label>
-                 <input type="email" id="email" placeholder="Your email" required>
-        
-                 <label for ="text"> Message </label>
-                 <textarea id="comment" name="w3review" rows="7" cols="50" placeholder="Your Comment" required></textarea>
+                 <input type="text" id="name" name="name" placeholder="Name" required>
+                
+				 <label for ="email"> Email </label>
+                 <input type="email" id="email" name="email" placeholder="Email" required>
+                
+				 <label for ="text"> Message </label>
+				 <input type="text" id="msg" name="msg" placeholder="message" required>
+             <!----  <textarea id="comment" name="comment" rows="7" cols="50" placeholder="Your Comment" required></textarea>---->
                  
-                 <button class="btn" type="submit" value="Submit"> submit </button>
+                <button class="btn" type="submit" onclick="alert('submitted.-Successfully')"> Submit </button>
             </form>
 
            <div id="comments"></div> <!----messages------>
@@ -1504,7 +1505,7 @@ function openNav() {
   });
          
         //Contact us 
-      document.getElementById('comment-form').addEventListener('submit', function(e) {
+   /*   document.getElementById('comment-form').addEventListener('submit', function(e) {
   e.preventDefault();
   const name = document.getElementById('name').value;
   const commentText = document.getElementById('comment').value;
@@ -1524,7 +1525,20 @@ function addComment(name, commentText) {
   commentDiv.classList.add('comment');
   commentDiv.innerHTML = `<strong>${name}:</strong> ${commentText}`;
   commentsSection.appendChild(commentDiv);
-}
+}  */
+</script>
+
+   <script>
+      const form = document.getElementById('myForm');
+      form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const responseData = await fetch('https://script.google.com/macros/s/AKfycbw-d3Eb2-hszre2uCKLnNxHX25lyGYDu32ghI6-15rRi7YGOzA8DA9cBOJNFsmWqSo/exec', {
+        method: 'POST',
+          body: formData
+        });
+    // Handle the response here (if needed)
+  });
 </script>
                         
 </body>
