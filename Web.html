@@ -69,7 +69,7 @@
         width:height:100vh;
         width:0;
         position: fixed;
-        z-index:99;
+        z-index:99999;
         top: 0;
         right: 0;
         background-color:#FFEAEC;
@@ -173,37 +173,46 @@
           border-radius:0px;
           border:1px none #FFFFFF; */
            }
-		   
-     .container {
-  position: relative;
-  overflow: hidden;
-}
+		
+   
+   .container {        
+         margin:0px auto;
+         width:100%;
+         padding:10px;         
+         height:auto;
+      }
 
 .image-div {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+       position:sticky;
+       top:30px;
+       z-index:0;
 }
 
 .image-div img {
-  width: 100%;
-  height: 100%;
-  filter: blur(0); /* Adjust this value for desired blur initially */
-  transition: filter 0.5s ease; /* Smooth transition */
-}
+       height:100%;
+       width:100%;
+       
+  }
 
-.content-div {
-  /* Your styling for content div */
-  /* Make sure this div has enough content to enable scrolling */
-  /* Overflow and height settings might be necessary */
-   }
-
+    .content-div {
+        border:1px solid black;
+        text-align:center;      
+        z-index:1;
+        position: relative;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        min-height:100vh ;
+        min-height:50vh;
+     }
+    .content-div > h2{
+        padding:10px ;
+     }
+    .content-div > p{
+        padding:10px ;
+     }
 
     footer {
-         position:fixed;
+        position:relative;
          width:100%;         
          margin:0 auto;
          background:#122029;
@@ -282,29 +291,25 @@
           z-index:1 ;
           font-size:1.50rem;
            }
-		   
-		      @  @media only screen and (max-width:767px) { 
+   @media only screen and (max-width:767px) { 
 	  
 	  }
 	  
 	  
-	   @media only screen and (min-width:768px) { 
-	           html {
-				   margin:0 auto;
-				   width:90%;
-				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-				   }  
+   @media only screen and (min-width:768px) { 
+	       html {
+		    margin:0 auto;
+		    width:90%;
+		    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	          }  
 	   }
 	   
-	   
-	   @media only screen and (min-width:992px) { 
-		       html {
-				   margin:0 auto;
-				   width:70%;
-				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-				   }    
-		}   
- 
+   @media only screen and (min-width:992px) { 
+	       html {
+	           margin:0 auto;
+		   width:70%;
+		   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		   }    		 
       }
    </style>
   </head>
@@ -357,11 +362,14 @@
            <!-----Main Body------>
        <div class="container">
              <div class="image-div">
-                 <img src="your_image.jpg" alt="Image">
+                 <img src="images/sunflower.png" alt="Image">
             </div>
              <div class="content-div">
                  <!-- Your content here -->
+                  <h2>  hello world </h2>
                  <!-- This div's scroll will affect the blur -->
+                  <p>  local community service and attractive food for the
+                      Vo bhi nahi ho gya tha ki pic of the year and attractive food for me to get to know about to get the same time  </p>
             </div>
       </div>
 
