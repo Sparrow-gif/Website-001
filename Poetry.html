@@ -26,7 +26,7 @@
         }  
   html {
        scroll-behavior:smooth;
-       scroll-padding:2.50em;
+       scroll-padding:3.30em;
       }
   header {
        display:-webkit-box;
@@ -176,7 +176,8 @@
           border-radius:0px;
           border:1px none #FFFFFF; */
            }
-   
+    
+	  
      #section {
        position: relative;       
        margin:0 ;
@@ -203,7 +204,7 @@
  #section > #background {
          min-height:70vh; 
          width:100%;
-         background-image:url('images/biography.jpeg');    
+         background-image:url('POETRY/banner.jpg');    
          background-size:cover;
          background-position:center;
          filter:blur(2px) ;
@@ -217,8 +218,8 @@
               transform:translate(-50%,-50%) ;
        transform:translate(-50%,-50%) ;
        z-index:1;
-       width:90%;
-       backdrop-filter:blur(2px) ;
+       width:70%;
+     /*  backdrop-filter:blur(2px) ; */
     /*   width:50%; */
        padding:10px 10px ;  
     /*  text-align:center;  */
@@ -239,62 +240,197 @@
        border-radius:6px;
     }
        
-   /* Gallery */
- #gallery {
-       gap:10px;
-       display:grid;
-     grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
-      background:#a2f2ec;
-      padding:20px 10px;
- /* display: flex; */
- /* flex-wrap: wrap; */
- /* justify-content: space-around; */
-  /* Add more styling as needed */
-}
-.gallery-item {
-     margin: 0 auto;
-     cursor: pointer;
-     width:95%;
-     border-radius:5px;
-     padding:0px;
-     overflow:hidden;
-     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
- .gallery-item > img{
-       min-height:300px;
-       max-height:auto;
-       width:100%;
-       border-radius:5px;
-       border:0px solid black;
-   }
-/* Lightbox */
-.lightbox {
-  display: none;
-  position: fixed;  
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform:translate(-50%,-50%) ;
-  height: 100%;
-  background-color:#f2d891;
-  z-index: 99;
-  overflow:scroll;
-  padding: 10px 20px;
-}
-.lightbox-content {
-  max-width: 100%;
-  height: auto ;
-  margin: 50px auto;
-  display: block;
+	   
+	    #data-list > li {
+            margin: 10px auto;
+            padding:10px;
+            width:80%;
+            min-height:320px;		
+            border:0px solid #B0FE76 ;
+            background-color: ;
+            Border-radius:8px;
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+      #data-list > li > #qts {
+            text-align:center;
+            color:black;
+            font-size:18px;
+			font-family:;
+         }
+	  #data-list > li > qtsimg {
+	        width:100%;
+			max-width:400px;
+			height:auto;
+	  }
+     #data-list > li > #author {
+            text-align:right;
+            color:aqua;
+            font-size:20px;
+			font-family:;
+         }
+        .pagination {
+            width:100%;
+            margin-top:0px;           
+            padding:4px;            
+            align-items:center;
+            background: #7D53DE;
+		    display:flex; 
+            flex-wrap:wrap;
+            justify-content:center;  
+            align-items:center;	
+        }
+
+       .pagination > ul {
+            text-decoration:none;
+            list-style-type: none;
+            padding:0px;     
+            display:flex; 
+            flex-wrap:wrap;
+            justify-content:center;  
+            align-items:center;			
+        }
+
+      .pagination > ul > li {
+            display: inline;
+            padding:10px 8px;
+            Border-radius:8px;
+            margin: 5px;
+            color: #E0E2DB ;
+            border:1px solid #E6AF2E;     
+            background: #7D53DE;    
+            font-size:20px ; 
+            cursor:pointer;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+
+      .pagination > ul > li > a {
+             text-decoration:none;
+             color:  #FFFFFF ;   
+			  padding:10px 9px;
+        }
+ 
+ 
+  .recommend {
+          margin:10px auto;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          width:95%;
+          padding:10px 10px;
+          background: #F7F7FF;
+        }
+    .recommend > h3{
+           padding:10px 0px;
+        }
+    .recommend > a{
+          user-select:none;
+          text-decoration:none;
+          color: green;
+          padding:5px;
+          cursor:pointer;
+          display:block;
+          font-family:Roboto ;
+          font-weight: ;
+        }
+
+             #gettouch {
+          margin:0 auto ;
+          padding:20px;    
+          background: ;    
+          -webkit-user-select:none;
+          -moz-user-select:none;
+          -ms-user-select:none;      
+         text-transform: capitalize ;    
+       }
+  #gettouch > form {
+        user-select:none;
+        margin:0 auto ;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        gap:6px;
+       }
+   #gettouch > form > h2 {
+         color:#5E239D;
+         font-size:2rem;
+         font-family: lato ;
+         font-weight:600;
+       }
+   #gettouch > form > label {
+        width:100%;
+        display:block;
+        Font-family:roboto;
+        font-size:20px ;
+      }
+   #gettouch > form >  input {
+        width:100%;
+        padding:8px;
+        font-size:18px;
+        display:block;
+        margin:0px auto ;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        Font-family:roboto;
+         }
+  #gettouch > form >  textarea {
+        width:100%;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        padding:8px;
+        font-size:18px;
+        Font-family:slabo;
+      }
+  #gettouch > form > .btn {
+        Font-family:Roboto;
+        font-size:16px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        width:80%;
+        margin:10px auto;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        -webkit-transition-duration:0.3s;
+             -o-transition-duration:0.3s;
+                transition-duration:0.3s;      
+         }
+  #gettouch > form > .btn:hover {
+        background-color: #45a049;
+       }
+  #gettouch > form > .btn:active {
+          -webkit-transform:scale(0.90) ;
+              -ms-transform:scale(0.90) ;
+                  transform:scale(0.90) ;
+       }
+  #comments {
+         margin-top: 20px;
+         Font-family:slabo;
+		 color: ;
+       }
+   
+  .comment {
+        background-color: #e6f7ff;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        Font-family:slabo;
+		 color: dodgerblue;
      }
-.close {
-  color:red;
-  font-size: 50px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
+   .didit > #community {
+       background-color: #e6f7ff;
+       padding: 7px;
+       margin:10px auto;
+       Font-family:slabo;
+       overflow:hidden;
+	    color: dodgerblue ;
+     }
+      .didit {
+          min-height: auto ;
+          max-height: auto ;
+          overflow:auto;
+		  padding:10px;
+		   color: ;
+       }
+
 
     footer {
          margin:0 auto;
@@ -360,20 +496,51 @@
           z-index:90 ;
           font-size:1.50rem;
             }
-    .clkpic{
-          position: fixed;
-          bottom: 20px;
-          left: 20px;
-          height:60px;
-          width:60px;
-          border:2px solib red;
-          transition-duration:0.3s;
-          z-index:99999;
-         }
-  .clkpic:hover {
-            height:140px;
-            width:120px;
-         }
+   
+     #img-con {
+            margin: 10px auto;
+            position: fixed;
+            overflow:hidden;
+            width:70px;
+            height:90px;
+            display:block;
+            cursor: pointer;
+			bottom:0px;
+			left:10px;
+			transition-duration:0.5s;
+           }
+    #img-con > img {
+        width:100%;
+        height:100%;
+        background-position:center;
+        background-size:cover;
+        object-fit:cover;
+	    opacity:70%;
+        }
+	 #img-con:hover {
+	     width:130px;
+         height:170px;
+	 }	
+    #img-con > p {        
+         position:absolute;
+         top:0;
+         left:0;
+         width:100%;
+		 height:100%;
+         background:#2C2A4A;
+         display:flex;
+         justify-content:center;
+         align-items:center;        
+         user-select:none;
+		  color: #FFFFFF;
+         font-size:12px;
+		 opacity:100%;
+         text-align:center;
+         font-family: slabo;
+          }
+    #img-con:hover > p {
+          opacity:0;
+       }
 		 
 		 
 	   
@@ -388,6 +555,9 @@
 				   width:90%;
 				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }  
+			  #section > #blur { width:60%;}
+			  #data-list > li { width:80%;}
+			  #gettouch { margin:0 auto; width:70%;}
 	   }
 	   
 	   
@@ -397,6 +567,9 @@
 				   width:70%;
 				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }    
+			   #section > #blur { width:50%;}
+			     #data-list > li { width:50%;}
+				  #gettouch { margin:0 auto; width:50%;}
 		}
    </style>
   </head>
@@ -446,6 +619,7 @@
   </section>
           
 
+           
            <!-----100vh background ------>
       <section id="section">
           <div id="background">  </div>
@@ -454,44 +628,173 @@
               <p> unleash your creativity and share your deepest
                   feeling.join our community of poets today. 
              </p>
-              <a href="#gallery"> write Now  </a>
+              <a href="#content"> write Now  </a>
         </div> 
      </section>
 
-           
-     <div id="gallery">
-               <h1 style="font-family:Edu TAS Beginner;">  Poetry </h1>
-          <div class="gallery-item" data-aos="fade-up"> <!-----image-1------>
-              <img src="Img001.jpg" alt="Image 1">
-         </div>
+    <section id="content">        
+        <div id="data-list">
 
-         <div class="gallery-item" data-aos="fade-up" > <!-----image-2------>
-             <img src="Img1.jpeg" alt="Image 2">
+            <li>   <!----Quotes 1----->
+                <p id="qts"> Hello World 1</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li><!----Quotes 2----->
+                <p id="qts"> Hello World 2</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li> <!----Quotes 3----->
+                <p id="qts"> Hello World 3</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+		   
+		    <li> <!----IMAGE 1----->
+                <img src="#" id="qtsimg" alt="image1" width="600" height="400"> </>                
+           </li>
+
+            <li> <!----Quotes 4----->
+                <p id="qts"> Hello World 4</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>  <!----Quotes 5----->
+                <p id="qts"> Hello World 5</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>  <!----Quotes 6----->
+                <p id="qts"> Hello World 6</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>  <!----Quotes 7----->
+                <p id="qts"> Hello World 7</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>  <!----Quotes 8----->
+                <p id="qts"> Hello World 8</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>  <!----Quotes 9----->
+                <p id="qts"> Hello World 9</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>   <!----Quotes 10----->
+                <p id="qts"> Hello World 10</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>  <!----Quotes 11----->
+                <p id="qts"> Hello World 11</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>  <!----Quotes 12----->
+                <p id="qts"> Hello World 12</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li> <!----Quotes 13----->
+                <p id="qts"> Hello World 13</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>  <!----Quotes 14----->
+                <p id="qts"> Hello World 14</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>  <!----Quotes 15----->
+                <p id="qts"> Hello World 15</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>  <!----Quotes 16----->
+                <p id="qts"> Hello World 16</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>  <!----Quotes 17----->
+                <p id="qts"> Hello World 17</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>   <!----Quotes 18----->
+                <p id="qts"> Hello World 18</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>   <!----Quotes 19----->
+                <p id="qts"> Hello World 19</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
+            <li>   <!----Quotes 20----->
+                <p id="qts"> Hello World 20</p>
+                <p id="author"> Lod Krishna </p>
+           </li>
+
         </div>
 
-         <div class="gallery-item" data-aos="fade-up" > <!-----image-3------>
-             <img src="images/raadha2.jpg" alt="Image 1">
+   </section>
+     <div class="pagination">
+          <ul id="pagination-list">   </ul>
+    </div>
+
+
+          
+		   <!------recomended section-------->
+         <div class="recommend">
+              <h3> related posts </h3>
+              <a href="Movie.html" target="_self"> Top 10 Movie Download Websites </a>
+              <a href="Index.html" target="_self"> Words of Lord Krishna that will brighten your life </a>
+              <a href="Poetry.html" target="_self"  id="dnl">  love to read poetry </a>
+              <a href="Stories.html" target="_self"> Stories in the life of Lord Krishna </a>
+              <a href="Education.html" target="_self"> Top 10 useful education Websites for students </a>
+              <a href="Biography.html" target="_self"> Life stories of great people's </a>
+              <a href="#" target="_self">  self paytm cash Earning Games  </a>
+              
         </div>
 
-         <div class="gallery-item" data-aos=fade-up" > <!-----image-4----->
-             <img src="images/raadha1.jpeg" alt="Image 2">
+
+           <!----COMMENT Section------>
+				  <div class="didit">
+                       <h3 style="font-family:Roboto;"> Recent Comments  </h3>
+                       <div id="comments"> </div> <!----messages-04----->
+                       <div id="community"> <b> sudip:- </b> Great </div> <!----messages-03----->
+                       <div id="community"> <b> sneha:- </b> wows  </div> <!----messages-02---->
+                       <div id="community"> <b> ajoy :- </b> best </div> <!----messages-01----->
+                 </div>
+				 
+		   </aside>
+		        
+		</section>	
+			
+		
+				   <!----Comment Section------->
+        <div id="gettouch" class="comment-section">
+             <form action="#" method="post" id="comment-form">
+                 <h2> leave a comment </h2>
+                 
+                 <label for ="text"> Message </label>
+                 <textarea id="comment" name="w3review" rows="4" cols="40" placeholder="Your Comment*" required></textarea>
+                 
+                 <label for ="Name"> Name </label>
+                 <input type="text" id="name" placeholder="Your Name*" required>
+        
+                 <label for ="email"> Email </label>
+                 <input type="email" id="email" placeholder="Your email*" required>
+        
+                 
+                <button class="btn" type="submit"><a href="https://forms.gle/nHqv5mkYEijQami39" style="text-decoration:none;color:white;"> Submit </a></button>
+             
+             </form>         
         </div>
-
-         <div class="gallery-item" data-aos="fade-up" > <!-----image-5------>
-             <img src="images/raadha2.jpg" alt="Image 1">
-        </div>
-
-         <div class="gallery-item" data-aos="fade-up" > <!-----image-6----->
-             <img src="images/raadha1.jpeg" alt="Image 2">
-        </div>
-      <!-- Add more images with similar structure -->
-  </div>
-
-<div class="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-content" src="" alt="Image">
-</div>
-
        
        <footer>   <!------footer Section------->
        <h2> Quotes World </h2>          
@@ -511,7 +814,14 @@
         <a href="#" target="_self"><p> Food-factory LLC</p></a>
    </div>
   </footer>
-      <img src="Img1.jpeg" class="clkpic"> 
+  
+  
+      <div id="img-con"> <!----------------DADU---------------->
+          <img src="Images/Trees.jpg">          
+          <p> 1941-2021 </p>         
+       </div>
+	  
+	  
         <!----Go To Top Button------>
      <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>     
   </body>
@@ -539,8 +849,14 @@ document.getElementById("topButton").addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+       //link click scrolling 
+  document.getElementById("dnl").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;  
+ });
 
-       const galleryItems = document.querySelectorAll('.gallery-item');
+     //Light BOX
+     /*  const galleryItems = document.querySelectorAll('.gallery-item');
 const lightbox = document.querySelector('.lightbox');
 const lightboxImage = document.querySelector('.lightbox-content');
 const closeBtn = document.querySelector('.close');
@@ -561,7 +877,48 @@ lightbox.addEventListener('click', e => {
   if (e.target !== lightboxImage) {
     lightbox.style.display = 'none';
   }
-});
+}); */
+
+
+        const itemsPerPage = 6;
+        const dataList = document.getElementById('data-list').getElementsByTagName('li');
+        const paginationList = document.getElementById('pagination-list');
+        let currentPage = 1;
+
+        function showPage(page) {
+            for (let i = 0; i < dataList.length; i++) {
+                if (i >= (page - 1) * itemsPerPage && i < page * itemsPerPage) {
+                    dataList[i].style.display = 'block';
+                } else {
+                    dataList[i].style.display = 'none';
+                }
+            }
+        }
+
+        function updatePagination() {
+            const numPages = Math.ceil(dataList.length / itemsPerPage);
+            paginationList.innerHTML = '';
+
+            for (let i = 1; i <= numPages; i++) {
+                const li = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = '#';
+                link.innerText = i;
+                li.appendChild(link);
+
+                link.addEventListener('click', function () {
+                    currentPage = i;
+                    showPage(currentPage);
+                    updatePagination();
+                });
+
+                paginationList.appendChild(li);
+            }
+        }
+
+        showPage(currentPage);
+        updatePagination(); 
+     
 
      //change Navigation background
    window.addEventListener('scroll', function() {
@@ -574,18 +931,30 @@ lightbox.addEventListener('click', e => {
        navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
      }
   });
+  
+            
+            //Contact us 
+      document.getElementById('comment-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const commentText = document.getElementById('comment').value;
+  const email = document.getElementById('email').value;
+  if (name && commentText) {
+    addComment(name, commentText, email);
+    document.getElementById('comment-form').reset();
+	 alert("submitted");
+  } else {
+    alert('Please fill in all fields.');
+  }
+});
+
+function addComment(name, commentText) {
+  const commentsSection = document.getElementById('comments');
+  const commentDiv = document.createElement('div');
+  commentDiv.classList.add('comment');
+  commentDiv.innerHTML = `<strong>${name}:</strong> ${commentText}`;
+  commentsSection.appendChild(commentDiv);
+}
    </script>
 
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-           offset: 160, // offset (in px) from the original trigger point
-           delay: 100, // values from 0 to 3000, with step 50ms
-           duration: 400, // values from 0 to 3000, with step 50ms
-           easing: 'ease', // default easing for AOS animations
-           once: false, // whether animation should happen only once - while scrolling down
-           mirror: false, // whether elements should animate out while scrolling past them
-           anchorPlacement: 'top-bottom',
-         });
-  </script>
 </hyml>
