@@ -263,7 +263,12 @@ header > h2{
        border:0px solid #F03A47;
        transition:0.3s;
     }
-   #bg > #blur a:hover { background: ;color: ; }
+   #bg > #blur a:hover { background:black ;
+                         color: #F03A47 ; 
+						 transform:scale(0.90);
+						 border-radius:6px; 
+						 border:2px solid red;
+						 }
 
 
      .head-logo > a{
@@ -397,8 +402,8 @@ header > h2{
 		   padding:10px;
 		   width:100%;
 		   height:auto;
-		   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;    
-		  }
+		   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		   }
   
   
      #footbg {
@@ -473,22 +478,22 @@ header > h2{
              height:auto ;
              padding:20px ;
              background: #F0EDEE;
-             display:grid;
+           /*  display:grid;
              gap:10px;
              display:grid;
              grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
-             place-items:center;
+             place-items:center; */
              overflow:hidden;
              text-transform:capitalize ;
           }
       #about > .abbg {
             margin:0 auto ;
             width:100%;
-            height:220px;
-            border:0.5px solid black;
+            height:260px;
+            border: ;
             overflow:hidden;
             border-radius:10px;
-            background-image:url('Images/Trees.jpg') ;
+            background-image:url('INDEX/Lod7.webp') ;
             background-size:cover;
             background-position:center;
           }     
@@ -522,8 +527,11 @@ header > h2{
          display: flex;
          flex-direction: column;
          box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+		 transition-duration:0.3s;
          }
-
+     .article:hover{
+	     transform:scale(1.04);
+	 }
    .article img {
         max-width: 100%;
         height: auto;  
@@ -609,6 +617,7 @@ header > h2{
               -ms-transform:scale(0.90) ;
                   transform:scale(0.90) ;
        }
+	     
   #comments {
          margin-top: 20px;
          Font-family:slabo;
@@ -724,10 +733,12 @@ footer {
               flex-direction: ;
             }
       .article { width:380px; }
-
-   #about > .abhe > p  {  max-height:220px; overflow: auto; }
-   #gettouch > form { width:80%;}
-      }
+      #about { display:flex; gap:20px; justify-content:center; align-items:center;}
+	  #about > .abbg { width:40%; border:none;}
+	  #about > .abhe { width:60%;}
+      #about > .abhe > p  {  max-height:220px; overflow: auto; }
+      #gettouch > form { width:80%;}
+        }
 
 
 
@@ -1298,7 +1309,7 @@ footer {
 	   
 	   <!----------ASIDE SECTION----------------->
 	     <aside>
-		      <video src="#">  </video>
+		      
 		 </aside>
 		 
 		 
@@ -1350,7 +1361,7 @@ footer {
 
       <!---Artical2----->
           <div class="article">
-             <img src="article2.jpg" alt="Article 2 Image">
+             <img src="INDEX/Lod7.webp" alt="Article 2 Image">
              <h3><a href="#" id="dnl"> Words of Lord Krishna that will brighten your life </a></h3>
          </div>
 
@@ -1408,10 +1419,9 @@ footer {
                  <input type="email" id="email" name="email" placeholder="Email" required>
                 
 				 <label for ="text"> Message </label>
-				 <input type="text" id="msg" name="msg" placeholder="message" required>
-             <!----  <textarea id="comment" name="comment" rows="7" cols="50" placeholder="Your Comment" required></textarea>---->
+				 <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Your Comment*" required></textarea>
                  
-                <button class="btn" type="submit" onclick="alert('submitted.-Successfully')"> Submit </button>
+                <button class="btn" type="submit" onclick="alert('submitted-Successfully')"> Submit </button>
             </form>
 
            <div id="comments"></div> <!----messages------>
@@ -1504,16 +1514,16 @@ function openNav() {
      }
   });
          
-        //Contact us 
-   /*   document.getElementById('comment-form').addEventListener('submit', function(e) {
+         //Contact us 
+     /* document.getElementById('myForm').addEventListener('submit', function(e) {
   e.preventDefault();
   const name = document.getElementById('name').value;
-  const commentText = document.getElementById('comment').value;
+  const commentText = document.getElementById('msg').value;
   const email = document.getElementById('email').value;
   if (name && commentText) {
     addComment(name, commentText, email);
-    document.getElementById('comment-form').reset();
-    window.alert('Submitted Successfully');
+    document.getElementById('myForm').reset();
+	 alert("submitted");
   } else {
     alert('Please fill in all fields.');
   }
@@ -1525,7 +1535,7 @@ function addComment(name, commentText) {
   commentDiv.classList.add('comment');
   commentDiv.innerHTML = `<strong>${name}:</strong> ${commentText}`;
   commentsSection.appendChild(commentDiv);
-}  */
+} */
 </script>
 
    <script>
