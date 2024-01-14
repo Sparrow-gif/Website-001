@@ -1462,7 +1462,7 @@ footer {
          
                          <!-----Contact Us Section------->
           <div id="gettouch" class="comment-section">
-             <form action="#" method="post" id="myForm"> <!--id comment-form--->
+             <form action="#" method="post" id="myForm" onsubmit="showAlert()"> <!--id comment-form--->
                  <h2> Contact Us Today </h2>
                  <p style="Font-family:lora;"> Complete the form below to get in
                      touch with us. We are ready to assist
@@ -1477,7 +1477,7 @@ footer {
 				 <label for ="text"> Message </label>
 				 <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Your Comment*" required></textarea>
                  
-                <button class="btn" type="submit" onclick="alert('submitted-Successfully')"> Submit </button>
+                <button class="btn" type="submit" onclick="lert('submitted-Successfully')"> Submit </button>
             </form>
 
            <div id="comments"></div> <!----messages------>
@@ -1595,6 +1595,10 @@ function addComment(name, commentText) {
 </script>
 
    <script>
+      function showAlert() {
+            alert("Form submitted successfully!");
+            document.getElementById('myForm').reset();
+        };
       const form = document.getElementById('myForm');
       form.addEventListener('submit', async function(e) {
       e.preventDefault();
