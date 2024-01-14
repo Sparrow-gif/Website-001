@@ -15,13 +15,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title> paytm cash earning apps </title>
   <style>
-      *{
+      
+   *{
          margin:0px;
          padding:0px;
-         box-sizing:border-box;
+         -webkit-box-sizing:border-box;
+                 box-sizing:border-box;
          text-transform:capitalize;
          Font-family: cabin;
-		 user-select: none;
+		 -webkit-user-select: none;
+		    -moz-user-select: none;
+		     -ms-user-select: none;
+		         user-select: none;
        }
      .head-logo > a{
            padding: 10px 10px;
@@ -35,10 +40,13 @@
          -moz-user-select:none;    
          -ms-user-select:none;    
           user-select:none;  
-          transition-duration:0.3s;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
+          -webkit-transition-duration:0.3s;  
+               -o-transition-duration:0.3s;  
+                  transition-duration:0.3s;
+          -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
        }
-  .head-logo > a:hover{ transform:scale(1.20)}
+  .head-logo > a:hover{ -webkit-transform:scale(1.20); -ms-transform:scale(1.20); transform:scale(1.20)}
    .head-logo > a:nth-child(1) {
          color:white;
          background: #266DD3;
@@ -76,7 +84,8 @@
       border:0.5px solid black;
       background-size:cover;
       background-position:center;
-         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+         -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                 box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
        }
   .contest > #banner > img {
          width:100%;
@@ -103,10 +112,17 @@
 		  margin:0 auto;
        }
      fieldset >  div {
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content:space-between;
-        align-items:center;
-        align-content:center;
+        -webkit-box-pack:justify;
+            -ms-flex-pack:justify;
+                justify-content:space-between;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+        -ms-flex-line-pack:center;
+            align-content:center;
         padding:8px;
         margin:0px auto ;
 		padding:10px;
@@ -118,7 +134,9 @@
          color: black;
          Font-size:18px;
          cursor:pointer;
-         transition-duration:0.3s;     
+         -webkit-transition-duration:0.3s;
+              -o-transition-duration:0.3s;
+                 transition-duration:0.3s;     
        }
     fieldset >  div > a:hover { 
          text-decoration: underline; 
@@ -127,7 +145,8 @@
          padding:6px;
       }
      fieldset >  div > img {
-         object-fit:cover;
+         -o-object-fit:cover;
+            object-fit:cover;
          width:80px;
          height: 60px;
          border:none;
@@ -149,6 +168,8 @@
             border: none;
             text-align: left;
             outline: none;
+            -webkit-transition: 0.4s;
+            -o-transition: 0.4s;
             transition: 0.4s;
             margin:10px auto;
 			text-transform:lowercase;
@@ -175,6 +196,8 @@
   background-color: white;
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
   text-transform:lowercase;
 }
@@ -190,11 +213,19 @@
          text-transform: capitalize ;    
        }
   #gettouch > form {
-        user-select:none;
+        -webkit-user-select:none;
+           -moz-user-select:none;
+            -ms-user-select:none;
+                user-select:none;
         margin:0 auto ;
         width:100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap:6px;
        }
    #gettouch > form > h2 {
@@ -309,6 +340,7 @@
     /* Styles for medium screens here */
            #container {
 		          gap:10px;
+                 display:-ms-grid;
                  display:grid;
                  grid-template-columns:repeat(auto-fit,minmax(min(15rem,100%),1fr)) ;				  
 		     }
@@ -326,17 +358,26 @@
         html {
              width:70%;
              margin:0 auto;
-             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+             -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
            }
          #flex {
+             display:-webkit-box;
+             display:-ms-flexbox;
              display:flex;
-             flex-wrap:nowrap;
-             justify-content:center;
-             flex-direction: ;
+             -ms-flex-wrap:nowrap;
+                 flex-wrap:nowrap;
+             -webkit-box-pack:center;
+                 -ms-flex-pack:center;
+                     justify-content:center;
+             -webkit-box-orient:vertical;
+             -webkit-box-direction:normal;
+                 -ms-flex-direction: ;
+                     flex-direction: ;
              gap:2%;
            }
          #flex > main { width:65%; }
-         #flex > aside { width:30%; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; overflow:hidden; }
+         #flex > aside { width:30%; -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; overflow:hidden; }
 		 
 		  #gettouch { margin:0 auto; width:50%;}
 		  
