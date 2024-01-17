@@ -20,7 +20,7 @@
           padding:0px;
           -webkit-box-sizing:border-box;
           box-sizing:border-box;
-          font-family: Domine;
+          font-family: montserrat;
           text-transform:capitalize;                     
         }  
   html {
@@ -262,12 +262,14 @@ header > h2{
        text-shadow: 1px 1px 3px #666666; 
        border:0px solid #F03A47;
        transition:0.3s;
+	   Font-family: pt sans;
     }
-   #bg > #blur a:hover { background:black ;
-                         color: #F03A47 ; 
+   #bg > #blur a:hover { background: #FFFFFF ;
+                         color: red ; 
 						 transform:scale(0.90);
-						 border-radius:6px; 
-						 border:2px solid red;
+						 border-radius:3px; 
+						 border:1px solid red;
+						 text-shadow:none;
 						 }
 
 
@@ -313,7 +315,7 @@ header > h2{
          border-radius:4px;
          margin:10px auto;
          width:100%;  
-         height:40vh;		 
+		 height:40vh;		 
          overflow: hidden;     
         -webkit-user-select:none;
         -moz-user-select:none;
@@ -326,8 +328,8 @@ header > h2{
   
   
  #w3-content > img {
-      height:100%;     
-      width:100%;     
+         height:100%;     
+      width:100%;  
       background-size:cover;
       background-position:center; 
 	  object-fit: fill ;
@@ -349,8 +351,9 @@ header > h2{
     #quotes > main > img {
            margin:0 auto;
            width:100%;
-           aspect-ratio: 1/1;
-           object-fit: fill;
+           min-height:260px;
+		   max-height:380px;
+		   object-fit: fill;
            background-size:cover;
            background-position:center; 
           }
@@ -376,7 +379,7 @@ header > h2{
             text-align:center;
             padding:5px 0px;
             color:#313ae8 ;
-            font-family:PT Serif;
+            font-family: ;
          }
     #quotes > main > div > h4::after{ 
          content:" ";
@@ -389,7 +392,7 @@ header > h2{
             background:#5F00BA ;           
           }
     #quotes > main > div > h3 {
-            font-family:Roboto;
+            font-family: ;
             text-align:right;
             padding: 0px 5px ;
             color :#ed6a13; /* #313ae8 ; */
@@ -398,11 +401,7 @@ header > h2{
   
   
       aside {
-		   margin:0 auto;
-		   padding:10px;
-		   width:100%;
-		   height:auto;
-		   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		  
 		   }
   
   
@@ -429,8 +428,8 @@ header > h2{
       font-size:18px;
      }
     #footbg > #background {
-         min-height: 520px;
-         max-height:80vh;
+         min-height: 460px;
+         max-height:60vh;
          width:100%;
          background-image: linear-gradient(to right, #D4ADCF, #bfe9ff);
       /*   background-image:url('images/raadha3.jpeg');  */
@@ -499,13 +498,13 @@ header > h2{
           }     
        #about > .abhe > h2  {
                padding:6px 8px;
-               font-family: domine ;
+               font-family: ;
                font-size:30px;
                color: ;
           }
        #about > .abhe > p  {
                padding:4px;
-               font-family: Open Sans;
+               font-family: ;
                font-size:20px;
                font-weight: ;     
                overflow:auto;			   
@@ -542,13 +541,13 @@ header > h2{
      .article h3 {
            margin-top: 0;
            transition-duration:0.3s;
-           font-family: Slabo;
-      }
+		     font-family: lato;
+           }
 
       .article h3 a {
             text-decoration: none;
             color: #333;
-           font-family: Slabo;
+           font-family: lato;
       }
 
      .article h3 a:hover {
@@ -575,7 +574,7 @@ header > h2{
    #gettouch > form > label {
         width:100%;
         display:block;
-        Font-family:slabo;
+        Font-family: cabin;
       }
    #gettouch > form >  input {
         width:100%;
@@ -585,7 +584,7 @@ header > h2{
         margin:0px auto ;
         border: 1px solid #ccc;
         border-radius:4px;
-        Font-family:slabo;
+        Font-family: ;
          }
   #gettouch > form >  textarea {
         width:100%;
@@ -593,10 +592,10 @@ header > h2{
         border-radius:4px;
         padding:8px;
         font-size:16px;
-        Font-family:slabo;
+        Font-family: ;
       }
   #gettouch > form > .btn {
-        Font-family:Roboto;
+        Font-family: ;
         padding: 10px 20px;
         background-color: #4CAF50;
         color: white;
@@ -620,7 +619,7 @@ header > h2{
 	     
   #comments {
          margin-top: 20px;
-         Font-family:slabo;
+         Font-family: ;
        }
 
   .comment {
@@ -628,7 +627,7 @@ header > h2{
         padding: 10px;
         margin-bottom: 10px;
         border-radius: 4px;
-        Font-family:slabo;
+        Font-family: ;
      }
    
           /*  Footer Css Section */
@@ -723,7 +722,8 @@ footer {
          width:80%;
         }
 		
-    #quotes > main > img { width:70%; margin:0px 15% auto; object-fit:fill; }
+    #quotes > main > img { width:80%; margin:0px 10% auto; object-fit: fill; min-height:320px;max-heigh:420px;}
+    
     #quotes > main > div { width:80%; }
      
      .recommended-articles {
@@ -755,13 +755,15 @@ footer {
         }
 		
 		  #quotes { 
-	        display:flex;
+	        display: ;
 			gap:10px;
 	  }
-	    #quotes > main { width:65%;}
-		#quotes > aside { width:34%;}
+
+		   
+	    #quotes > main { }
+		#quotes > aside { }
 		
-    #quotes > main > img { width:60%; margin:0px 20% auto; object-fit: fill; }
+     #quotes > main > img { width:60%; margin:0px 20% auto; object-fit: fill; min-height:480px;max-heigh:480px;}
     #quotes > main > div { width:90%; }
    #about > .abhe > p  {  max-height:220px; overflow:scroll; }
    #gettouch > form { width:60%;}
@@ -823,7 +825,7 @@ footer {
       <section id="bg">
             <div id="background">  </div>
             <div id="blur"> 
-               <h1> Discover The Wisdom Of Lord sri Krishna </h1>
+               <h1 style="font-family:domine;"> Discover The Wisdom Of Lord sri Krishna </h1>
                <p> Discover The Whisdom Of Sri Krishna's Teaching
                    Through Powerful Quotes. Expand Your Consciousness
                    And Find Inner Peace. </p>
@@ -839,7 +841,7 @@ footer {
      <!----Shri krishna life story------->
            <main style="padding:10px;">             <!-------heading------->
                 <div class="heading" id="heading">
-                     <h2> Krishna Quotes: Best Lord Krishna Quotes From Srimad Bhagavad Gita </h2>
+                     <h2 style="font-family:cabin;"> Krishna Quotes: Best Lord Krishna Quotes From Srimad Bhagavad Gita </h2>
                      <p> Updated on : nov 22, 2023 </p>
                </div>
                              <!-------heading logo------->
@@ -862,7 +864,7 @@ footer {
      </div>
                 
          <div class="som">
-              <p style="font-family:Lora;"> 
+              <p style="font-family:open sans ;padding:10px 15px;"> 
                    Sri Krishna's quotes hold immense value in daily life, serving as guiding beacons for navigating 
                    life's complexities. His teachings, found in the Bhagavad Gita, resonate across ages, offering 
                    wisdom on duty, righteousness, and the path to inner peace. Embracing concepts like selflessness, 
@@ -1319,7 +1321,7 @@ footer {
       <section id="footbg">
             <div id="background">  </div>
             <div id="blur"> 
-               <h1 style="color:#8d2cf5;"> Discover More Enlightening Wisdom...</h1>
+               <h1 style="color:#8d2cf5; Font-family: cabin;"> Discover More Enlightening Wisdom...</h1>
                <p> Discover a wide Range of inspiring quotes by lod sri krishna to uplift
                    your spirit and motivate yourself in every aspect Of life. Your collection
                    offers timeless Wishdom and guidance for personal growth, relationship and spirituality. 
@@ -1332,7 +1334,7 @@ footer {
       <section id="about">
                  <div class="abbg">  </div>
                  <div class="abhe">
-                      <h2> About us </h2>
+                      <h2 style="Font-family:lato;"> About us </h2>
                       <p> Welcome to our Quotes page, your destination for Shri Krishna Quotes in Kolkata, WB. 
                           We are passionate about spreading the wisdom and teachings of Shri Krishna
                           through our carefully curated collection of quotes. 
@@ -1350,7 +1352,7 @@ footer {
       
 
      <!-----Recomended Article Section-------->
-	     <h2 Style="padding:10px;"> our Recommended top Articles </h2>
+	     <h2 Style="padding:10px; Font-family: cabin;"> our Recommended top Articles </h2>
          <section class="recommended-articles">
              
        <!---Artical1----->
@@ -1407,8 +1409,8 @@ footer {
                          <!-----Contact Us Section------->
           <div id="gettouch" class="comment-section">
              <form action="#" method="post" id="myForm"> <!--id comment-form--->
-                 <h2> Contact Us Today </h2>
-                 <p style="Font-family:lora;"> Complete the form below to get in
+                 <h2 style="Font-family:cabin; padding:20px 0px;"> Contact Us Today </h2>
+                 <p style="Font-family: ;"> Complete the form below to get in
                      touch with us. We are ready to assist
                      you with help bring your vision to life. </p>
                   
@@ -1421,10 +1423,10 @@ footer {
 				 <label for ="text"> Message </label>
 				 <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Your Comment*" required></textarea>
                  
-                <button class="btn" type="submit" onclick="alert('submitted-Successfully')"> Submit </button>
+                <button class="btn" type="submit" onclick="lert('submitted-Successfully')"> Submit </button>
             </form>
 
-           <div id="comments"></div> <!----messages------>
+           <div id="comments"> </div> <!----messages------>
       </div>
       
   
@@ -1548,8 +1550,38 @@ function addComment(name, commentText) {
           body: formData
         });
     // Handle the response here (if needed)
-	  document.getElementById('myForm').reset();
+	  document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevents the default form submission behavior
+
+            // Show alert
+            window.alert('Form submitted!');
+
+            // Refresh the form
+            document.getElementById('myForm').reset();			
+        });
+		
+		 //Contact us 
+      document.getElementById('myForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const commentText = document.getElementById('msg').value;
+  const email = document.getElementById('email').value;
+  if (name && commentText) {
+    addComment(name, commentText, email);
+    document.getElementById('myForm').reset();
 	 alert("submitted");
+  } else {
+    alert('Please fill in all fields.');
+  }
+});
+
+function addComment(name, commentText) {
+  const commentsSection = document.getElementById('comments');
+  const commentDiv = document.createElement('div');
+  commentDiv.classList.add('comment');
+  commentDiv.innerHTML = `<strong>${name}:</strong> ${commentText}`;
+  commentsSection.appendChild(commentDiv);
+} 
   });
 </script>
                         
