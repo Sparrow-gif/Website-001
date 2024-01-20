@@ -310,31 +310,51 @@ header > h2{
          background: #F42B03 ;
        }
 
-        /*  Image Slider Css*/
-    #w3-content {
-         border-radius:4px;
-         margin:10px auto;
-         width:100%;  
-		 height:40vh;		 
-         overflow: hidden;     
-        -webkit-user-select:none;
-        -moz-user-select:none;
-        -ms-user-select:none;     
-         position:relative;    
-         z-index:-1 ;
-         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-		 resize: both;
-      }
-  
-  
- #w3-content > img {
-         height:100%;     
-      width:100%;  
-      background-size:cover;
-      background-position:center; 
-	  object-fit: fill ;
-    }
-     
+        /* Styles for the slideshow container */
+        .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin:10px auto;
+        }
+
+        /* Styles for slides */
+        .mySlides {
+            display: none;
+        }
+
+        /* Navigation buttons */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 14px;
+            color: #f5f5fc;
+            font-weight: bold;
+            font-size: 15px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+            background-color: #333;
+			text-decoration:none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* Automatic slideshow animation */
+        .fade {
+            animation: fade 1.5s ease-in-out infinite;
+        }
+
+        @keyframes fade {
+            from { opacity:1 ; }
+            to { opacity: 1; }
+        }
+	 
+	 
          /* Quotes body Css */
     #quotes {
            background:#F4FFF8;
@@ -505,7 +525,7 @@ header > h2{
        #about > .abhe > p  {
                padding:4px;
                font-family: ;
-               font-size:20px;
+               font-size:16px;
                font-weight: ;     
                overflow:auto;			   
           }
@@ -514,7 +534,10 @@ header > h2{
              width: 100%;
              margin: 0 auto;
              padding:10px  ;   
-            box-sizing:border-box;
+             box-sizing:border-box;
+			 Display:flex;
+			 flex-wrap:wrap;
+			 gap:15px;
         }
 
    .article {
@@ -717,10 +740,8 @@ footer {
   @media only screen and (min-width:768px) {         
                         
     #bg > #blur {   width:70%;  }
-    #w3-content {
-         margin:10px auto;
-         width:80%;
-        }
+		
+      .slideshow-container {  max-width: 85%; min-height:310px;max-heigh:40vh; }
 		
     #quotes > main > img { width:80%; margin:0px 10% auto; object-fit: fill; min-height:320px;max-heigh:420px;}
     
@@ -732,7 +753,7 @@ footer {
               flex-wrap: wrap;
               flex-direction: ;
             }
-      .article { width:380px; }
+      .article { width:360px; }
       #about { display:flex; gap:20px; justify-content:center; align-items:center;}
 	  #about > .abbg { width:40%; border:none;}
 	  #about > .abhe { width:60%;}
@@ -749,11 +770,10 @@ footer {
 				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }       
     #bg > #blur {   width:60%;  }
-    #w3-content {
-         margin:10px auto;
-         width:70%;
-        }
-		
+  
+  
+     .slideshow-container {  max-width: 85%; min-height:310px;max-heigh:40vh; }
+  
 		  #quotes { 
 	        display: ;
 			gap:10px;
@@ -825,7 +845,7 @@ footer {
       <section id="bg">
             <div id="background">  </div>
             <div id="blur"> 
-               <h1 style="font-family:domine;"> Discover The Wisdom Of Lord sri Krishna </h1>
+               <h1 style="font-family:domine;color:#0c0875;"> Discover The Wisdom Of Lord sri Krishna </h1>
                <p> Discover The Whisdom Of Sri Krishna's Teaching
                    Through Powerful Quotes. Expand Your Consciousness
                    And Find Inner Peace. </p>
@@ -855,16 +875,29 @@ footer {
      
         <!----Shri krishna life story-close------->
 
-
-                    <!----- Image Slider section----->
-      <div id="w3-content">
-            <img class="mySlides" src="INDEX/Lod5.png">
-            <img class="mySlides" src="INDEX/Lod2.jpg">
-            <img class="mySlides" src="INDEX/Lod7.webp">
-     </div>
                 
+				<!----- Image Slider section----->
+		<div class="slideshow-container">
+       <!-- Slides -->
+             <div class="mySlides fade">
+                  <img src="INDEX/Lod2.jpg" style="width:100%">
+            </div>
+             <div class="mySlides fade">
+                  <img src="INDEX/Lod9.jpg" style="width:100%">
+            </div>
+             <div class="mySlides fade">
+                   <img src="INDEX/Lod13.webp" style="width:100%">
+            </div>
+
+          <!-- Navigation buttons -->
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>		
+				
+				
+				
          <div class="som">
-              <p style="font-family:open sans ;padding:10px 15px;"> 
+              <p style="font-family:open sans ;padding:7px 3px;"> 
                    Sri Krishna's quotes hold immense value in daily life, serving as guiding beacons for navigating 
                    life's complexities. His teachings, found in the Bhagavad Gita, resonate across ages, offering 
                    wisdom on duty, righteousness, and the path to inner peace. Embracing concepts like selflessness, 
@@ -1467,21 +1500,45 @@ function openNav() {
 } ;
       
 
-        /* Image Slider JavaScript */
-      var myIndex = 0;
-      carousel();
+	 
+	       // Automatic slideshow
+    let slideIndex = 0;
+    showSlides();
 
-     function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-     }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 1500); // Change image every 2 seconds
-     };
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+
+    // Manual slideshow navigation
+    function plusSlides(n) {
+        showManualSlides(slideIndex += n);
+    }
+
+    function showManualSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+	 
             
             /* Go To Top Button */
       window.onscroll = function () {
