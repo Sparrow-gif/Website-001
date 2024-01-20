@@ -15,7 +15,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <title> Shri Krishna Quotes </title>
     <style>
-        * {
+  * {
           margin:0px;
           padding:0px;
           -webkit-box-sizing:border-box;
@@ -75,7 +75,8 @@ header > h2{
         top: 0;
         right: 0;
         background: rgba( 235, 242, 250, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        -webkit-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 4px );
        -webkit-backdrop-filter: blur( 4px );
       /*  background-color:#FFEAEC; */
@@ -88,7 +89,8 @@ header > h2{
         -webkit-user-select:none;
         -moz-user-select:none;
         -ms-user-select:none;    
-       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      }
    .sidenav::-webkit-scrollbar{ display: ;}   /* SIDENAV scrollbar */
 .sidenav a {
@@ -192,7 +194,7 @@ header > h2{
            }
 
            /* blur background Section */
-      #bg {
+  #bg {
        position: relative;       
        margin:0 ;
        padding:0 ;
@@ -220,6 +222,8 @@ header > h2{
          min-height: 580px;
          max-height:80vh;
          width:100%;
+         background-image: -webkit-gradient(linear, left top, right top, from(#9796f0), to(#fbc7d4));
+         background-image: -o-linear-gradient(left, #9796f0, #fbc7d4);
          background-image: linear-gradient(to right, #9796f0, #fbc7d4);
        /*  background-image:url('images/.jpg');    */
          background-size:cover;
@@ -240,7 +244,8 @@ header > h2{
        transform:translate(-50%,-50%) ;
        z-index:1;
        width:90%;
-       backdrop-filter:blur(2px) ;
+       -webkit-backdrop-filter:blur(2px) ;
+               backdrop-filter:blur(2px) ;
     /*   width:50%; */
        padding:10px 10px ;  
     /*  text-align:center;  */
@@ -261,12 +266,16 @@ header > h2{
        text-align:center;    
        text-shadow: 1px 1px 3px #666666; 
        border:0px solid #F03A47;
+       -webkit-transition:0.3s;
+       -o-transition:0.3s;
        transition:0.3s;
 	   Font-family: pt sans;
     }
    #bg > #blur a:hover { background: #FFFFFF ;
                          color: red ; 
-						 transform:scale(0.90);
+						 -webkit-transform:scale(0.90); 
+						     -ms-transform:scale(0.90); 
+						         transform:scale(0.90);
 						 border-radius:3px; 
 						 border:1px solid red;
 						 text-shadow:none;
@@ -285,10 +294,13 @@ header > h2{
          -moz-user-select:none;    
          -ms-user-select:none;    
          user-select:none;  
-         transition-duration:0.3s;
-         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
+         -webkit-transition-duration:0.3s;  
+              -o-transition-duration:0.3s;  
+                 transition-duration:0.3s;
+         -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
        }
-  .head-logo > a:hover{ transform:scale(1.20)}
+  .head-logo > a:hover{ -webkit-transform:scale(1.20); -ms-transform:scale(1.20); transform:scale(1.20)}
    .head-logo > a:nth-child(1) {
          color:white;
          background: #266DD3;
@@ -315,7 +327,8 @@ header > h2{
             max-width: 600px;
             position: relative;
             margin:10px auto;
-			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+			-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+			        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 			border-radius:3PX;
         }
 
@@ -335,11 +348,13 @@ header > h2{
             color: #f5f5fc;
             font-weight: bold;
             font-size: 15px;
+            -webkit-transition: 0.6s ease;
+            -o-transition: 0.6s ease;
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             cursor: pointer;
-            background-color:#3652cf;
-	    text-decoration:none;
+            background-color: #3652cf;
+			text-decoration:none;
         }
 
         .next {
@@ -349,7 +364,13 @@ header > h2{
 
         /* Automatic slideshow animation */
         .fade {
-            animation: fade 1.5s ease-in-out infinite;
+            -webkit-animation: fade 1.5s ease-in-out infinite;
+                    animation: fade 1.5s ease-in-out infinite;
+        }
+
+        @-webkit-keyframes fade {
+            from { opacity:1 ; }
+            to { opacity: 1; }
         }
 
         @keyframes fade {
@@ -376,7 +397,8 @@ header > h2{
            width:100%;
            min-height:260px;
 		   max-height:380px;
-		   object-fit: fill;
+		   -o-object-fit: fill;
+		      object-fit: fill;
            background-size:cover;
            background-position:center; 
           }
@@ -395,7 +417,8 @@ header > h2{
             background: #F2F79E ;
             padding:3px 5px;
             margin: 10px auto;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
          }
     
     #quotes > main > div > h4 {
@@ -410,9 +433,13 @@ header > h2{
      #quotes > main > div > h4::before{ 
          content:" ";
         }
+    #quotes > main > div > h4::-moz-selection {
+            color: #FFFFFF;
+            background:#6b1de0 ;           
+          }
     #quotes > main > div > h4::selection {
             color: #FFFFFF;
-            background:#6b1de0 ;                     
+            background:#6b1de0 ;           
           }
     #quotes > main > div > h3 {
             font-family: ;
@@ -426,9 +453,8 @@ header > h2{
       aside {
 		  
 		   }
-  
-  
-     #footbg {
+
+  #footbg {
        position:relative ;       
        margin:0 ;
        padding:0 ;
@@ -454,6 +480,8 @@ header > h2{
          min-height: 460px;
          max-height:60vh;
          width:100%;
+         background-image: -webkit-gradient(linear, left top, right top, from(#D4ADCF), to(#bfe9ff));
+         background-image: -o-linear-gradient(left, #D4ADCF, #bfe9ff);
          background-image: linear-gradient(to right, #D4ADCF, #bfe9ff);
       /*   background-image:url('images/raadha3.jpeg');  */
          background-size:cover;
@@ -537,9 +565,11 @@ header > h2{
              width: 100%;
              margin: 0 auto;
              padding:10px  ;   
-             box-sizing:border-box;
+             -webkit-box-sizing:border-box;   
+                     box-sizing:border-box;
 			 Display:flex;
-			 flex-wrap:wrap;
+			 -ms-flex-wrap:wrap;
+			     flex-wrap:wrap;
 			 gap:15px;
         }
 
@@ -549,24 +579,37 @@ header > h2{
          border: 0px solid #ccc;
          padding: 10px ;
          margin-bottom: 10px;
+         display: -webkit-box;
+         display: -ms-flexbox;
          display: flex;
-         flex-direction: column;
-         box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-		 transition-duration:0.3s;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+         -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+                 box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+		 -webkit-transition-duration:0.3s;
+		      -o-transition-duration:0.3s;
+		         transition-duration:0.3s;
          }
      .article:hover{
-	     transform:scale(1.04);
+	     -webkit-transform:scale(1.04);
+	         -ms-transform:scale(1.04);
+	             transform:scale(1.04);
 	 }
    .article img {
         max-width: 100%;
         height: auto;  
-        object-fit: cover;
+        -o-object-fit: cover;  
+           object-fit: cover;
         aspect-ratio:1/0.70;
          }
 
      .article h3 {
            margin-top: 0;
-           transition-duration:0.3s;
+           -webkit-transition-duration:0.3s;
+                -o-transition-duration:0.3s;
+                   transition-duration:0.3s;
 		     font-family: lato;
            }
 
@@ -590,11 +633,19 @@ header > h2{
           -ms-user-select:none;          
        }
   #gettouch > form {
-        user-select:none;
+        -webkit-user-select:none;
+           -moz-user-select:none;
+            -ms-user-select:none;
+                user-select:none;
         margin:0 auto ;
         width:100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap:6px;
        }
    #gettouch > form > label {
@@ -728,7 +779,7 @@ footer {
             }
 
 
-   @Keyframes  heart {
+ @Keyframes  heart {
              50% {
               -webkit-transform:scale(0.80);
                   -ms-transform:scale(0.80);
@@ -746,18 +797,24 @@ footer {
 		
       .slideshow-container {  max-width: 85%; min-height:310px;max-heigh:40vh; }
 		
-    #quotes > main > img { width:80%; margin:0px 10% auto; object-fit: fill; min-height:320px;max-heigh:420px;}
+    #quotes > main > img { width:80%; margin:0px 10% auto; -o-object-fit: fill; object-fit: fill; min-height:320px;max-heigh:420px;}
     
     #quotes > main > div { width:80%; }
      
      .recommended-articles {
               width: 100%;
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
-              flex-wrap: wrap;
-              flex-direction: ;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+              -webkit-box-orient:vertical;
+              -webkit-box-direction:normal;
+                  -ms-flex-direction: ;
+                      flex-direction: ;
             }
       .article { width:360px; }
-      #about { display:flex; gap:20px; justify-content:center; align-items:center;}
+      #about { display:-webkit-box; display:-ms-flexbox; display:flex; gap:20px; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center; -webkit-box-align:center; -ms-flex-align:center; align-items:center;}
 	  #about > .abbg { width:40%; border:none;}
 	  #about > .abhe { width:60%;}
       #about > .abhe > p  {  max-height:220px; overflow: auto; }
@@ -770,7 +827,8 @@ footer {
                   html {
 				   margin:0 auto;
 				   width:70%;
-				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }       
     #bg > #blur {   width:60%;  }
   
@@ -786,7 +844,7 @@ footer {
 	    #quotes > main { }
 		#quotes > aside { }
 		
-     #quotes > main > img { width:60%; margin:0px 20% auto; object-fit: fill; min-height:480px;max-heigh:480px;}
+     #quotes > main > img { width:60%; margin:0px 20% auto; -o-object-fit: fill; object-fit: fill; min-height:480px;max-heigh:480px;}
     #quotes > main > div { width:90%; }
    #about > .abhe > p  {  max-height:220px; overflow:scroll; }
    #gettouch > form { width:60%;}
@@ -1643,7 +1701,6 @@ function addComment(name, commentText) {
   commentsSection.appendChild(commentDiv);
 } 
   });
-</script>
-                        
+</script>                        
 </body>
 </html>
