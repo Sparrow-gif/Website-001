@@ -25,7 +25,7 @@
         }  
   html {
        scroll-behavior:smooth;
-       scroll-padding:3.30em;
+       scroll-padding:3.0em;
       }
   header {
        display:-webkit-box;
@@ -241,73 +241,104 @@
     }
        
 	   
-	    #data-list > li {
-            margin: 10px auto;
-            padding:10px;
-            width:80%;
-            min-height:320px;		
-            border:0px solid #B0FE76 ;
-            background-color: ;
-            Border-radius:8px;
-			box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        }
-      #data-list > li > #qts {
-            text-align:center;
-            color:black;
-            font-size:18px;
-			font-family:;
-         }
-	  #data-list > li > qtsimg {
-	        width:100%;
-			max-width:400px;
-			height:auto;
-	  }
-     #data-list > li > #author {
-            text-align:right;
-            color:aqua;
-            font-size:20px;
-			font-family:;
-         }
-        .pagination {
-            width:100%;
-            margin-top:0px;           
-            padding:4px;            
-            align-items:center;
-            background: #7D53DE;
-		    display:flex; 
-            flex-wrap:wrap;
-            justify-content:center;  
-            align-items:center;	
-        }
+	   /* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: ;
+  overflow:auto;
+  padding:20px;
+  background: ;
+}
 
-       .pagination > ul {
-            text-decoration:none;
-            list-style-type: none;
-            padding:0px;     
-            display:flex; 
-            flex-wrap:wrap;
-            justify-content:center;  
-            align-items:center;			
+         /* Slides */
+    .mySlides {
+          min-height:460px;
+		  user-select:none;
+          max-height:80vh;
+          display: none;
+          padding: 20px;
+          text-align: center;
+          border:0px solid black;
+          border-radius:4px;
+          margin:0 auto;
+          width:95%;
+          background:#F2F4F3;
+          border-radius: 11px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+       }
+   .mySlides::-webkit-scrollbar { display:none; }
+       /* Next & previous buttons */
+    .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -30px;
+          padding: 8px 13px;
+          color: #ddd;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius:30px;
+          user-select: none;
+          background:#2370eb;
+          text-decoration:none;
         }
+  /* Position the "next button" to the right */
+ .prev {
+  position: absolute;
+  left: 0;
+  border-radius:50%;
+}
+.next {
+  position: absolute;
+  right: 0;
+  border-radius:50%;
+}
 
-      .pagination > ul > li {
-            display: inline;
-            padding:10px 8px;
-            Border-radius:8px;
-            margin: 5px;
-            color: #E0E2DB ;
-            border:1px solid #E6AF2E;     
-            background: #7D53DE;    
-            font-size:20px ; 
-            cursor:pointer;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-        }
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #2370eb;
+  color: white;
+}
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 10px;
+    background: #FCFCFC;
+    display:block;
+    overflow:scroll;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+  .dot-container::-webkit-scrollbar { display:none; }
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 30px;
+  font-size:20px;
+  line-height:35px;
+  width: 30px;
+  margin: 0 2px;
+  background-color: ;
+  border-radius:4px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   }
 
-      .pagination > ul > li > a {
-             text-decoration:none;
-             color:  #FFFFFF ;   
-			  padding:10px 9px;
-        }
+        /* Add a background color to the active dot/circle */
+           .active, .dot:hover {
+                          background-color: #3DDC97;
+                    }
+		/* Add an italic font style to all quotes */
+              .mySlides > h2 { color: ;
+            		text-decoration:underline; 
+					font-weight:bold;
+				}			
+        /* Add an italic font style to all quotes */
+               q {font-style: italic; user-select:none;}
+
+        /* Add a blue color to the author */
+           .author {color: cornflowerblue;}
  
  
   .recommend {
@@ -557,7 +588,23 @@
 				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }  
 			  #section > #blur { width:60%;}
-			  #data-list > li { width:80%;}
+			 .mySlides {
+                        min-height:500px;
+                        max-height:80vh;
+						overflow:scroll;
+						margin:0 auto;
+						width:85%;
+						}
+				 .prev {
+                     position: absolute;
+                     left: 2%;
+                     border-radius:50%;
+                  }
+                 .next {
+                     position: absolute;
+                     right: 2%;
+                     border-radius:50%;
+                   }
 			  #gettouch { margin:0 auto; width:70%;}
 	   }
 	   
@@ -569,7 +616,23 @@
 				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }    
 			   #section > #blur { width:50%;}
-			     #data-list > li { width:50%;}
+			     .mySlides {
+                        min-height:520px;
+                        max-height:80vh;
+						overflow:scroll;
+						margin:0 auto;
+						width:80%;
+						}
+				 .prev {
+                     position: absolute;
+                     left: 6%;
+                     border-radius:50%;
+                  }
+                 .next {
+                     position: absolute;
+                     right: 6%;
+                     border-radius:50%;
+                   }
 				  #gettouch { margin:0 auto; width:50%;}
 		}
    </style>
@@ -629,122 +692,41 @@
               <p> unleash your creativity and share your deepest
                   feeling.join our community of poets today. 
              </p>
-              <a href="#content"> write Now  </a>
+              <a href="#slides"> write Now  </a>
         </div> 
      </section>
 
-    <section id="content">        
-        <div id="data-list">
+                      <!-----------QUOTES--CONTAUNER----------------->
+   <div class="slideshow-container" id="slides">
 
-            <li>   <!----Quotes 1----->
-                <p id="qts"> Hello World 1</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
+          <div class="mySlides">  <!-----Poetry 01------->
+		      <h2> poetry </h2>
+              <q>
+                 I love you the more in that I believe you had liked me for my own sake and for nothing else.                 
+             </q>
+              <p class="author">- John Keats</p>
+         </div>
 
-            <li><!----Quotes 2----->
-                <p id="qts"> Hello World 2</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li> <!----Quotes 3----->
-                <p id="qts"> Hello World 3</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-		   
-		    <li> <!----IMAGE 1----->
-                <img src="#" id="qtsimg" alt="image1" width="600" height="400"> </>                
-           </li>
-
-            <li> <!----Quotes 4----->
-                <p id="qts"> Hello World 4</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>  <!----Quotes 5----->
-                <p id="qts"> Hello World 5</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>  <!----Quotes 6----->
-                <p id="qts"> Hello World 6</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>  <!----Quotes 7----->
-                <p id="qts"> Hello World 7</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>  <!----Quotes 8----->
-                <p id="qts"> Hello World 8</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>  <!----Quotes 9----->
-                <p id="qts"> Hello World 9</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>   <!----Quotes 10----->
-                <p id="qts"> Hello World 10</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>  <!----Quotes 11----->
-                <p id="qts"> Hello World 11</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>  <!----Quotes 12----->
-                <p id="qts"> Hello World 12</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li> <!----Quotes 13----->
-                <p id="qts"> Hello World 13</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>  <!----Quotes 14----->
-                <p id="qts"> Hello World 14</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>  <!----Quotes 15----->
-                <p id="qts"> Hello World 15</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>  <!----Quotes 16----->
-                <p id="qts"> Hello World 16</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>  <!----Quotes 17----->
-                <p id="qts"> Hello World 17</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>   <!----Quotes 18----->
-                <p id="qts"> Hello World 18</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>   <!----Quotes 19----->
-                <p id="qts"> Hello World 19</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
-            <li>   <!----Quotes 20----->
-                <p id="qts"> Hello World 20</p>
-                <p id="author"> Lod Krishna </p>
-           </li>
-
+          <div class="mySlides">  <!-----Poetry 02------->
+		     <h2> poetry </h2>
+             <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+             <p class="author">- Ernest Hemingway</p>
+         </div>
+ 
+          <div class="mySlides"> <!-----Poetry 03------->
+		     <h2> poetry </h2>
+             <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+             <p class="author">- Thomas A. Edison</p>
         </div>
 
-   </section>
-     <div class="pagination">
-          <ul id="pagination-list">   </ul>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+     <div class="dot-container">
+         <span class="dot" onclick="currentSlide(1)"> p1 </span> 
+         <span class="dot" onclick="currentSlide(2)"> p2 </span> 
+         <span class="dot" onclick="currentSlide(3)"> p3 </span> 
     </div>
 
 
@@ -752,13 +734,13 @@
 		   <!------recomended section-------->
          <div class="recommend">
               <h3> related posts </h3>
-              <a href="Movie.html" target="_self"> Top 10 Movie Download Websites </a>
-              <a href="Index.html" target="_self"> Words of Lord Krishna that will brighten your life </a>
-              <a href="Poetry.html" target="_self"  id="dnl">  love to read poetry </a>
-              <a href="Stories.html" target="_self"> Stories in the life of Lord Krishna </a>
-              <a href="Education.html" target="_self"> Top 10 useful education Websites for students </a>
-              <a href="Biography.html" target="_self"> Life stories of great people's </a>
-              <a href="#" target="_self">  self paytm cash Earning Games  </a>
+              <a href="Movie.html" target="_self"> 1) Top 10 Movie Download Websites </a>
+              <a href="Index.html" target="_self"> 2)Words of Lord Krishna that will brighten your life </a>
+              <a href="Poetry.html" target="_self"  id="dnl"> 3)  love to read poetry </a>
+              <a href="Stories.html" target="_self"> 4) Stories in the life of Lord Krishna </a>
+              <a href="Education.html" target="_self"> 5) Top 10 useful education Websites for students </a>
+              <a href="Biography.html" target="_self"> 6) Life stories of great people's </a>
+              <a href="#" target="_self">  7) self paytm cash Earning Games  </a>
               
         </div>
 
@@ -825,7 +807,7 @@
 	  
         <!----Go To Top Button------>
      <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>     
-  </body>
+	 
    <script>
           //navigation javascript
          function openNav() {
@@ -856,69 +838,33 @@ document.getElementById("topButton").addEventListener("click", function () {
   document.documentElement.scrollTop = 0;  
  });
 
-     //Light BOX
-     /*  const galleryItems = document.querySelectorAll('.gallery-item');
-const lightbox = document.querySelector('.lightbox');
-const lightboxImage = document.querySelector('.lightbox-content');
-const closeBtn = document.querySelector('.close');
+           
+      var slideIndex = 1;
+          showSlides(slideIndex);
+  
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-galleryItems.forEach(item => {
-  item.addEventListener('click', e => {
-    const imgSrc = e.target.getAttribute('src');
-    lightboxImage.setAttribute('src', imgSrc);
-    lightbox.style.display = 'block';
-  });
-});
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-closeBtn.addEventListener('click', () => {
-  lightbox.style.display = 'none';
-});
-
-lightbox.addEventListener('click', e => {
-  if (e.target !== lightboxImage) {
-    lightbox.style.display = 'none';
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");  
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
   }
-}); */
-
-
-        const itemsPerPage = 6;
-        const dataList = document.getElementById('data-list').getElementsByTagName('li');
-        const paginationList = document.getElementById('pagination-list');
-        let currentPage = 1;
-
-        function showPage(page) {
-            for (let i = 0; i < dataList.length; i++) {
-                if (i >= (page - 1) * itemsPerPage && i < page * itemsPerPage) {
-                    dataList[i].style.display = 'block';
-                } else {
-                    dataList[i].style.display = 'none';
-                }
-            }
-        }
-
-        function updatePagination() {
-            const numPages = Math.ceil(dataList.length / itemsPerPage);
-            paginationList.innerHTML = '';
-
-            for (let i = 1; i <= numPages; i++) {
-                const li = document.createElement('li');
-                const link = document.createElement('a');
-                link.href = '#';
-                link.innerText = i;
-                li.appendChild(link);
-
-                link.addEventListener('click', function () {
-                    currentPage = i;
-                    showPage(currentPage);
-                    updatePagination();
-                });
-
-                paginationList.appendChild(li);
-            }
-        }
-
-        showPage(currentPage);
-        updatePagination(); 
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+};
      
 
      //change Navigation background
@@ -957,5 +903,5 @@ function addComment(name, commentText) {
   commentsSection.appendChild(commentDiv);
 }
    </script>
-
-</hyml>
+ </body>
+</html>
