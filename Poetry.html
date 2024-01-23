@@ -13,9 +13,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <title> Poetry_Page </title>
+  <title> Poetry </title>
     <style>
-         * {
+
+ * {
           margin:0px;
           padding:0px;
           -webkit-box-sizing:border-box;
@@ -66,14 +67,20 @@
       transition-duration:0.3s;
      text-shadow: 1px 1px 3px #666666;
       }
-.sidenav {
+  .sidenav {
         height:100vh;
         width:0;
+        width:0;
         position: fixed;
-        z-index:99;
+        z-index:999;
         top: 0;
         right: 0;
-        background-color:#FFEAEC;
+        background: rgba( 235, 242, 250, 0.25 );
+        -webkit-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+       -webkit-backdrop-filter: blur( 4px );
+      /*  background-color:#FFEAEC; */
         overflow: scroll;
        -webkit-transition: 0.5s;
        -o-transition: 0.5s;
@@ -83,7 +90,8 @@
         -webkit-user-select:none;
         -moz-user-select:none;
         -ms-user-select:none;    
-       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      }
 
 .sidenav a {
@@ -101,17 +109,25 @@
 .sidenav a:hover{
   color: #f1f1f1;
   background:#2576e8;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
  .sidenav > .active {
           color: #f1f1f1;
           background:#6e0cf7;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
  #cold {
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content:center;
-        align-items:center;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
      }
   #cold > a {
         font-size:20px;
@@ -207,7 +223,8 @@
          background-image:url('POETRY/banner.jpg');    
          background-size:cover;
          background-position:center;
-         filter:blur(2px) ;
+         -webkit-filter:blur(2px) ;
+                 filter:blur(2px) ;
        }
   #section > #blur {
        position:absolute;
@@ -260,7 +277,10 @@
          /* Slides */
     .mySlides {
           min-height:460px;
-		  user-select:none;
+		  -webkit-user-select:none;
+		     -moz-user-select:none;
+		      -ms-user-select:none;
+		          user-select:none;
           max-height:80vh;
           display: none;
           padding: 20px;
@@ -271,7 +291,8 @@
           width:95%;
           background:#F2F4F3;
           border-radius: 11px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
        }
    .mySlides::-webkit-scrollbar { display:none; }
        /* Next & previous buttons */
@@ -286,7 +307,10 @@
           font-weight: bold;
           font-size: 20px;
           border-radius:30px;
-          user-select: none;
+          -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
           background:#2370eb;
           text-decoration:none;
         }
@@ -314,7 +338,8 @@
     background: #FCFCFC;
     display:block;
     overflow:scroll;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     }
   .dot-container::-webkit-scrollbar { display:none; }
 /* The dots/bullets/indicators */
@@ -328,8 +353,11 @@
   background-color: ;
   border-radius:4px;
   display: inline-block;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
    }
 
         /* Add a background color to the active dot/circle */
@@ -342,7 +370,7 @@
 					font-weight:bold;
 				}			
         /* Add an italic font style to all quotes */
-               q {font-style: italic; user-select:none;}
+               q {font-style: italic; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;}
 
         /* Add a blue color to the author */
            .author {color: cornflowerblue;}
@@ -350,7 +378,8 @@
  
   .recommend {
           margin:10px auto;
-          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
           width:95%;
           padding:10px 10px;
           background: #F7F7FF;
@@ -359,7 +388,10 @@
            padding:10px 0px;
         }
     .recommend > a{
-          user-select:none;
+          -webkit-user-select:none;
+             -moz-user-select:none;
+              -ms-user-select:none;
+                  user-select:none;
           text-decoration:none;
           color: green;
           padding:5px;
@@ -379,11 +411,19 @@
          text-transform: capitalize ;    
        }
   #gettouch > form {
-        user-select:none;
+        -webkit-user-select:none;
+           -moz-user-select:none;
+            -ms-user-select:none;
+                user-select:none;
         margin:0 auto ;
         width:100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap:6px;
        }
    #gettouch > form > h2 {
@@ -546,7 +586,9 @@
             cursor: pointer;
 			bottom:0px;
 			left:10px;
-			transition-duration:0.5s;
+			-webkit-transition-duration:0.5s;
+			     -o-transition-duration:0.5s;
+			        transition-duration:0.5s;
 			z-index:0;
            }
     #img-con > img {
@@ -554,7 +596,8 @@
         height:100%;
         background-position:center;
         background-size:cover;
-        object-fit:cover;
+        -o-object-fit:cover;
+           object-fit:cover;
 	    opacity:100%;
 		z-index:0;
         }
@@ -570,10 +613,19 @@
          width:100%;
 		 height:100%;
          background:#2C2A4A;
+         display:-webkit-box;
+         display:-ms-flexbox;
          display:flex;
-         justify-content:center;
-         align-items:center;        
-         user-select:none;
+         -webkit-box-pack:center;
+             -ms-flex-pack:center;
+                 justify-content:center;
+         -webkit-box-align:center;
+             -ms-flex-align:center;
+                 align-items:center;        
+         -webkit-user-select:none;        
+            -moz-user-select:none;        
+             -ms-user-select:none;        
+                 user-select:none;
 		  color: #FFFFFF;
          font-size:12px;
 		 opacity:80%;
@@ -595,7 +647,8 @@
 	           html {
 				   margin:0 auto;
 				   width:90%;
-				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }  
 			  #section > #blur { width:60%;}
 			 .mySlides {
@@ -623,7 +676,8 @@
 		       html {
 				   margin:0 auto;
 				   width:70%;
-				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }    
 			   #section > #blur { width:50%;}
 			     .mySlides {
