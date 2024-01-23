@@ -15,14 +15,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <title> Best Movie Download Websites </title>
     <style>
-         * {
+ * {
           margin:0px;
           padding:0px;
           -webkit-box-sizing:border-box;
           box-sizing:border-box;
           font-family: montserrat;
           text-transform:capitalize;  
-          user-select:none;		  
+          -webkit-user-select:none;  
+             -moz-user-select:none;  
+              -ms-user-select:none;  
+                  user-select:none;		  
         }  
    html {
        scroll-behavior:smooth;
@@ -67,28 +70,31 @@
       transition-duration:0.3s;
      text-shadow: 1px 1px 3px #666666;
       }
-.sidenav {
+  .sidenav {
         height:100vh;
         width:0;
+        width:0;
         position: fixed;
-        z-index:99;
+        z-index:999;
         top: 0;
         right: 0;
-        background: rgba( 240, 240, 201, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 16px );
-       -webkit-backdrop-filter: blur( 16px );
-        border-radius: 0px;
+        background: rgba( 235, 242, 250, 0.25 );
+        -webkit-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+       -webkit-backdrop-filter: blur( 4px );
+      /*  background-color:#FFEAEC; */
         overflow: scroll;
        -webkit-transition: 0.5s;
        -o-transition: 0.5s;
-        transition: 0.5s;
-        padding-top: 40px;
-        text-align:center;  
-       -webkit-user-select:none;
-       -moz-user-select:none;
-       -ms-user-select:none;    
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+       transition: 0.5s;
+       padding-top: 40px;
+       text-align:center;  
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;    
+       -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      }
 
 .sidenav a {
@@ -107,12 +113,14 @@
 .sidenav a:hover{
   color: #f1f1f1;
   background:#2576e8;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
  .sidenav > .active {
           color: #f1f1f1;
           background:#6e0cf7;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
 .sidenav .closebtn {
   position: absolute;
@@ -126,9 +134,15 @@
   border-radius: ;
 }
   #cold {
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content:center;
-        align-items:center;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
      }
   #cold > a {
         font-size:20px;
@@ -202,10 +216,13 @@
          -moz-user-select:none;    
          -ms-user-select:none;    
          user-select:none;  
-         transition-duration:0.3s;
-         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
+         -webkit-transition-duration:0.3s;  
+              -o-transition-duration:0.3s;  
+                 transition-duration:0.3s;
+         -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
        }
-  .head-logo > a:hover{ transform:scale(1.20)}
+  .head-logo > a:hover{ -webkit-transform:scale(1.20); -ms-transform:scale(1.20); transform:scale(1.20)}
    .head-logo > a:nth-child(1) {
          color:white;
          background: #266DD3;
@@ -235,7 +252,8 @@
        /*  max-height:380px; */
          width:100%;
          margin:10px auto;
-         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+         -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                 box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
        }
   .contest > #banner > img {
          width:100%;
@@ -251,6 +269,7 @@
             width:100%;
           /*  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
             gap:20px;
+            display:-ms-grid;
             display:grid;
             grid-template-columns:repeat(auto-fit,minmax(min(23rem,100%),1fr)) ;
 	   }
@@ -266,13 +285,19 @@
 		  font-size: ;
         }
      #seen > #movie {
-         box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+         -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+                 box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+         display:-webkit-box;
+         display:-ms-flexbox;
          display:flex;
-         justify-content:center;        
+         -webkit-box-pack:center;
+             -ms-flex-pack:center;
+                 justify-content:center;        
          gap:3px;
          padding:5px;
          height: ;
-         box-sizing:border-box;
+         -webkit-box-sizing:border-box;
+                 box-sizing:border-box;
        }
     #seen >  #movie > .imgdiv {
          margin:0 auto;
@@ -281,18 +306,23 @@
        /*  max-height:360px; */
          background: ;
          overflow: scroll;
-         transition-duration:0.3s;
+         -webkit-transition-duration:0.3s;
+              -o-transition-duration:0.3s;
+                 transition-duration:0.3s;
       }
      #seen >  #movie > .imgdiv::-webkit-scrollbar { display:none; }
 
     #seen > #movie > .imgdiv > img {
-         object-fit:cover;
+         -o-object-fit:cover;
+            object-fit:cover;
          background-position:center;
          width:100%;
          height:100%;
-         transition-duration:0.3s;
+         -webkit-transition-duration:0.3s;
+              -o-transition-duration:0.3s;
+                 transition-duration:0.3s;
       }
-    #seen > #movie > .imgdiv:hover > img { transform:scale(1.20) ;}
+    #seen > #movie > .imgdiv:hover > img { -webkit-transform:scale(1.20) ; -ms-transform:scale(1.20) ; transform:scale(1.20) ;}
     #seen > #movie > .rate {
               font-family: ;
               color: ;
@@ -357,6 +387,7 @@
          margin:0 auto ;
          width:100%;
          gap:10px;
+         display:-ms-grid;
          display:grid;
          grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;      
           }
@@ -370,7 +401,8 @@
          -moz-user-select:none;    
          -ms-user-select:none;    
          user-select:none;  
-         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+         -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
+                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
          }
      
      #container > div > h2{
@@ -394,13 +426,18 @@
             min-height:100%;
             max-height:320px;			
             margin:0 auto;    
-            transition-duration:0.3s;
+            -webkit-transition-duration:0.3s;    
+                 -o-transition-duration:0.3s;    
+                    transition-duration:0.3s;
             background-size:cover;
             background-position:center;
-			object-fit:fill;
+			-o-object-fit:fill;
+			   object-fit:fill;
         }
     #container > div > #hvr > img:hover {
-         transform:scale(1.15) ;
+         -webkit-transform:scale(1.15) ;
+             -ms-transform:scale(1.15) ;
+                 transform:scale(1.15) ;
        }
     #container > div > p {
            font-size:16px;
@@ -414,8 +451,10 @@
            background: #FF9914;
            border-radius:5px;
            cursor:pointer ;
-           animation:scale 1s linear infinite;
-           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+           -webkit-animation:scale 1s linear infinite;
+                   animation:scale 1s linear infinite;
+           -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
         }
      #page > a {
            text-decoration:none;
@@ -425,11 +464,15 @@
       aside {
            padding:10px;
            overflow: hidden;
-           user-select:none;
+           -webkit-user-select:none;
+              -moz-user-select:none;
+               -ms-user-select:none;
+                   user-select:none;
         }
     aside > #howvdo {
          margin:0 auto;
          gap:10px;
+         display:-ms-grid;
          display:grid;
          grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;               
         }
@@ -440,13 +483,15 @@
            max-height:280px;
            border:0px solid black;
            border-radius:0px;
-           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+           -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
          }
 
 
     .recommend {
           margin:10px auto;
-          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
           width:95%;
           padding:10px 10px;
           background: #F7F7FF;
@@ -455,7 +500,10 @@
            padding:10px 0px;
         }
     .recommend > a{
-          user-select:none;
+          -webkit-user-select:none;
+             -moz-user-select:none;
+              -ms-user-select:none;
+                  user-select:none;
           text-decoration:none;
           color: green;
           padding:5px;
@@ -548,11 +596,19 @@
          text-transform: capitalize ;    
        }
   #gettouch > form {
-        user-select:none;
+        -webkit-user-select:none;
+           -moz-user-select:none;
+            -ms-user-select:none;
+                user-select:none;
         margin:0 auto ;
         width:100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap:6px;
        }
    #gettouch > form > h2 {
@@ -634,7 +690,7 @@
        }
 
     @Keyframes scale {
-         50%{ transform:scale(0.85); }
+         50%{ -webkit-transform:scale(0.85); -ms-transform:scale(0.85); transform:scale(0.85); }
            }
   
   
@@ -648,7 +704,8 @@
 	        html {
 				   margin:0 auto;
 				   width:90%;
-				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }  
             .contest > #banner { width:80%;}
 			 #contentable > table{ width:80%; margin:0 auto; }
@@ -660,7 +717,8 @@
             html {
 				   margin:0 auto;
 				   width:70%;
-				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }  
 		 .contest > #banner { width:70%;}
 		   #contentable > table{ width:70%; margin:10px auto; }
@@ -1169,7 +1227,7 @@
     </div>
  </footer>
              
-  </body>
+ 
    <script>
           
           //navigation javascript
@@ -1253,4 +1311,5 @@ function addComment(name, commentText) {
   commentsSection.appendChild(commentDiv);
 }
    </script>
-</hyml>
+ </body>
+</html>
