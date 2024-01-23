@@ -218,14 +218,15 @@
               transform:translate(-50%,-50%) ;
        transform:translate(-50%,-50%) ;
        z-index:1;
-       width:70%;
-     /*  backdrop-filter:blur(2px) ; */
+       width:90%;
+       -webkit-backdrop-filter:blur(2px) ;
+               backdrop-filter:blur(2px) ;
     /*   width:50%; */
        padding:10px 10px ;  
     /*  text-align:center;  */
      /*  border:2px inset white; */
      /*  border-radius:4px;       */
-     /* font-weight:bold;     */    
+     /* font-weight:bold;     */ 
      }
  #section >  #blur a {
        display:inline-block;
@@ -240,6 +241,12 @@
        border-radius:6px;
     }
        
+	   
+	   #introo {
+	      padding:20px;
+		  background:;
+	   }
+	   
 	   
 	   /* Slideshow container */
 .slideshow-container {
@@ -540,6 +547,7 @@
 			bottom:0px;
 			left:10px;
 			transition-duration:0.5s;
+			z-index:0;
            }
     #img-con > img {
         width:100%;
@@ -547,11 +555,13 @@
         background-position:center;
         background-size:cover;
         object-fit:cover;
-	    opacity:70%;
+	    opacity:100%;
+		z-index:0;
         }
 	 #img-con:hover {
 	     width:130px;
          height:170px;
+		 z-index:0;
 	 }	
     #img-con > p {        
          position:absolute;
@@ -566,7 +576,7 @@
          user-select:none;
 		  color: #FFFFFF;
          font-size:12px;
-		 opacity:100%;
+		 opacity:80%;
          text-align:center;
          font-family: ;
           }
@@ -696,6 +706,22 @@
         </div> 
      </section>
 
+
+      <div id="introo">
+             <p>     
+                 Step into the enchanting world of verse at our poetry haven. Welcome to a digital realm where
+				 words dance, emotions resonate, and creativity knows no bounds. Our poetry website is a tapestry
+				 of diverse voices, weaving tales of love, resilience, and introspection. Immerse yourself in
+				 the lyrical cadence of poets who paint the canvas of human experience with vivid imagery and
+				 profound reflections. From sonnets to free verse, our collection spans the spectrum of poetic 
+				 expression, offering a sanctuary for both seasoned poets and those discovering the beauty of 
+				 language. Join us in celebrating the power of words, where each poem is a portal into the
+				 intricate landscapes of the heart and mind. Whether you seek solace or inspiration, our poetic 
+				 sanctuary invites you to explore the limitless possibilities of language.
+			</p>
+      </div>
+
+
                       <!-----------QUOTES--CONTAUNER----------------->
    <div class="slideshow-container" id="slides">
 
@@ -800,7 +826,7 @@
   
   
       <div id="img-con"> <!----------------DADU---------------->
-          <img src="Images/Trees.jpg">          
+          <img src="POETRY/dadu.jpg">          
           <p> 1941-2021 </p>         
        </div>
 	  
