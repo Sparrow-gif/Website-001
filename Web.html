@@ -15,14 +15,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <title> Web News </title>
     <style>
-         * {
+   
+   * {
           margin:0px;
           padding:0px;
           -webkit-box-sizing:border-box;
           box-sizing:border-box;
           font-family: montserrat;
           text-transform:capitalize;  
-          user-select:none;		  
+          -webkit-user-select:none;  
+             -moz-user-select:none;  
+              -ms-user-select:none;  
+                  user-select:none;		  
         }  
   header {
        display:-webkit-box;
@@ -63,14 +67,20 @@
       transition-duration:0.3s;
      text-shadow: 1px 1px 3px #666666;
       }
-.sidenav {
+   .sidenav {
         height:100vh;
         width:0;
+        width:0;
         position: fixed;
-        z-index:99999;
+        z-index:999;
         top: 0;
         right: 0;
-        background-color:#FFEAEC;
+        background: rgba( 235, 242, 250, 0.25 );
+        -webkit-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+       -webkit-backdrop-filter: blur( 4px );
+      /*  background-color:#FFEAEC; */
         overflow: scroll;
        -webkit-transition: 0.5s;
        -o-transition: 0.5s;
@@ -80,8 +90,9 @@
         -webkit-user-select:none;
         -moz-user-select:none;
         -ms-user-select:none;    
-       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
+       -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     }
 	.sidenav::-webkit-scrollbar { display:none;}
 .sidenav a {
        padding: 15px ;
@@ -98,12 +109,14 @@
 .sidenav a:hover{
   color: #f1f1f1;
   background:#2576e8;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
  .sidenav > .active {
           color: #f1f1f1;
           background:#6e0cf7;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
 .sidenav .closebtn {
   position: absolute;
@@ -117,9 +130,15 @@
   border-radius: ;
 }
   #cold {
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content:center;
-        align-items:center;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
      }
   #cold > a {
         font-size:20px;
@@ -178,7 +197,8 @@
          width:100%;         
          height:auto;
          padding:10px; 
-         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
 
   .container > .image-div {
@@ -196,7 +216,8 @@
        height:100%;
        background-position:center;
 	   background-size:cover;
-	   object-fit:fill;
+	   -o-object-fit:fill;
+	      object-fit:fill;
      }
 
     .content-div {
@@ -312,12 +333,14 @@
 	       html {
 		       margin:0 auto;
 		       width:90%;
-		       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		       -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	          }  
 			.container {  
                margin:0 auto;
 		       width:80%;
-		       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		       -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		               box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 			   }
 			  .content-div { padding:30px;}
 	   }
@@ -326,7 +349,8 @@
 	       html {
 	           margin:0 auto;
 		   width:70%;
-		   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		   }    		 
       }
    </style>
@@ -415,7 +439,7 @@
         <!----Go To Top Button------>
      <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
 
-  </body>
+ 
    <script>
           //navigation javascript
          function openNav() {
@@ -453,4 +477,5 @@ document.getElementById("topButton").addEventListener("click", function () {
   });
 
    </script>
-</hyml>
+   </body>
+</html>
