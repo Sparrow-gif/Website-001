@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <title> Blogs_Page </title>
+  <title> Blogs </title>
     <style>
-         * {
+ * {
           margin:0px;
           padding:0px;
           -webkit-box-sizing:border-box;
@@ -66,15 +66,20 @@ header > h2{
       transition-duration:0.3s;
      text-shadow: 1px 1px 3px #666666;
       }
-.sidenav {
+   .sidenav {
         height:100vh;
-        width:0;height:100vh;
+        width:0;
         width:0;
         position: fixed;
-        z-index:99;
+        z-index:999;
         top: 0;
         right: 0;
-        background-color:#FFEAEC;
+        background: rgba( 235, 242, 250, 0.25 );
+        -webkit-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+       -webkit-backdrop-filter: blur( 4px );
+      /*  background-color:#FFEAEC; */
         overflow: scroll;
        -webkit-transition: 0.5s;
        -o-transition: 0.5s;
@@ -84,7 +89,8 @@ header > h2{
         -webkit-user-select:none;
         -moz-user-select:none;
         -ms-user-select:none;    
-       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      }
 
 .sidenav a {
@@ -102,17 +108,25 @@ header > h2{
 .sidenav a:hover{
   color: #f1f1f1;
   background:#2576e8;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
  .sidenav > .active {
           color: #f1f1f1;
           background:#6e0cf7;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
   #cold {
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content:center;
-        align-items:center;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
      }
   #cold > a {
         font-size:20px;
@@ -182,8 +196,12 @@ header > h2{
        position:relative;       
        margin:0 ;
        padding:0 ;
-       user-select:none;
-       object-fit:fill;
+       -webkit-user-select:none;
+          -moz-user-select:none;
+           -ms-user-select:none;
+               user-select:none;
+       -o-object-fit:fill;
+          object-fit:fill;
        overflow:hidden;
       }
  #section >#blur >  h1{
@@ -205,9 +223,11 @@ header > h2{
          background-image:url('BLOG/BLOG2.jpg');    
          background-size:cover;
          background-position:center;
-         background-attachment:fixed;
-         filter:blur(0px) ;
-         object-fit:fill;
+         background-attachment: ;
+         -webkit-filter:blur(0px) ;
+                 filter:blur(0px) ;
+         -o-object-fit:fill;
+            object-fit:fill;
          overflow:hidden;
        }
   #section > #blur {
@@ -215,7 +235,9 @@ header > h2{
    /* backdrop-filter:blur(1px) ; */
        top:45%;
        left:50%;
-       transform:translate(-50%,-50%) ;
+       -webkit-transform:translate(-50%,-50%) ;
+           -ms-transform:translate(-50%,-50%) ;
+               transform:translate(-50%,-50%) ;
        z-index: 5 ;
        width:90%;
     /*   width:50%; */
@@ -236,11 +258,15 @@ header > h2{
        margin-top:20px ;
        text-align:center;
        cursor:pointer;
-       transition-duration:0.3s;
+       -webkit-transition-duration:0.3s;
+            -o-transition-duration:0.3s;
+               transition-duration:0.3s;
 	    Font-family: pt sans;
     }
   #section >  #blur a:active {
-         transform:scale(0.90) ;
+         -webkit-transform:scale(0.90) ;
+             -ms-transform:scale(0.90) ;
+                 transform:scale(0.90) ;
          border-radius:10px;
      }
     #inttro {
@@ -261,6 +287,7 @@ header > h2{
             margin:0 auto ;
             padding:10px;
             gap:10px;
+            display:-ms-grid;
             display:grid;
             grid-template-columns:repeat(auto-fit,minmax(min(30rem,100%),1fr)) ;
           }
@@ -270,7 +297,8 @@ header > h2{
           width:100%;
           border:0px solid black;
           margin:0 auto;
-		  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+		  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+		          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
        }
   
     #blogvdos > img {
@@ -288,10 +316,17 @@ header > h2{
 		  margin:0 auto;
        }
      fieldset >  div {
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content:space-between;
-        align-items:center;
-        align-content:center;
+        -webkit-box-pack:justify;
+            -ms-flex-pack:justify;
+                justify-content:space-between;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+        -ms-flex-line-pack:center;
+            align-content:center;
         padding:20pxpx;
         margin:0px auto ;
 		padding:10px;
@@ -303,7 +338,9 @@ header > h2{
          color: black;
          Font-size:18px;
          cursor:pointer;
-         transition-duration:0.3s;     
+         -webkit-transition-duration:0.3s;
+              -o-transition-duration:0.3s;
+                 transition-duration:0.3s;     
        }
     fieldset >  div > a:hover { 
          text-decoration: underline; 
@@ -312,7 +349,8 @@ header > h2{
          padding:6px;
       }
      fieldset >  div > img {
-         object-fit:cover;
+         -o-object-fit:cover;
+            object-fit:cover;
          width:80px;
          height: 60px;
          border:none;
@@ -326,7 +364,10 @@ header > h2{
           padding:20px;
           margin:0 auto ;
           background: #5e41f0;
-          user-select:none;
+          -webkit-user-select:none;
+             -moz-user-select:none;
+              -ms-user-select:none;
+                  user-select:none;
          }
    #ourwork > h2 {
             text-align:center;
@@ -337,6 +378,7 @@ header > h2{
    #ourwork > .grid {
             margin:0 auto ;
             gap:20px;
+            display:-ms-grid;
             display:grid;
             grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;         
          }
@@ -357,7 +399,10 @@ header > h2{
            background:#5e41f0 ;
            padding:20px ;
            color:white;
-           user-select:none;
+           -webkit-user-select:none;
+              -moz-user-select:none;
+               -ms-user-select:none;
+                   user-select:none;
          }
     .aboutus > h2 {
            margin-bottom:40px;
@@ -386,11 +431,19 @@ header > h2{
          text-transform: capitalize ;    
        }
   #gettouch > form {
-        user-select:none;
+        -webkit-user-select:none;
+           -moz-user-select:none;
+            -ms-user-select:none;
+                user-select:none;
         margin:0 auto ;
         width:100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap:6px;
        }
    #gettouch > form > h2 {
@@ -551,7 +604,10 @@ header > h2{
           cursor: pointer;
           z-index:90;
           font-size:1.50rem;
-          user-select:none;
+          -webkit-user-select:none;
+             -moz-user-select:none;
+              -ms-user-select:none;
+                  user-select:none;
             }
 
 
@@ -565,7 +621,8 @@ header > h2{
 	           html {
 				   margin:0 auto;
 				   width:90%;
-				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }  
 			  #section > #blur { 
                  width:60%;
@@ -596,13 +653,16 @@ header > h2{
 		       html {
 				   margin:0 auto;
 				   width:70%;
-				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }    
      		
 
 	     aside >  #blok { display:block;}
 	    #blak { display:none;}
         .flow {
+		     display:-webkit-box;
+		     display:-ms-flexbox;
 		     display:flex;
 			 justify-Content:center;
 			 gap:10px;
@@ -854,7 +914,6 @@ header > h2{
      <a href="https://youtube.com/@Wings_dna?si=EDxPSSc30nXrQ5DZ" target="_blank" style="text-decoration:none;color:White;"> <button id="ytb"> <i class="fa-brands fa-youtube"></i> </a> </button> </a>
      <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
 
-  </body>
 
    <script>
           function notevel() {
@@ -929,4 +988,5 @@ function addComment(name, commentText) {
   commentsSection.appendChild(commentDiv);
 }
    </script>
-</hyml>
+   </body>
+</html>
