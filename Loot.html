@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <title> Loot_Page </title>
+  <title> discount </title>
     <style>
-         * {
+* {
           margin:0px;
           padding:0px;
           -webkit-box-sizing:border-box;
@@ -62,15 +62,20 @@
       transition-duration:0.3s;
      text-shadow: 1px 1px 3px #666666;
       }
-.sidenav {
+   .sidenav {
         height:100vh;
-        width:height:100vh;
+        width:0;
         width:0;
         position: fixed;
-        z-index:99;
+        z-index:999;
         top: 0;
         right: 0;
-        background-color:#FFEAEC;
+        background: rgba( 235, 242, 250, 0.25 );
+        -webkit-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+       -webkit-backdrop-filter: blur( 4px );
+      /*  background-color:#FFEAEC; */
         overflow: scroll;
        -webkit-transition: 0.5s;
        -o-transition: 0.5s;
@@ -80,7 +85,8 @@
         -webkit-user-select:none;
         -moz-user-select:none;
         -ms-user-select:none;    
-       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      }
 
 .sidenav a {
@@ -98,12 +104,14 @@
 .sidenav a:hover{
   color: #f1f1f1;
   background:#2576e8;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
  .sidenav > .active {
           color: #f1f1f1;
           background:#6e0cf7;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
 .sidenav .closebtn {
   position: absolute;
@@ -117,9 +125,15 @@
   border-radius: ;
 }
   #cold {
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content:center;
-        align-items:center;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
      }
   #cold > a {
         font-size:20px;
@@ -194,7 +208,9 @@
   position: absolute;
   top: 50%;
   right:5%;
-  transform:translate(-50%,-50%) ;
+  -webkit-transform:translate(-50%,-50%) ;
+      -ms-transform:translate(-50%,-50%) ;
+          transform:translate(-50%,-50%) ;
   padding: 7px 5px;
   border: none;
   background: none;
@@ -210,12 +226,14 @@
        padding:10px;
        background:#FFFBFC ;
        gap:10px;
+       display:-ms-grid;
        display:grid;
        grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
        text-transform:capitalize;
       }
     .product-card {
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
           border: ;
           font-family: ;
           background:#FFFFFA ;
@@ -226,7 +244,11 @@
 		/*  max-height:480px;  */
 		  overflow:hidden;
           text-align: center;
+          -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+          transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+          -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
+          transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
           text-transform:capitalize;
           }
 	 .product-card::-webkit-scrollbar{ display:none;}
@@ -239,7 +261,8 @@
 					  
 	     .product-card > #Des {
 	             height: ;
- 		         text-overflow: ellipsis;  
+ 		         -o-text-overflow: ellipsis;
+ 		            text-overflow: ellipsis;  
                  overflow:hidden;
                  width:auto;
                  white-space:wrap;
@@ -257,7 +280,11 @@
          border-radius: 8px;
          margin: 10px auto;
          background-position:center;
+         -webkit-transition: -webkit-transform 0.3s ease;
+         transition: -webkit-transform 0.3s ease;
+         -o-transition: transform 0.3s ease;
          transition: transform 0.3s ease;
+         transition: transform 0.3s ease, -webkit-transform 0.3s ease;
        }
 
      .product-card .price {
@@ -267,7 +294,8 @@
        }
 
   .product-card > button {
-           box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+           -webkit-box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+                   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
            background-color: #2ecc71;
            color: white;
            border: none;
@@ -276,7 +304,9 @@
            font-size: 16px;
            font-family: ;
            cursor: pointer;
-           transition-duration: 0.3s;
+           -webkit-transition-duration: 0.3s;
+                -o-transition-duration: 0.3s;
+                   transition-duration: 0.3s;
            text-shadow: 1px 1px 3px #666666; 
            text-transform:capitalize;
       }
@@ -288,17 +318,24 @@
       } 
   .product-card  button:active {
               background-color: #27ae60;
-              transform: scale(0.90);
+              -webkit-transform: scale(0.90);
+                  -ms-transform: scale(0.90);
+                      transform: scale(0.90);
          }
 
       /* Animation and Glow Effect */
         .product-card:hover {
-              transform: scale(1.05);
-              box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+              -webkit-transform: scale(1.05);
+                  -ms-transform: scale(1.05);
+                      transform: scale(1.05);
+              -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
 
       .product-card img:hover {
-             transform: scale(1.1);
+             -webkit-transform: scale(1.1);
+                 -ms-transform: scale(1.1);
+                     transform: scale(1.1);
          }
 
     footer {
@@ -391,22 +428,25 @@
 	           html {
 				   margin:0 auto;
 				   width:90%;
-				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }  
                #section  {
 			       gap:10px;
+                  display:-ms-grid;
                   display:grid;
                   grid-template-columns:repeat(auto-fit,minmax(min(16rem,100%),1fr)) ;
 	          }
-	   
+	   }
 	   
 	   @media only screen and (min-width:992px) { 
 		       html {
 				   margin:0 auto;
 				   width:70%;
-				   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-				   }    
-		   
+				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   }   
+}
     </style>
   </head>
   <body oncontextmenu="return false">
@@ -459,7 +499,7 @@
           
 
      <div class="search-container">
-         <input type="text" id="searchInput" placeholder="Search products">
+         <input type="search" id="searchInput" placeholder="Search products">
          <button id="searchBtn" class="fa fa-search"></button>
     </div>
 
@@ -604,7 +644,7 @@
         <!----Go To Top Button------>
    <!------<button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>------>
      
-  </body>
+
    <script>
           //navigation javascript
          function openNav() {
@@ -665,4 +705,5 @@ document.getElementById("topButton").addEventListener("click", function () {
   }
 });
    </script>
-</hyml>
+   </body>
+</html>
