@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html> <!--Roboto--Cabin--Open Sans--Lato---Montserrat--Quicksand---PT Sans--Playfair--Display--Domine---->
 <head>
@@ -202,7 +201,7 @@
           padding:10px;
        }
     main > img {
-          min-width:250px;
+	      min-width:330px;
           max-width:330px;
           aspect-ratio: 1/1.05;
           margin:10px auto;     
@@ -211,6 +210,101 @@
           box-shadow: rgba(255, 255, 255) 0px 7px 29px 0px;
          }
  
+       fieldset {
+          padding:20px;
+		  margin:0 auto;
+       }
+     fieldset >  div {
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack:justify;
+            -ms-flex-pack:justify;
+                justify-content:space-between;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+        -ms-flex-line-pack:center;
+            align-content:center;
+        padding:8px;
+        margin:0px auto ;
+		padding:10px;
+		width:100%;
+        border-bottom:0.80px solid silver;
+      }
+     fieldset >  div > a { 
+         text-decoration: none; 
+         color: black;
+         Font-size:18px;
+         cursor:pointer;
+         -webkit-transition-duration:0.3s;
+              -o-transition-duration:0.3s;
+                 transition-duration:0.3s;     
+       }
+    fieldset >  div > a:hover { 
+         text-decoration: underline; 
+         color: ;
+         Font-size:20px;
+         padding:6px;
+      }
+     fieldset >  div > img {
+         -o-object-fit:cover;
+            object-fit:cover;
+         width:80px;
+         height: 60px;
+         border:none;
+         outline:none;
+         border-radius:6px;
+       }
+	   
+	    .askqtn {
+	        margin:0 auto;
+			width:90%;
+	      }
+      .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            -webkit-transition: 0.4s;
+            -o-transition: 0.4s;
+            transition: 0.4s;
+            margin:10px auto;
+			text-transform:lowercase;
+           }
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  text-transform:lowercase;
+}
+
+
 
     footer {
         position:relative;
@@ -300,22 +394,24 @@
 	  
    @media only screen and (min-width:768px) { 
 	       
-			.container {  
-               margin:0 auto;
-		       width:80%;
-		       -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-		               box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-			   }
-			  .content-div { padding:30px;}
+			fieldset > div { width:80%;}
 	   }
 	   
    @media only screen and (min-width:992px) { 
 	       html {
 	           margin:0 auto;
-		   width:70%;
+		   width:80%;
 		   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-		   }    		 
+		   }  
+		   fieldset > div { width:100%;}
+         article {
+              display:flex;
+              justify-content: space-arround ;  
+              gap:3%;			  
+		   }	
+          article > main { width :65%;}		
+           article > aside { width :30%;}			  
       }
    </style>
   </head>
@@ -366,7 +462,7 @@
           
                  
            <!-----Main Body------>
-     
+   <article>
         <main>
            <img src="HEALTH/apple.png" alt="tips1">   <!------Image 01------->
            <img src="HEALTH/banana.png" alt="tips2">   <!------Image 02------->
@@ -381,8 +477,85 @@
            <img src="HEALTH/.png" alt="tips11">  <!------Image 11-------->
            <img src="HEALTH/.png" alt="tips12">  <!------Image 12-------->
       </main>
-                   
-       
+           
+
+       <aside>
+		    <fieldset style="border:none;">
+                <legend style="border:none;"><h2> Our Recommended Articals </h2></legend>
+           
+                  <div> <!-----Post 1------>
+                       <a href="#"> hello world </a>
+                       <img src="#" alt="img1">
+                 </div>
+
+                 <div> <!-----Post 2------>
+                      <a href="#"> hello world </a>
+                     <img src="#" alt="img1">
+                    </div>
+
+                  <div> <!-----Post 3------>
+                     <a href="#"> hello world </a>
+                    <img src="#" alt="img1">
+                  </div>
+
+                  <div> <!-----Post 4------>
+                    <a href="#"> hello world </a>
+                    <img src="#" alt="img1">
+                 </div>
+
+                   <div> <!-----Post 5------>
+                     <a href="#"> hello world </a>
+                     <img src="#" alt="img1">
+                  </div>
+
+                 <div> <!-----Post 6----->
+                      <a href="#"> Cyber security tips </a>
+                     <img src="#" alt="img1">
+                 </div>
+  
+                  <div> <!-----Post 7------>
+                     <a href="#"> hello world </a>
+                     <img src="#" alt="img1">
+                 </div>
+
+                  <div> <!-----Post 8----->
+                      <a href="#"> hello world </a>
+                      <img src="#" alt="img1">
+                  </div>
+				
+             </fieldset> 
+
+                <section class="askqtn"><!-------frequnncy asked questin section----------------->
+				       
+					   <h2> FAQ </h2>
+					    
+				       <button class="accordion"> what kind of health tips can i find on the website  ? </button>  <!----FAQ1----->
+                        <div class="panel">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                       </div>
+
+                        <button class="accordion"> how to earn free paytm cash ? </button>   <!----FAQ2----->
+                        <div class="panel">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                       </div>
+ 
+                        <button class="accordion">how to earn with zupee app ? </button>     <!----FAQ3----->
+                        <div class="panel">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                       </div>
+
+                        <button class="accordion"> how to withdraw money on paytm ? </button>   <!----FAQ4----->
+                        <div class="panel">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                       </div>
+ 
+                        <button class="accordion">is it is possible to withdraw money from the app to bank ? </button>     <!----FAQ5----->
+                        <div class="panel">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                       </div>
+			    </Section>
+        </aside>				
+   </article>    
        <footer>   <!------footer Section------->
        <h2> Quotes World </h2>          
       <select>
@@ -442,6 +615,22 @@ document.getElementById("topButton").addEventListener("click", function () {
      }
   });
 
+         
+		        //ACCORDION
+           var acc = document.getElementsByClassName("accordion");
+           var i;
+
+          for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+         if (panel.style.maxHeight) {
+             panel.style.maxHeight = null;
+      } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+     } 
+  });
+}
    </script>
    </body>
 </html>
