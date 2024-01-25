@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html> <!--Roboto--Cabin--Open Sans--Lato---Montserrat--Quicksand---PT Sans--Playfair--Display--Domine---->
+<head>
+  <meta charset="utf-8"/>
+  <base href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title> health tips </title>
+    <style>
+   
+   * {
+          margin:0px;
+          padding:0px;
+          -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+          font-family: montserrat;
+          text-transform:capitalize;  
+          -webkit-user-select:none;  
+             -moz-user-select:none;  
+              -ms-user-select:none;  
+                  user-select:none;		  
+        }  
+  header {
+       display:-webkit-box;
+       display:-ms-flexbox;
+       display:flex;
+       -webkit-box-pack:justify;
+       -ms-flex-pack:justify;
+       justify-content:space-between;
+       -webkit-box-align:center;
+       -ms-flex-align:center;
+       align-items:center;
+       position:sticky;
+       z-index:99;
+       top:0px;
+       background:#13d48a ; /* #ebe6fa; */
+       padding:2px;      
+       -webkit-user-select:none;
+       -moz-user-select:none;
+       -ms-user-select:none;
+     }
+  header > h2{
+          font-size:25px;
+          color:white;
+          text-indent:10px;
+          font-family: sans-serif;
+          -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+        }
+         
+  header > span {
+      padding: 0px 10px;
+      font-size:1.80rem;
+      cursor:pointer;           
+      background: ;
+      color:white;  
+      -webkit-transition-duration:0.3s;  
+      -o-transition-duration:0.3s;  
+      transition-duration:0.3s;
+     text-shadow: 1px 1px 3px #666666;
+      }
+   .sidenav {
+        height:100vh;
+        width:0;
+        width:0;
+        position: fixed;
+        z-index:999;
+        top: 0;
+        right: 0;
+        background: rgba( 235, 242, 250, 0.25 );
+        -webkit-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+       -webkit-backdrop-filter: blur( 4px );
+      /*  background-color:#FFEAEC; */
+        overflow: scroll;
+       -webkit-transition: 0.5s;
+       -o-transition: 0.5s;
+       transition: 0.5s;
+       padding-top: 40px;
+       text-align:center;  
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;    
+       -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     }
+	.sidenav::-webkit-scrollbar { display:none;}
+.sidenav a {
+       padding: 15px ;
+       text-decoration: none;
+       font-size: 16px;
+       color: black;
+       display: block;
+       -webkit-transition: 0.3s;
+       -o-transition: 0.3s;
+       transition: 0.3s;
+       margin-bottom:6px;
+    }
+
+.sidenav a:hover{
+  color: #f1f1f1;
+  background:#2576e8;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+ .sidenav > .active {
+          color: #f1f1f1;
+          background:#6e0cf7;
+          -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+.sidenav .closebtn {
+  position: absolute;
+  top:5px;
+  right: 10px;
+  font-size: 20px;
+  margin-left: 50px;
+  padding:-0px 12px;
+  background: #6e0cf7;
+  color:white;  
+  border-radius: ;
+}
+  #cold {
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+     }
+  #cold > a {
+        font-size:20px;
+        padding:10px 15px;
+        border-radius:50%;
+     }
+    .scroll-container {
+        width: 100%;
+        overflow-x: auto;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;        
+        background:white;
+        padding:5px;
+        position:relative ;
+        white-space: nowrap;
+      }
+ .scroll-container::-webkit-scrollber {
+         display:none;
+      }
+ .scroll-container > .scroll-item {
+        font-family: Slabo;
+         background:#ebe6fa ;
+         text-align:center;
+         min-width: 100px;
+         text-decoration:none;
+         padding:5px;
+         border: none;
+         margin-right: 10px;
+         border-radius:10px;
+         overflow:scroll;
+        -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;       
+       }
+	  .scroll-container > .scroll-item::-webkit-scrollbar{ display: none;}
+    .scroll-container > #active {
+        color: white;
+        background:#6e0cf7;
+        }
+   .scroll-container > .scroll-item:hover {
+          color: white;
+          background:#6e0cf7;
+       }
+   .scroll-container::-webkit-scrollbar{  width:2px; }
+
+   .scroll-container::-webkit-scrollbar-track{  background: ;}
+
+   .scroll-container::-webkit-scrollbar-thumb{
+         /* background-color: #4acf36;
+          border-radius:0px;
+          border:1px none #FFFFFF; */
+           }
+		
+      main {
+          display:flex;
+          flex-wrap:wrap;
+          justify-content: space-arround;
+          align-items:center;
+          background: #d5ebf7;
+          gap:17px 15px;
+          padding:10px;
+       }
+    main > img {
+          min-width:250px;
+          max-width:330px;
+          aspect-ratio: 1/1.05;
+          margin:10px auto;     
+          border:0px solid black;  
+          border-radius:4px;
+          box-shadow: rgba(255, 255, 255) 0px 7px 29px 0px;
+         }
+ 
+
+    footer {
+        position:relative;
+         width:100%;         
+         margin:0 auto;
+         background:#122029;
+         color:white;    
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         padding:5px;
+         text-transform:capitalize;
+         overflow:hidden;
+         -webkit-user-select:none;
+         -moz-user-select:none;
+         -ms-user-select:none;              
+       }
+   footer > h3 > i{
+        font-size:24px;
+        text-indent:20px;
+        padding:5px;
+     }  
+   .sneha {
+        padding:10px;
+        color:white;
+       }
+   .sneha > a{
+        text-decoration:none;
+        color:white;
+        display:block;      
+        margin:3px;  
+        font-size:14px
+        }
+   select {
+        margin:10px;
+        float:right;
+        width:40%;
+		max-width:210px;
+        height:40px;
+        outline:none;
+        border:2px solid #253330; 
+        border-radius:30px;
+        text-align:center;
+        font-size:16px;
+        font-weight:600px;
+        -webkit-transition:all 0.3s;
+        -o-transition:all 0.3s;
+        transition:all 0.3s;
+        background:white;
+        outline:2px solid white; 
+        text-transform:capitalize;
+       }
+    #topButton {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #007BFF;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          padding: 5px 10px;
+          font-size: 16px;
+          cursor: pointer;
+          z-index:1 ;
+          font-size:1.50rem;
+            }
+    .telegram {
+          position: fixed;
+          bottom: 80px;
+          right: 10px;
+          background-color: #007BFF;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          padding: 5px 10px;
+          font-size: 20px;
+          cursor: pointer;
+          z-index:1 ;
+          font-size:1.50rem;
+           }
+   @media only screen and (max-width:767px) { 
+	  
+	  }
+	  
+	  
+   @media only screen and (min-width:768px) { 
+	       
+			.container {  
+               margin:0 auto;
+		       width:80%;
+		       -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		               box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+			   }
+			  .content-div { padding:30px;}
+	   }
+	   
+   @media only screen and (min-width:992px) { 
+	       html {
+	           margin:0 auto;
+		   width:70%;
+		   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		   }    		 
+      }
+   </style>
+  </head>
+  <body ncontextmenu="return false">
+        <header id="navbar">              
+           <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" target="_self" >Home</a>
+                <a href="About us.html" target="_self" > About us </a>
+                <a href="Blogs.html" target="_self" > Blogs </a>
+                <a href="Poetry.html" target="_self" > Poetry </a>
+				<a href="health.html" class="active" target="_self" > health </a>                              
+                <a href="Web.html" target="_self" > web news </a>
+                <a href="#" target="_blank" > E-commerce </a>
+                <a href="#" target="_blank" > Cricket </a>
+                <a href="Contact us.html" target="_self" >Contact us</a>
+                <div id="cold">
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-instagram "></i> </a>
+                    <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
+               </div>
+          </div>
+                <h2> Quotes World  </h2>
+                <span onclick="openNav()">&#9776;</span>
+     </header>
+
+         <section class="scroll-container">
+               <a class="scroll-item" href="Top10.html" target="_self"> Daily Quotes </a>     
+               <a class="scroll-item" href="index.html" target="_self"> K.Quotes </a>
+               <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
+               <a class="scroll-item" href="Blogs.html" target="_self"> blogs </a>
+               <a class="scroll-item" href="Poetry.html" target="_self"> poetry </a>               
+               <a class="scroll-item" href="Education.html" target="_self"> education </a>
+               <a class="scroll-item" href="Biography.html" target="_self"> biography </a>               
+               <a class="scroll-item" href="Games.html" target="_self"> games </a>
+               <a class="scroll-item" href="Loot.html" target="_self"> loot Offers </a>    
+               <a class="scroll-item" href="Movie.html" target="_self"> Movies </a>  
+               <a class="scroll-item" id="active" href="#" target="_self"> health </a>
+               <a class="scroll-item" href="Web.html" target="_self"> web news </a>                               			   
+               <a class="scroll-item" href="https://www.amazon.in" target="_self"> Life-Style </a>
+               <a class="scroll-item" href="#" target="_self"> cricket </a>
+               <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
+          <!-- Add more items as needed -->
+  </section>
+          
+                 
+           <!-----Main Body------>
+     
+        <main>
+           <img src="HEALTH/apple.png" alt="tips1">   <!------Image 01------->
+           <img src="HEALTH/banana.png" alt="tips2">   <!------Image 02------->
+           <img src="HEALTH/berries.png" alt="tips3">   <!------Image 03------->
+           <img src="HEALTH/grapes.png" alt="tips4">   <!------Image 04------->
+           <img src="HEALTH/kiwi.png" alt="tips5">   <!------Image 05------->
+           <img src="HEALTH/orange.png" alt="tips6">   <!------Image 06------->
+           <img src="HEALTH/papaya.png" alt="tips7">   <!------Image 07------->
+           <img src="HEALTH/pineapple.png" alt="tips8">   <!------Image 08------->
+           <img src="HEALTH/potato.png" alt="tips9">   <!------Image 09------->
+           <img src="HEALTH/.png" alt="tips10">  <!------Image 10------->
+           <img src="HEALTH/.png" alt="tips11">  <!------Image 11-------->
+           <img src="HEALTH/.png" alt="tips12">  <!------Image 12-------->
+      </main>
+                   
+       
+       <footer>   <!------footer Section------->
+       <h2> Quotes World </h2>          
+      <select>
+           <option> English</option>
+           <option> hindi   </option>
+           <option> Bengali </option>
+           <option> gujrati </option>
+           <option> tamil  </option>
+           <option> telugu  </option>
+           <option> odiya  </option>           
+     </select>
+    <div class="sneha">
+        <a href="About us.html" target="_self"><p> Terms & privacy </p></a>
+        <a href="About us.html" target="_self"><p> policy </p></a>
+        <a href="About us.html" target="_self"><p> 2023® </p></a>
+        <a href="About us.html" target="_self"><p> quotes world LLC</p></a>
+   </div>
+  </footer>
+     
+        <!----Go To Top Button------>
+     <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
+
+ 
+   <script>
+          //navigation javascript
+         function openNav() {
+         document.getElementById("mySidenav").style.width = "80%";
+           }
+         function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+           } ;
+
+          /* Go To Top Button */
+
+      window.onscroll = function () {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("topButton").style.display = "block";
+  } else {
+    document.getElementById("topButton").style.display = "none";
+  }
+};
+
+     // Scroll to the top when the button is clicked
+document.getElementById("topButton").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+     window.addEventListener('scroll', function() {
+       const navbar = document.getElementById('navbar');
+       const scrolled = window.scrollY;
+
+       if (scrolled > 30) {
+       navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
+     } else {
+       navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
+     }
+  });
+
+   </script>
+   </body>
+</html>
