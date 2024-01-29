@@ -231,6 +231,14 @@
           box-shadow: rgba(255, 255, 255) 0px 7px 29px 0px;
          }
  
+ 
+      #conclution1 {
+        	  display:block;
+		      padding:10px 10px;
+		     }	
+        #conclution2 { display:none;}
+ 
+ 
        fieldset {
           padding:20px;
 		  margin:0 auto;
@@ -418,8 +426,14 @@
 	           margin:0 auto;
 		       width:90%;
 			   }
-			fieldset > div { width:80%;}
-	   }
+			   
+			 main {
+          		  gap:10px;
+                  display:grid;
+                  grid-template-columns:repeat(auto-fit,minmax(min(18rem,100%),1fr)) ;
+				}
+		       	  fieldset > div { width:80%;}
+	          }
 	   
    @media only screen and (min-width:992px) { 
 	       html {
@@ -428,6 +442,15 @@
 		   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		   }  
+		    main {
+          display:flex;
+          flex-wrap:wrap;
+          justify-content: space-arround;
+          align-items:center;
+          background: #d5ebf7;
+          gap:17px 15px;
+          padding:10px;
+       }
 		   fieldset > div { width:100%;}
          article {
               display:flex;
@@ -435,7 +458,9 @@
               gap:3%;			  
 		   }	
           article > main { width :65%;}		
-           article > aside { width :30%;}			  
+           article > aside { width :30%;}
+        #conclution1 { display:none;}	
+        #conclution2 { display:block; padding:10px 10px;}		
       }
    </style>
   </head>
@@ -562,7 +587,19 @@
            <img src="HEALTH/.png" alt="tips11">  <!------Image 11-------->
            <img src="HEALTH/.png" alt="tips12">  <!------Image 12-------->
       </main>
-           
+         
+		 
+     <div id="conclution1">
+         <h2 style="color:#200a57; padding:10px;font-weight:600;">  conclution </h2>
+		 <p style="color:; padding:15px 25px;"> In the vibrant tapestry of life, prioritizing our well-being becomes paramount, and the journey to holistic health unfolds seamlessly with the wisdom gleaned from a natural health tips website. 
+		     As the digital gateway to a rejuvenated existence, this platform serves as a beacon of empowerment, offering a kaleidoscope of insights that harmonize mind, body, and spirit. Nurturing a 
+		     wholesome lifestyle, it not only imparts the significance of nourishing foods and invigorating exercises but also advocates for the healing power of nature's remedies. Guiding us towards a 
+			 balanced equilibrium, the website inspires a mindful approach to health, encapsulating the essence of wellness in its purest form. Embracing this digital sanctuary, we embark on a transformative 
+			 odyssey, where the amalgamation of nature's bounty and timeless wisdom coalesce to sculpt a radiant and resilient version of ourselves. Step into the sanctuary of well-being, where the journey to 
+			 vitality awaits – a testament to the beauty of embracing natural health.
+	    </p>
+	</div>   
+
 
        <aside>
 		    <fieldset style="border:none;">
@@ -654,7 +691,20 @@
                        </div>
 			    </Section>
         </aside>				
-   </article>    
+   </article>  
+
+ 
+       <div id="conclution2">
+           <h2 style="color:#200a57; padding:10px;font-weight:600;">  conclution </h2>
+           <p style="color:; padding:15px 25px;"> In the vibrant tapestry of life, prioritizing our well-being becomes paramount, and the journey to holistic health unfolds seamlessly with the wisdom gleaned from a natural health tips website. 
+		       As the digital gateway to a rejuvenated existence, this platform serves as a beacon of empowerment, offering a kaleidoscope of insights that harmonize mind, body, and spirit. Nurturing a 
+			   wholesome lifestyle, it not only imparts the significance of nourishing foods and invigorating exercises but also advocates for the healing power of nature's remedies. Guiding us towards a 
+			   balanced equilibrium, the website inspires a mindful approach to health, encapsulating the essence of wellness in its purest form. Embracing this digital sanctuary, we embark on a transformative 
+			   odyssey, where the amalgamation of nature's bounty and timeless wisdom coalesce to sculpt a radiant and resilient version of ourselves. Step into the sanctuary of well-being, where the journey to 
+			   vitality awaits – a testament to the beauty of embracing natural health. 
+		  </p>
+      </div> 
+   
        <footer>   <!------footer Section------->
        <h2> Quotes World </h2>          
       <select>
