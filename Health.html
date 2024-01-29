@@ -304,6 +304,7 @@
             transition: 0.4s;
             margin:10px auto;
 			text-transform:lowercase;
+			font-family:Open Sans;
            }
 
 .active, .accordion:hover {
@@ -322,16 +323,17 @@
   content: "\2212";
 }
 
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-out;
-  -o-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-  text-transform:lowercase;
-}
+    .panel {
+         padding: 0 18px;
+         background-color: white;
+         max-height: 0;
+         overflow: hidden;
+        -webkit-transition: max-height 0.2s ease-out;
+        -o-transition: max-height 0.2s ease-out;
+         transition: max-height 0.2s ease-out;
+         text-transform:lowercase;
+		 font-family:Quicksand;
+      }
 
 
 
@@ -430,7 +432,7 @@
 			 main {
           		  gap:10px;
                   display:grid;
-                  grid-template-columns:repeat(auto-fit,minmax(min(18rem,100%),1fr)) ;
+                  grid-template-columns:repeat(auto-fit,minmax(min(17rem,100%),1fr)) ;
 				}
 		       	  fieldset > div { width:80%;}
 	          }
@@ -462,6 +464,21 @@
         #conclution1 { display:none;}	
         #conclution2 { display:block; padding:10px 10px;}		
       }
+	  
+	  
+	   @media(prefers-color-scheme:light) {  /* LIGHT MODE */
+	         body {
+			     Background:#FFFFFF;
+				 color:#000000;
+			 }
+	  }
+     
+	  @media(prefers-color-scheme:dark) { /* DARK MODE*/
+	         body {
+			     Background:#000000;
+				 color:#FFFFFF;
+			 }
+	  }
    </style>
   </head>
   <body ncontextmenu="return false">
@@ -591,7 +608,7 @@
 		 
      <div id="conclution1">
          <h2 style="color:#200a57; padding:10px;font-weight:600;">  conclution </h2>
-		 <p style="color:; padding:15px 25px;"> In the vibrant tapestry of life, prioritizing our well-being becomes paramount, and the journey to holistic health unfolds seamlessly with the wisdom gleaned from a natural health tips website. 
+		 <p style="color:; padding:0px 15px;"> In the vibrant tapestry of life, prioritizing our well-being becomes paramount, and the journey to holistic health unfolds seamlessly with the wisdom gleaned from a natural health tips website. 
 		     As the digital gateway to a rejuvenated existence, this platform serves as a beacon of empowerment, offering a kaleidoscope of insights that harmonize mind, body, and spirit. Nurturing a 
 		     wholesome lifestyle, it not only imparts the significance of nourishing foods and invigorating exercises but also advocates for the healing power of nature's remedies. Guiding us towards a 
 			 balanced equilibrium, the website inspires a mindful approach to health, encapsulating the essence of wellness in its purest form. Embracing this digital sanctuary, we embark on a transformative 
@@ -606,7 +623,7 @@
                 <legend style="border:none;color:#200a57;"><h2> Our Recommended Articals </h2></legend>
            
                   <div> <!-----Post 1------>
-                       <a href="#"> top 10 movie download websites </a>
+                       <a href="#"> top movie download websites </a>
                        <img src="INDEX/movie.webp" alt="img1">
                  </div>
 
@@ -626,7 +643,7 @@
                  </div>
 
                    <div> <!-----Post 5------>
-                     <a href="#"> poetry </a>
+                     <a href="#"> amazing poetry </a>
                      <img src="INDEX/poetry.webp" alt="img1">
                   </div>
 
@@ -642,7 +659,7 @@
 
                   <div> <!-----Post 8----->
                       <a href="#"> stories in the life of lord krishna </a>
-                      <img src="INDEX/stories.webp" alt="img1">
+                      <img src="INDEX/cute.webp" alt="img1">
                   </div>
 				
 				  <div> <!-----Post 9----->
