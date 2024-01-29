@@ -596,7 +596,7 @@ header > h2{
 		 -webkit-transition-duration:0.3s;
 		      -o-transition-duration:0.3s;
 		         transition-duration:0.3s;
-         }
+			 }
      .article:hover{
 	     -webkit-transform:scale(1.04);
 	         -ms-transform:scale(1.04);
@@ -606,7 +606,7 @@ header > h2{
         max-width: 100%;
         height: auto;  
         -o-object-fit: cover;  
-           object-fit: cover;
+        object-fit: cover;
         aspect-ratio:1/0.70;
          }
 
@@ -667,14 +667,18 @@ header > h2{
         border: 1px solid #ccc;
         border-radius:4px;
         Font-family: ;
+		outline:none;
          }
-  #gettouch > form >  textarea {
+	 #gettouch > form >  input:user-invalid { border:1.50px solid red;}
+	 #gettouch > form >  textarea:user-invalid { border:1.50px solid red;}
+    #gettouch > form > textarea {
         width:100%;
         border: 1px solid #ccc;
         border-radius:4px;
         padding:8px;
         font-size:16px;
         Font-family: ;
+		outline:none;
       }
   #gettouch > form > .btn {
         Font-family: ;
@@ -855,10 +859,24 @@ footer {
        #about > .abhe > p  {  min-height:220px; max-height:360px; overflow-y:scroll; }
        #gettouch > form { width:60%;}
       }
-
+	  
+	  
+	  @media(prefers-color-scheme:light) {  /* LIGHT MODE */
+	         body {
+			     Background:#FFFFFF;
+				 color:#000000;
+			 }
+	  }
+     
+	  @media(prefers-color-scheme:dark) { /* DARK MODE*/
+	         body {
+			     Background:#000000;
+				 color:#FFFFFF;
+			 }
+	  }
    </style>
 </head>
-<body oncontextmenu="return false">
+<body ocontextmenu="return false">
            <!----Google Ads------->
       
            <!----Google Ads close------->
@@ -947,10 +965,10 @@ footer {
 		<div class="slideshow-container">
        <!-- Slides -->
              <div class="mySlides fade">
-                  <img src="INDEX/Lod2.jpg" style="width:100%">
+                  <img src="INDEX/Lod2.webp" style="width:100%">
             </div>
              <div class="mySlides fade">
-                  <img src="INDEX/Lod9.jpg" style="width:100%">
+                  <img src="INDEX/Lod9.webp" style="width:100%">
             </div>
              <div class="mySlides fade">
                    <img src="INDEX/Lod13.webp" style="width:100%">
@@ -1003,7 +1021,7 @@ footer {
                     <h3> -भगवान कृष्ण </h3>
               </div>
 
-    <!---Images1---> <img src="INDEX/Lod1.png" alt="image01">
+    <!---Images1---> <img src="INDEX/Lod1.webp" alt="image01" loading="lazy">
 
                <div class="box4"> 
                     <h4> "Whatever happened in the past is for the best. What is happening is also for the best. What will happen in the future will be for the best." </h4>
@@ -1037,7 +1055,7 @@ footer {
                     <h3> -भगवान कृष्ण </h3>
               </div>
 			  
-    <!---Images2---> <img src="INDEX/Lod3.png" alt="image02">
+    <!---Images2---> <img src="INDEX/Lod3.webp" alt="image02" loading="lazy">
 	
                 <div class="box8"> 
                     <h4> "Reshape yourself through the power of your will; never let yourself be degraded by self-will. The will is the only friend of the Self, and the will is the only enemy of the Self." </h4>
@@ -1055,7 +1073,7 @@ footer {
                     <h3> -भगवान कृष्ण </h3>
               </div>
     
-   <!---Images3---> <img src="INDEX/Lod4.png" alt="image03">
+   <!---Images3---> <img src="INDEX/Lod4.webp" alt="image03" loading="lazy">
 
               <div class="box10"> 
                     <h4> "The senses are so turbulent that they can torment the mind. But he who controls his senses with the mind, and engages his active organs in works of devotion, without attachment, is by far superior." </h4>
@@ -1089,7 +1107,7 @@ footer {
                     <h3> -भगवान कृष्ण </h3>
               </div>
 
-  <!---Images4---> <img src="INDEX/Lod5.png" alt="image04">
+  <!---Images4---> <img src="INDEX/Lod5.webp" alt="image04" loading="lazy">
 
               <div class="box13"> 
                     <h4> "As a lamp in a windless place does not waver, so the transcendentalist, whose mind is controlled, remains always steady in his meditation on the transcendent Self." </h4>
@@ -1123,7 +1141,7 @@ footer {
                     <h3> -भगवान कृष्ण </h3>
               </div>
    
-   <!---Images5---> <img src="INDEX/Lod6.png" alt="image05">
+   <!---Images5---> <img src="INDEX/Lod6.webp" alt="image05" loading="lazy">
 
                <div class="box17"> 
                     <h4> "That knowledge which sees the one indestructible reality in all beings, the undivided in the divided, is knowledge in the mode of goodness." </h4>
@@ -1157,7 +1175,7 @@ footer {
                     <h3> -भगवान कृष्ण </h3>
               </div>
 			  
-     <!---Images6---> <img src="INDEX/Lod8.png" alt="image06">
+     <!---Images6---> <img src="INDEX/Lod8.webp" alt="image06" loading="lazy">
 	 
               <div class="box21"> 
                     <h4> "A person is said to have attained yoga when, having renounced all material desires, he neither acts for sense gratification nor engages in fruitive activities." </h4>
@@ -1191,7 +1209,7 @@ footer {
                     <h3> -भगवान कृष्ण </h3>
               </div>
 			  
-      <!---Images7---> <img src="INDEX/Lod10.png" alt="image07">
+      <!---Images7---> <img src="INDEX/Lod10.webp" alt="image07" loading="lazy">
 	  
               <div class="box25"> 
                     <h4> "A gift is pure when it is given from the heart to the right person at the right time and at the right place, and when we expect nothing in return." </h4>
@@ -1209,7 +1227,7 @@ footer {
                     <h3> -भगवान कृष्ण </h3>
               </div>
 
-  <!---Images8---> <img src="INDEX/Lod11.png" alt="image08">
+  <!---Images8---> <img src="INDEX/Lod11.webp" alt="image08" loading="lazy">
 
                 <div class="box27"> 
                     <h4> Hello World </h4>
@@ -1235,7 +1253,7 @@ footer {
                     <h3> -भगवान कृष्ण </h3>
               </div>
 
-   <!---Images9---> <img src="INDEX/Lod12.png" alt="image09">
+   <!---Images9---> <img src="INDEX/Lod12.webp" alt="image09" loading="lazy">
 
                 <div class="box30"> 
                     <h4> Hello World </h4>
@@ -1269,7 +1287,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-   <!---Images10---> <img src="INDEX/Lod14.png" alt="image10">
+   <!---Images10---> <img src="INDEX/Lod14.webp" alt="image10" loading="lazy">
 
                <div class="box34"> 
                     <h4> Hello World </h4>
@@ -1294,7 +1312,7 @@ footer {
                     <h4> Hello World </h4>
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
-     <!---Images11---> <img src="INDEX/Lod15.png" alt="image011">
+     <!---Images11---> <img src="INDEX/Lod15.webp" alt="image011" loading="lazy">
                <div class="box37"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
@@ -1319,7 +1337,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-  <!---Images12---> <img src="INDEX/Lod16.png" alt="image12">
+  <!---Images12---> <img src="INDEX/Lod16.webp" alt="image12" loading="lazy">
 
                 <div class="box40"> 
                     <h4> "He who is not disturbed in spite of the threefold miseries, who is not elated when there is happiness, and who is free from attachment, fear, and anger, is called a sage of steady mind." </h4>
@@ -1353,7 +1371,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 			  
-    <!---Images13---> <img src="INDEX/Lod1.png" alt="image13">
+    <!---Images13---> <img src="INDEX/Lod1.webp" alt="image13" loading="lazy">
 	  
                <div class="box44"> 
                     <h4> “Darkness cannot drive out darkness only light can, hate cannot drive out hate. Only love can do that.” </h4>
@@ -1371,7 +1389,7 @@ footer {
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
 
-   <!---Images14---> <img src="INDEX/Lod13.webp" alt="image14">
+   <!---Images14---> <img src="INDEX/Lod13.webp" alt="image14" loading="lazy">
 
                <div class="box46"> 
                     <h4> Hello World </h4>
@@ -1404,7 +1422,7 @@ footer {
                     <h4> Hello World </h4>
                     <h3> শ্রী কৃষ্ণ </h3>
               </div>
-    <!---Images15---> <img src="INDEX/Lod1.png" alt="image15">
+    <!---Images15---> <img src="INDEX/Lod1.webp" alt="image15" loading="lazy">
               <div class="box50"> 
                     <h4> Hello World </h4>
                     <h3> Lod krishna </h3>
@@ -1463,67 +1481,67 @@ footer {
              
        <!---Artical1----->
           <div class="article">
-              <img src="INDEX/movie.webp" alt="Article 1 Image">
+              <img src="INDEX/movie.webp" alt="Article 1 Image" loading="lazy">
               <h3><a href="Movie.html"> Top Movie Download Websites </a></h3>
          </div>
 
      <!---Artical1.5----->
           <div class="article">
-             <img src="INDEX/webnews.webp" alt="Article 3 Image">
+             <img src="INDEX/webnews.webp" alt="Article 3 Image" loading="lazy">
              <h3><a href="web.html"> Web news </a></h3>
          </div>
 
       <!---Artical2----->
           <div class="article">
-             <img src="INDEX/Lod7.webp" alt="Article 2 Image">
+             <img src="INDEX/Lod7.webp" alt="Article 2 Image" loading="lazy">
              <h3><a href="#" id="dnl"> Words of Lord Krishna that will brighten your life </a></h3>
          </div>
 
      <!---Artical3----->
           <div class="article">
-             <img src="INDEX/CYBER1.jpg" alt="Article 3 Image">
+             <img src="INDEX/CYBER1.webp" alt="Article 3 Image" loading="lazy">
              <h3><a href="Cyber.html"> cyber security </a></h3>
          </div>
 
      <!---Artical4----->
           <div class="article">
-             <img src="INDEX/poetry.jpg" alt="Article 4 Image">
+             <img src="INDEX/poetry.webp" alt="Article 4 Image" loading="lazy">
              <h3><a href="Poetry.html"> love to read poetry </a></h3>
          </div>
 
     <!---Artical5----->
           <div class="article">
-             <img src="INDEX/laws.jpg" alt="Article 5 Image">
+             <img src="INDEX/laws.webp" alt="Article 5 Image" loading="lazy">
              <h3><a href="#"> The Indian Laws </a></h3>
          </div>
 
      <!---Artical6----->
           <div class="article">
-             <img src="INDEX/education.jpg" alt="Article 6 Image">
+             <img src="INDEX/education.webp" alt="Article 6 Image" loading="lazy">
              <h3><a href="Education.html"> Top 10 useful education Websites for students </a></h3>
          </div>
 
     <!---Artical7----->
           <div class="article">
-             <img src="INDEX/biography.jpg" alt="Article 7 Image">
+             <img src="INDEX/biography.webp" alt="Article 7 Image" loading="lazy">
              <h3><a href="Biography.html"> Life stories of great people's </a></h3>
          </div>
 
     <!---Artical8----->
           <div class="article">
-             <img src="INDEX/cute.webp" alt="Article 8 Image">
+             <img src="INDEX/cute.webp" alt="Article 8 Image" loading="lazy">
              <h3><a href="Stories.html"> Stories in the life of Lord Krishna </a></h3>
          </div>
 		 
 	 <!---Artical9----->
           <div class="article">
-             <img src="INDEX/loot.webp" alt="Article 9 Image">
+             <img src="INDEX/loot.webp" alt="Article 9 Image" loading="lazy">
              <h3><a href="Loot.html"> Daily Loot Offers </a></h3>
          </div>
 		 
 	 <!---Artical10----->
           <div class="article">
-             <img src="INDEX/cash.webp" alt="Article 10 Image">
+             <img src="INDEX/cash.webp" alt="Article 10 Image" loading="lazy">
              <h3><a href="Paytm.html"> Self Paytm cash Earning Apps </a></h3>
          </div>
     <!-- You can add more articles using the same structure -->
@@ -1539,15 +1557,15 @@ footer {
                      you with help bring your vision to life. </p>
                   
                  <label for ="Name"> Name </label>
-                 <input type="text" id="name" name="name" placeholder="Name" required>
+                 <input type="text" id="name" name="name" placeholder="Name" spellcheck="true" required>
                 
 				 <label for ="email"> Email </label>
-                 <input type="email" id="email" name="email" placeholder="Email" required>
+                 <input type="email" id="email" name="email" placeholder="Email" spellcheck="true" required>
                 
 				 <label for ="text"> Message </label>
-				 <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Your Comment*" required></textarea>
+				 <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Your Comment*" spellcheck="true" required></textarea>
                  
-                <button class="btn" type="submit" onclick="lert('submitted-Successfully')"> Submit </button>
+                <button class="btn" type="submit"> Submit </button>
             </form>
 
            <div id="comments"> </div> <!----messages------>
