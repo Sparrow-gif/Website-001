@@ -5,15 +5,19 @@
   <base href="#">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.jpeg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <title> Quotes </title>
-    <style>
-  * {
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="description" content="Fuel your drive with our curated collection of inspirational quotes! Explore a diverse range of motivational gems that empower, uplift, and ignite your passion. Transform your mindset and embrace daily motivation on our quotes website.">
+  <title> best motivation Quotes </title>
+
+  <style>
+      * {
           margin:0px;
           padding:0px;
           -webkit-box-sizing:border-box;
@@ -21,7 +25,11 @@
           font-family: montserrat;
           text-transform:capitalize;                     
         }  
-header {
+  html {
+       scroll-behavior:smooth;
+       scroll-padding:3em;
+      }
+ header {
        display:-webkit-box;
        display:-ms-flexbox;
        display:flex;
@@ -35,16 +43,16 @@ header {
        z-index:99;
        top:0px;
        background:#13d48a ; /* #ebe6fa; */
-       padding:3px;      
+       padding:2px;      
        -webkit-user-select:none;
        -moz-user-select:none;
        -ms-user-select:none;
      }
 header > h2{
-          font-size:25px;
+          font-size: 25px;
           color:white;
           text-indent:10px;
-          font-family: ;
+          font-family: sans-serif;
           -webkit-animation-duration: 6s;
           animation-duration: 6s;
         }
@@ -60,8 +68,7 @@ header > h2{
       transition-duration:0.3s;
      text-shadow: 1px 1px 3px #666666;
       }
-	  
-   .sidenav {
+  .sidenav {
         height:100vh;
         width:0;
         width:0;
@@ -87,7 +94,7 @@ header > h2{
        -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      }
-
+   .sidenav::-webkit-scrollbar{ display: ;}   /* SIDENAV scrollbar */
 .sidenav a {
        padding: 15px ;
        text-decoration: none;
@@ -109,19 +116,18 @@ header > h2{
  .sidenav > .active {
           color: #f1f1f1;
           background:#6e0cf7;
-          -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-                  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+         -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
-  #cold {
+#cold {
         display:-webkit-box;
         display:-ms-flexbox;
         display:flex;
-        -webkit-box-pack:center;
-            -ms-flex-pack:center;
-                justify-content:center;
+        -ms-flex-pack:distribute;
+        justify-content:space-around;
         -webkit-box-align:center;
-            -ms-flex-align:center;
-                align-items:center;
+        -ms-flex-align:center;
+         align-items:center;
      }
   #cold > a {
         font-size:20px;
@@ -134,13 +140,16 @@ header > h2{
   right: 10px;
   font-size: 20px;
   margin-left: 50px;
-  padding:5px 12px;
+  padding:-0px 12px;
   background: #6e0cf7;
   color:white;  
   border-radius: ;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-  .scroll-container {
+
+     .scroll-container {
         width: 100%;
         overflow-x: auto;
         display:-webkit-box;
@@ -160,7 +169,7 @@ header > h2{
          text-align:center;
          min-width: 100px;
          text-decoration:none;
-         padding:8px;
+         padding:5px;
          border: none;
          margin-right: 10px;
          border-radius:10px;
@@ -185,147 +194,83 @@ header > h2{
           border-radius:0px;
           border:1px none #FFFFFF; */
            }
-
-    section {
-           margin:0 auto ;
-           width:100%;
-           height:auto;
-           padding:10px ;
-		   background:#f5f6f7;
-      }
-   section > h2 {
-         padding: 10px ;
-         color: #232ed1;
-      }
-    section > #queen {
-	      background: #ffecd1;
-          margin: 10px auto ;
-          padding:5px;
-          width:100%;
-          min-height:200px;
-          max-height:auto;
-          border: ;
-          border-radius:8px;
-          position:relative;
-		  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-		          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     
+	 
+	  .head-logo > a {
+	       display: inline-block;
+           padding: 10px 10px;
+           text-decoration:none;   
+           font-size:20px;   
+           cursor:pointer;   
+           color:white;  
+           border-radius:50%;
+           margin: 0px 4px ;
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         -webkit-transition-duration:0.3s;  
+              -o-transition-duration:0.3s;  
+                 transition-duration:0.3s;
+         -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
        }
-    section > #queen > img {
-            width:100%;
-            max-height:250px;
-            background-size:cover ;
-            background-position:center;
-            position:relative;
-            z-index:-1;
-            overflow:hidden;
-            -webkit-user-select:none;
-               -moz-user-select:none;
-                -ms-user-select:none;
-                    user-select:none;
-            -webkit-filter:blur(2px) ;
-                    filter:blur(2px) ;
-      }
-   section > #queen > p {
-          position:absolute;
-          text-align:center;
-          width:90%;
-          top:50%;
-          left:50%;
-          -webkit-transform:translate(-50%,-50%) ;
-              -ms-transform:translate(-50%,-50%) ;
-                  transform:translate(-50%,-50%) ;
-          color: #ff7d00;
-          z-index:10;
-      }
-   
-   section > #queen > p > span {
-          display:block;
-          color: #001524 ;
-          padding:5px;
-          text-align:right;
-      }
-
-      #textslide {
-         background: #f5f7f6;    
-         max-height:auto;   
-         -webkit-user-select:none;   
-            -moz-user-select:none;   
-             -ms-user-select:none;   
-                 user-select:none; 
-         overflow: ;
-      }
-	   #textslide::-webkit-scrollbar { display:none;}
- #textslide > .slideshow-container {
-         width:90%;
-         position: relative;
-         margin: 0 auto;
-         padding:10px;
-         background: #f5f7f6 ;
-         min-height:200px;
-         max-height:auto;
-         overflow:scroll;
-         display:-webkit-box;
-         display:-ms-flexbox;
-         display:flex;
-         -webkit-box-pack:center;
-             -ms-flex-pack:center;
-                 justify-content:center;
-         -webkit-box-align:center;
-             -ms-flex-align:center;
-                 align-items:center;  
-        }
-     #textslide > .slideshow-container::-webkit-scrollbar { display:none;}
-    .mySlides > h2 {
-          color: #1a6ce8 ;
-          font-family: ;
-          text-align:center;
-          font-size: 22px;
-        }
-   .mySlides > h3 {
-          color: #b8ad4b ;
-          font-family: ;
-          text-align:right;
-          padding:20px 5px;
-          font-size: 20px;
-    }
-   /* The dots/bullets/indicators */
-  #textslide > #dots > .dot {
-  height:5px;
-  width:5px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
-  -o-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease;
-}
-
-  #textslide > #dots > .active {
-      background-color:#f046e7;
-	  -webkit-box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
-          box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
-}
-
-/* Fading animation */
-  #textslide >  .fade {
-        -webkit-animation-name: fade;
-                animation-name: fade;
-       -webkit-animation-duration: 1.5s;
-               animation-duration: 1.5s;
+  .head-logo > a:hover{ -webkit-transform:scale(1.20); -ms-transform:scale(1.20); transform:scale(1.20)}
+   .head-logo > a:nth-child(1) {
+         color:white;
+         background: #266DD3;
        }
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-    footer {
+   .head-logo > a:nth-child(2) {
+         color:white;
+         background: #F75C03 ;
+       }
+   .head-logo > a:nth-child(3) {
+         color:white;
+         background: #7BB2D9 ;
+       }
+   .head-logo > a:nth-child(4) {
+         color:white;
+         background: #31D843 ;
+       }
+   .head-logo > a:nth-child(5) {
+         color:white;
+         background: #F42B03 ;
+       }
+	   
+	 
+	 main {
+	    margin:10px auto;   
+		padding:10px;
+		width:100%;
+		background: ;
+        display: flex;
+        flex-direction: column;
+		box-sizing:border-box;
+	 }
+	main > div {
+	    background: #F1FFFA;
+		padding:15px 20px;		
+	}
+	main > div > .Quotes {
+	     text-align:center;
+		 font-family:Roboto;
+	}
+   main > div > .name {
+	    text-align:right;
+		font-weight:600;
+		font-family:;
+	 }	
+   main > img {
+	      min-width:330px;
+          max-width:95%;
+          aspect-ratio: 1/1;
+          margin:20px auto;     
+          border:0px solid black;  
+          border-radius:4px;
+          box-shadow: rgba(255, 255, 255) 0px 7px 29px 0px;
+	}
+	
+	 footer {
          margin:0 auto;
          background:#122029;
          color:white;    
@@ -339,12 +284,7 @@ header > h2{
          -webkit-user-select:none;
          -moz-user-select:none;
          -ms-user-select:none;         
-       }
-   footer > h3 > i{
-        font-size:24px;
-        text-indent:20px;
-        padding:5px;
-     }  
+       } 
    .sneha {
         padding:10px;
         color:white;
@@ -353,8 +293,8 @@ header > h2{
         text-decoration:none;
         color:white;
         display:block;      
-        margin:6px;  
-        font-size:14px
+        margin:3px;  
+        font-size: ; /*14px*/
         }
    select {
         margin:10px;
@@ -374,44 +314,55 @@ header > h2{
         background:white;
         outline:2px solid white; 
         text-transform:capitalize;
+		cursor:pointer;
        }
 	   
 	   
-  
-       @media only screen and (max-width: 767px) {
-    /* Styles for small screens here */
+      @media only screen and (max-width: 767px) {
+                                                        /* Styles for small screens here */
        
       }
-	  
-	
-  @media only screen and (min-width: 768px) {
-    /* Styles for medium screens here */
-         section > #queen { margin:10 auto; width:75%;}
+     @media only screen and (min-width: 768px) {
+                                                        /* Styles for medium screens here */
+                    html {
+						 margin:0 auto;
+				         width:90%;
+						}    
+                    main > img {
+	                        min-width:330px;
+                            max-width:70%;
+                            aspect-ratio: 1/0.70;
+                            margin:20px auto;     
+                            border:0px solid black;  
+                            border-radius:4px;
+                            box-shadow: rgba(255, 255, 255) 0px 7px 29px 0px;
+	                 }						
       }
-  
-	  
      @media only screen and (min-width:992px) {
-	          html {
-                width:80%;
-                margin:0 auto;
-                -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-           }
-		   section > #queen { margin:10 auto; width:65%;}
-	 }
-   </style>
-  </head>
-  <body oncontextmenu="return false">
-        <header id="navbar">              
+                                                        /* Styles for large screens here */
+				  html {
+				     margin:0 auto;
+				     width:80%;
+				    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				   }                                    
+       
+      }
+
+ </style>
+</head>
+<body>
+  
+         <header id="navbar">              
            <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html" target="_self" > Home</a>
                 <a href="About us.html" target="_self" > About us </a>
                 <a href="Blogs.html" target="_self" > Blogs </a>
                 <a href="Poetry.html" target="_self" > Poetry </a>
-                <a href="Web.html" target="_self" > web stories </a>
-                <a href="https://www.amazon.in" target="_blank"> Life-Style </a>
-                <a href="https://www.sportskeeda.com" target="_blank"> cricket </a>
+                <a href="Web.html" target="_self" > web news </a>
+                <a href="#" target="_blank" > E-commerce </a>
+                <a href="#" target="_blank" > Cricket </a>
                 <a href="Health.html" target="_self" > health </a>                
                 <a href="Contact us.html" target="_self" > Contact us</a>
                 <div id="cold">
@@ -427,7 +378,8 @@ header > h2{
                 <span onclick="openNav()">&#9776;</span>
      </header>
 
-         <section class="scroll-container">
+      
+     <nav class="scroll-container">
                <a class="scroll-item" id="active" href="Top10.html" target="_self"> Daily Quotes </a>     
                <a class="scroll-item" href="index.html" target="_self"> K.Quotes </a>
                <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
@@ -441,120 +393,70 @@ header > h2{
                <a class="scroll-item" href="https://www.amazon.in" target="_blank"> Life-Style </a>
                <a class="scroll-item" href="https://www.sportskeeda.com" target="_blank"> cricket </a>
                <a class="scroll-item" href="Health.html" target="_self"> health </a>
-               <a class="scroll-item" href="Web.html" target="_self"> web Story </a>                
+               <a class="scroll-item" href="Web.html" target="_self"> web news </a>                
                <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
-  </section>
-       
-        <section>
-                      <h2> Today's Top 10 Quotes </h2>
+     </nav>
+     
+	  
+	  <article>
+	         <div class="heading" id="heading"style="padding:5px 10px;">
+                   <h1 style="font-family:roboto;"> inspiration & motivation quotes to brighten your day </h1>
+                   <p> Updated on : nov 16, 2023 </p>
+            </div>
+                             <!-------heading logo------->
+                <div class="head-logo">
+                     <a id="telegramShareBtn" class="fa-brands fa-telegram" title="telegram"> </a>
+                     <a id="instagramShareBtn" class="fa-brands fa-instagram" title="Instagram"> </a>
+                     <a id="twitterShareBtn" class="fa-brands fa-twitter" title="twitter"> </a>
+                     <a id="whatsappButton" class="fa-brands fa-whatsapp" title="whatsapp"> </a>
+                     <a href="#" class="fa-brands fa-youtube" title="YouTube"> </a>
+               </div>			
+	  </article>
+	  
+	        <!-------main content in my webpage--------->
+	  <main>
+	       <div>
+		       <p class="Quotes"> 1. "HELLO WORLD." </p>
+			   <p class="name"> -hii  </p>
+		   </div>
+		       
+			  <img src="HEALTH/apple.png" alt="motivation images" loading="lazy">   <!--------motivation images01--------->
+			  
+		   <div>
+		       <p class="Quotes"> 1. "HELLO WORLD." </p>
+			   <p class="name"> -hii  </p>
+		   </div>
+		       
+			  <img src="HEALTH/apple.png" alt="motivation images" loading="lazy">   <!--------motivation images02--------->
+			  
+           <div>
+		       <p class="Quotes"> 1. "HELLO WORLD." </p>
+			   <p class="name"> -hii  </p>
+		   </div>
+		       
+			  <img src="HEALTH/apple.png" alt="motivation images" loading="lazy">   <!--------motivation images03--------->
+			  
 
-                 <div id="queen">   <!---Quotes 01----->
-                      <img src="Img2.jpeg" alt="">
-                      <p>  “Everybody is a genius. But if you judge a 
-                            fish by its ability to climb a tree, it will 
-                            live its whole life believing that it is stupid.” 
-                        <span> — Albert Einstein   </span>
-                      </p>
-                </div>       
+           <div>
+		       <p class="Quotes"> 1. "HELLO WORLD." </p>
+			   <p class="name"> -hii  </p>
+		   </div>
+		       
+			  <img src="HEALTH/apple.png" alt="motivation images" loading="lazy">   <!--------motivation images04--------->
+			  
 
-                 <div id="queen">   <!---Quotes 02----->
-                      <img src="Images/abhimanyu.jpeg" alt="">
-                      <p> hello World </p>
-                </div>       
-
-                <div id="queen">   <!---Quotes 03----->
-                      <img src="images/ima1.jpeg" alt="">
-                      <p> hello World </p>
-                </div>       
-
-                <div id="queen">   <!---Quotes 04----->
-                      <img src="images/Ima2.jpeg" alt="">
-                      <p> hello World </p>
-                </div>       
-
-                 <div id="queen">   <!---Quotes 05----->
-                      <img src="images/Ima3.jpeg " alt="">
-                      <p> hello World </p>
-                </div>       
-
-                <div id="queen">   <!---Quotes 06----->
-                      <img src="images/Ima2.jpeg" alt="">
-                      <p> hello World </p>
-                </div>       
-    
-                <div id="queen">   <!---Quotes 07----->
-                      <img src="Img2.jpeg" alt="">
-                      <p> hello World </p>
-                </div>       
-
-                 <div id="queen">   <!---Quotes 08----->
-                      <img src="images/Ima1.jpeg  " alt="">
-                      <p> hello World </p>
-                </div>       
-
-                <div id="queen">   <!---Quotes 09----->
-                      <img src="images/Ima2.jpeg" alt="">
-                      <p> hello World </p>
-                </div>       
-  
-       </section>
-       
-        <section id="textslide">
-         <div class="slideshow-container">
-
-            <div class="mySlides fade">
-               <h2> I absolutely love the amazing blog created by this
-                    business in Kolkata. The content is engaging and informative,
-                    and the layout is visually appealing. Thank you for
-                    providing such valuable information! 
-              </h2>
-               <h3> -somnath (user) </h3>
-           </div>
-
-            <div class="mySlides fade">
-               <h2> I absolutely love the amazing blog created by this
-                    business in Kolkata.
-              </h2>
-               <h3> -somnath (user) </h3>
-           </div>
-
-            <div class="mySlides fade">
-               <h2> The content is engaging and informative,
-                    and the layout is visually appealing. Thank you for
-                    providing such valuable information! 
-              </h2>
-               <h3> -somnath (user) </h3>
-           </div>
-
-            <div class="mySlides fade">
-               <h2> I absolutely love the amazing blog created by this
-                    business in Kolkata.
-              </h2>
-               <h3> -somnath (user) </h3>
-           </div>
-
-            <div class="mySlides fade">
-               <h2> The content is engaging and informative,
-                    and the layout is visually appealing. Thank you for
-                    providing such valuable information! 
-              </h2>
-               <h3> -somnath (user) </h3>
-           </div>
-       </div>
-   <br>
-
-       <div  id="dots" style="text-align:center">
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-       </div>
-   </section>
-
-
-       <footer>   <!------footer Section------->
+           <div>
+		       <p class="Quotes"> 1. "HELLO WORLD." </p>
+			   <p class="name"> -hii  </p>
+		   </div>
+		       
+			  <img src="HEALTH/apple.png" alt="motivation images" loading="lazy">   <!--------motivation images05--------->
+			  			  
+	  </main>
+	 
+	 
+     <footer>   <!------footer Section------->
        <h2> Quotes World </h2>          
       <select>
            <option> English</option>
@@ -572,41 +474,21 @@ header > h2{
         <a href="About us.html" target="_self"><p> Food-factory LLC</p></a>
    </div>
   </footer>
-
-
-   <script>
-         function openNav() {
-         document.getElementById("mySidenav").style.width = "80%";
-           }
-         function closeNav() {
-         document.getElementById("mySidenav").style.width = "0";
-           } ;
-
-
-      let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-    slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-};
-
-     //change Navigation background
-   window.addEventListener('scroll', function() {
-       const navbar = document.getElementById('navbar');
-       const scrolled = window.scrollY;
+  
+	 
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "80%";
+          }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+      } ;
+	  
+	  
+	   //change Navigation background
+     window.addEventListener('scroll', function() {
+         const navbar = document.getElementById('navbar');
+         const scrolled = window.scrollY;
 
        if (scrolled > 30) {
        navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
@@ -614,6 +496,60 @@ function showSlides() {
        navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
      }
   });
+  
+      
+	       //telegram share button
+			  
+       document.getElementById('telegramShareBtn').addEventListener('click', function() {
+    // Replace 'your_message' and 'your_url' with your own message and URL
+    var message = encodeURIComponent('Check out this awesome link!');
+    var url = encodeURIComponent('https://example.com');
+
+    var telegramLink = 'https://t.me/share/url?url=' + url + '&text=' + message;
+
+    // Open the Telegram share URL in a new window or tab
+    window.open(telegramLink, '_blank');
+});
+	
+		      //whatsapp share button
+			  
+        document.getElementById("whatsappButton").addEventListener("click", function() {
+        // Replace 'your_text' and 'your_url' with the desired text and URL you want to share
+        var text = "Check out this cool website!";
+        var url = "https://sparrow-gif.github.io/Website-001/";
+
+        // Construct the WhatsApp share URL
+        var whatsappUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(text + " " + url);
+
+        // Open the WhatsApp share window
+        window.open(whatsappUrl, "_blank");
+    });
+	      
+		    //INSTAGRAM share button
+		  
+		   document.getElementById('instagramShareBtn').addEventListener('click', function() {
+             // Replace 'your_caption' and 'your_url' with your own caption and URL
+           var caption = encodeURIComponent('Check out this amazing photo!');
+           var url = encodeURIComponent('https://example.com/image.jpg');
+
+           var instagramLink = 'https://www.instagram.com/share?url=' + url + '&caption=' + caption;
+
+              // Open the Instagram share URL in a new window or tab
+           window.open(instagramLink, '_blank');
+       });
+	 
+	          //twitter share button
+		  
+		  document.getElementById('twitterShareBtn').addEventListener('click', function() {
+    // Replace 'your_text' and 'your_url' with your own tweet text and URL
+    var text = encodeURIComponent('Check out this awesome tweet!');
+    var url = encodeURIComponent('https://example.com');
+
+    var twitterLink = 'https://twitter.com/intent/tweet?text=' + text + '&url=' + url;
+
+    // Open the Twitter share URL in a new window or tab
+    window.open(twitterLink, '_blank');
+});
    </script>
-   </body>
+</body>
 </html>
