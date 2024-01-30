@@ -205,15 +205,16 @@ header > h2{
            color:white;  
            border-radius:50%;
            margin: 0px 4px ;
-         -webkit-user-select:none;    
-         -moz-user-select:none;    
-         -ms-user-select:none;    
-         user-select:none;  
-         -webkit-transition-duration:0.3s;  
+          -webkit-user-select:none;    
+          -moz-user-select:none;    
+          -ms-user-select:none;    
+           user-select:none;  
+          -webkit-transition-duration:0.3s;  
               -o-transition-duration:0.3s;  
                  transition-duration:0.3s;
-         -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-                 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
+          -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;  
+         	text-transform:capitalize;			 
        }
   .head-logo > a:hover{ -webkit-transform:scale(1.20); -ms-transform:scale(1.20); transform:scale(1.20)}
    .head-logo > a:nth-child(1) {
@@ -249,7 +250,7 @@ header > h2{
 	 }
 	main > div {
 	    background: #F1FFFA;
-		padding:15px 20px;		
+		padding:25px 30px;		
 	}
 	main > div > .Quotes {
 	     text-align:center;
@@ -335,7 +336,7 @@ header > h2{
                     main > img {
 	                        min-width:330px;
                             max-width:70%;
-                            aspect-ratio: 1/0.70;
+                            aspect-ratio: 1/0.80;
                             margin:20px auto;     
                             border:0px solid black;  
                             border-radius:4px;
@@ -371,7 +372,7 @@ header > h2{
 </head>
 <body>
   
-         <header id="navbar">              
+         <header id="navbar" title="Header">              
            <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html" target="_self" > Home</a>
@@ -392,12 +393,12 @@ header > h2{
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
                </div>
           </div>
-                <h2> Quotes World  </h2>
-                <span onclick="openNav()">&#9776;</span>
+                <h2 title="Logo"> Quotes World  </h2>
+                <span onclick="openNav()" title="Menu-Ber">&#9776;</span>
      </header>
 
       
-     <nav class="scroll-container">
+     <nav class="scroll-container" title="Scroll-bar">
                <a class="scroll-item" id="active" href="Top10.html" target="_self"> Daily Quotes </a>     
                <a class="scroll-item" href="index.html" target="_self"> K.Quotes </a>
                <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
@@ -419,15 +420,15 @@ header > h2{
 	  
 	  <article>
 	         <div class="heading" id="heading"style="padding:5px 10px;">
-                   <h1 style="font-family:roboto;"> inspiration & motivation quotes to brighten your day </h1>
-                   <p> Updated on : nov 16, 2023 </p>
+                   <h1 style="font-family:roboto;"> inspiration & motivation quotes that will brighten your day and motivate you </h1>
+                   <p title="Create-Time"> Updated on : nov 16, 2023 </p>
             </div>
                              <!-------heading logo------->
                 <div class="head-logo">
-                     <a id="telegramShareBtn" class="fa-brands fa-telegram" title="telegram"> </a>
+                     <a id="telegramShareBtn" class="fa-brands fa-telegram" title="Telegram"> </a>
                      <a id="instagramShareBtn" class="fa-brands fa-instagram" title="Instagram"> </a>
-                     <a id="twitterShareBtn" class="fa-brands fa-twitter" title="twitter"> </a>
-                     <a id="whatsappButton" class="fa-brands fa-whatsapp" title="whatsapp"> </a>
+                     <a id="twitterShareBtn" class="fa-brands fa-twitter" title="Twitter"> </a>
+                     <a id="whatsappButton" class="fa-brands fa-whatsapp" title="Whatsapp"> </a>
                      <a href="#" class="fa-brands fa-youtube" title="YouTube"> </a>
                </div>			
 	  </article>
@@ -511,9 +512,9 @@ header > h2{
 	  </main>
 	 
 	 
-     <footer>   <!------footer Section------->
+     <footer title="Footer">   <!------footer Section------->
        <h2> Quotes World </h2>          
-      <select>
+      <select title="language switcher">
            <option> English</option>
            <option> hindi   </option>
            <option> Bengali </option>
