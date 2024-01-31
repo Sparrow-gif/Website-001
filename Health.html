@@ -472,8 +472,8 @@
    </style>
   </head>
   <body ncontextmenu="return false">
-        <header id="navbar">              
-           <div id="mySidenav" class="sidenav">
+        <header id="navbar" title="header">              
+           <div id="mySidenav" class="sidenav" title="sidenav">
                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html" target="_self" > Home</a>
                 <a href="About us.html" target="_self" > About us </a>
@@ -493,8 +493,8 @@
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
                </div>
           </div>
-                <h2> Quotes World  </h2>
-                <span onclick="openNav()">&#9776;</span>
+                <h2 title="logo"> Quotes World  </h2>
+                <span onclick="openNav()" title="menuber">&#9776;</span>
      </header>
 
          <nav class="scroll-container">
@@ -613,52 +613,52 @@
                 <legend style="border:none;color:#200a57;"><h1> Our Recommended Articals </h1></legend>
            
                   <div> <!-----Post 1------>
-                       <a href="#"> top movie download websites </a>
+                       <a href="Movie.html"> top movie download websites </a>
                        <img src="INDEX/movie.webp" alt="img1">
                  </div>
 
                  <div> <!-----Post 2------>
-                      <a href="#"> web news </a>
+                      <a href="Web.html"> web news </a>
                      <img src="INDEX/webnews.webp" alt="img1">
                     </div>
 
                   <div> <!-----Post 3------>
-                     <a href="#"> lord krishna quotes from bhagbat gita </a>
+                     <a href="index.html"> lord krishna quotes from bhagbat gita </a>
                     <img src="" alt="img1">
                   </div>
 
                   <div> <!-----Post 4------>
-                    <a href="#"> cyber security tips </a>
+                    <a href="Cyber.html"> cyber security tips </a>
                     <img src="INDEX/CYBER1.webp" alt="img1">
                  </div>
 
                    <div> <!-----Post 5------>
-                     <a href="#"> amazing poetry </a>
+                     <a href="Poetry.html"> amazing poetry </a>
                      <img src="INDEX/poetry.webp" alt="img1">
                   </div>
 
                  <div> <!-----Post 6----->
-                      <a href="#"> education websites for students </a>
+                      <a href="Education.html"> education websites for students </a>
                      <img src="INDEX/education.webp" alt="img1">
                  </div>
   
                   <div> <!-----Post 7------>
-                     <a href="#"> Biography of great peoples </a>
+                     <a href="Biography.html"> Biography of great peoples </a>
                      <img src="INDEX/biography.webp" alt="img1">
                  </div>
 
                   <div> <!-----Post 8----->
-                      <a href="#"> stories in the life of lord krishna </a>
+                      <a href="Stories.html"> The Story of Sri Krishna </a>
                       <img src="INDEX/cute.webp" alt="img1">
                   </div>
 				
 				  <div> <!-----Post 9----->
-                      <a href="#"> daily loot Offers </a>
+                      <a href="loot.html"> daily loot Offers </a>
                       <img src="INDEX/loot.webp" alt="img1">
                   </div>
 				  
 				  <div> <!-----Post 10----->
-                      <a href="#"> paytm cash earning games </a>
+                      <a href="Paytm.html"> paytm cash earning games </a>
                       <img src="INDEX/cash.webp" alt="img1">
                   </div>
              </fieldset> 
@@ -770,7 +770,6 @@ document.getElementById("topButton").addEventListener("click", function () {
        navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
      }
   });
-
          
 		        //ACCORDION
            var acc = document.getElementsByClassName("accordion");
