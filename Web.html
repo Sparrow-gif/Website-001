@@ -5,14 +5,15 @@
   <base href="#">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">    
+  <link rel="icon" type="image/x-icon" href="favicon.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="description" content="Empower yourself with our Web News hub! Learn about breaking stories, discover in-depth analyses, and get real-time updates on diverse topics. Uncover the latest trends, get informed, and embark on a journey of discovery. Stay ahead in a fast-paced world – click, learn, and explore with us!">
   <title> Web News </title>
     <style>
    
@@ -135,7 +136,7 @@
         display:flex;
         -webkit-box-pack:center;
             -ms-flex-pack:center;
-                justify-content:center;
+         justify-content:space-around;
         -webkit-box-align:center;
             -ms-flex-align:center;
                 align-items:center;
@@ -197,17 +198,16 @@
          margin:0px auto;
          width:100%;         
          height:auto;
-         padding:10px; 
-         -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
-                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      }
+         padding:5px; 
+		  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		               box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
 
   .container > .image-div {
          position:sticky;
 		 min-height:30vh;
 		 max-width:800px;
-         min-height: ;
-         top:3em;
+         top:3.30em;
          z-index:0;
 		 margin:0 auto;
         }
@@ -222,22 +222,23 @@
      }
 
     .content-div {
-        text-align:center;      
-        z-index:1;
-        position: relative;
-        border-top-left-radius:15px;
-        border-top-right-radius:15px;
-        min-height:70vh ;
-        max-height:auto;
-        background:rgba( 241, 232, 232, 0.55 );
-        backdrop-filter:blur( 4px );
-       -webkit-backdrop-filter:blur( 4px );
-        border:1px solid rgba( 255, 255, 255, 0.18 );
-     }
-    .content-div > h2 {
-        padding:10px ;
+            text-align:center;      
+            z-index:1;
+            position: relative;
+            border-top-left-radius:15px;
+            border-top-right-radius:15px;
+            min-height:650px;
+            max-height:auto;
+            background: rgba( 255, 255, 255, 0.25 );
+			box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );           
+            backdrop-filter: blur( 4px );
+           -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+       }
+    .content-div > h1 {
+        padding:20px;
         font-size: ;
-        font-family: ;
+        font-family:roboto ;
      }
     .content-div > p {
         padding:10px ;
@@ -282,6 +283,7 @@
         margin:10px;
         float:right;
         width:40%;
+		max-width:210px;
         height:40px;
         outline:none;
         border:2px solid #253330; 
@@ -309,32 +311,39 @@
           font-size: 16px;
           cursor: pointer;
           z-index:1 ;
-          font-size:1.50rem;
+          font-size:1.30rem;
             }
-    .telegram {
-          position: fixed;
-          bottom: 80px;
-          right: 10px;
-          background-color: #007BFF;
-          color: white;
+    #whatsapp-share-btn {
+	      position: fixed;
+          bottom: 10%;
+          right: 20px;
+          background-color: ;
+          color: ;
           border: none;
           border-radius: 50%;
-          padding: 5px 10px;
-          font-size: 20px;
+          padding: 15px 15px;
+          font-size: 16px;
           cursor: pointer;
           z-index:1 ;
-          font-size:1.50rem;
-           }
+          font-size: 1.10rem ;
+	}
+	
+	
+	
+	
    @media only screen and (max-width:767px) { 
 	  
 	  }
 	  
 	  
    @media only screen and (min-width:768px) { 
-	       
+	             html {
+	                margin:0 auto;
+		            width:90%;
+			   }
 			.container {  
                margin:0 auto;
-		       width:80%;
+		       width:90%;
 		       -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		               box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 			   }
@@ -373,11 +382,11 @@
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
                </div>
           </div>
-                <h2> Quotes World  </h2>
-                <span onclick="openNav()">&#9776;</span>
+                <h2 title="logo"> Quotes World  </h2>
+                <span onclick="openNav()" title="Menu Ber">&#9776;</span>
      </header>
 
-         <section class="scroll-container">
+         <nav class="scroll-container" title="scroll-ber">
                <a class="scroll-item" href="Top10.html" target="_self"> Daily Quotes </a>     
                <a class="scroll-item" href="index.html" target="_self"> K.Quotes </a>
                <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
@@ -394,28 +403,28 @@
                <a class="scroll-item" id="active" href="Web.html" target="_self"> web news </a>                
                <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
-  </section>
+       </nav>
           
                  
            <!-----Main Body------>
-       <div class="container">
+       <main class="container">
              <div class="image-div">
                  <img src="WEB/RAMMANDIR.jpeg" alt="Image">
             </div>
              <div class="content-div">
                  <!-- Your content here -->
-                  <h2>  hello world </h2>
+                  <h1>  hello world </h1>
                  <!-- This div's scroll will affect the blur -->
                   <p>  local community service and attractive food for the
                       Vo bhi nahi ho gya tha ki pic of the year and attractive food for me to get to know about to get the same time  </p>
             </div>
-      </div>
+      </main>
 
                    
        
-       <footer>   <!------footer Section------->
+       <footer title="footer">   <!------footer Section------->
        <h2> Quotes World </h2>          
-      <select>
+      <select title="language -switcher">
            <option> English</option>
            <option> hindi   </option>
            <option> Bengali </option>
@@ -433,13 +442,15 @@
   </footer>
      
         <!----Go To Top Button------>
-     <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
-
+     <button id="topButton" title="go-to-top"> <i class="fa-solid fa-arrow-up"></i> </button>
+     <button id="whatsapp-share-btn" class="fa-solid fa-share-nodes" title="share button"> </button>
+ 
+ 
  
    <script>
           //navigation javascript
          function openNav() {
-         document.getElementById("mySidenav").style.width = "80%";
+         document.getElementById("mySidenav").style.width = "340px";
            }
          function closeNav() {
          document.getElementById("mySidenav").style.width = "0";
@@ -471,6 +482,19 @@ document.getElementById("topButton").addEventListener("click", function () {
        navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
      }
   });
+
+
+          document.getElementById('whatsapp-share-btn').addEventListener('click', function() {
+     // Replace 'Your text here' and 'Your URL here' with your desired text and URL
+        var text = encodeURIComponent('Check out this content!');
+        var url = encodeURIComponent('Your URL here');
+  
+    // Create the WhatsApp share link
+        var whatsappLink = `https://api.whatsapp.com/send?text=${text}%20${url}`;
+   
+   // Open the link in a new tab
+        window.open(whatsappLink, '_blank');
+});
 
    </script>
    </body>
