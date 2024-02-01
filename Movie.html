@@ -740,7 +740,7 @@
                 <span onclick="openNav()">&#9776;</span>
      </header>
 
-       <section class="scroll-container">
+       <nav class="scroll-container">
                <a class="scroll-item" href="Top10.html" target="_self"> Daily Quotes </a>     
                <a class="scroll-item" href="index.html" target="_self"> K.Quotes </a>
                <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
@@ -757,7 +757,7 @@
                <a class="scroll-item" href="Web.html" target="_self"> web news </a>                
                <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
-  </section>
+      </nav>
           
                  
            <!-----Main Body------>
@@ -769,10 +769,10 @@
                </div>
                              <!-------heading logo------->
                 <div class="head-logo">
-                     <a href="#" class="fa-brands fa-telegram" title="telegram"> </a>
-                     <a href="#" class="fa-brands fa-instagram" title="Instagram"> </a>
-                     <a href="#" class="fa-brands fa-twitter" title="twitter"> </a>
-                     <a href="#" class="fa-brands fa-whatsapp" title="whatsapp"> </a>
+                     <a id="telegramShareBtn" class="fa-brands fa-telegram" title="telegram"> </a>
+                     <a id="instagramShareBtn" class="fa-brands fa-instagram" title="Instagram"> </a>
+                     <a id="twitterShareBtn" class="fa-brands fa-twitter" title="twitter"> </a>
+                     <a id="whatsappButton" class="fa-brands fa-whatsapp" title="whatsapp"> </a>
                      <a href="#" class="fa-brands fa-youtube" title="YouTube"> </a>
                </div>
                              <!-------main div------->
@@ -1263,20 +1263,58 @@
  });
 
 
-     var acc = document.getElementsByClassName("accordion");
-var i;
+      //telegram share button
+			  
+       document.getElementById('telegramShareBtn').addEventListener('click', function() {
+    // Replace 'your_message' and 'your_url' with your own message and URL
+    var message = encodeURIComponent('Check out this awesome link!');
+    var url = encodeURIComponent('https://example.com');
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-};
+    var telegramLink = 'https://t.me/share/url?url=' + url + '&text=' + message;
+
+    // Open the Telegram share URL in a new window or tab
+    window.open(telegramLink, '_blank');
+});
+	
+		      //whatsapp share button
+			  
+        document.getElementById("whatsappButton").addEventListener("click", function() {
+        // Replace 'your_text' and 'your_url' with the desired text and URL you want to share
+        var text = "Check out this cool website!";
+        var url = "https://sparrow-gif.github.io/Website-001/";
+
+        // Construct the WhatsApp share URL
+        var whatsappUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(text + " " + url);
+
+        // Open the WhatsApp share window
+        window.open(whatsappUrl, "_blank");
+    });
+	      
+		    //INSTAGRAM share button
+		  
+		   document.getElementById('instagramShareBtn').addEventListener('click', function() {
+             // Replace 'your_caption' and 'your_url' with your own caption and URL
+           var caption = encodeURIComponent('Check out this amazing photo!');
+           var url = encodeURIComponent('https://example.com/image.jpg');
+
+           var instagramLink = 'https://www.instagram.com/share?url=' + url + '&caption=' + caption;
+
+              // Open the Instagram share URL in a new window or tab
+           window.open(instagramLink, '_blank');
+       });
+	 
+	          //twitter share button
+		  
+		  document.getElementById('twitterShareBtn').addEventListener('click', function() {
+    // Replace 'your_text' and 'your_url' with your own tweet text and URL
+    var text = encodeURIComponent('Check out this awesome tweet!');
+    var url = encodeURIComponent('https://example.com');
+
+    var twitterLink = 'https://twitter.com/intent/tweet?text=' + text + '&url=' + url;
+
+    // Open the Twitter share URL in a new window or tab
+    window.open(twitterLink, '_blank');
+});
             
       
       //Contact us 
