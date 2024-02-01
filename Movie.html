@@ -550,7 +550,10 @@
         border: 1px solid #ccc;
         border-radius:4px;
         Font-family:  ;
+		outline:none;
          }
+	 #gettouch > form >  input:user-invalid { border:1.50px solid red;}
+	 #gettouch > form >  textarea:user-invalid { border:1.50px solid red;}
   #gettouch > form >  textarea {
         width:100%;
         border: 1px solid #ccc;
@@ -558,6 +561,7 @@
         padding:8px;
         font-size: ;
         Font-family: ;
+		outline:none;
       }
   #gettouch > form > .btn {
         Font-family: ;
@@ -1013,17 +1017,16 @@
              <form action="#" method="post" id="comment-form">
                  <h1> leave a comment </h1>
                  
-                 <label for ="text"> Message </label>
-                 <textarea id="comment" name="w3review" rows="4" cols="40" placeholder="Your Comment*" required></textarea>
-                 
                  <label for ="Name"> Name </label>
-                 <input type="text" id="name" placeholder="Your Name*" required>
-        
-                 <label for ="email"> Email </label>
-                 <input type="email" id="email" placeholder="Your email*" required>
-        
+                 <input type="text" id="name" name="name" placeholder="Name" spellcheck="true" required>
+                
+				 <label for ="email"> Email </label>
+                 <input type="email" id="email" name="email" placeholder="Email" spellcheck="true" required>
+                
+				 <label for ="text"> Message </label>
+				 <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Your Comment*" spellcheck="true" required></textarea>
                  
-                 <button class="btn" type="submit" value="Submit" title="button"> submit </button>
+                <button class="btn" type="submit"> Submit </button>
             </form>
         
 
