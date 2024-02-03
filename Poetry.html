@@ -263,8 +263,9 @@
      .gallery {
            display: flex;
            flex-wrap: wrap;
-           justify-content: space-around;
-           align-items:center;
+           justify-content:space-evenly ;
+           align-items:center ;
+		   gap:15px;
          }
 
     .lightbox {
@@ -282,9 +283,9 @@
     .gallery > img {
           height:210px;
           width:160px;
-          margin:10px 0px;
+          margin: ;
           border-radius:4px;
-	  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
        }
      .lightbox-content {
            max-width: 90%;
@@ -418,12 +419,12 @@
 		 color: dodgerblue;
      }
    .didit > #community {
-       background-color: #e6f7ff;
-       padding: 7px;
-       margin:10px auto;
-       Font-family: ;
-       overflow:hidden;
-	    color: dodgerblue ;
+        background-color: ;
+        padding: 7px;
+        margin:10px auto;
+        Font-family: ;
+        overflow:hidden;
+	    color: ;
      }
       .didit {
           min-height: auto ;
@@ -520,7 +521,10 @@
 				   width:90%;
 				   }
 			  #section > #blur { width:60%;}
-			
+			 .gallery > img {
+			          height:290px;
+                      width:200px;
+			     }
 			 
 	   }
 	   
@@ -528,10 +532,11 @@
 	   @media only screen and (min-width:992px) { 
 		       html {
 				   margin:0 auto;
-				   width:80%;
+				   width:65%;
 				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }  
+				   
              .close-btn {
                    position: absolute;
                    top: 15px;
