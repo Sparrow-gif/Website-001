@@ -215,7 +215,7 @@
  #section > #blur > p {
        margin-top:20px ;
        color:white; 
-      font-size:18px;
+       font-size: ;
      }
  #section > #background {
          min-height: 380px;
@@ -265,15 +265,13 @@
  
   .recommend {
           margin:10px auto;
-          -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-                  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+       /*   -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;  */
           width:95%;
           padding:10px 10px;
-          background: #F7F7FF;
+          background: ;
         }
-    .recommend > h3{
-           padding:10px 0px;
-        }
+   
     .recommend > a{
           -webkit-user-select:none;
              -moz-user-select:none;
@@ -281,7 +279,7 @@
                   user-select:none;
           text-decoration:none;
           color: green;
-          padding:5px;
+          padding:5px 20px;
           cursor:pointer;
           display:block;
           font-family: ;
@@ -303,7 +301,7 @@
             -ms-user-select:none;
                 user-select:none;
         margin:0 auto ;
-        width:100%;
+        max-width:640px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -462,67 +460,6 @@
           z-index:90 ;
           font-size:1.30rem;
             }
-   
-     #img-con {
-            margin: 10px auto;
-            position: fixed;
-            overflow:hidden;
-            width:70px;
-            height:90px;
-            display:block;
-            cursor: pointer;
-			bottom:0px;
-			left:10px;
-			-webkit-transition-duration:0.5s;
-			     -o-transition-duration:0.5s;
-			        transition-duration:0.5s;
-			z-index:0;
-           }
-    #img-con > img {
-        width:100%;
-        height:100%;
-        background-position:center;
-        background-size:cover;
-        -o-object-fit:cover;
-           object-fit:cover;
-	    opacity:100%;
-		z-index:0;
-        }
-	 #img-con:hover {
-	     width:130px;
-         height:170px;
-		 z-index:0;
-	 }	
-    #img-con > p {        
-         position:absolute;
-         top:0;
-         left:0;
-         width:100%;
-		 height:100%;
-         background:#2C2A4A;
-         display:-webkit-box;
-         display:-ms-flexbox;
-         display:flex;
-         -webkit-box-pack:center;
-             -ms-flex-pack:center;
-                 justify-content:center;
-         -webkit-box-align:center;
-             -ms-flex-align:center;
-                 align-items:center;        
-         -webkit-user-select:none;        
-            -moz-user-select:none;        
-             -ms-user-select:none;        
-                 user-select:none;
-		  color: #FFFFFF;
-         font-size:12px;
-		 opacity:80%;
-         text-align:center;
-         font-family: ;
-          }
-    #img-con:hover > p {
-          opacity:0;
-       }
-		 
 		 
 	   
 	   @media only screen and (max-width:767px) { 
@@ -536,24 +473,8 @@
 				   width:90%;
 				   }
 			  #section > #blur { width:60%;}
-			 .mySlides {
-                        min-height:500px;
-                        max-height:80vh;
-						overflow:scroll;
-						margin:0 auto;
-						width:85%;
-						}
-				 .prev {
-                     position: absolute;
-                     left: 2%;
-                     border-radius:50%;
-                  }
-                 .next {
-                     position: absolute;
-                     right: 2%;
-                     border-radius:50%;
-                   }
-			  #gettouch { margin:0 auto; width:70%;}
+			
+			 
 	   }
 	   
 	   
@@ -565,24 +486,7 @@
 				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }    
 			   #section > #blur { width:50%;}
-			     .mySlides {
-                        min-height:520px;
-                        max-height:80vh;
-						overflow:scroll;
-						margin:0 auto;
-						width:80%;
-						}
-				 .prev {
-                     position: absolute;
-                     left: 6%;
-                     border-radius:50%;
-                  }
-                 .next {
-                     position: absolute;
-                     right: 6%;
-                     border-radius:50%;
-                   }
-				  #gettouch { margin:0 auto; width:50%;}
+			    
 		}
    </style>
   </head>
@@ -637,7 +541,7 @@
       <section id="section">
           <div id="background">  </div>
           <div id="blur"> 
-              <h1 style="Font-family:roboto;"> Express your emotions through poetry </h1>
+              <h1 style="Font-family: ;"> Express your emotions through poetry </h1>
               <p> unleash your creativity and share your deepest
                   feeling.join our community of poets today. 
              </p>
@@ -647,7 +551,7 @@
 
 
       <div id="introo" Style="padding:20px;">
-             <p>     
+             <p style="font-size:1rem;">     
                  Step into the enchanting world of verse at our poetry haven. Welcome to a digital realm where
 				 words dance, emotions resonate, and creativity knows no bounds. Our poetry website is a tapestry
 				 of diverse voices, weaving tales of love, resilience, and introspection. Immerse yourself in
@@ -668,7 +572,7 @@
           
 		   <!------recomended section-------->
          <div class="recommend">
-              <h1 style="font-family:Roboto;"> related posts </h1>
+              <h1 style="font-family:Roboto;color:#291769;"> related posts </h1>
               <a href="Movie.html" target="_self"> 1) Top 10 Movie Download Websites </a>
 			  <a href="Web.html" target="_self"> 2) web news </a>
               <a href="Index.html" target="_self"> 3)Words of Lord Krishna that will brighten your life </a>
@@ -685,7 +589,7 @@
 
            <!----COMMENT Section------>
 				  <div class="didit">
-                       <h3 style="font-family:Roboto;"> Recent Comments  </h3>
+                       <h1 style="font-family:Roboto; color:#291769;"> Recent Comments  </h1>
                        <div id="comments"> </div> <!----messages-04----->
                        <div id="community"> <b> sudip:- </b> Great </div> <!----messages-03----->
                        <div id="community"> <b> sneha:- </b> wows  </div> <!----messages-02---->
@@ -736,12 +640,6 @@
    </div>
   </footer>
   
-  
-      <div id="img-con"> <!----------------DADU---------------->
-          <img src="POETRY/dadu.jpg">          
-          <p> 1941-2021 </p>         
-       </div>
-	  
 	  
         <!----Go To Top Button------>
      <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>     
