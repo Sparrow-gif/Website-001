@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-   <meta name="description" content="">
+  <meta name="description" content="Immerse yourself in the enchanting world of poetry on our website! Discover a rich tapestry of emotions and expressions as you explore a diverse collection of verses. Learn the art of poetic language, unravel the beauty of words, and get inspired to unleash your creativity. Join our community of poetry enthusiasts, where every stanza is an invitation to explore, learn, and connect. Embark on a poetic journey with us and discover the power of language to captivate hearts and minds.">   
   <title> Poetry </title>
     <style>
 
@@ -286,6 +286,7 @@
           margin: ;
           border-radius:4px;
 	      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+		  cursor:pointer;
        }
      .lightbox-content {
            max-width: 90%;
@@ -350,6 +351,7 @@
             -ms-flex-direction: column;
                 flex-direction: column;
         gap:6px;
+		padding:15px;
        }
    #gettouch > form > h1 {
          color:#5E239D;
@@ -363,6 +365,10 @@
         Font-family:lato ;
         font-size:20px ;
       }
+	  
+	 #gettouch > form >  input:user-invalid { border:1.50px solid red;}
+	 #gettouch > form >  textarea:user-invalid { border:1.50px solid red;}
+	  
    #gettouch > form >  input {
         width:100%;
         padding:8px;
@@ -372,6 +378,7 @@
         border: 1px solid #ccc;
         border-radius:4px;
         Font-family:Quicksand ;
+		outline:none;
          }
   #gettouch > form >  textarea {
         width:100%;
@@ -380,6 +387,7 @@
         padding:8px;
         font-size:18px;
         Font-family: ;
+		outline:none;
       }
   #gettouch > form > .btn {
         Font-family: ;
@@ -551,8 +559,8 @@
    </style>
   </head>
   <body oncontextmenu="return false">
-        <header id="navbar">              
-           <div id="mySidenav" class="sidenav">
+        <header id="navbar" title="header">              
+           <div id="mySidenav" class="sidenav" title="sideNav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html" target="_self" > Home</a>
                 <a href="About us.html" target="_self" > About us </a>
@@ -572,11 +580,11 @@
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
                </div>
           </div>
-                <h2> Quotes World  </h2>
-                <span onclick="openNav()">&#9776;</span>
+                <h2 title="logo"> Quotes World  </h2>
+                <span onclick="openNav()" title="menubar">&#9776;</span>
      </header>
 
-         <section class="scroll-container">
+         <nav class="scroll-container" title="scrollBer">
                <a class="scroll-item" href="Top10.html" target="_self"> Daily Quotes </a>     
                <a class="scroll-item" href="index.html" target="_self"> K.Quotes </a>
                <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
@@ -593,7 +601,7 @@
                <a class="scroll-item" href="Web.html" target="_self"> web news </a>                
                <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
-  </section>
+     </nav>
           
 
            
@@ -610,8 +618,8 @@
      </section>
 
 
-      <div id="introo" Style="padding:20px;">
-             <p style="font-size:1rem;">     
+      <div id="introo" Style="padding:20px 6px;" title="article">
+             <p style="font-size:14px;">     
                  Step into the enchanting world of verse at our poetry haven. Welcome to a digital realm where
 				 words dance, emotions resonate, and creativity knows no bounds. Our poetry website is a tapestry
 				 of diverse voices, weaving tales of love, resilience, and introspection. Immerse yourself in
@@ -627,7 +635,7 @@
 
                       <!-----------QUOTES--CONTAUNER----------------->
         
-       <div class="gallery">
+       <div class="gallery" title="Poetry">
             <img src="C:\Users\intel\Desktop\WEBSITE\INDEX/webnews.webp" alt="Image 1" class="lightbox-trigger">            
             <img src="images/Img2.jpeg" alt="Image 2" class="lightbox-trigger">
             <img src="images/Img1.jpeg" alt="Image 1" class="lightbox-trigger">            
@@ -639,8 +647,8 @@
             <!-- Add more images as needed -->
        </div>
 
-        <div class="lightbox" id="lightbox">
-             <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox" id="lightbox" title="lightbox">
+             <span class="close-btn" onclick="closeLightbox()" title="close-btn">&times;</span>
              <img src="" alt="Lightbox Image" class="lightbox-content">
        </div>
 
@@ -678,7 +686,7 @@
 		
 				   <!----Comment Section------->
         <div id="gettouch" class="comment-section">
-             <form action="#" method="post" id="comment-form">
+             <form action="#" method="post" id="comment-form" title="form">
                  <h1> leave a comment </h1>
                  
                  <label for ="text"> Message </label>
@@ -691,14 +699,14 @@
                  <input type="email" id="email" placeholder="Your email*" required>
         
                  
-                <button class="btn" type="submit"> Submit </button>
+                <button class="btn" type="submit" title="Button"> Submit </button>
              
              </form>         
         </div>
        
-       <footer>   <!------footer Section------->
+       <footer title="footer">   <!------footer Section------->
        <h2> Quotes World </h2>          
-      <select>
+      <select title="language-switcher">
            <option> English</option>
            <option> hindi   </option>
            <option> Bengali </option>
