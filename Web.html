@@ -247,6 +247,30 @@
         font-family: ;
      }
 
+
+   #language-switcher {
+          margin-bottom: 20px;
+      }
+
+   #language-switcher > button {
+             cursor: pointer;
+             padding: 10px 20px;
+             margin-right: 10px;
+             background-color: #3498db;
+             color: #fff;
+             border: none;
+             border-radius: 5px;
+         }
+
+       #language-switcher > button :hover {
+               background-color: #2980b9;
+         }
+
+#greeting {
+    font-size: 18px;
+    color: #333;
+}
+
     footer {
         position:relative;
          width:100%;         
@@ -344,7 +368,7 @@
 			   }
 			.container {  
                margin:0 auto;
-		       width:90%;
+		       width:85%;
 		       -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		               box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 			   }
@@ -354,7 +378,7 @@
    @media only screen and (min-width:992px) { 
 	       html {
 	           margin:0 auto;
-		       width:80%;
+		       width:65%;
 		   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		   }    		 
@@ -408,16 +432,23 @@
           
                  
            <!-----Main Body------>
-       <main class="container">
+       <main class="container">	        
              <div class="image-div">
                  <img src="WEB/RAMMANDIR.jpeg" alt="Image">
             </div>
+			
              <div class="content-div">
+			 
+			    <div id="language-switcher">
+                     <button onclick="changeLanguage('bn')">   বাংলা   </button>
+                     <button onclick="changeLanguage('hn')">   हिंदी   </button>
+                     <button onclick="changeLanguage('en')"> english </button>
+               </div>
+   <hr>
                  <!-- Your content here -->
-                  <h1>  hello world </h1>
+                  <h1 id="greet">  hello world </h1>
                  <!-- This div's scroll will affect the blur -->
-                  <p>  local community service and attractive food for the
-                      Vo bhi nahi ho gya tha ki pic of the year and attractive food for me to get to know about to get the same time  </p>
+                  <p id="greeting"> 'jai hanuman' </p>
             </div>
       </main>
 
@@ -484,6 +515,21 @@ document.getElementById("topButton").addEventListener("click", function () {
      }
   });
 
+
+          function changeLanguage(language) {
+              const greetings = {
+                        'bn': 'জয় হনুমান',
+                        'hn': 'जय हनुमान',
+                        'en': 'jai hanuman'
+        // Add more languages and corresponding greetings as needed
+     };       
+  
+    const greetingElement = document.getElementById('greeting');
+    greetingElement.textContent = greetings[language];
+	
+};
+
+        
 
           document.getElementById('whatsapp-share-btn').addEventListener('click', function() {
      // Replace 'Your text here' and 'Your URL here' with your desired text and URL
