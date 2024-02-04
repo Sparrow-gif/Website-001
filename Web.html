@@ -206,6 +206,7 @@
   .container > .image-div {
          position:sticky;
 		 min-height:30vh;
+		 max-height:320px;
 		 max-width:800px;
          top:3.30em;
          z-index:0;
@@ -537,15 +538,20 @@
          document.getElementById("mySidenav").style.width = "0";
            } ;
 
-          /* Go To Top Button */
 
-      window.onscroll = function () {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    document.getElementById("topButton").style.display = "block";
-  } else {
-    document.getElementById("topButton").style.display = "none";
-  }
-};
+
+
+         //change Navigation background
+   window.addEventListener('scroll', function() {
+       const navbar = document.getElementById('navbar');
+       const scrolled = window.scrollY;
+
+       if (scrolled > 30) {
+       navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
+     } else {
+       navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
+     }
+  });
 
 
 
