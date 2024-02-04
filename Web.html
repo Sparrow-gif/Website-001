@@ -249,7 +249,7 @@
 
 
    #language-switcher {
-          margin-bottom: 20px;
+          margin-bottom: 10px;
       }
 
    #language-switcher > button {
@@ -265,12 +265,18 @@
        #language-switcher > button :hover {
                background-color: #2980b9;
          }
-
-#greeting {
-    font-size: 18px;
-    color: #333;
-}
-
+       #content > h1 {
+	        font-size:20px;
+			color:;
+			font-family:;
+	     }
+      #content > p {
+	        font-size:16px;
+			color:;
+			font-family:;
+	   }
+	   
+	   
     footer {
         position:relative;
          width:100%;         
@@ -440,19 +446,21 @@
              <div class="content-div">
 			 
 			    <div id="language-switcher">
-                     <button onclick="changeLanguage('bn')">   বাংলা   </button>
-                     <button onclick="changeLanguage('hn')">   हिंदी   </button>
-                     <button onclick="changeLanguage('en')"> english </button>
+                     <button onclick="changeLanguage('bn')">    বাংলা     </button>
+                     <button onclick="changeLanguage('hi')">    हिन्दी       </button>
+                     <button onclick="changeLanguage('en')">  English </button>
                </div>
-   <hr>
-                 <!-- Your content here -->
-                  <h1 id="greet">  Mobile Radiation Raises Health Concerns; </h1>
-                 <!-- This div's scroll will affect the blur -->
-                  <p id="greeting"> In a recent study, scientists have shed light on the potential health hazards posed by mobile phone radiation. The research highlights concerns about prolonged exposure to electromagnetic fields emitted by these devices and their possible impact on the human body.
-Experts have long cautioned against the adverse effects of mobile radiation, linking it to various health issues such as headaches, sleep disturbances, and even more serious conditions like cancer. The increasing reliance on smartphones and the growing amount of time people spend on them has raised alarms about the cumulative exposure to these electromagnetic waves.
-To assess personal exposure levels, users are encouraged to dial *#07# on their mobile phones. This code provides information about the Specific Absorption Rate (SAR), a measure of the amount of radiofrequency energy absorbed by the body when using a mobile phone. A higher SAR value indicates increased exposure to radiation.
-While regulatory bodies set SAR limits to ensure the safety of mobile devices, researchers emphasize the importance of minimizing unnecessary exposure. Simple precautions, such as using hands-free options or keeping the phone at a distance when not in use, can help reduce the potential risks associated with mobile radiation.
-The findings underscore the need for ongoing research and public awareness campaigns to educate individuals about responsible mobile phone use and to encourage manufacturers to develop devices with lower radiation emissions. As the debate on mobile radiation continues, it is crucial for users to stay informed and take steps to protect their health in this increasingly digital age. </p>
+     	<hr>		   
+               <div id="content">
+                     <h1 id="heading-english">Welcome to Language Switcher</h1>
+                     <p id="english-text">Hello, this is English text.</p>
+    
+                     <h1 id="heading-bengali" style="display:none;">ভাষা সুইচারে আপনাকে স্বাগতম</h1>
+                     <p id="bengali-text" style="display:none;">হ্যালো, এটি বাংলা টেক্সট।</p>
+    
+                     <h1 id="heading-hindi" style="display:none;">भाषा स्विचर में आपका स्वागत है</h1>
+                     <p id="hindi-text" style="display:none;">नमस्ते, यह हिन्दी टेक्स्ट है।</p>
+              </div>
             </div>
       </main>
 
@@ -520,17 +528,14 @@ document.getElementById("topButton").addEventListener("click", function () {
   });
 
 
-          function changeLanguage(language) {
-              const greetings = {
-                        'bn':'সাম্প্রতিক এক গবেষণায়, বিজ্ঞানীরা মোবাইল ফোনের বিকিরণের কারণে সম্ভাব্য স্বাস্থ্যের ঝুঁকির উপর আলোকপাত করেছেন। গবেষণাটি এই ডিভাইসগুলির দ্বারা নির্গত ইলেক্ট্রোম্যাগনেটিক ক্ষেত্রের দীর্ঘায়িত এক্সপোজার এবং মানবদেহে তাদের সম্ভাব্য প্রভাব সম্পর্কে উদ্বেগ তুলে ধরে।বিশেষজ্ঞরা দীর্ঘকাল ধরে মোবাইল বিকিরণের বিরূপ প্রভাবের বিরুদ্ধে সতর্ক করে এসেছেন, এটি বিভিন্ন স্বাস্থ্য সমস্যা যেমন মাথাব্যথা, ঘুমের ব্যাঘাত এবং ক্যান্সারের মতো আরও গুরুতর অবস্থার সাথে যুক্ত। স্মার্টফোনের উপর ক্রমবর্ধমান নির্ভরতা এবং মানুষের ক্রমবর্ধমান সময় সেগুলিতে ব্যয় করা এই ইলেক্ট্রোম্যাগনেটিক তরঙ্গগুলির ক্রমবর্ধমান এক্সপোজার সম্পর্কে সতর্কতা বাড়িয়ে তুলেছে।ব্যক্তিগত এক্সপোজার মাত্রা মূল্যায়ন করতে, ব্যবহারকারীদের তাদের মোবাইল ফোনে *#07# ডায়াল করতে উৎসাহিত করা হয়। এই কোডটি নির্দিষ্ট শোষণ হার (SAR) সম্পর্কে তথ্য প্রদান করে, একটি মোবাইল ফোন ব্যবহার করার সময় শরীর দ্বারা শোষিত রেডিওফ্রিকোয়েন্সি শক্তির পরিমাপ। একটি উচ্চ SAR মান বিকিরণের বর্ধিত এক্সপোজার নির্দেশ করে।যদিও নিয়ন্ত্রক সংস্থাগুলি মোবাইল ডিভাইসের নিরাপত্তা নিশ্চিত করতে SAR সীমা নির্ধারণ করে, গবেষকরা অপ্রয়োজনীয় এক্সপোজার কমানোর গুরুত্বের উপর জোর দেন। সহজ সতর্কতা, যেমন হ্যান্ডস-ফ্রি বিকল্পগুলি ব্যবহার করা বা ব্যবহার না করার সময় ফোনকে দূরত্বে রাখা, মোবাইল রেডিয়েশনের সাথে যুক্ত সম্ভাব্য ঝুঁকি কমাতে সাহায্য করতে পারে।এই ফলাফলগুলি দায়বদ্ধ মোবাইল ফোন ব্যবহার সম্পর্কে ব্যক্তিদের শিক্ষিত করার জন্য এবং কম বিকিরণ নির্গমন সহ ডিভাইসগুলি বিকাশে নির্মাতাদের উত্সাহিত করার জন্য চলমান গবেষণা এবং জনসচেতনতা প্রচারের প্রয়োজনীয়তার উপর জোর দেয়। মোবাইল রেডিয়েশন নিয়ে বিতর্ক চলতে থাকায়, এই ক্রমবর্ধমান ডিজিটাল যুগে ব্যবহারকারীদের সচেতন থাকা এবং তাদের স্বাস্থ্য রক্ষার জন্য পদক্ষেপ নেওয়া অত্যন্ত গুরুত্বপূর্ণ।',
-                        'hn':'हाल के एक अध्ययन में वैज्ञानिकों ने मोबाइल फोन विकिरण से उत्पन्न संभावित स्वास्थ्य खतरों पर प्रकाश डाला है। शोध इन उपकरणों द्वारा उत्सर्जित विद्युत चुम्बकीय क्षेत्रों के लंबे समय तक संपर्क और मानव शरीर पर उनके संभावित प्रभाव के बारे में चिंताओं पर प्रकाश डालता है।विशेषज्ञों ने लंबे समय से मोबाइल विकिरण के प्रतिकूल प्रभावों के प्रति आगाह किया है, इसे विभिन्न स्वास्थ्य समस्याओं जैसे सिरदर्द, नींद में खलल और यहां तक कि कैंसर जैसी गंभीर स्थितियों से जोड़ा है। स्मार्टफोन पर बढ़ती निर्भरता और लोगों द्वारा उन पर बिताए जाने वाले समय की बढ़ती मात्रा ने इन विद्युत चुम्बकीय तरंगों के संचयी जोखिम के बारे में चिंता बढ़ा दी है।व्यक्तिगत जोखिम के स्तर का आकलन करने के लिए, उपयोगकर्ताओं को अपने मोबाइल फोन पर *#07# डायल करने के लिए प्रोत्साहित किया जाता है। यह कोड विशिष्ट अवशोषण दर (एसएआर) के बारे में जानकारी प्रदान करता है, जो मोबाइल फोन का उपयोग करते समय शरीर द्वारा अवशोषित रेडियोफ्रीक्वेंसी ऊर्जा की मात्रा का माप है। उच्च SAR मान विकिरण के बढ़ते जोखिम को इंगित करता है।जबकि नियामक निकाय मोबाइल उपकरणों की सुरक्षा सुनिश्चित करने के लिए एसएआर सीमाएं निर्धारित करते हैं, शोधकर्ता अनावश्यक जोखिम को कम करने के महत्व पर जोर देते हैं। सरल सावधानियां, जैसे हैंड्स-फ़्री विकल्पों का उपयोग करना या उपयोग में न होने पर फ़ोन को दूरी पर रखना, मोबाइल विकिरण से जुड़े संभावित जोखिमों को कम करने में मदद कर सकता है।निष्कर्ष व्यक्तियों को जिम्मेदार मोबाइल फोन उपयोग के बारे में शिक्षित करने और निर्माताओं को कम विकिरण उत्सर्जन वाले उपकरण विकसित करने के लिए प्रोत्साहित करने के लिए चल रहे अनुसंधान और सार्वजनिक जागरूकता अभियानों की आवश्यकता को रेखांकित करते हैं। जैसा कि मोबाइल विकिरण पर बहस जारी है, उपयोगकर्ताओं के लिए इस तेजी से डिजिटल युग में सूचित रहना और अपने स्वास्थ्य की रक्षा के लिए कदम उठाना महत्वपूर्ण है।',
-                        'en': 'In a recent study, scientists have shed light on the potential health hazards posed by mobile phone radiation. The research highlights concerns about prolonged exposure to electromagnetic fields emitted by these devices and their possible impact on the human body.Experts have long cautioned against the adverse effects of mobile radiation, linking it to various health issues such as headaches, sleep disturbances, and even more serious conditions like cancer. The increasing reliance on smartphones and the growing amount of time people spend on them has raised alarms about the cumulative exposure to these electromagnetic waves.To assess personal exposure levels, users are encouraged to dial *#07# on their mobile phones. This code provides information about the Specific Absorption Rate (SAR), a measure of the amount of radiofrequency energy absorbed by the body when using a mobile phone. A higher SAR value indicates increased exposure to radiation.While regulatory bodies set SAR limits to ensure the safety of mobile devices, researchers emphasize the importance of minimizing unnecessary exposure. Simple precautions, such as using hands-free options or keeping the phone at a distance when not in use, can help reduce the potential risks associated with mobile radiation.The findings underscore the need for ongoing research and public awareness campaigns to educate individuals about responsible mobile phone use and to encourage manufacturers to develop devices with lower radiation emissions. As the debate on mobile radiation continues, it is crucial for users to stay informed and take steps to protect their health in this increasingly digital age.'
-        // Add more languages and corresponding greetings as needed
-     };       
-  
-    const greetingElement = document.getElementById('greeting');
-    greetingElement.textContent = greetings[language];
-	
+         function changeLanguage(language) {
+  document.getElementById('heading-english').style.display = language === 'en' ? 'block' : 'none';
+  document.getElementById('heading-bengali').style.display = language === 'bn' ? 'block' : 'none';
+  document.getElementById('heading-hindi').style.display = language === 'hi' ? 'block' : 'none';
+
+  document.getElementById('english-text').style.display = language === 'en' ? 'block' : 'none';
+  document.getElementById('bengali-text').style.display = language === 'bn' ? 'block' : 'none';
+  document.getElementById('hindi-text').style.display = language === 'hi' ? 'block' : 'none';
 };
 
 
