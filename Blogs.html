@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <meta name="description" content=>
+  <meta name="description" content="Embark on a captivating journey of self-discovery and knowledge with our dynamic vlog platform! Dive into a world of engaging content where you can learn, discover, and get inspired by a diverse range of topics. Elevate your online experience with our thought-provoking vlogs – your gateway to endless learning and exploration. Subscribe now to unlock a wealth of insights and join a community passionate about knowledge and discovery!">
   <title> Blogs </title>
     <style>
  * {
@@ -205,20 +205,20 @@ header > h2{
           object-fit:fill;
        overflow:hidden;
       }
- #section >#blur >  h1{
-       font-size:30px;
-       text-transform:uppercase;
-       margin:0 auto ;
-       color: #e3e35f;
-	   font-family:domine;
-    } 
- #section > #blur > p {
-       margin-top:20px ;
-       color:white; 
-       font-size:18px;
-     }
+    #section >#blur >  h1{
+          font-size: ;
+          text-transform:uppercase;
+          margin:0 auto ;
+          color: #e3e35f;
+	      font-family: ;
+        } 
+    #section > #blur > p {
+          margin-top:20px ;
+          color:white; 
+          font-size: ;
+       }
  #section > #background {
-         min-height: 580px;
+         min-height: 560px;
          max-height:80vh;
          width:100%;
          background-image:url('BLOG/BLOG2.jpg');    
@@ -252,7 +252,8 @@ header > h2{
        display:inline-block;
        padding:10px ;
        width:80%;
-       font-size:18px;
+	   max-width:210px;
+       font-size: ;
        text-decoration:none;
        color: White ;
        background:red;
@@ -262,20 +263,20 @@ header > h2{
        -webkit-transition-duration:0.3s;
             -o-transition-duration:0.3s;
                transition-duration:0.3s;
-	    Font-family: pt sans;
-    }
-  #section >  #blur a:active {
+	    Font-family: ; /* pt sans */
+      }
+  #section >  #blur a:hover {
          -webkit-transform:scale(0.90) ;
              -ms-transform:scale(0.90) ;
                  transform:scale(0.90) ;
          border-radius:10px;
-     }
+       }
     #inttro {
           margin:0 auto ;
           padding:20px 20px;
           background: ;  */#deed9a */
           font-family: ;
-          font-size:20px;
+          font-size: ;
       }
      #inttro > #intotext::first-letter{
             font-size: 200%;
@@ -470,7 +471,12 @@ header > h2{
         border: 1px solid #ccc;
         border-radius:4px;
         Font-family: ;
+		outline:none;
          }
+		 
+	 #gettouch > form >  input:user-invalid { border:1.50px solid red;}
+	 #gettouch > form >  textarea:user-invalid { border:1.50px solid red;}
+		 
   #gettouch > form >  textarea {
         width:100%;
         border: 1px solid #ccc;
@@ -478,6 +484,7 @@ header > h2{
         padding:8px;
         font-size:18px;
         Font-family: ;
+		outline:none;
       }
 	  
   #gettouch > form > .btn {
@@ -682,9 +689,9 @@ header > h2{
    </style>
   </head>
   <body oncontextmenu="return false">
-        <header id="navbar" >              
-           <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <header id="navbar" title="Header">              
+           <div id="mySidenav" class="sidenav" title="SideNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="close">&times;</a>
                 <a href="index.html" target="_self" >Home</a>
                 <a href="About us.html" target="_self" > About us </a>
                 <a href="Blogs.html" class="active" target="_self" > Blogs </a>
@@ -703,11 +710,11 @@ header > h2{
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
                </div>
           </div>
-                <h2> Quotes World  </h2>
-                <span onclick="openNav()">&#9776;</span>
+                <h2 title="logo"> Quotes World  </h2>
+                <span onclick="openNav()" title="Menubar">&#9776;</span>
      </header>
 
-         <nav class="scroll-container">
+         <nav class="scroll-container" title="ScrollBar">
                <a class="scroll-item" href="Top10.html" target="_self"> Daily Quotes </a>     
                <a class="scroll-item" href="index.html" target="_self"> K.Quotes </a>
                <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
@@ -736,17 +743,13 @@ header > h2{
                   into who you are today. let us  help you tell
                   your unique biographies. 
              </p>
-              <a href="#blogvdos" id="soundButton"> Explore Now  </a>
-              <audio id="myAudio">
-                   <source src="Btnsnd.mp3" type="audio/mp3">
-                   Your browser does not support the audio element.
-             </audio>
+              <a href="#blogvdos" id="soundButton" title="button"> Explore Now  </a>
         </div> 
      </section>
   
              <!----Blog Introduced Section----->
-     <article id="inttro">
-               <p id="intotext" style="font-family:Poppins;">  
+     <article id="inttro" title="articles">
+               <p id="intotext" style="font-family: ;">  
                    Introducing Blog, a dynamic Youtube video creator based in Jhargram, WB.
                    With a passion for creating engaging and informative content, Blog is 
                    dedicated to helping businesses and individuals amplify their online
@@ -765,15 +768,15 @@ header > h2{
             <iframe src="https://www.youtube.com/embed/TFBnMxL_K0Y">   </iframe>            
             <iframe src="https://www.youtube.com/embed/KcmrYjC09j0">   </iframe>
      
-            <img src='BLOG/BLOG4.jpg' alt="img1">
-            <img src='BLOG/BLOG5.webp' alt="img2">
-            <img src='BLOG/BLOG6.webp' alt="img3">
-            <img src='BLOG/BLOG7.webp' alt="img4">
+            <img src='BLOG/BLOG4.jpg' alt="img1" loading="lazy">
+            <img src='BLOG/BLOG5.webp' alt="img2" loading="lazy">
+            <img src='BLOG/BLOG6.webp' alt="img3" loading="lazy">
+            <img src='BLOG/BLOG7.webp' alt="img4" loading="lazy">
         </main>
 		
          <aside Style="background-color: ; /*#E8E9EB*/ height:auto; ">
 		         <fieldset style="border:none;">
-                <legend style="border:none;"><h2 Style="color:#3454D1;">  Related posts </h2></legend>
+                <legend style="border:none;"> <h1 Style="color:#3454D1;">  Related posts </h1> </legend>
            
                 <div> <!-----Post 1------>
                        <a href="#"> movie download websites </a>
@@ -828,7 +831,7 @@ header > h2{
 			 
 			     <!----COMMENT Section------>
 				  <div class="didit" id="blok">
-                       <h3 style="font-family:Roboto;"> Recent Comments  </h3>
+                       <h2 style="font-family:Roboto;"> Recent Comments  </h2>
                        <div id="comments"> </div> <!----messages-04----->
                        <div id="community"> <b> sudip:- </b> Great </div> <!----messages-03----->
                        <div id="community"> <b> sneha:- </b> wows  </div> <!----messages-02---->
@@ -839,7 +842,7 @@ header > h2{
 	
 	
        <section id="ourwork">    <!----our work container------->
-              <h2> Our work </h2>
+              <h1> Our work </h1>
               <div class="grid">
                     <div class="b1">
                          <h2> Engaging video content creation </h2>
@@ -858,7 +861,7 @@ header > h2{
              
               <!-----about us section-------->
       <section class="aboutus">
-               <h2> about Us </h2>
+               <h1> about Us </h1>
                <p>   
                    Welcome to Blog, a leading video blogging website based in kolkata, WB. We are dedicated to providing a platform for individuals and businesses to share 
                    their stories, ideas, and expertise through engaging and high-quality videos.
@@ -885,28 +888,28 @@ header > h2{
 
        <!----Comment Section------->
         <div id="gettouch" class="comment-section">
-             <form action="#" method="post" id="comment-form">
-                 <h2> leave a comment </h2>
+             <form action="#" method="post" id="comment-form" title="form">
+                 <h1> leave a comment </h1>
                  
                  <label for ="text"> Message </label>
-                 <textarea id="comment" name="w3review" rows="4" cols="40" placeholder="Your Comment*" required></textarea>
+                 <textarea id="comment" name="w3review" rows="4" cols="40" placeholder="Your Comment*" spellcheck="true" required></textarea>
                  
                  <label for ="Name"> Name </label>
-                 <input type="text" id="name" placeholder="Your Name*" required>
+                 <input type="text" id="name" placeholder="Your Name*" spellcheck="true" required>
         
                  <label for ="email"> Email </label>
-                 <input type="email" id="email" placeholder="Your email*" required>
+                 <input type="email" id="email" placeholder="Your email*" spellcheck="true" required>
         
                  
-                 <button class="btn" type="submit" value="Submit"> submit </button>
+                 <button class="btn" type="submit" value="Submit" title="button"> submit </button>
              </form>         
         </div>
 
 
 
-       <footer>   <!------footer Section------->
+       <footer title="Footer">   <!------footer Section------->
        <h2> Quotes World </h2>          
-      <select>
+      <select title="language-Switcher">
            <option> English</option>
            <option> hindi   </option>
            <option> Bengali </option>
@@ -925,7 +928,7 @@ header > h2{
      
         <!----Go To Top Button------>     
      <a href="https://youtube.com/@Wings_dna?si=EDxPSSc30nXrQ5DZ" target="_blank" style="text-decoration:none;color:White;"> <button id="ytb"> <i class="fa-brands fa-youtube"></i> </a> </button> </a>
-     <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
+     <button id="topButton" title="top-button"> <i class="fa-solid fa-arrow-up"></i> </button>
 
 
    <script>
