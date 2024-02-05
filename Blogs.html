@@ -5,14 +5,15 @@
   <base href="#">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">   
+  <link rel="icon" type="image/x-icon" href="favicon.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="description" content=>
   <title> Blogs </title>
     <style>
  * {
@@ -272,7 +273,7 @@ header > h2{
     #inttro {
           margin:0 auto ;
           padding:20px 20px;
-          background:#deed9a ;
+          background: ;  */#deed9a */
           font-family: ;
           font-size:20px;
       }
@@ -283,7 +284,7 @@ header > h2{
 
 
     #blogvdos {
-	        background-color:#F9F9ED;
+	        background-color: ; /*#F9F9ED */
             margin:0 auto ;
             padding:10px;
             gap:10px;
@@ -363,7 +364,7 @@ header > h2{
    #ourwork {
           padding:20px;
           margin:0 auto ;
-          background: #5e41f0;
+          background: ; /* #5e41f0 */
           -webkit-user-select:none;
              -moz-user-select:none;
               -ms-user-select:none;
@@ -371,7 +372,7 @@ header > h2{
          }
    #ourwork > h2 {
             text-align:center;
-            color:white;
+            color: #5e41f0;
             margin:20px 0px 40px 0px;
 			Font-family:lato;
          }
@@ -396,7 +397,7 @@ header > h2{
     .aboutus {
            margin:0 auto ;
            width:100%;
-           background:#5e41f0 ;
+           background: ; /* #5e41f0 */
            padding:20px ;
            color:white;
            -webkit-user-select:none;
@@ -408,10 +409,12 @@ header > h2{
            margin-bottom:40px;
            Font-family: ;
            font-size:30px;
+		   color:#5e41f0;
          }
      .aboutus > p {
            Font-family: ;
            font-size:22px;
+		   color:black;
          }
    .aboutus > iframe {
             border: 0px solid black ;
@@ -589,12 +592,12 @@ header > h2{
           font-size: 16px;
           cursor: pointer;
           z-index:90 ;
-          font-size:1.50rem;
+          font-size:1.30rem;
             }
       #ytb {          
           position: fixed;
           bottom:80px;
-          right: 10px;
+          right: 20px;
           background-color:red;
           color: white;
           border: none;
@@ -603,7 +606,7 @@ header > h2{
           font-size: 16px;
           cursor: pointer;
           z-index:90;
-          font-size:1.50rem;
+          font-size:1.30rem;
           -webkit-user-select:none;
              -moz-user-select:none;
               -ms-user-select:none;
@@ -618,7 +621,10 @@ header > h2{
 	
           
 	   @media only screen and (min-width:768px) { 
-	          
+	           html {
+				   margin:0 auto;
+				   width:90%;
+				   }
 			  #section > #blur { 
                  width:60%;
                  position:absolute;                 
@@ -628,6 +634,17 @@ header > h2{
                    margin:0 auto;
               }
             
+			 .flow {
+		         display:-webkit-box;
+		         display:-ms-flexbox;
+		         display:flex;
+			     justify-Content:space-evenly;
+			     gap:10px;
+	     	  }				
+       		 .flow > main { width:60%; }
+			 .flow > aside { width:36%; }
+			 
+			
             .aboutus > h2{
                    margin:0 auto ;
                    width:80%;
@@ -638,7 +655,7 @@ header > h2{
                }
              .aboutus > iframe {
                     margin:0 auto ;
-                    width:80%;
+                    width:60%;
                }
           #gettouch { margin:0 auto; width:70%;}
 	   }
@@ -647,7 +664,7 @@ header > h2{
 	    @media only screen and (min-width:992px) { 
 		       html {
 				   margin:0 auto;
-				   width:80%;
+				   width:65%;
 				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   }    
@@ -655,16 +672,7 @@ header > h2{
 
 	     aside >  #blok { display:block;}
 	    #blak { display:none;}
-        .flow {
-		     display:-webkit-box;
-		     display:-ms-flexbox;
-		     display:flex;
-			 justify-Content:center;
-			 gap:10px;
-	     	}				
-       		 .flow > main { width:70%; }
-			 .flow > aside { width:30%; }
-			 
+      
 		     .aboutus > iframe {
                     margin:20px auto ;
                     width:60%;
@@ -674,17 +682,17 @@ header > h2{
    </style>
   </head>
   <body oncontextmenu="return false">
-        <header id="navbar">              
+        <header id="navbar" >              
            <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html" target="_self" >Home</a>
                 <a href="About us.html" target="_self" > About us </a>
                 <a href="Blogs.html" class="active" target="_self" > Blogs </a>
                 <a href="Poetry.html" target="_self" > Poetry </a>
-				<a href="Health.html" target="_self" > health </a>                               
-                <a href="Web.html" target="_self" > web news </a>
-                <a href="https://www.amazon.in" target="_blank"> Life-Style </a>
+			    <a href="Web.html" target="_self" > web news </a>
+                <a href="https://www.amazon.in" target="_blank"> e-commerce </a>
                 <a href="https://www.sportskeeda.com" target="_blank"> cricket </a>
+				<a href="Health.html" target="_self" > health </a>                                             
                 <a href="Contact us.html" target="_self" >Contact us</a>
                 <div id="cold">
                     <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
@@ -699,7 +707,7 @@ header > h2{
                 <span onclick="openNav()">&#9776;</span>
      </header>
 
-         <section class="scroll-container">
+         <nav class="scroll-container">
                <a class="scroll-item" href="Top10.html" target="_self"> Daily Quotes </a>     
                <a class="scroll-item" href="index.html" target="_self"> K.Quotes </a>
                <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
@@ -716,7 +724,7 @@ header > h2{
                <a class="scroll-item" href="Web.html" target="_self"> web news </a>                
                <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
-  </section>
+         </nav>
           
 
            <!-------100vh background ------>
@@ -737,7 +745,7 @@ header > h2{
      </section>
   
              <!----Blog Introduced Section----->
-     <section id="inttro">
+     <article id="inttro">
                <p id="intotext" style="font-family:Poppins;">  
                    Introducing Blog, a dynamic Youtube video creator based in Jhargram, WB.
                    With a passion for creating engaging and informative content, Blog is 
@@ -749,7 +757,7 @@ header > h2{
                    Blog is your go-to partner for professional and impactful video content creation. 
                    Elevate your online presence with Blog and unlock the power of visual storytelling today.
               </p>
-    </section>
+    </article>
           
     <section class="flow">		  
         <main id="blogvdos">            
@@ -763,7 +771,7 @@ header > h2{
             <img src='BLOG/BLOG7.webp' alt="img4">
         </main>
 		
-         <aside Style="background-color:#E8E9EB; height:auto; ">
+         <aside Style="background-color: ; /*#E8E9EB*/ height:auto; ">
 		         <fieldset style="border:none;">
                 <legend style="border:none;"><h2 Style="color:#3454D1;">  Related posts </h2></legend>
            
@@ -934,7 +942,7 @@ header > h2{
 
           //navigation javascript
          function openNav() {
-         document.getElementById("mySidenav").style.width = "80%";
+         document.getElementById("mySidenav").style.width = "340px";
            }
          function closeNav() {
          document.getElementById("mySidenav").style.width = "0";
