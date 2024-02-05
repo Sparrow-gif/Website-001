@@ -303,8 +303,8 @@
          font-size:2rem;
          color: black;
          cursor: pointer;
-}
-
+		 transition-duration:0.3s;
+	 }
         
  
   .recommend {
@@ -536,6 +536,14 @@
 			          height:290px;
                       width:200px;
 			     }
+			 .close-btn {
+                   position: absolute;
+                   top: 15px;
+                   right: 35px;
+                   font-size:3rem;
+                   color: black;
+                   cursor: pointer;
+              }			
 			 
 	   }
 	   
@@ -638,7 +646,7 @@
 
                       <!-----------QUOTES--CONTAUNER----------------->
         
-        <!---------------->
+        <!-------Most Read Poems--------->
           <h3 style="padding:2px 5px; color:; font-weight:bold;"> Most Read Poems  </h3>
      <div class="gallery">
           <img src="images/me.jpg" alt="Image 1" class="lightbox-trigger" loading="lazy" title="">            
@@ -652,7 +660,7 @@
           <!-- Add more images as needed -->
     </div>
 
-          <!---------------->
+          <!------Newly added poems---------->
           <h3 style="padding:2px 5px; color:; font-weight:bold;"> Newly added poems  </h3>
      <div class="gallery">
           <img src="images/me.jpg" alt="Image 1" class="lightbox-trigger" loading="lazy" title="">            
@@ -666,6 +674,17 @@
           <!-- Add more images as needed -->
     </div>
 
+          <!------upcoming poems---------->
+          <h3 style="padding:2px 5px; color:; font-weight:bold;"> upcoming poems  </h3>
+     <div class="gallery">
+          <img src="images/me.jpg" alt="Image 1" class="lightbox-trigger" loading="lazy" title="">            
+          <img src="images/Img2.jpeg" alt="Image 2" class="lightbox-trigger" loading="lazy" title="">
+          <img src="images/Img1.jpeg" alt="Image 1" class="lightbox-trigger" loading="lazy" title="">            
+          <img src="images/Img2.jpeg" alt="Image 2" class="lightbox-trigger" loading="lazy" title="">    
+          <img src="images/me.jpg" alt="Image 1" class="lightbox-trigger" loading="lazy" title="">            
+          <!-- Add more images as needed -->
+    </div>
+  
      <div class="lightbox" id="lightbox">
           <span class="close-btn" onclick="closeLightbox()">&times;</span>
           <img src="" alt="Lightbox Image" class="lightbox-content">
