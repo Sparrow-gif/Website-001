@@ -296,7 +296,7 @@ header > h2{
 			gap:15px;
            }
    #blogvdos > iframe {
-          width:85%;
+          width:90%;
 		  aspect-ratio:1/0.60;
           border:0px solid black;
           margin:0 auto;
@@ -324,7 +324,7 @@ header > h2{
         display:flex;
         -webkit-box-pack:justify;
             -ms-flex-pack:justify;
-                justify-content:space-between;
+                justify-content:space-evenly;
         -webkit-box-align:center;
             -ms-flex-align:center;
                 align-items:center;
@@ -339,7 +339,7 @@ header > h2{
      fieldset >  div > a { 
          text-decoration: none; 
          color: black;
-         Font-size:18px;
+         Font-size: ;
          cursor:pointer;
          -webkit-transition-duration:0.3s;
               -o-transition-duration:0.3s;
@@ -372,11 +372,11 @@ header > h2{
               -ms-user-select:none;
                   user-select:none;
          }
-   #ourwork > h2 {
-            text-align:center;
+   #ourwork > h1 {
+            text-align: ;
             color: #5e41f0;
             margin:20px 0px 40px 0px;
-			Font-family:lato;
+			Font-family: ;
          }
    #ourwork > .grid {
             margin:0 auto ;
@@ -387,8 +387,8 @@ header > h2{
          }
    #ourwork > .grid > div {
            height:auto;
-           width:100%;
-           padding:10px;
+           width:90%;
+           padding:15px;
            background: #0e0636;
            color:#ecebf2 ;
            font-family: ;
@@ -401,31 +401,24 @@ header > h2{
            width:100%;
            background: ; /* #5e41f0 */
            padding:20px ;
-           color:white;
+           color: ;
            -webkit-user-select:none;
               -moz-user-select:none;
                -ms-user-select:none;
                    user-select:none;
          }
-    .aboutus > h2 {
-           margin-bottom:40px;
+    .aboutus > h1  {
+           margin-bottom:25px;
            Font-family: ;
-           font-size:30px;
-		   color:#5e41f0;
+           font-size: ;
+		   color: #5e41f0 ;
          }
      .aboutus > p {
            Font-family: ;
-           font-size:22px;
+           font-size: ;
 		   color:black;
          }
-   .aboutus > iframe {
-            border: 0px solid black ;
-            min-height:260px ;
-			max-height:auto;
-            margin:10px auto ;
-            width:100%;
-			border-radius:10px;         }
-
+  
     #gettouch {
           margin:0 auto ;
           padding:20px;    
@@ -433,7 +426,7 @@ header > h2{
           -webkit-user-select:none;
           -moz-user-select:none;
           -ms-user-select:none;      
-         text-transform: capitalize ;    
+          text-transform: capitalize ;    
        }
   #gettouch > form {
         -webkit-user-select:none;
@@ -450,10 +443,11 @@ header > h2{
             -ms-flex-direction: column;
                 flex-direction: column;
         gap:6px;
+		max-width:550px;
        }
-   #gettouch > form > h2 {
+   #gettouch > form > h1 {
          color:#5E239D;
-         font-size:2rem;
+         font-size: ;
          font-family: ;
          font-weight:600;
        }
@@ -461,12 +455,12 @@ header > h2{
         width:100%;
         display:block;
         Font-family: ;
-        font-size:20px ;
+        font-size: ;
       }
    #gettouch > form >  input {
         width:100%;
         padding:8px;
-        font-size:18px;
+        font-size: ;
         display:block;
         margin:0px auto ;
         border: 1px solid #ccc;
@@ -483,14 +477,14 @@ header > h2{
         border: 1px solid #ccc;
         border-radius:4px;
         padding:8px;
-        font-size:18px;
+        font-size: ;
         Font-family: ;
 		outline:none;
       }
 	  
   #gettouch > form > .btn {
         Font-family: ;
-        font-size:16px;
+        font-size: ;
         padding: 10px 20px;
         background-color: #4CAF50;
         color: white;
@@ -523,13 +517,13 @@ header > h2{
         border-radius: 4px;
         Font-family: ;
      }
-	    .didit > #community {
-       background-color: #e6f7ff;
-       padding: 7px;
-       margin:10px auto;
-       Font-family: ;
-       overflow:hidden;
-     }
+	  .didit > #community {
+               background-color: #e6f7ff;
+               padding: 7px;
+               margin:10px auto;
+               Font-family: ;
+               overflow:hidden;
+           }
       .didit {
           min-height: auto ;
           max-height: auto ;
@@ -552,16 +546,12 @@ header > h2{
          -moz-user-select:none;
          -ms-user-select:none;         
        }
-   footer > h3 > i{
-        font-size:24px;
-        text-indent:20px;
-        padding:5px;
-     }  
+   
    .sneha {
         padding:10px;
         color:white;
        }
-   .sneha > a{
+   .sneha > a {
         text-decoration:none;
         color:white;
         display:block;      
@@ -586,6 +576,7 @@ header > h2{
         background:white;
         outline:2px solid white; 
         text-transform:capitalize;
+		cursor:pointer;
        }
     #topButton {
           display: none;
@@ -649,23 +640,9 @@ header > h2{
 			     justify-Content:space-evenly;
 			     gap:10px;
 	     	  }				
-       		 .flow > main { width:60%; }
-			 .flow > aside { width:36%; }
+       		 .flow > main { width:65%; }
+			 .flow > aside { width:32%; }
 			 
-			
-            .aboutus > h2{
-                   margin:0 auto ;
-                   width:80%;
-               }
-              .aboutus > p{
-                    margin:0 auto ;
-                     width:80%;
-               }
-             .aboutus > iframe {
-                    margin:0 auto ;
-                    width:60%;
-               }
-          #gettouch { margin:0 auto; width:70%;}
 	   }
 	   
 	   
@@ -681,11 +658,7 @@ header > h2{
 	     aside >  #blok { display:block;}
 	    #blak { display:none;}
       
-		     .aboutus > iframe {
-                    margin:20px auto ;
-                    width:60%;
-               }
-		  #gettouch { margin:0 auto; width:50%;}
+		    
 		}
    </style>
   </head>
@@ -777,7 +750,7 @@ header > h2{
 		
          <aside Style="background-color: ; /*#E8E9EB*/ height:auto; ">
 		         <fieldset style="border:none;">
-                <legend style="border:none;"> <h1 Style="color:#3454D1;">  Related posts </h1> </legend>
+                <legend style="border:none;"> <h1 Style="color:#3454D1; color:#5e41f0;">  Related posts </h1> </legend>
            
                 <div> <!-----Post 1------>
                        <a href="#"> movie download websites </a>
@@ -862,7 +835,7 @@ header > h2{
              
               <!-----about us section-------->
       <section class="aboutus">
-               <h1> about Us </h1>
+               <h1 style="color: #5e41f0;"> about Us </h1>
                <p>   
                    Welcome to Blog, a leading video blogging website based in kolkata, WB. We are dedicated to providing a platform for individuals and businesses to share 
                    their stories, ideas, and expertise through engaging and high-quality videos.
@@ -893,7 +866,7 @@ header > h2{
                  <h1> leave a comment </h1>
                  
                  <label for ="text"> Message </label>
-                 <textarea id="comment" name="w3review" rows="4" cols="40" placeholder="Your Comment*" spellcheck="true" required></textarea>
+                 <textarea id="comment" name="w3review" rows="6" cols="40" placeholder="Your Comment*" spellcheck="true" required></textarea>
                  
                  <label for ="Name"> Name </label>
                  <input type="text" id="name" placeholder="Your Name*" spellcheck="true" required>
