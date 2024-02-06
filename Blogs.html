@@ -304,6 +304,36 @@ header > h2{
 		          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
        }
   
+  
+    
+    .watchmore > iframe {
+          margin:10px 0px;
+          width:750px;
+          aspect-ratio:1/0.60;
+          outline:none;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+       }
+   .watchmore > div {
+            overflow-x:auto;
+            overflow-y:hidden;
+            background: ;
+            padding:0px 0px;
+            white-space:nowrap;
+      }
+    .watchmore > div > a > img {
+             background-position:center;
+             width:210px;
+             aspect-ratio:1/0.60;
+             display:inline-block;
+             margin:4px 8px;
+             border:0px solid black;
+             border-radius:3px;
+             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+             cursor:pointer;
+     }
+	 
+	 
+  
       fieldset {
              padding:10px;
 		     margin:0 auto;
@@ -607,9 +637,13 @@ header > h2{
             }
 
 
-@media only screen and (min-width: 767px) {       
-     
-   
+@media only screen and (max-width: 767px) {       
+         #related1  {
+		        display:none;
+		    }
+          #related2  {
+		        display:block;
+		   }
     }
 	
           
@@ -622,10 +656,6 @@ header > h2{
                  width:60%;
                  position:absolute;                 
                  }
-              #inttro > p {
-                   width:80%;
-                   margin:0 auto;
-              }
             
 			 .flow {
 		         display:-webkit-box;
@@ -637,22 +667,34 @@ header > h2{
        		 .flow > main { width:65%; }
 			 .flow > aside { width:32%; }
 			 
+			  #related1  {
+		        display:block;
+                 }
+             #related2  {
+		        display:none;
+		        }
+		 .watchmore > div > a > img {
+                background-position:center;
+                width:310px;
+                aspect-ratio:1/0.60; 
+				}
 	   }
 	   
 	   
 	    @media only screen and (min-width:992px) { 
 		       html {
 				   margin:0 auto;
-				   width:65%;
+				   max-width:65%;
+				   min-width:770px;
 				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-				   }    
-     		
-
-	     aside >  #blok { display:block;}
-	    #blak { display:none;}
-      
-		    
+				   }   
+              .watchmore > div > a > img {
+                   background-position:center;
+                   width:420px;
+                   aspect-ratio:1/0.60; 
+				}				   
+     		 
 		}
    </style>
   </head>
@@ -738,7 +780,7 @@ header > h2{
         </main>
 		
          <aside Style="background-color: ; /*#E8E9EB*/ height:auto; ">
-		         <fieldset style="border:none;">
+		         <fieldset style="border:none;" id="related1">
                 <legend style="border:none;"> <h1 Style="color:#3454D1; color:#5e41f0;Font-family:roboto;">  Related posts </h1> </legend>
            
                 <div> <!-----Post 1------>
@@ -792,17 +834,24 @@ header > h2{
                   </div>
              </fieldset>  
 			 
-			     <!----COMMENT Section------>
-				  <div class="didit" id="blok">
-                       <h2 style="font-family:Roboto;"> Recent Comments  </h2>
-                       <div id="comments"> </div> <!----messages-04----->
-                       <div id="community"> <b> sudip:- </b> Great </div> <!----messages-03----->
-                       <div id="community"> <b> sneha:- </b> wows  </div> <!----messages-02---->
-                       <div id="community"> <b> ajoy :- </b> best </div> <!----messages-01----->
-                 </div>
+			 
 		<aside>  <!---------aside section close here ------------>
     </section>
 	
+	             
+	     <section class="watchmore">
+		           <iframe src="images/Img1.jpeg" name="frames" frameborder="0" loading="auto" allowfullscreen>  </iframe>
+				   
+				   <div>
+                       <a href="Images/me.jpg" target="frames"> <img src="images/me.jpg"> </img> </a>       
+                       <a href="Images/Img2.jpeg" target="frames"> <img src="images/Img2.jpeg">  </img> </a>
+                       <a href="Images/img1.jpeg" target="frames"> <img src="images/Img1.jpeg">  </img> </a>
+                       <a href="Images/me.jpg" target="frames"> <img src="images/me.jpg">  </img> </a>
+                       <a href="Images/me.jpg" target="frames"> <img src="#">  </img> </a>
+                       <a href="Images/me.jpg" target="frames"> <img src="#">  </img> </a>      
+                 </div>
+		 </section>
+		 
 	
        <section id="ourwork">    <!----our work container------->
               <h1> Our work </h1>
@@ -839,6 +888,61 @@ header > h2{
             <iframe id="nana" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235994.22918278718!2d86.8356899689507!3d22.451228405975893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d7bcae512b101%3A0xd6cf20a23cf93fab!2sJhargram%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1704776651297!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
                 
+				
+		
+		<fieldset style="border:none;" id="related2">
+                <legend style="border:none;"> <h1 Style="color:#3454D1; color:#5e41f0;Font-family:roboto;">  Related posts </h1> </legend>
+           
+                <div> <!-----Post 1------>
+                       <a href="movie.html"> movie download websites </a>
+                       <img src="INDEX/movie.webp" alt="img1" loading="lazy">
+                 </div>
+
+                 <div> <!-----Post 2------>
+                      <a href="web.html"> web news </a>
+                     <img src="INDEX/webnews.webp" alt="img1" loading="lazy">
+                    </div>
+
+                  <div> <!-----Post 3------>
+                     <a href="index.html"> quotes of lord krishna </a>
+                    <img src="INDEX/.webp" alt="img1" loading="lazy">
+                  </div>
+
+                  <div> <!-----Post 4------>
+                    <a href="cyber.html"> cyber security tips </a>
+                    <img src="INDEX/CYBER1.JPG" alt="img1" loading="lazy">
+                 </div>
+
+                   <div> <!-----Post 5------>
+                     <a href="poetry.html"> our poetry </a>
+                     <img src="INDEX/poetry.jpg" alt="img1" loading="lazy">
+                  </div>
+
+                 <div> <!-----Post 6----->
+                      <a href="education.html"> top 10 education websites </a>
+                     <img src="INDEX/education.jpg" alt="img1" loading="lazy">
+                 </div>
+  
+                  <div> <!-----Post 7------>
+                     <a href="biography.html"> biography of great people </a>
+                     <img src="INDEX/biography.jpg" alt="img1" loading="lazy">
+                 </div>
+
+                  <div> <!-----Post 8----->
+                      <a href="stories.htl"> stories of lord krishna </a>
+                      <img src="INDEX/cute.webp" alt="img1" loading="lazy">
+                  </div>
+				
+				   <div> <!-----Post 9----->
+                      <a href="loot.html"> daily loot offers </a>
+                      <img src="INDEX/loot.webp" alt="img1" loading="lazy">
+                  </div>
+				  
+				   <div> <!-----Post 10----->
+                      <a href="paytm.html"> self earning apps </a>
+                      <img src="INDEX/cash.webp" alt="img1" loading="lazy">
+                  </div>
+             </fieldset> 
 				
 				    <!----COMMENT Section------>
 				  <div class="didit" id="blak">
@@ -890,7 +994,7 @@ header > h2{
   </footer>
      
         <!----Go To Top Button------>     
-     <a href="https://youtube.com/@Wings_dna?si=EDxPSSc30nXrQ5DZ" target="_blank" style="text-decoration:none;color:White;"> <button id="ytb"> <i class="fa-brands fa-youtube"></i> </a> </button> </a>
+     <a href="https://youtube.com/@Wings_dna?si=EDxPSSc30nXrQ5DZ" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:White;"> <button id="ytb"> <i class="fa-brands fa-youtube"></i> </a> </button> </a>
      <button id="topButton" title="top-button"> <i class="fa-solid fa-arrow-up"></i> </button>
 
 
