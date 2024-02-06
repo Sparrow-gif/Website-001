@@ -5,14 +5,15 @@
   <base href="#">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.jpeg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <meta name="description" content=>
   <title> Most Played Mobile Games </title>
     <style>
 
@@ -733,8 +734,8 @@
           padding: 5px 10px;
           font-size: 16px;
           cursor: pointer;
-          z-index:99 ;
-          font-size:1.50rem;
+          z-index:9 ;
+          font-size:1.30rem;
             }
     #paytm {
           position: fixed;
@@ -768,7 +769,10 @@
 	  
 	  
 	   @media only screen and (min-width:768px) { 
-	           
+	             html {
+				   margin:0 auto;
+				   width:90%;
+				   }
 			 #about >  #aboutpera > p {
                    max-height:360px;
                    overflow:scroll;
@@ -789,7 +793,7 @@
 	   @media only screen and (min-width:992px) { 
 		       html {
 				   margin:0 auto;
-				   width:80%;
+				   width:65%;
 				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 				   } 
@@ -797,17 +801,17 @@
    </style>
   </head>
   <body oncontextmenu="return false">
-        <header id="navbar">              
-           <div id="mySidenav" class="sidenav">
+        <header id="navbar" title="Header">              
+           <div id="mySidenav" class="sidenav" title="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html" target="_self" > Home</a>
                 <a href="About us.html" target="_self" > About us </a>
                 <a href="Blogs.html" target="_self" > Blogs </a>
                 <a href="poetry.html" target="_self" > Poetry </a>
-				<a href="Health.html" target="_self" > health </a>                               
-                <a href="Web.html" target="_self" > web news </a>
-                <a href="https://www.amazon.in" target="_blank"> Life-Style </a>
+				<a href="Web.html" target="_self" > web news </a>                
+			    <a href="https://www.amazon.in" target="_blank"> e-commerce </a>
                 <a href="https://www.sportskeeda.com" target="_blank"> cricket </a>
+				<a href="Health.html" target="_self" > health </a>                                             
                 <a href="Contact us.html" target="_self" > Contact us</a>
                 <div id="cold">
                     <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
@@ -818,11 +822,11 @@
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>                                
                </div>
           </div>
-                <h2> Quotes World  </h2>
-                <span onclick="openNav()">&#9776;</span>
+                <h2 title="logo"> Quotes World </h2>
+                <span onclick="openNav()" title="menu">&#9776;</span>
      </header>
 
-         <section class="scroll-container">
+         <nav class="scroll-container" title="Scroll Ber">
                <a class="scroll-item" href="Top10.html" target="_self"> Daily Quotes </a>     
                <a class="scroll-item" href="index.html" target="_self"> K.Quotes </a>
                <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
@@ -839,7 +843,7 @@
                <a class="scroll-item" href="Web.html" target="_self"> web news </a>                
                <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
-  </section>
+        </nav>
           
 
            <!-----100vh background ------>
@@ -860,13 +864,13 @@
          <p> Updated on : Dec 20, 2023 </p>
          <!-------heading logo------->
                 <div class="head-logo">
-                     <a href="#" class="fa-brands fa-telegram" title="telegram"> </a>
-                     <a href="#" class="fa-brands fa-instagram" title="Instagram"> </a>
-                     <a href="#" class="fa-brands fa-twitter" title="twitter"> </a>
-                     <a href="#" class="fa-brands fa-whatsapp" title="whatsapp"> </a>
+                     <a id="telegramShareBtn" class="fa-brands fa-telegram" title="telegram"> </a>
+                     <a id="instagramShareBtn" class="fa-brands fa-instagram" title="Instagram"> </a>
+                     <a id="twitterShareBtn" class="fa-brands fa-twitter" title="twitter"> </a>
+                     <a id="whatsappButton" class="fa-brands fa-whatsapp" title="whatsapp"> </a>
                      <a href="#" class="fa-brands fa-youtube" title="YouTube"> </a>
                </div>
-         <p style="Font-family: ; padding:10px 0px;"> 
+         <p style="Font-family: ; padding:10px 5px;"> 
              Video games aren't just entertainment; they're a dynamic path to a healthier you! Engaging in gaming doesn't just transport you to fantastical 
              realms; it enhances your mental prowess by flexing problem-solving muscles and boosting strategic thinking. Some games even sneakily inspire
              physical activity, turning fun into a workout! Need a breather from the daily grind? Gaming's your go-to stress buster, whisking you away to 
@@ -1320,9 +1324,9 @@
       </div>
 
 
-       <footer>   <!------footer Section------->
+       <footer title="footer">   <!------footer Section------->
        <h2> Quotes World </h2>          
-      <select>
+      <select title="language switcher">
            <option> English</option>
            <option> hindi   </option>
            <option> Bengali </option>
@@ -1340,14 +1344,14 @@
   </footer>
      
         <!----Go To Top Button------>
-     <button id="topButton"> <i class="fa-solid fa-arrow-up"></i> </button>
-     <a href="Paytm.html" id="paytm" class="fa-solid fa-gift fa-bounce"> </a>
+     <button id="topButton"> <i class="fa-solid fa-arrow-up" title="top button"></i> </button>
+     <a href="Paytm.html" id="paytm" class="fa-solid fa-gift fa-bounce" title="GiftBox"> </a>
     
 	
    <script>
           //navigation javascript
          function openNav() {
-         document.getElementById("mySidenav").style.width = "80%";
+         document.getElementById("mySidenav").style.width = "340px";
            }
          function closeNav() {
          document.getElementById("mySidenav").style.width = "0";
@@ -1376,21 +1380,7 @@ document.getElementById("topButton").addEventListener("click", function () {
   document.documentElement.scrollTop = 0;  
  });
 
-     var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-};
-
+  
      //change Navigation background
    window.addEventListener('scroll', function() {
        const navbar = document.getElementById('navbar');
@@ -1404,6 +1394,61 @@ for (i = 0; i < acc.length; i++) {
   });
    
       
+	  
+	    //telegram share button
+			  
+       document.getElementById('telegramShareBtn').addEventListener('click', function() {
+    // Replace 'your_message' and 'your_url' with your own message and URL
+    var message = encodeURIComponent('Check out this awesome link!');
+    var url = encodeURIComponent('https://example.com');
+
+    var telegramLink = 'https://t.me/share/url?url=' + url + '&text=' + message;
+
+    // Open the Telegram share URL in a new window or tab
+    window.open(telegramLink, '_blank');
+});
+	
+		      //whatsapp share button
+			  
+        document.getElementById("whatsappButton").addEventListener("click", function() {
+        // Replace 'your_text' and 'your_url' with the desired text and URL you want to share
+        var text = "Check out this cool website!";
+        var url = "https://sparrow-gif.github.io/Website-001/";
+
+        // Construct the WhatsApp share URL
+        var whatsappUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(text + " " + url);
+
+        // Open the WhatsApp share window
+        window.open(whatsappUrl, "_blank");
+    });
+	      
+		    //INSTAGRAM share button
+		  
+		   document.getElementById('instagramShareBtn').addEventListener('click', function() {
+             // Replace 'your_caption' and 'your_url' with your own caption and URL
+           var caption = encodeURIComponent('Check out this amazing photo!');
+           var url = encodeURIComponent('https://example.com/image.jpg');
+
+           var instagramLink = 'https://www.instagram.com/share?url=' + url + '&caption=' + caption;
+
+              // Open the Instagram share URL in a new window or tab
+           window.open(instagramLink, '_blank');
+       });
+	 
+	          //twitter share button
+		  
+		  document.getElementById('twitterShareBtn').addEventListener('click', function() {
+    // Replace 'your_text' and 'your_url' with your own tweet text and URL
+    var text = encodeURIComponent('Check out this awesome tweet!');
+    var url = encodeURIComponent('https://example.com');
+
+    var twitterLink = 'https://twitter.com/intent/tweet?text=' + text + '&url=' + url;
+
+    // Open the Twitter share URL in a new window or tab
+    window.open(twitterLink, '_blank');
+});
+	  
+	  
        //Contact us 
       document.getElementById('comment-form').addEventListener('submit', function(e) {
   e.preventDefault();
