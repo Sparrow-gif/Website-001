@@ -5,28 +5,30 @@
   <base href="#">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">      
+  <link rel="icon" type="image/x-icon" href="favicon.jpeg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <meta name="description" content=>
   <title> Biography of Rabindranath tagore  </title>
+  <meta name="description" content=>
     <style>
   
-  * {
+       * {
           margin:0px;
           padding:0px;
           -webkit-box-sizing:border-box;
           box-sizing:border-box;
-          font-family: montserrat;
+          font-family: roboto;
           text-transform:capitalize;                     
         }  
   html {
        scroll-behavior:smooth;
-       scroll-padding:2.50em;
+       scroll-padding:3em;
       }
   header {
        display:-webkit-box;
@@ -124,7 +126,7 @@
         display:flex;
         -webkit-box-pack:center;
             -ms-flex-pack:center;
-                justify-content:center;
+                justify-content:space-around;
         -webkit-box-align:center;
             -ms-flex-align:center;
                 align-items:center;
@@ -210,7 +212,7 @@
        font-size:18px;
      }
  #section > #background {    
-         min-height: 580px;
+         min-height: 380px;
          max-height:80vh;
          width:100%;
          background-image:url('BIO/BIO1.jpg');    
@@ -228,8 +230,8 @@
                transform:translate(-50%,-50%) ;
        z-index: 9 ;
        width:90%;
-       -webkit-backdrop-filter:blur(4px) ;
-               backdrop-filter:blur(4px) ;
+       -webkit-backdrop-filter:blur(0px) ;
+               backdrop-filter:blur(0px) ;
     /*   width:50%; */
        padding: 10px ;  
     /*  text-align:center;  */
@@ -241,7 +243,8 @@
        font-family: ;
        display:inline-block;
        padding:10px ;
-       width:70%;
+       min-width:260px;
+	   max-width:70%;
        font-size:18px;
        text-decoration:none;
        color: #427bf5 ;
@@ -264,174 +267,26 @@
         color: white ;
         border-radius: 4px;
       }
-   .search-container {
-         position: relative;
-         display: inline-block;
-         float:right;
-         width:60%;
-         -webkit-box-sizing:border-box;
-                 box-sizing:border-box;
-         padding: ;
-         border: 1px solid #ccc;
-         border-radius: 20px;
-         overflow:hidden;
-         margin:20px 10px;         
-       }
-
-    .head-logo > a{
-           padding: 10px 10px;
-           text-decoration:none;   
-           font-size:20px;   
-           cursor:pointer;   
-           color:white;  
-           border-radius:50%;
-           margin: 0px 4px ;
-         -webkit-user-select:none;    
-         -moz-user-select:none;    
-         -ms-user-select:none;    
-         user-select:none;  
-         -webkit-transition-duration:0.3s;  
-              -o-transition-duration:0.3s;  
-                 transition-duration:0.3s;
-         -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-                 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
-       }
-  .head-logo > a:hover{ -webkit-transform:scale(1.20); -ms-transform:scale(1.20); transform:scale(1.20)}
-   .head-logo > a:nth-child(1) {
-         color:white;
-         background: #266DD3;
-       }
-   .head-logo > a:nth-child(2) {
-         color:white;
-         background: #F75C03 ;
-       }
-   .head-logo > a:nth-child(3) {
-         color:white;
-         background: #7BB2D9 ;
-       }
-   .head-logo > a:nth-child(4) {
-         color:white;
-         background: #31D843 ;
-       }
-   .head-logo > a:nth-child(5) {
-         color:white;
-         background: #F42B03 ;
-       }
-  .contest > #banner {
-       /*  background-image:url('image/Spider.jpg'); */
-       /* background-size:cover; */
-       /*  background-position:center; */
-       /*  background-attachment: ; */
-         aspect-ratio: 1/0.45;
-         max-width:850px;
-         margin:10px auto;
-         -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-                 box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-       }
-  .contest > #banner > img {
-         width:100%;
-         height:100%; 
-         background-size:cover;
-         background-position:center;
-         -o-object-fit:cover;
-            object-fit:cover;
-      }
 
 
-    #searchInput {    
-        border:none;
-        padding:10px 8px ;
-        outline:none;
-        background: #FEEFE5 ;
-        font-family: ;
-      }
-
-   #searchBtn {
-        position: absolute;
-        top: 50%;
-        right:0%;
-        -webkit-transform:translate(-50%,-50%) ;
-            -ms-transform:translate(-50%,-50%) ;
-                transform:translate(-50%,-50%) ;
-        padding:6px 4px ;
-        border: none;
-        background: none;
-        cursor: pointer;
-        color: #0D00A4 ;
-    }
-
-    #container {
-         -webkit-user-select:none;    
-         -moz-user-select:none;    
-         -ms-user-select:none;    
-         user-select:none;  
-         padding:14px ;
-         background: ;
-         margin:0 auto ;
-         width:100%;
-         gap:10px;
-         display:-ms-grid;
-         display:grid;
-         grid-template-columns:repeat(auto-fit,minmax(min(31rem,100%),1fr)) ;      
-          }
-     #container > div {
-            background: #FFFFFF;
-            height:auto ;    
-            padding:8px;     
-            margin:20px auto ;
-            width:100%;
-      -webkit-user-select:none;    
-         -moz-user-select:none;    
-         -ms-user-select:none;    
-         user-select:none;  
-         -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
-                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-         gap:10px;
-         display:-ms-grid;
-         display:grid;
-         grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
-         }
-     
-     #container > #website1 > #paragraph > h4{
-           text-indent:0px;
-           padding:8px 5px;
-           color: #FCAB10;
-       }
-      #container > #website1 > #hvr {
-            width:100%;   
-            min-height:210px ;         
-            max-height:340px;
-            overflow:hidden;
-            -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        }
-    #container > #website1 > #hvr > img {
-            border:none;
-            outline:none;
-            width:100%;
-            height:100%;       
-            margin:0 auto;    
-            -webkit-transition-duration:0.3s;    
-                 -o-transition-duration:0.3s;    
-                    transition-duration:0.3s;
-            background-size:cover;
-            background-position:center;
-            -o-object-fit:cover;
-               object-fit:cover;
-        }
-    #container > #website1 > #hvr > img:hover {
-         -webkit-transform:scale(1.20) ;
-             -ms-transform:scale(1.20) ;
-                 transform:scale(1.20) ;
-       }
-    #container > #website1 > #paragraph > p {
-           font-size:16px;
-           padding:0px;
-           font-family: ;
-           font-weight: ;           
-        }
-
-
+  table {
+     border:none;
+	 margin:10px auto;
+	 padding:10px;
+	 text-align:center;
+	 border-radius:6px;
+	 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+   tr,th,td  {
+        padding:10px;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+		border-radius:8px;
+		transition-duration:0.3s;
+   }
+  tr:hover {
+        transform:scale(1.05);
+		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+		}
 
     footer {
          margin:0 auto;
@@ -495,8 +350,8 @@
           padding: 5px 10px;
           font-size: 16px;
           cursor: pointer;
-          z-index:10 ;
-          font-size:1.50rem;
+          z-index:9 ;
+          font-size:1.30rem;
             }
      #paytm {
           position: fixed;
@@ -519,49 +374,35 @@
 
         @media (min-width: 600px) {
 
-            body {
-                background-color: ;
-            }   
-         aside {
-               margin:0 auto;
-               width: ;
-            }
-         #container > #website1 > #hvr { width: ;  }
-         #container > #website1 > #paragraph > p  {
-               min-height:180px ;         
-               max-height:350px;
-               overflow-y: scroll;
-                }
         }
          
 
       /* Media Query for Laptops and Desktops */
 
             @media only screen and (max-width:767px) { 
-	  
-	  }
+	               table { width:90%;}
+	        }
 	  
 	  
 	   @media only screen and (min-width:768px) { 
-	           
+	         html {
+			     margin:0 auto;
+				 width:90%;
+				   }
+           table { width:70%;}
 	   }
 	   
 	   
 	   @media only screen and (min-width:992px) { 
 		       html {
 				   margin:0 auto;
-				   width:80%;
-				   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-				           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-				   }   
-		     
-              #container > div {
-                  gap:20px;
-                  display:-ms-grid;
-                  display:grid;
-                  grid-template-columns: repeat(auto-fit,minmax(min(5rem,100%),1fr)) ;      
-                }				   
+				   max-width:65%;
+				   min-width:990px
+			   }  
+           	   
 		}
+		
+		
    </style>
   </head>
   <body oncontextmenu="return false">
@@ -572,10 +413,10 @@
                 <a href="About us.html" target="_self" > About us </a>
                 <a href="Blogs.html" target="_self" > Blogs </a>
                 <a href="Poetry.html" target="_self" > Poetry </a>
-				<a href="Health.html" target="_self" > health </a>                               
-                <a href="Web.html" target="_self" > web news </a>
-                <a href="https://www.amazon.in" target="_blank"> Life-Style </a>
+			    <a href="Web.html" target="_self" > web news </a>
+                <a href="https://www.amazon.in" target="_blank"> e-commerce </a>
                 <a href="https://www.sportskeeda.com" target="_blank"> cricket </a>
+				<a href="Health.html" target="_self" > health </a>                               
                 <a href="Contact us.html" target="_self" > Contact us</a>
                 <div id="cold">
                     <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
@@ -590,7 +431,7 @@
                 <span onclick="openNav()">&#9776;</span>
      </header>
 
-         <section class="scroll-container">
+         <nav class="scroll-container">
               <a class="scroll-item" href="Top10.html" target="_self"> Daily Quotes </a>     
                <a class="scroll-item" href="Index.html" target="_self"> K.Quotes </a>
                <a class="scroll-item" href="Stories.html" target="_self"> K.Stories </a>
@@ -607,7 +448,7 @@
                <a class="scroll-item" href="Web.html" target="_self"> web news </a>                
                <a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>
           <!-- Add more items as needed -->
-  </section>
+        </nav>
           
 
            <!-----100vh background ------>
@@ -623,259 +464,86 @@
         </div> 
      </section>
 
-
-       <!--------Headind Section--------->
-      <aside id="hed" style="padding:5px;">             <!-------heading------->
-                <div class="heading">
-                     <h2> Biographies of great people that are very important to know </h2>
-                     <p> Updated on : Dec 02, 2023 </p>
-               </div>
-                             <!-------heading logo------->
-                <div class="head-logo">
-                     <a href="#" class="fa-brands fa-telegram" title="telegram"> </a>
-                     <a href="#" class="fa-brands fa-instagram" title="Instagram"> </a>
-                     <a href="#" class="fa-brands fa-twitter" title="twitter"> </a>
-                     <a href="#" class="fa-brands fa-whatsapp" title="whatsapp"> </a>
-                     <a href="#" class="fa-brands fa-youtube" title="YouTube"> </a>
-               </div>
-                             <!-------main div------->
-                <div class="contest">
-                     <div id="banner"> <img src="images/Img1.jpeg"> </div><!-------headind banner------->
-                          
-                     <div id="cont"> <!-------headind paragraph------->
-                          <p class="texts" style="font-family:PT Serif;">  
-                               Biographies of great people are crucial because they provide invaluable insights into the lives, struggles, 
-                               accomplishments, and mindsets of those who've made significant impacts in various fields. These stories offer
-                               inspiration, teaching us about resilience, determination, and the ability to overcome challenges. Understanding 
-                               their journeys helps us learn from their successes and failures, gain different perspectives, and apply their
-                               wisdom to our own lives. Moreover, biographies often offer historical context, helping us comprehend the broader
-                               societal, cultural, and historical factors that shaped these individuals and their contributions to the world. 
-                               Ultimately, studying the lives of great people can motivate us to pursue our aspirations, instilling a 
-                               sense of possibility and empowerment.
-                         </p>
-                    </div>
-               </div>
-       </aside>
-
-
-                   <!----Search Input------->
-         <div class="search-container">
-              <input type="text" id="searchInput" placeholder="Search...">
-              <button id="searchBtn" class="fa fa-search"></button>
-        </div>
-
-
-      <!-------Biography Container------------>
-     <!--------Main section--------->
-   <div id="container">     
-       <!------Biography container------>
-             <!----Biography 1----->
-       <div id="website1" data-name="Elon mask"> 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> Elon Mask </h4>
-           <p> 
-              the platform may provide personalized learning plans and adaptive assessments,
-              tailoring content to individual learning styles. With a focus on exam preparation 
-              and a user-friendly interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>
-                <!----Biography 2----->
-       <div id="website1" data-name="Rabindranath Tagore" > 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> Rabindranath Tagore </h4>
-           <p> 
-              interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>
-
-       <!----Biography 3----->
-       <div id="website1" data-name="Sachin Tendulkar" > 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> Sachin Tendulkar </h4>
-           <p> 
-              interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>
-
-       <!----Biography 4----->
-       <div id="website1" data-name="Ratan Tata" > 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> Ratan Tata </h4>
-           <p> 
-              interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>
-
-       <!----Biography 5----->
-       <div id="website1" data-name="Jawaharlal Nehru" > 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> Jawaharlal Nehru </h4>
-           <p> 
-              interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>
-
-       <!----Biography 6----->
-       <div id="website1" data-name="Mahatma Gandhi" > 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> Mahatma Gandhi </h4>
-           <p> 
-              interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>
-
-       <!----Biography 7----->
-       <div id="website1" data-name="A.P.J. Abdul Kalam" > 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> A.P.J. Abdul Kalam </h4>
-           <p> 
-              interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>
-
-       <!----Biography 8----->
-       <div id="website1" data-name="Indira Gandhi" > 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> Indira Gandhi </h4>
-           <p> 
-              interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>
-
-       <!----Biography 9----->
-       <div id="website1" data-name="Nelson Mandela" > 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> Nelson Mandela </h4>
-           <p> 
-              interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>
-
-       <!----Biography 10----->
-       <div id="website1" data-name="Steve Jobs" > 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> Steve Jobs </h4>
-           <p> 
-              interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>
-
-        <!----Biography 11----->
-       <div id="website1" data-name="Dr.B.R. Ambedkar" > 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> Dr. B.R. Ambedkar </h4>
-           <p> 
-              interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>    
-
-       <!----Biography 12----->
-       <div id="website1" data-name="swami vivekananda " > 
-           
-           <div id="hvr"> <!-----image Container----->
-               <img src="Images/Spider.jpg"> 
-          </div>
-
-           <div id="paragraph"> <!-----Peragraph Container----->
-           <h4> swami vivekananda  </h4>
-           <p> 
-              interface, Meritnation aims to cater to the diverse needs of students.
-              It's important to recognize that preferences vary, and students often choose online
-              learning platforms based on their specific requirements and learning preferences.
-          </p>
-         </div>
-      </div>
-    <!-- Add more div elements as needed -->
-  </div><!--------Main section close--------->
-
+      <table>
+            <tr>
+			    <th> s.l no </th>
+				<th>  name  </th>
+				<th>  link  </th>
+			</tr>
+			
+			 <tr>
+			    <td> 01 </td>
+				<td> Rabindranath tagore </td>
+				<td> <a href=""> read now </a> </td>
+			</tr> 
+			
+			 <tr>
+			    <td> 02 </td>
+				<td> elon mask </td>
+				<td> <a href=""> read now </a> </td>
+			</tr>
+			
+			 <tr>
+			    <td> 03 </td>
+				<td> sachin tendulkar </td>
+				<td> <a href=""> read now </a> </td>
+			</tr>
+			
+			 <tr>
+			    <td> 04 </td>
+				<td> ratan tata </td>
+				<td> <a href=""> read now </a> </td>
+			</tr>
+			
+			 <tr>
+			    <td> 05 </td>
+				<td> jawaharlal nahru </td>
+				<td> <a href=""> read now </a> </td>
+			</tr>
+			
+			 <tr>
+			    <td> 06 </td>
+				<td> mahatma gandhi </td>
+				<td> <a href=""> read now </a> </td>
+			</tr>
+			
+			 <tr>
+			    <td> 07 </td>
+				<td> apj abdul kalam </td>
+				<td> <a href=""> read now </a> </td>
+			</tr>
+			
+			 <tr>
+			    <td> 08 </td>
+				<td> indira gandhi </td>
+				<td> <a href=""> read now </a> </td>
+			</tr>
+			
+			 <tr>
+			    <td> 09 </td>
+				<td> nelson mandela </td>
+				<td> <a href=""> read now </a> </td>
+			</tr>
+			
+			 <tr>
+			    <td> 10 </td>
+				<td> steve jobs </td>
+				<td> <a href=""> read now </a> </td>
+			</tr>
+			
+			 <tr>
+			    <td> 11 </td>
+				<td> dr. br ambedkar </td>
+				<td> <a href=""> read now </a> </td>
+			</tr>
+			
+			 <tr>
+			    <td> 12 </td>
+				<td> swami vevekananda </td>
+				<td> <a href=""> read now </a> </td>
+			</tr>
+			
+      </table>
        
        <footer>   <!------footer Section------->
        <h2> Quotes World </h2>          
@@ -904,34 +572,63 @@
    <script>
           //navigation javascript
          function openNav() {
-         document.getElementById("mySidenav").style.width = "80%";
+         document.getElementById("mySidenav").style.width = "340px";
            }
          function closeNav() {
          document.getElementById("mySidenav").style.width = "0";
            } ;
 
-   //search input javascript
+   //telegram share button
+			  
+       document.getElementById('telegramShareBtn').addEventListener('click', function() {
+    // Replace 'your_message' and 'your_url' with your own message and URL
+    var message = encodeURIComponent('Check out this awesome link!');
+    var url = encodeURIComponent('https://example.com');
 
-         document.getElementById('searchInput').addEventListener('input', function () {
-  const filter = this.value.toLowerCase();
-  const items = document.querySelectorAll('#container div');
+    var telegramLink = 'https://t.me/share/url?url=' + url + '&text=' + message;
 
-  items.forEach(function (item) {
-    const name = item.dataset.name.toLowerCase();
+    // Open the Telegram share URL in a new window or tab
+    window.open(telegramLink, '_blank');
+});
+	
+		      //whatsapp share button
+			  
+        document.getElementById("whatsappButton").addEventListener("click", function() {
+        // Replace 'your_text' and 'your_url' with the desired text and URL you want to share
+        var text = "Check out this cool website!";
+        var url = "https://sparrow-gif.github.io/Website-001/";
 
-    if (name.includes(filter)) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
-  });
+        // Construct the WhatsApp share URL
+        var whatsappUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(text + " " + url);
 
-  // Show all items when the search bar is cleared
-  if (filter === '') {
-    items.forEach(function (item) {
-      item.style.display = 'block';
+        // Open the WhatsApp share window
+        window.open(whatsappUrl, "_blank");
     });
-  }
+	      
+		    //INSTAGRAM share button
+		  
+		   document.getElementById('instagramShareBtn').addEventListener('click', function() {
+             // Replace 'your_caption' and 'your_url' with your own caption and URL
+           var caption = encodeURIComponent('Check out this amazing photo!');
+           var url = encodeURIComponent('https://example.com/image.jpg');
+
+           var instagramLink = 'https://www.instagram.com/share?url=' + url + '&caption=' + caption;
+
+              // Open the Instagram share URL in a new window or tab
+           window.open(instagramLink, '_blank');
+       });
+	 
+	          //twitter share button
+		  
+		  document.getElementById('twitterShareBtn').addEventListener('click', function() {
+    // Replace 'your_text' and 'your_url' with your own tweet text and URL
+    var text = encodeURIComponent('Check out this awesome tweet!');
+    var url = encodeURIComponent('https://example.com');
+
+    var twitterLink = 'https://twitter.com/intent/tweet?text=' + text + '&url=' + url;
+
+    // Open the Twitter share URL in a new window or tab
+    window.open(twitterLink, '_blank');
 });
 
           /* Go To Top Button */
@@ -963,18 +660,20 @@ document.getElementById("topButton").addEventListener("click", function () {
   });
 
       
+          // search filter
           document.getElementById('searchInput').addEventListener('input', function () {
-          const filter = this.value.toLowerCase();
-          const items = document.querySelectorAll('#container div');
+           const filter = this.value.toLowerCase();
+           const items = document.querySelectorAll('#container #website1');
 
-  items.forEach(function (item) {
-    const name = item.dataset.name.toLowerCase();
+           items.forEach(function (item) {
+           const name = item.dataset.name.toLowerCase();
 
-    if (name.includes(filter)) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
+          if (name.includes(filter)) {
+            item.style.display = 'block';
+      } else {
+            item.style.display = 'none';  
+            			
+      }
   });
 
   // Show all items when the search bar is cleared
