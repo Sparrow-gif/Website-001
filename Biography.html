@@ -43,7 +43,7 @@
        position:sticky;
        z-index:99;
        top:0px;
-       background:#13d48a ; /* #ebe6fa; */
+       background:black;
        padding:2px;      
        -webkit-user-select:none;
        -moz-user-select:none;
@@ -539,7 +539,7 @@
 			
 			 <tr>
 			    <td> 12 </td>
-				<td> swami vevekananda </td>
+				<td> swami vivekananda </td>
 				<td> <a href=""> read now </a> </td>
 			</tr>
 			
@@ -578,58 +578,6 @@
          document.getElementById("mySidenav").style.width = "0";
            } ;
 
-   //telegram share button
-			  
-       document.getElementById('telegramShareBtn').addEventListener('click', function() {
-    // Replace 'your_message' and 'your_url' with your own message and URL
-    var message = encodeURIComponent('Check out this awesome link!');
-    var url = encodeURIComponent('https://example.com');
-
-    var telegramLink = 'https://t.me/share/url?url=' + url + '&text=' + message;
-
-    // Open the Telegram share URL in a new window or tab
-    window.open(telegramLink, '_blank');
-});
-	
-		      //whatsapp share button
-			  
-        document.getElementById("whatsappButton").addEventListener("click", function() {
-        // Replace 'your_text' and 'your_url' with the desired text and URL you want to share
-        var text = "Check out this cool website!";
-        var url = "https://sparrow-gif.github.io/Website-001/";
-
-        // Construct the WhatsApp share URL
-        var whatsappUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(text + " " + url);
-
-        // Open the WhatsApp share window
-        window.open(whatsappUrl, "_blank");
-    });
-	      
-		    //INSTAGRAM share button
-		  
-		   document.getElementById('instagramShareBtn').addEventListener('click', function() {
-             // Replace 'your_caption' and 'your_url' with your own caption and URL
-           var caption = encodeURIComponent('Check out this amazing photo!');
-           var url = encodeURIComponent('https://example.com/image.jpg');
-
-           var instagramLink = 'https://www.instagram.com/share?url=' + url + '&caption=' + caption;
-
-              // Open the Instagram share URL in a new window or tab
-           window.open(instagramLink, '_blank');
-       });
-	 
-	          //twitter share button
-		  
-		  document.getElementById('twitterShareBtn').addEventListener('click', function() {
-    // Replace 'your_text' and 'your_url' with your own tweet text and URL
-    var text = encodeURIComponent('Check out this awesome tweet!');
-    var url = encodeURIComponent('https://example.com');
-
-    var twitterLink = 'https://twitter.com/intent/tweet?text=' + text + '&url=' + url;
-
-    // Open the Twitter share URL in a new window or tab
-    window.open(twitterLink, '_blank');
-});
 
           /* Go To Top Button */
 
@@ -647,7 +595,7 @@ document.getElementById("topButton").addEventListener("click", function () {
   document.documentElement.scrollTop = 0;
 });
 
- //change Navigation background
+    //change Navigation background
    window.addEventListener('scroll', function() {
        const navbar = document.getElementById('navbar');
        const scrolled = window.scrollY;
@@ -655,35 +603,9 @@ document.getElementById("topButton").addEventListener("click", function () {
        if (scrolled > 30) {
        navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
      } else {
-       navbar.style.backgroundColor = '#13d48a'; // Change this to the default color
+       navbar.style.backgroundColor = 'black'; // Change this to the default color
      }
   });
-
-      
-          // search filter
-          document.getElementById('searchInput').addEventListener('input', function () {
-           const filter = this.value.toLowerCase();
-           const items = document.querySelectorAll('#container #website1');
-
-           items.forEach(function (item) {
-           const name = item.dataset.name.toLowerCase();
-
-          if (name.includes(filter)) {
-            item.style.display = 'block';
-      } else {
-            item.style.display = 'none';  
-            			
-      }
-  });
-
-  // Show all items when the search bar is cleared
-  if (filter === '') {
-    items.forEach(function (item) {
-      item.style.display = 'block';
-    });
-  }
-});
-
    </script>
    </body>
 </html>
