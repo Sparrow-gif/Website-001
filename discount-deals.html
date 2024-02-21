@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Roboto--Cabin--Open Sans--Lato---Montserrat--Quicksand---PT Sans--Playfair--Display--Domine---->
+<head>
+  <meta charset="utf-8"/>
+  <base href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">     
+  <link rel="icon" type="image/x-icon" href="favicon.jpeg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="robots" content="nofollow, noarchive">
+  <meta name="keywords" content="Discount store, Bargain deals, Budget-friendly shopping, Markdowns, Savings shop, Sale items">
+  <meta name="description" content="Discover unbeatable savings at our discount shop! Explore a wide range of products and learn how to get exclusive discounts on your favorite items. Dive into a world of budget-friendly shopping and uncover incredible deals. Start saving today – explore, discover, and get more for less at our discount shop!">
+  <title> Low Price Wonderland: Explore Affordable Finds for Everything You Need! </title>
+  <style>
+     * {
+          margin:0px;
+          padding:0px;
+          -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+          font-family: Roboto;
+          text-transform:capitalize;                     
+        }  
+  body.sidebar-open {  overflow: hidden; }
+	 html{  background-color:#f0f0f0; 
+		 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	     }
+   header {
+            background-color: #181f1a;
+            color: white;
+            padding: 0px 10px;
+            position:sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        #navbar {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .navbar-brand h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .navbar-toggler {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+            padding: 10px;
+        }
+        
+        .sidebar {
+            height: calc(100vh - 40px);
+            width: 360px;
+            position: fixed;
+            top: 43px;
+            right: -100%;
+            background-color: #fff;
+            overflow-y: auto;
+            padding-top: 20px; /* Adjusted padding top */
+            transition: 0.5s;
+            z-index: 998;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar.active {
+            right: 0;
+        }
+        
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu li {
+            margin-bottom: 10px;
+        }
+        
+        .menu li a {
+            display: block;
+            padding: 10px 20px;
+            margin:10px 10px;
+            text-decoration: none;
+            color: black;
+            transition: background-color 0.3s;
+            border-radius: 30px;
+            text-align: center; /* Center align the text */
+        }
+        
+        .menu li a:hover {
+            background-color: #2576e8;
+            color: white;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        .social-links a {
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .social-links a:hover {
+            color: #fff;
+            background-color: #1e62d0;
+            transform: translateY(-5px);
+        }
+        
+        @media (max-width:550px) {
+            .sidebar {
+                width: 100%;
+            }
+        }
+		
+		
+    #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the transparency here */
+  z-index: 997; /* Ensure the overlay is below the sidebar */
+  display: none; /* Initially hidden */
+}
+
+#overlay.active {
+  display: block; /* Display when sidebar is active */
+}
+		
+  .scroll-container {
+        width: 100%;
+        overflow-x: auto;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;        
+        background:white;
+        padding:6px 0px;
+        position:relative ;
+        white-space: nowrap;
+		scroll-snap-type: x mandatory;
+	 }
+ .scroll-container::-webkit-scrollber {
+         display:none;
+      }
+ .scroll-container > .scroll-item {
+         color:dodgerblue;
+		 border:2px solid #ebe6fa;
+         text-align:center;
+         min-width: 100px;
+         text-decoration:none;
+         padding:5px;
+         margin-right: 10px;
+         border-radius:14px;
+         overflow:scroll;
+		 scroll-snap-align:center;
+        }
+	  .scroll-container > .scroll-item::-webkit-scrollbar{ display: none;}
+    .scroll-container > #active {
+        color: white;
+        background:#6e0cf7;
+		 border:none;
+        }
+   .scroll-container > .scroll-item:hover {
+          color: white;
+          background:#6e0cf7;
+		  border:none;
+       }
+   .scroll-container::-webkit-scrollbar{  width:2px; }
+
+   .scroll-container::-webkit-scrollbar-track{  background: ;}
+
+   .scroll-container::-webkit-scrollbar-thumb{
+         /* background-color: #4acf36;
+          border-radius:0px;
+          border:1px none #FFFFFF; */
+           }
+      
+      .search-container {
+          position: relative;
+          display: ;
+          margin:10px auto;
+          max-width:420px;
+	      background: dodgerblue;
+          border-radius:0px;
+          }
+
+  #searchInput {
+       padding: 8px 30px 8px 10px;
+       border: 1px solid #ccc;
+       border-radius:0px;
+       outline:none;
+       width:90%;
+       font-family: ;
+	  }
+
+    #searchBtn {
+          position: absolute;
+          top: 50%;
+          right:5%;
+         -webkit-transform:translate(-50%,-50%) ;
+         -ms-transform:translate(-50%,-50%) ;
+          transform:translate(-50%,-50%) ;
+          padding: 7px 5px;
+          border: none;
+          background: none;
+          cursor: pointer;
+          width:0%;
+          color:white;
+    }
+
+ 
+        .gallery {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             gap: 20px 20px;
+         }
+  
+    .gallery-item {
+            position: relative;
+            width: 165px; /* Fixed width for each item */
+            height: 200px; /* Fixed height for each item */
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	    padding:3px;
+         }
+  
+   .gallery-item img {
+           width: 100%;
+           height: 100%;
+           display: block;
+           transition: transform 0.3s ease-in-out;
+           object-fit: cover;
+         }
+  
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .price-button {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        background-color: #ff5a5f;
+        color: white;
+        padding: 5px 10px;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+ 
+   
+    footer {
+         margin:0 auto;
+         background:#122029;
+         color:white;    
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         padding:5px;
+         text-transform:capitalize;
+         overflow:hidden;
+         -webkit-user-select:none;
+         -moz-user-select:none;
+         -ms-user-select:none;         
+       }
+ 
+   .sneha {
+        padding:10px;
+        color:white;
+       }
+   .sneha > a{
+        text-decoration:none;
+        color:white;
+        display:block;      
+        margin:3px;  
+        font-size:14px
+        }
+   select {
+        margin:10px;
+        float:right;
+        width:40%;
+		max-width:210px;
+        height:40px;
+        outline:none;
+        border:2px solid #253330; 
+        border-radius:30px;
+        text-align:center;
+        font-size:16px;
+        font-weight:600px;
+        -webkit-transition:all 0.3s;
+        -o-transition:all 0.3s;
+        transition:all 0.3s;
+        background:white;
+        outline:2px solid white; 
+        text-transform:capitalize;
+       }
+   
+    .whatsapp {
+          position: fixed;
+          bottom: 20px;
+          right: 10px;
+          background-color:#54f542 ;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          padding: 5px 10px;
+          font-size: 20px;
+          cursor: pointer;
+          z-index:1 ;
+          font-size:1.50rem;
+           }
+		   
+		   
+		     @media only screen and (max-width:690px) { 
+	              .search-container { width: 310px ; }
+				  
+	  }
+	  
+	  
+	   @media only screen and (min-width:768px) { 
+	              html {
+				   margin:0 auto;
+				   width:90%;
+				 }
+              .gallery-item {
+                          position: relative;
+                          width: 220px; /* Fixed width for each item */
+                          height: 260px; 
+						  }
+	   }
+	   @media only screen and (min-width:992px) { 
+		       html {
+	                 margin:0 auto;
+			         max-width:70%;
+			         min-width:990px;
+		        }    
+}
+    </style>
+  </head>
+  <body ncontextmenu="return false">
+        <header id="header">
+    <nav id="navbar">
+        <div class="navbar-brand">
+            <h1>Quotes World</h1>
+        </div>
+        <button class="navbar-toggler" id="toggleButton" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+    <aside id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="index.html" title="Go to Home">Home</a></li>
+            <li><a href="about-us.html" title="Learn about us">About us</a></li>
+            <li><a href="blog-videos.html" title="Explore Blogs">videos</a></li>
+            <li><a href="poem-sonnet-poetry.html" title="Read Poetry">books</a></li>
+            <li><a href="web-news.html" title="Discover Web News">Web News</a></li>
+            <li><a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer">Life-Style</a></li>
+            <li><a href="https://www.sportskeeda.com" target="_blank" rel="noopener noreferrer">Cricket</a></li>
+            <li><a href="health-advice.html" title="Get Health Advice">Health</a></li>
+            <li><a href="contact-us.html" title="Contact us">Contact us</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100028875690917&mibextid=2JQ9oc" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/shri.krishna04?igsh=MXY5aWxnbGM0N293bw==" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/paytm_cash_hub" target="_blank" rel="noopener noreferrer" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://whatsapp.com/channel/0029VaNPC4QEVccDcycBlh0r" target="_blank" rel="noopener noreferrer" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://youtube.com/@Wings_dna?si=q_lyk1Tif5t1D-iJ" target="_blank" rel="noopener noreferrer" title="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </aside>
+</header>
+
+	  <!-- Overlay to cover content behind sidebar -->
+         <div id="overlay"></div>
+	  
+         <nav class="scroll-container" title="scroll-ber">
+               <a class="scroll-item" href="motivational-quotes.html" target="_self"> Daily Quotes </a>     
+               <a class="scroll-item" href="index.html" target="_self"> wishdom </a>
+               <a class="scroll-item" href="sri-krishna-stories.html" target="_self"> Karma </a>
+               <a class="scroll-item" href="blog-videos.html" target="_self"> videos </a>
+               <a class="scroll-item" href="poem-sonnet-poetry.html" target="_self"> books </a>               
+               <a class="scroll-item" href="best-educational-websites.html" target="_self"> study </a>
+               <a class="scroll-item" href="best-mobile-games.html" target="_self"> gaming </a>
+               <a class="scroll-item" id="active" href="discount-deals.html" target="_self"> life-style </a>    
+               <a class="scroll-item" href="movie-sites.html" target="_self"> cinema </a>                                        
+               <a class="scroll-item" href="health-advice.html" target="_self"> health </a>
+               <a class="scroll-item" href="web-news.html" target="_self"> web news </a>                
+               <!---<a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>--->
+          <!-- Add more items as needed -->
+       </nav>
+          
+      
+       <a class="whatsapp" href="https://whatsapp.com/channel/0029VaNPC4QEVccDcycBlh0r" title="whatsapp"> <i class="fa-brands fa-whatsapp"> </i> </a>
+          
+
+     <div class="search-container" title="search">
+         <input type="search" id="searchInput" placeholder="Search products">
+         <button for="search" id="searchBtn" class="fa fa-search" title="search"></button>
+    </div>
+
+      <!-----Main Body------>              
+        <section class="gallery" id="gallery">
+                  <article class="gallery-item" data-name="Man Wrist Watches" id="pcard">   <!------PRODUCT 01--------->
+                      <a href="https://amzn.to/3UHCcUv" target="_blank">
+                          <img src="AMAZON/Man Wrist Watches.webp" alt="product" loading="auto">
+                     </a>
+                      <a href="https://amzn.to/3UHCcUv" class="price-button"> $ 399 </a>
+                </article>
+				
+                 <article class="gallery-item" data-name="shoes" id="pcard">    <!------PRODUCT 02--------->
+                     <a href="image2.jpg" target="_blank">
+                        <img src="image2-thumbnail.jpg" alt="product" loading="auto">
+                    </a>
+                     <a href="#" class="price-button">$24.99</a>
+               </article>
+			   
+			    <article class="gallery-item" data-name="Wrist Watches" id="pcard">   <!------PRODUCT 03--------->
+                      <a href="https://amzn.to/3SMNEvG" target="_blank">
+                          <img src="AMAZON/watches.jpg" alt="product" loading="auto">
+                     </a>
+                      <a href="https://amzn.to/3SMNEvG" class="price-button"> $ 299</a>
+                </article>
+				
+                 <article class="gallery-item" data-name="shoes" id="pcard">    <!------PRODUCT 03--------->
+                     <a href="image2.jpg" target="_blank">
+                        <img src="image2-thumbnail.jpg" alt="product" loading="auto">
+                    </a>
+                     <a href="#" class="price-button">$24.99</a>
+               </article>
+			   
+			    <article class="gallery-item" data-name="shoes" id="pcard">   <!------PRODUCT 04--------->
+                      <a href="image1.jpg" target="_blank">
+                          <img src="image1-thumbnail.jpg" alt="product" loading="auto">
+                     </a>
+                      <a href="#" class="price-button">$19.99</a>
+                </article>
+				
+                 <article class="gallery-item" data-name="shoes" id="pcard">    <!------PRODUCT 05--------->
+                     <a href="image2.jpg" target="_blank">
+                        <img src="image2-thumbnail.jpg" alt="product" loading="auto">
+                    </a>
+                     <a href="#" class="price-button">$24.99</a>
+               </article>
+			   
+			    <article class="gallery-item" data-name="shoes" id="pcard">   <!------PRODUCT 06--------->
+                      <a href="image1.jpg" target="_blank">
+                          <img src="image1-thumbnail.jpg" alt="product" loading="auto">
+                     </a>
+                      <a href="#" class="price-button">$19.99</a>
+                </article>
+				
+                 <article class="gallery-item" data-name="shoes" id="pcard">    <!------PRODUCT 07--------->
+                     <a href="image2.jpg" target="_blank">
+                        <img src="image2-thumbnail.jpg" alt="product" loading="auto">
+                    </a>
+                     <a href="#" class="price-button">$24.99</a>
+               </article>
+			   
+			    <article class="gallery-item" data-name="shoes" id="pcard">   <!------PRODUCT 08--------->
+                      <a href="image1.jpg" target="_blank">
+                          <img src="image1-thumbnail.jpg" alt="product" loading="auto">
+                     </a>
+                      <a href="#" class="price-button">$19.99</a>
+                </article>
+				
+                 <article class="gallery-item" data-name="shoes" id="pcard">    <!------PRODUCT 09--------->
+                     <a href="image2.jpg" target="_blank">
+                        <img src="image2-thumbnail.jpg" alt="product" loading="auto">
+                    </a>
+                     <a href="#" class="price-button">$24.99</a>
+               </article>
+			   
+			    <article class="gallery-item" data-name="shoes" id="pcard">   <!------PRODUCT 10--------->
+                      <a href="image1.jpg" target="_blank">
+                          <img src="image1-thumbnail.jpg" alt="product" loading="auto">
+                     </a>
+                      <a href="#" class="price-button">$19.99</a>
+                </article>
+				
+                 <article class="gallery-item" data-name="shoes" id="pcard">    <!------PRODUCT 11--------->
+                     <a href="image2.jpg" target="_blank">
+                        <img src="image2-thumbnail.jpg" alt="product" loading="auto">
+                    </a>
+                     <a href="#" class="price-button">$24.99</a>
+               </article>
+  <!-- Add more images here -->
+     </section>
+
+                   
+       
+       <footer title="footer">   <!------footer Section------->
+       <h2> Quotes World </h2>          
+      <select title="language switcher">
+           <option> English</option>
+           <option> hindi   </option>
+           <option> Bengali </option>
+           <option> gujrati </option>
+           <option> tamil  </option>
+           <option> telugu  </option>
+           <option> odiya  </option>           
+     </select>
+    <div class="sneha">
+        <a href="about-us.html" target="_self"><p> Terms & privacy </p></a>
+        <a href="about-us.html" target="_self"><p> policy </p></a>
+	<a href="about-us.html" target="_self"><p> sitemap </p></a>
+        <a href="about-us.html" target="_self"><p> 2024® </p></a>
+  </div>
+  </footer>
+     
+
+   <script>
+           const sidebar = document.getElementById("sidebar");
+           const overlay = document.getElementById("overlay");
+           const toggleButton = document.getElementById("toggleButton");
+
+      function toggleNav() {
+          sidebar.classList.toggle("active");
+          toggleButton.innerHTML = sidebar.classList.contains("active") ? "&times;" : "&#9776;";
+
+    // Toggle visibility of overlay
+      overlay.classList.toggle("active");
+
+    // Add/remove class to body to prevent scrolling
+        document.body.classList.toggle("sidebar-open");
+  };
+
+
+
+
+         //change Navigation background
+   window.addEventListener('scroll', function() {
+       const navbar = document.getElementById('header');
+       const scrolled = window.scrollY;
+
+       if (scrolled > 30) {
+       navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
+     } else {
+       navbar.style.backgroundColor = '#181f1a'; // Change this to the default color
+     }
+  });
+
+
+
+       // Find the active scroll item
+              const activeItem = document.getElementById("active");
+              const scrollContainer = document.querySelector(".scroll-container");
+
+      // Calculate scroll position to center the active item
+              const containerWidth = scrollContainer.offsetWidth;
+              const scrollItemWidth = activeItem.offsetWidth;
+              const scrollItemLeft = activeItem.offsetLeft;
+              const scrollItemCenter = scrollItemLeft - (containerWidth - scrollItemWidth) / 2;
+
+     // Scroll the container to center the active item
+             scrollContainer.scrollLeft = scrollItemCenter;
+			 
+			 
+
+         // search filter
+          document.getElementById('searchInput').addEventListener('input', function () {
+           const filter = this.value.toLowerCase();
+           const items = document.querySelectorAll('#gallery #pcard');
+
+           items.forEach(function (item) {
+           const name = item.dataset.name.toLowerCase();
+
+          if (name.includes(filter)) {
+            item.style.display = 'block';
+      } else {
+            item.style.display = 'none';            
+      }
+  });
+
+  // Show all items when the search bar is cleared
+  if (filter === '') {
+    items.forEach(function (item) {
+      item.style.display = 'block';
+    });
+  }
+});
+   </script>
+   </body>
+</html>

@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Roboto--Cabin--Open Sans--Lato---Montserrat--Quicksand---PT Sans--Playfair--Display--Domine---->
+<head>
+  <meta charset="utf-8"/>
+  <base href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="nofollow, noarchive">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="keywords" content="Top mobile games, Android games, Popular mobile games, Offline mobile games, Action mobile games, Puzzle mobile games, Casual mobile games">
+  <meta name="description" content="Unlock the world of mobile gaming with our comprehensive mobile games review website! Discover the latest trends, learn about must-play titles, and get expert insights to elevate your gaming experience. Dive into in-depth analyses, uncover hidden gems, and stay ahead of the curve. Level up your gaming knowledge – explore, learn, and get ready for unparalleled mobile gaming excitement!">
+  <title> Best mobile games in India: discover the best Games, tips, and reviews </title>
+  <style>
+
+    * {
+          margin:0px;
+          padding:0px;
+          -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+          font-family: Roboto;
+          text-transform:capitalize;    
+	      user-select:none;
+        }  
+  html {
+       scroll-behavior:smooth;
+       scroll-padding:2.50em;
+	  background-color:#f0f0f0;
+      }
+  body.sidebar-open {  overflow: hidden; }
+   header {
+            background-color: #181f1a;
+            color: white;
+            padding: 0px 10px;
+            position:sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        #navbar {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .navbar-brand h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .navbar-toggler {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+            padding: 10px;
+        }
+        
+        .sidebar {
+            height: calc(100vh - 40px);
+            width: 360px;
+            position: fixed;
+            top: 43px;
+            right: -100%;
+            background-color: #fff;
+            overflow-y: auto;
+            padding-top: 20px; /* Adjusted padding top */
+            transition: 0.5s;
+            z-index: 998;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar.active {
+            right: 0;
+        }
+        
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu li {
+            margin-bottom: 10px;
+        }
+        
+        .menu li a {
+            display: block;
+            padding: 10px 20px;
+            margin:10px 10px;
+            text-decoration: none;
+            color: black;
+            transition: background-color 0.3s;
+            border-radius: 30px;
+            text-align: center; /* Center align the text */
+        }
+        
+        .menu li a:hover {
+            background-color: #2576e8;
+            color: white;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        .social-links a {
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .social-links a:hover {
+            color: #fff;
+            background-color: #1e62d0;
+            transform: translateY(-5px);
+        }
+        
+        @media (max-width:550px) {
+            .sidebar {
+                width: 100%;
+            }
+        }
+		
+		
+    #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the transparency here */
+  z-index: 997; /* Ensure the overlay is below the sidebar */
+  display: none; /* Initially hidden */
+}
+
+#overlay.active {
+  display: block; /* Display when sidebar is active */
+}
+		
+  .scroll-container {
+        width: 100%;
+        overflow-x: auto;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;        
+        background:white;
+        padding:6px 0px;
+        position:relative ;
+        white-space: nowrap;
+		scroll-snap-type: x mandatory;
+	 }
+ .scroll-container::-webkit-scrollber {
+         display:none;
+      }
+ .scroll-container > .scroll-item {
+         color:dodgerblue;
+	 border:2px solid #ebe6fa;
+         text-align:center;
+         min-width: 100px;
+         text-decoration:none;
+         padding:5px;
+         margin: 0px 6px;
+         border-radius:14px;
+         overflow:scroll;
+	 scroll-snap-align:center;
+        }
+	  .scroll-container > .scroll-item::-webkit-scrollbar{ display: none;}
+    .scroll-container > #active {
+        color: white;
+        background:#6e0cf7;
+		 border:none;
+        }
+   .scroll-container > .scroll-item:hover {
+          color: white;
+          background:#6e0cf7;
+		  border:none;
+       }
+   .scroll-container::-webkit-scrollbar{  width:2px; }
+
+   .scroll-container::-webkit-scrollbar-track{  background: ;}
+
+   .scroll-container::-webkit-scrollbar-thumb{
+         /* background-color: #4acf36;
+          border-radius:0px;
+          border:1px none #FFFFFF; */
+           }
+   
+     #section {
+       position:relative;       
+       margin:0 ;
+       padding:0 ;
+      }
+ #section >#blur >  h1{
+       font-size: ;
+       text-transform:uppercase;
+       margin:0 auto ;
+       color: #e3e35f;
+       text-shadow: 2px 2px 8px #e3e35f;
+	   font-family: ;
+    } 
+ #section > #blur > p {
+       margin-top:20px ;
+       color: white; 
+       font-size: ;
+       Font-family: ;
+     }
+ #section > #background {
+         min-height: 380px;
+         width:100%;
+         background-image:url('GAMES/banner.webp');    
+         background-size:cover;
+         background-position:center;
+         background-attachment: ;
+       }
+  #section > #blur {
+       position:absolute ;
+       background: ;
+       top:50%;
+       left:50%;
+       font-weight:800px;
+      -webkit-transform:translate(-50%,-50%) ;
+          -ms-transform:translate(-50%,-50%) ;
+              transform:translate(-50%,-50%) ;
+       z-index: 5 ;
+       width:90%;
+       height: ;
+      -webkit-backdrop-filter:blur(2px) ;
+              backdrop-filter:blur(2px) ;
+     /*  opacity:80%; */
+       display:-webkit-box;
+       display:-ms-flexbox;
+       display:flex;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+               flex-direction: column;
+       -webkit-box-pack:center;
+           -ms-flex-pack:center;
+               justify-content:center;
+       -webkit-box-align:center;
+           -ms-flex-align:center;
+               align-items:center;
+    /*   width:50%; */
+       padding: 10px 10px ;  
+    /*  text-align:center;  */
+     /*  border:2px inset white; */
+     /*  border-radius:4px;       */
+     /* font-weight:bold;     */    
+     }
+ #section >  #blur a {
+       display:inline-block;
+       padding:10px ;
+       width:80%;
+	   max-width:370px;
+       font-size: ;
+       text-decoration:none;
+       color: #f26680 ;
+       border:4px solid #f26680 ;
+       background: ;
+       margin-top:20px ;
+       text-align:center;
+       -webkit-transition:0.3s;
+       -o-transition:0.3s;
+       transition:0.3s;
+    }
+   #section >  #blur a:hover{ 
+        background: #f26680 ;
+        color: white ;
+        border-radius: 6px;
+      }
+   #contentable {
+          margin:0 auto ;
+          padding:10px;
+          -webkit-user-select:none;
+             -moz-user-select:none;
+              -ms-user-select:none;
+                  user-select:none;
+          width:100% ;
+        }
+   #contentable >h1 {
+            color: ;
+            text-shadow: ;
+            font-family: ;
+            font-size: ;
+        }
+     .head-logo > a{
+           padding: 10px 10px;
+           text-decoration:none;   
+           font-size:14px;   
+           cursor:pointer;   
+           color:white;  
+           border-radius:50%;
+           margin: 0px 4px ;
+          -webkit-user-select:none;    
+          -moz-user-select:none;    
+          -ms-user-select:none;    
+           user-select:none;  
+           -webkit-transition-duration:0.3s;  
+                -o-transition-duration:0.3s;  
+                   transition-duration:0.3s;
+           -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;      
+         }
+  .head-logo > a:hover{ -webkit-transform:scale(1.20); -ms-transform:scale(1.20); transform:scale(1.20)}
+   .head-logo > a:nth-child(1) {
+         color:white;
+         background: #266DD3;
+       }
+   .head-logo > a:nth-child(2) {
+         color:white;
+         background: #F75C03 ;
+       }
+   .head-logo > a:nth-child(3) {
+         color:white;
+         background: #7BB2D9 ;
+       }
+   .head-logo > a:nth-child(4) {
+         color:white;
+         background: #31D843 ;
+       }
+   .head-logo > a:nth-child(5) {
+         color:white;
+         background: #F42B03 ;
+       }
+
+
+
+     main {
+         background: ;
+         gap:0px;
+         display:-ms-grid;
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(min(18rem,100%),1fr)) ;    		 
+          }
+    main > #img-con {
+            margin: 10px auto;
+            position:relative;
+            overflow:hidden;
+            width:240px;
+            height:230px;
+            display:block;
+            border-radius:10px;
+            cursor: pointer;
+            -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+    main > #img-con > img {
+        width:100%;
+        height:100%;
+        background-position:center;
+        background-size:cover;
+        -o-object-fit:cover;
+           object-fit:cover;
+        }
+   main > #img-con > .text {
+         text-decoration:none;
+         position:absolute;
+         top:0;
+         left:0;
+         width:100%;
+         min-height:100%;
+         background:#2C2A4A;
+         display:-webkit-box;
+         display:-ms-flexbox;
+         display:flex;
+         -webkit-box-pack:center;
+             -ms-flex-pack:center;
+                 justify-content:center;
+         -webkit-box-align:center;
+             -ms-flex-align:center;
+                 align-items:center;
+         opacity:70%;
+         -webkit-transition:0.5s;
+         -o-transition:0.5s;
+         transition:0.5s;
+         -webkit-user-select:none;
+            -moz-user-select:none;
+             -ms-user-select:none;
+                 user-select:none;
+          }
+   main > #img-con > .text > p {
+        color: #FFFFFF;
+        font-size:26px ;
+        padding:10px;
+        opacity:100%;
+        text-align:center;
+        font-family: ;
+      }  
+  main > #img-con:hover .text {
+          opacity:0;
+       }
+   
+
+     .container {
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         padding:10px auto;
+         height: auto;
+         background: ;
+         margin:0 auto ;
+         width:100%;
+         gap:10px;
+         display:-ms-grid;
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(min(30rem,100%),1fr)) ;      
+          }
+     .container > div {
+            background: #FFFFFF;
+            height:auto ;    
+            padding:15px 10px;     
+            margin:0 auto ;
+            width:100%;
+           -webkit-user-select:none;    
+           -moz-user-select:none;    
+           -ms-user-select:none;    
+            user-select:none;  
+            -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            gap:10px;
+            display:-ms-grid;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
+         }
+     
+	 .container > #website1 > #paragraph > p  > span  { font-weight:bold; }
+     .container > #website1 > #paragraph > h4{
+           text-indent:0px;
+           padding:8px 5px;
+           color: #5E239D;
+		   Font-family: PT Sans;
+       }
+      .container > #website1 > #hvr {
+            width:100%;   
+            min-height:180px ;         
+            max-height:320px;
+            overflow:hidden;
+            margin:0 auto;
+        }
+    .container > #website1 > #hvr > img {
+            width:100%;
+            height:100%;       
+            margin:0 auto;    
+            -webkit-transition-duration:0.3s;    
+                 -o-transition-duration:0.3s;    
+                    transition-duration:0.3s;
+            background-size:cover;
+            background-position:center;
+            -o-object-fit:cover;
+               object-fit:cover;
+        }
+    .container > #website1 > #hvr > img:hover {
+         -webkit-transform:scale(1.20) ;
+             -ms-transform:scale(1.20) ;
+                 transform:scale(1.20) ;
+       }
+    .container > #website1 > #paragraph > p {
+           font-size:14px;
+           padding:0px;
+           font-family: ;
+           font-weight: ;
+           min-height:220px ;         
+           max-height:auto;
+           overflow-y: scroll;
+        }
+     .container > #website1 > #paragraph > a {
+            text-decoration:none;
+            color: white;
+            background: #5F00BA ;
+            padding:10px 20px ;
+            border-radius:8px;
+            cursor:pointer;
+            margin-bottom:10px;
+            -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+       }
+
+   
+   #about {
+         margin:10px auto ;
+         width:100%;
+         padding:10px;
+         background: ;
+         color: ;
+         gap:10px;
+         display:-ms-grid;
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;
+       }
+   #about > #aboutpera > h1 {
+          padding:5px;
+		  Font-family: ;
+		  color: #291769;
+       }
+   #about >  #aboutpera > p {
+           padding:10px;
+           Font-family: ;
+           font-size:15px;
+           color: ;
+           font-weight: ;
+           min-height:230px;           
+         }
+   #about > #aboutimg  {
+           padding:10px;
+           min-height:230px;
+           max-height:320px ;
+           aspect-ratio:;          
+           margin:0 auto ;         
+       }
+     #about > #aboutimg > img {
+            width:100%;
+            height:100%;
+	    object-fit:cover;
+       }
+
+      .recommended-articles {
+             width: 100%;
+             margin: 0 auto;
+             padding:10px  ;   
+             -webkit-box-sizing:border-box;   
+                     box-sizing:border-box;
+			 Display:flex;
+			 -ms-flex-wrap:wrap;
+			     flex-wrap:wrap;
+	     gap:10px;
+	    justify-content:space-evenly ;
+        }
+
+   .article {
+         margin:0 auto;
+         width: 160px;
+         border: 0px solid #ccc;
+         padding:3px ;
+         margin-bottom: 10px;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+         -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+                 box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+		 -webkit-transition-duration:0.3s;
+		      -o-transition-duration:0.3s;
+		         transition-duration:0.3s;
+			 }
+     .article:hover{
+	     -webkit-transform:scale(1.04);
+	         -ms-transform:scale(1.04);
+	             transform:scale(1.04);
+	 }
+   .article img {
+        max-width: 100%;
+        aspect-ratio:1/1;  
+        -o-object-fit: cover;  
+        object-fit: cover;
+	background-position:center;
+     }
+
+     .article h3 {
+           margin-top:10px;
+           -webkit-transition-duration:0.3s;
+                -o-transition-duration:0.3s;
+                   transition-duration:0.3s;
+	    font-family: ;
+	    text-align:center;
+	     font-size:15px;
+           }
+
+      .article h3 a {
+            text-decoration: none;
+            color:#6e14b3;
+            text-align:center;
+         }
+
+     .article h3 a:hover {
+          text-decoration: underline;
+      }
+
+   
+      #gettouch {
+          margin:0 auto ;
+          padding:20px;    
+          background: ;    
+          -webkit-user-select:none;
+          -moz-user-select:none;
+          -ms-user-select:none;      
+         text-transform: capitalize ;    
+       }
+  #gettouch > form {
+        -webkit-user-select:none;
+           -moz-user-select:none;
+            -ms-user-select:none;
+                user-select:none;
+        margin:0 auto ;
+        max-width: 650px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap:6px;
+       }
+#gettouch > form > h1 {
+         color:#5E239D;
+         font-size: ;
+         font-family: ;
+         font-weight: ;
+       }
+   #gettouch > form > label {
+        width:100%;
+        display:block;
+        Font-family: ;
+        font-size: ;
+      }
+	  
+	    #gettouch > form >  input:user-invalid { border:1.50px solid red;}
+	 #gettouch > form >  textarea:user-invalid { border:1.50px solid red;}
+	  
+   #gettouch > form >  input {
+        width:100%;
+        padding:8px;
+        font-size: ;
+        display:block;
+        margin:0px auto ;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        Font-family: ;
+		outline:none;
+         }
+  #gettouch > form >  textarea {
+        width:100%;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        padding:8px;
+        font-size: ;
+        Font-family:  ;
+		outline:none;
+      }
+  #gettouch > form > .btn {
+        Font-family: ;
+        font-size: ;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        width:80%;
+        margin:10px auto;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        -webkit-transition-duration:0.3s;
+             -o-transition-duration:0.3s;
+                transition-duration:0.3s;      
+         }
+  #gettouch > form > .btn:hover {
+        background-color: #45a049;
+       }
+  #gettouch > form > .btn:active {
+          -webkit-transform:scale(0.90) ;
+              -ms-transform:scale(0.90) ;
+                  transform:scale(0.90) ;
+       }
+  #comments {
+         margin-top: 20px;
+         Font-family: ;
+       }
+
+  .comment {
+        background-color: ;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        Font-family: ;
+        overflow:hidden;
+        white-space:nowrap;
+        -o-text-overflow: ellipsis ;
+           text-overflow: ellipsis ;
+        }
+   #gettouch > .didit {
+          min-height:220px ;
+          max-height:260px ;
+          overflow:auto;
+          margin:0 auto;
+          width:100%;
+       }
+   #gettouch > .didit > #community {
+          background-color: ;
+          padding: 0px;
+          margin:10px auto;
+          Font-family: ;
+        }
+   #gettouch > .didit > #community > p {
+          overflow:hidden;
+          white-space:nowrap;
+          -o-text-overflow: ellipsis ;
+             text-overflow: ellipsis ;
+          padding:10px;
+       }
+
+
+    footer {
+         margin:0 auto;
+         background:#122029;
+         color:white;    
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         padding:10px;
+         text-transform:capitalize;
+         overflow:hidden;
+         -webkit-user-select:none;
+         -moz-user-select:none;
+         -ms-user-select:none;         
+       }
+
+   .sneha {
+        padding:0px;
+        color:white;
+       }
+   .sneha > a{
+        text-decoration:none;
+        color:white;
+        display:block;      
+        margin:3px;  
+        font-size: ;
+        }
+   select {
+        margin:10px;
+        float:right;
+        width:40%;
+		max-width:210px;
+        height:40px;
+        outline:none;
+        border:2px solid #253330; 
+        border-radius:30px;
+        text-align:center;
+        font-size:16px;
+        font-weight:600px;
+        -webkit-transition:all 0.3s;
+        -o-transition:all 0.3s;
+        transition:all 0.3s;
+        background:white;
+        outline:2px solid white; 
+        text-transform:capitalize;
+       }
+    #topButton {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #ff5400;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          padding: 5px 10px;
+          font-size: 16px;
+          cursor: pointer;
+          z-index:9 ;
+          font-size:1.30rem;
+            }
+    #paytm {
+          position: fixed;
+          bottom: 200px;
+          right: 10px;
+          background: rgba( 247, 243, 227, 0.25 );
+          -webkit-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+          backdrop-filter: blur( 4px );
+         -webkit-backdrop-filter: blur( 8px );
+          color: #8447FF;
+          border: none;
+          border-radius: 50%;
+          padding: 10px 10px;
+          font-size: 30px;
+          cursor: pointer;
+          z-index:10 ;    
+          }
+  @Keyframes {
+         
+           }
+		   
+		   
+  @media only screen and (min-width: 580px) {
+             .article {width:220px;}
+      }
+
+       @media only screen and (max-width:767px) { 
+	  
+	  }
+	  
+	  
+	   @media only screen and (min-width:768px) { 
+	             html {
+				   margin:0 auto;
+				   width:90%;
+			     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				   }
+			#section > #background { min-height: 480px; }
+			 .article {width:260px;}
+			 #about >  #aboutpera > p {
+                   max-height:360px;
+                   overflow:scroll;
+                   min-height: 230px;
+                   overflow-Y: scroll;
+              }
+          .container > div {
+                    width:100%; 
+                    padding: ;
+                   }
+                #about > #aboutimg { width:80%; } 
+               
+              
+	        }
+	   
+	   
+	   @media only screen and (min-width:992px) { 
+		       html {
+	              margin:0 auto;
+			      max-width:70%;
+			      min-width:990px;
+			       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		       }  
+			#section > #background { min-height: 540px; }
+      }
+   </style>
+  </head>
+  <body oncontextmenu="return false">
+         <header id="header">
+    <nav id="navbar">
+        <div class="navbar-brand">
+            <h1>Quotes World</h1>
+        </div>
+        <button class="navbar-toggler" id="toggleButton" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+    <aside id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="index.html" title="Go to Home"> Home </a></li>
+            <li><a href="about-us.html" title="Learn about us">About us</a></li>
+            <li><a href="blog-videos.html" title="Explore Blogs"> videos </a></li>
+            <li><a href="poem-sonnet-poetry.html" title="Read Poetry"> books </a></li>
+            <li><a href="web-news.html" title="Discover Web News"> Web News </a></li>
+            <li><a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer">Life-Style</a></li>
+            <li><a href="https://www.sportskeeda.com" target="_blank" rel="noopener noreferrer">Cricket</a></li>
+            <li><a href="health-advice.html" title="Get Health Advice">Health</a></li>
+            <li><a href="contact-us.html" title="Contact us">Contact us</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100028875690917&mibextid=2JQ9oc" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/shri.krishna04?igsh=MXY5aWxnbGM0N293bw==" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/paytm_cash_hub" target="_blank" rel="noopener noreferrer" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://whatsapp.com/channel/0029VaNPC4QEVccDcycBlh0r" target="_blank" rel="noopener noreferrer" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://youtube.com/@Wings_dna?si=q_lyk1Tif5t1D-iJ" target="_blank" rel="noopener noreferrer" title="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </aside>
+</header>
+
+	  <!-- Overlay to cover content behind sidebar -->
+          <div id="overlay"></div>
+	  
+         <nav class="scroll-container" title="scroll-ber">
+               <a class="scroll-item" href="motivational-quotes.html" target="_self"> Daily Quotes </a>     
+               <a class="scroll-item" href="index.html" target="_self"> wishdom </a>
+               <a class="scroll-item" href="sri-krishna-stories.html" target="_self"> Karma </a>
+               <a class="scroll-item" href="blog-videos.html" target="_self"> videos </a>
+               <a class="scroll-item" href="poem-sonnet-poetry.html" target="_self"> books </a>               
+               <a class="scroll-item" href="best-educational-websites.html" target="_self"> study </a>
+               <a class="scroll-item" id="active" href="best-mobile-games.html" target="_self"> gaming </a>
+               <a class="scroll-item" href="discount-deals.html" target="_self"> life-style </a>    
+               <a class="scroll-item" href="movie-sites.html" target="_self"> cinema </a>                                        
+               <a class="scroll-item" href="health-advice.html" target="_self"> health </a>
+               <a class="scroll-item" href="web-news.html" target="_self"> web news </a>                
+               <!---<a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>--->
+          <!-- Add more items as needed -->
+       </nav>
+          
+
+           <!-----100vh background ------>
+        <section id="section">
+          <div id="background">  </div>
+          <div id="blur"> 
+              <h1> discover the ultimate gaming experience </h1>
+              <p> unleash the power of interactive entertainment
+                  with our expert game reviews. join us now
+             </p>
+              <a href="#contentable"> join Now  </a>
+        </div> 
+     </section>
+
+        
+     <section id="contentable">      
+         <h1> Most Popular Video games in the world </h1>
+         <p> Updated on : jan 20, 2024 </p>
+         <!-------heading logo------->
+                <div class="head-logo">
+                     <a id="telegramShareBtn" class="fa-brands fa-telegram" title="telegram" target="" rel="noopener noreferrer"> </a>
+                     <a id="instagramShareBtn" class="fa-brands fa-instagram" title="Instagram" target="" rel="noopener noreferrer"> </a>
+                     <a id="twitterShareBtn" class="fa-brands fa-twitter" title="twitter" target="" rel="noopener noreferrer"> </a>
+                     <a id="whatsappButton" class="fa-brands fa-whatsapp" title="whatsapp" target="" rel="noopener noreferrer"> </a>
+                     <a href="#" class="fa-brands fa-youtube" title="YouTube" target="" rel="noopener noreferrer"> </a>
+               </div>
+         <p style="padding:10px 5px; font-size:14px;"> 
+             Video games aren't just entertainment; they're a dynamic path to a healthier you! Engaging in gaming doesn't just transport you to fantastical 
+             realms; it enhances your mental prowess by flexing problem-solving muscles and boosting strategic thinking. Some games even sneakily inspire
+             physical activity, turning fun into a workout! Need a breather from the daily grind? Gaming's your go-to stress buster, whisking you away to 
+             captivating worlds where worries fade. But wait, there's more! It's not all solitary; multiplayer games build bridges, connecting you with
+             fellow players, fostering teamwork, and breaking down walls of isolation. So, level up your well-being with video games—a fusion of thrill,
+             smarts, and camaraderie that's anything but ordinary!
+        </p>
+     </section>
+
+           <!----------Main Section-------->
+    <main>  
+         <div id="img-con"> <!---Box01------>
+          <img src="GAMES/survival.webp" alt="Survive">
+          <a class="text" href="#survival" target="self">
+               <p> Survival Games </p>
+          </a>
+       </div>
+
+        <div id="img-con"> <!---Box02------>
+          <img src="GAMES/raceing.webp" alt="race">
+          <a class="text" href="#Racing" target="self">
+               <p> Racing Games </p>
+          </a>
+       </div>
+
+       <div id="img-con"> <!---Box03------>
+          <img src="GAMES/casual.webp" alt="casual">
+          <a class="text" href="#Casual" target="self">
+               <p> Casual Games </p>
+          </a>
+       </div>
+
+        <div id="img-con"> <!---Box04------>
+          <img src="GAMES/board.webp" alt="board">
+          <a class="text" href="#Board" target="self">
+               <p> Board Games </p>
+          </a>
+       </div>
+  </main>
+     
+  
+      
+       <!-------Games Container------------>
+ <!-------Survival Games Container------------>
+   <div class="container" id="survival">       
+       <!------Games container------>
+       <div id="website1"> <!----Game 1----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/bgmi.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> bgmi </h4>
+           <p>  BGMI stands for "Battlegrounds Mobile India." It is a popular mobile battle royale game developed 
+		        by Krafton, Inc. The game is essentially a localized version of PUBG Mobile tailored specifically
+				for the Indian market. BGMI features similar gameplay mechanics, including parachuting onto an 
+				island, scavenging for weapons and equipment, and engaging in combat with other players until 
+				only one player or team remains standing. It gained significant popularity among mobile gamers 
+				in India after its release. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 4.3 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.4 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  877mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,00,00,000+downloads
+		   </p>
+          <a href="https://play.google.com/store/apps/details?id=com.pubg.imobile"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+       <div id="website1"> <!----Game 2----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/Spider.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Fortnite </h4>
+           <p>  Fortnite is a wildly popular online multiplayer video game developed by Epic Games.
+    		    It features several gameplay modes, the most prominent being "Battle Royale," where
+				up to 100 players compete to be the last one standing on a constantly shrinking map.
+				Players can scavenge for weapons, materials, and resources to build structures for
+				defense or traversal. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  
+          </p>
+            <a href="#"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+       <div id="website1"> <!----Game 3----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/ff.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Garena Free Fire </h4>
+           <p>  Free Fire" is a popular online multiplayer battle royale game developed by 111 Dots Studio 
+		        and published by Garena for Android and iOS devices. In the game, players are dropped onto 
+				a remote island where they compete against each other to be the last person or team standing.
+				Players can choose their starting positions, collect weapons, supplies, and vehicles, 
+				and strategically navigate the shrinking play zone to outlast their opponents. "Free Fire" 
+				has gained a significant player base worldwide and is known for its fast-paced gameplay,
+				various game modes, and regular updates introducing new content and features. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 4.1 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.4 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  593mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,00,00,000+downloads
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.dts.freefiremax"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+       <div id="website1"> <!----Game 4----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/cod.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Call of Duty: Warzone </h4>
+           <p>  In addition to its multiplayer modes, Call of Duty Mobile also offers a battle royale mode where 
+		        players compete against each other in a large map, scavenging for weapons and resources while 
+				trying to be the last player or team standing. The game regularly receives updates with new 
+				content, including maps, weapons, and modes, to keep players engaged.
+
+                Call of Duty Mobile has been well-received by both critics and players for its smooth gameplay, 
+				graphics, and the nostalgic feel it brings with its classic Call of Duty elements. It has
+				amassed a large player base worldwide and continues to be one of the leading mobile shooter games. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 5.0 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.4 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  2.54gb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,00,00,000+downloads
+          </p>
+            <a href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+      <div id="website1"> <!----Game 5----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/coc.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> clash of clans </h4>
+           <p>  Clash of Clans is a popular mobile strategy game developed and published by Supercell. In the game, players
+    		    build and upgrade their own village, train troops, and attack other players' villages to earn resources, 
+				trophies, and clan points. The main resources in the game are gold, elixir, and dark elixir, which are 
+				used to build and upgrade structures, train troops, and research upgrades. Players can join clans with 
+				other players, participate in clan wars, and donate troops to help each other out. Clash of Clans has 
+				a large and dedicated player base and has become one of the highest-grossing mobile games of all time. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 5.0 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.5 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  240mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  50,00,00,000+downloads
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+       
+    <!-- Add more div elements as needed -->
+  </div>  <!--------games section close--------->
+  
+  
+ <!-----Racing Game Container-------------->
+
+    <div class="container" id="Racing">     <!-----Raceing Game Container-------------->
+       <!------Games container------>
+       <div id="website1"> <!----Game 1----->
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/asphalt.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Asphalt 9: Legends </h4>
+           <p>  The game features a wide variety of licensed cars from real manufacturers such as Ferrari, Porsche,
+   		        Lamborghini, and many others. Players can race in different locations around the world, including 
+				iconic cities like Tokyo, Shanghai, and Paris, as well as in more exotic settings.
+
+                One of the notable features of Asphalt 9 is its high-quality graphics and visual effects, designed 
+				to provide an immersive racing experience. The gameplay includes various modes such as Career mode,
+				Multiplayer mode, and Events mode, offering different challenges and opportunities for players to 
+				compete and progress. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 5.0 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.3 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  125mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,00,00,000+downloads
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.gameloft.android.ANMP.GloftA8HM"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+       <div id="website1"> <!----Game 2----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/race3.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> real raceing 3 </h4>
+           <p>  "Real Racing 3," a popular mobile racing game developed by Firemonkeys Studios and published 
+		         by Electronic Arts. Real Racing 3 offers realistic graphics, a wide range of licensed cars,
+				 and various real-world tracks to race on. Players can compete in different events,
+				 customize their cars, and participate in multiplayer races. The game has garnered praise for
+				 its high-quality visuals and immersive gameplay experience. If you're a fan of racing games, 
+				 it's definitely worth giving Real Racing 3 a try! <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 6.0 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.0 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  55.20mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,00,00,000+downloads
+          </p>
+            <a href="https://play.google.com/store/apps/details?id=com.ea.games.r3_row"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+       <div id="website1"> <!----Game 3----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/Spider.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Mario Kart tour </h4>
+           <p>   Gear up for an exciting winter BATTLEGROUNDS experience with loads of fun! <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,00,00,000
+          </p>
+          <a href="#"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+       <div id="website1"> <!----Game 4----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/csr.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> csr raceing 2 </h4>
+           <p>   "CSR Racing 2" is a popular mobile racing game developed by British studio NaturalMotion Games. It's the 
+		         sequel to the original CSR Racing game and is available for iOS and Android devices. In CSR Racing 2, players
+				 can collect, customize, and race a variety of real-world licensed cars in stunning 3D graphics. 
+				 The game features a variety of modes, including single-player campaign races, multiplayer races, 
+				 and crew battles. Players can upgrade and customize their cars with a wide range of options, from 
+				 performance upgrades to visual modifications. CSR Racing 2 is known for its high-quality graphics, 
+				 realistic physics, and addictive gameplay loop of collecting cars, upgrading them, and competing in 
+				 races to earn rewards. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 7.0 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.1 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  3.21gb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  5,00,00,000+downloads
+          </p>
+            <a href="https://play.google.com/store/apps/details?id=com.naturalmotion.customstreetracer2"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+      <div id="website1"> <!----Game 5----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/need.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> need for speed:no limits </h4>
+           <p>  "Need for Speed: No Limits" is a mobile racing game developed by Firemonkeys Studios and 
+		         published by Electronic Arts. It is part of the long-running "Need for Speed" franchise 
+				 and is available for iOS and Android devices. In the game, players participate in illegal
+				 street races, customize their cars, and compete against other players in various challenges.
+				 The game features a variety of cars, customization options, and race tracks, offering an 
+				 immersive experience for fans of arcade-style racing games. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 5.0 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.1 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  124mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,00,00,000+downloads
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.ea.game.nfs14_row"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+    <!-- Add more div elements as needed -->
+  </div>  
+
+ <!-------Casual games Container------------>
+    <div class="container" id="Casual">     
+       <!------Games container------>
+       <div id="website1"> <!----Game 1----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/candy.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Candy Crush Saga </h4>
+           <p>  "Candy Crush Saga" features various levels of increasing difficulty, and players can use power-ups and boosters 
+		         to help them overcome challenges. The game also incorporates social elements, allowing players to connect 
+				 with friends on Facebook to compare scores and ask for lives or assistance.
+
+                 The game's success led to the development of numerous spin-offs and sequels, including "Candy Crush Soda Saga" 
+				 and "Candy Crush Jelly Saga," which introduced new gameplay mechanics and challenges while retaining the core 
+				 match-three puzzle format. "Candy Crush Saga" remains one of the highest-grossing and most-played mobile games
+				 worldwide. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 5.0 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.4 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  83.15mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  1,00,00,00,000+downloads
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.king.candycrushsaga"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+       <div id="website1"> <!----Game 2----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/bird.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> angry birds </h4>
+           <p>  In the game, players use a slingshot to launch birds at structures in order to destroy them and defeat the evil 
+		        green pigs hiding within. The pigs have stolen the birds' eggs, and the birds seek revenge by attacking the pigs'
+				various fortresses.
+
+                The success of "Angry Birds" led to numerous sequels, spin-offs, merchandise, and even an animated series and 
+				feature films. The franchise has become one of the most recognizable and successful in the mobile gaming 
+				industry, with its simple yet addictive gameplay and charming characters capturing the hearts of millions of 
+				players worldwide.<br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 5.1 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.2 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  258mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,00,00,000+downloads
+          </p>
+            <a href="https://play.google.com/store/apps/details?id=com.rovio.baba"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+       <div id="website1"> <!----Game 3----->
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/subway.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Subway Surfers </h4>
+           <p>  In the game, players take on the role of young graffiti artists who are caught in the act of "tagging" a metro
+      		    railway site and must escape from the inspector and his dog by running along the train tracks to avoid obstacles 
+				and oncoming trains. Along the way, players can collect coins, power-ups, and other items to enhance their
+				gameplay experience. The objective is to run as far as possible, avoid crashing into obstacles, and gather
+				as many coins as you can to unlock new characters, boards, and other items. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 5.1 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.4 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  133mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  1,00,00,00,000+downloads
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+      <div id="website1"> <!----Game 4----->
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/clash.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> clash royale </h4>
+           <p>  Players build decks of cards featuring various Clash of Clans troops, spells, and defenses. These cards are used to
+   		        deploy units onto a battlefield to attack enemy towers and defend their own towers. The game is played in real-time 
+				against other players from around the world. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 5.0 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.2 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  451mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  50,00,00,000+downloads
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+       <div id="website1"> <!----Game 5----->
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/cross.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> crossy road </h4>
+           <p>  Crossy Road is a popular mobile game developed by Hipster Whale. It was first released in November 2014 and quickly 
+		        gained popularity due to its addictive gameplay and charming pixel art graphics. The game is essentially an endless 
+				arcade hopper, where the player controls a character attempting to cross various roads, rivers, and train tracks 
+				without getting hit or falling into the water. The game features a variety of characters to unlock, each with its 
+				own unique appearance and behavior. Crossy Road has been praised for its simple yet challenging gameplay and has
+				inspired numerous spin-offs and imitations in the mobile gaming market. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 5.1 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.4 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  91.83mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,00,00,000+downloads
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.yodo1.crossyroad"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+    <!-- Add more div elements as needed -->
+  </div>  
+
+ <!-------Board Game Container------------>
+    <div class="container" id="Board">     
+       <!------Games container------>
+       <div id="website1"> <!----Game 1----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/ludo.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Ludo King </h4>
+           <p>  Ludo King is a popular digital version of the classic board game Ludo, developed by Indian studio Gametion Technologies 
+		        Pvt Ltd. It is available as a mobile app for both Android and iOS platforms, as well as a desktop version. The game 
+				allows players to enjoy the traditional gameplay of Ludo with friends and family, either locally or online. 
+				Ludo King features various game modes, including multiplayer, single-player, and offline modes. It has
+				gained significant popularity, particularly in India, where it has become one of the most downloaded mobile
+				games. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 6.0 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.1 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  76.15mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  1,00,00,00,000+downloads
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.ludo.king"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+       <div id="website1"> <!----Game 2----->
+           
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/chess.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Chess </h4>
+           <p>   Chess is played on an 8x8 grid board with alternating dark and light squares. Each player starts with 16 pieces: 
+		         one king, one queen, two rooks, two knights, two bishops, and eight pawns. The pieces are arranged in a specific
+				 pattern on the board at the beginning of the game. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 5.0 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.2 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  43.68mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,00,000+dowm
+          </p>
+            <a href="https://play.google.com/store/apps/details?id=com.miniclip.chess"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+      <div id="website1"> <!----Game 3----->
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/Spider.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> carcassonne </h4>
+           <p>  Gear up for an exciting winter BATTLEGROUNDS experience with loads of fun! <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+          </p>
+          <a href="#"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+       <div id="website1"> <!----Game 4----->
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/scrabble.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> Scrabble GO </h4>
+           <p>  Scrabble GO is a mobile game developed by Scopely, available for both iOS and Android devices.
+  		        It's a digital adaptation of the classic Scrabble board game, allowing players to challenge friends,
+				family, or random opponents from around the world in word-building battles.
+          <br/>               
+                Solo Play: Players can practice and sharpen their skills against the computer in solo mode.
+           <br/>
+                Multiplayer: Challenge friends or strangers in real-time matches.
+            <br/>
+                Tournaments: Compete in tournaments to win rewards and climb the leaderboards.
+           <br/>
+                Customization: Players can customize their boards and tiles to make the game more personalized.
+           <br/>
+                Chat: Communicate with opponents through an in-game chat feature.
+       <br/>
+                Word of the Day: Learn new words with the daily word feature. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 5.1 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  3.5 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  123mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,00,00,000+downloads
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.pieyel.scrabble"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+
+      <div id="website1"> <!----Game 5----->
+           <div id="hvr"> <!-----image Container----->
+               <img src="GAMES/ticket.webp" alt="games"> 
+          </div>
+
+           <div id="paragraph"> <!-----Peragraph Container----->
+           <h4> ticket to ride </h4>
+           <p>  "Ticket to Ride" is a popular board game designed by Alan R. Moon. Published in 2004 by Days of Wonder,
+ 		         it has since become a classic in the board game world. In the game, players collect train cards of various 
+				 colors and use them to claim railway routes on a map, aiming to connect cities and complete specific 
+				 routes depicted on their "destination tickets." Points are earned for completing routes, and bonus 
+				 points are awarded for connecting distant cities or completing tickets. The game combines strategy, 
+				 planning, and a bit of luck, making it enjoyable for players of all ages and levels of experience. 
+				 It has spawned numerous expansions and editions set in various regions around the world. <br/> <br/>
+		       <span> required OS :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  android 6.0 and up <br/> <br/>
+		       <span> ratting :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  4.4 <br/> <br/>
+			   <span> download size :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  232mb <br/> <br/>
+			   <span> downloads :- </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  10,000+downloads
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.marmalade.tickettoride"> download on google play </a> <!-----downlode button------->
+         </div>
+      </div>
+    <!-- Add more div elements as needed -->
+  </div>  
+
+
+       
+      <section id="about">
+          <div id="aboutpera">
+               <h1> About us </h1>
+               <p> Welcome to Games, your ultimate destination for game reviews. Based in Kolkata, WB, 
+                we are passionate about providing honest and insightful reviews
+                of the latest games in the industry. <br> <br>
+   
+               Our team of experienced gamers and industry experts 
+               carefully analyze each game, considering various aspects 
+               such as gameplay, graphics, storylines, and overall 
+               user experience. We strive to deliver unbiased reviews 
+               that help you make informed decisions before investing
+               your time and money in a game. Whether you are a 
+               casual gamer or a hardcore enthusiast, Games is here to 
+               guide you through the ever-evolving world of gaming.
+            </p>
+         </div>
+          <div id="aboutimg">
+             <img src="GAMES/banner.webp" alt="games">
+         </div>
+      </section>
+       
+
+       <!-----Recomended Article Section-------->
+	     <h1 Style="padding:10px; Font-family: ;color:#211b63;"> our Recommended top Articles </h1>
+         <section class="recommended-articles">
+             
+       <!---Artical1----->
+          <div class="article">
+              <img src="INDEX/movie.webp" alt="Article 1 Image" loading="lazy">
+              <h3><a href="movie-sites.html"> Top Movie Download Websites for Quality Entertainment on Demand </a></h3>
+         </div>
+
+     <!---Artical2----->
+          <div class="article">
+             <img src="INDEX/webnews.webp" alt="Article 3 Image" loading="lazy">
+             <h3><a href="web-news.html"> Stay Updated with the Latest Headlines on- web news </a></h3>
+         </div>
+
+      <!---Artical3----->
+          <div class="article">
+             <img src="INDEX/Lod7.webp" alt="Article 2 Image" loading="lazy">
+             <h3><a href="index.html"> Explore enlightening quotes from the Bhagavad Gita by Sri Krishna </a></h3>
+         </div>
+
+     <!---Artical4----->
+          <div class="article">
+             <img src="INDEX/CYBER1.webp" alt="Article 3 Image" loading="lazy">
+             <h3><a href="cyber-security.html"> SecureCyber: Your Trusted Resource for Cyber Security Insights and Solutions </a></h3>
+         </div>
+
+     <!---Artical5----->
+          <div class="article">
+             <img src="INDEX/poetry.webp" alt="Article 4 Image" loading="lazy">
+             <h3><a href="poem-sonnet-poetry.html"> Discover the Beauty of Poetry: Explore Poems, Analysis, and Inspiration Here </a></h3>
+         </div>
+
+    <!---Artical6----->
+          <div class="article">
+             <img src="INDEX/BLOG2.webp" alt="Article 5 Image" loading="lazy">
+             <h3><a href="blog-videos.html"> Explore Engaging Video Blogs: Your Destination for Informative Content </a></h3>
+         </div>
+
+     <!---Artical7----->
+          <div class="article">
+             <img src="INDEX/education.webp" alt="Article 6 Image" loading="lazy">
+             <h3><a href="best-educational-websites.html"> Top 10 useful education Websites for students </a></h3>
+         </div>
+
+    <!---Artical8----->
+          <div class="article">
+             <img src="INDEX/cute.webp" alt="Article 8 Image" loading="lazy">
+             <h3><a href="sri-krishna-stories.html"> Exploring Sri Krishna Stories and Wisdom: Unveiling Divine Tales and Teachings </a></h3>
+         </div>
+		 
+	 <!---Artical9----->
+          <div class="article">
+             <img src="INDEX/loot.webp" alt="Article 9 Image" loading="lazy">
+             <h3><a href="discount-deals.html"> discover unbeatable deals:a diverse range of products at unbeatable price </a></h3>
+         </div>
+		 
+	 <!---Artical10----->
+          <div class="article">
+             <img src="INDEX/banner.webp" alt="Article 10 Image" loading="lazy">
+             <h3><a href="best-mobile-games.html" id="dnl"> Best mobile games in India: discover the best Games, tips, and reviews </a></h3>
+         </div>
+		 
+	 <!---Artical11----->
+          <div class="article">
+             <img src="INDEX/health.webp" alt="Article 11 Image" loading="lazy">
+             <h3><a href="health-advice.html"> discover vital health tips & advice for a thriving lifestyle </a></h3>
+         </div>
+	 <!---Artical12----->
+          <div class="article">
+             <img src="INDEX/cash.webp" alt="Article 12 Image" loading="lazy">
+             <h3><a href="paytm-cash-earning-app.html"> Discover top paytm cash earning apps: maximize your earning Today </a></h3>
+         </div>
+    <!-- You can add more articles using the same structure -->
+  </section>
+
+    
+        <!-----Contact Us Section------->
+          <div id="gettouch" class="comment-section">
+             <form action="#" method="post" id="myForm"> <!--id comment-form--->
+                 <h1> leave a comment </h1>
+                 
+                 <label for ="Name"> Name </label>
+                 <input type="text" id="name" name="name" placeholder="Name" spellcheck="true" required>
+                
+				 <label for ="email"> Email </label>
+                 <input type="email" id="email" name="email" placeholder="Email" spellcheck="true" required>
+                
+				 <label for ="text"> Message </label>
+				 <textarea id="msg" name="msg" rows="6" cols="40" placeholder="Your Comment*" spellcheck="true" required></textarea>
+                 
+                <button class="btn" type="submit"> Submit </button>
+            </form>   
+
+           <div class="didit">
+                 <h3 style="color:#202a57;"> Recent Comments  </h3>
+                 <div id="comments"> </div> <!----messages-04----->
+                 <div id="community"> Comments 0 </div> <!----messages-03----->
+            <!---<div id="community"> <b> sneha:- </b> wows  </div> ---messages-02---->
+            <!---<div id="community"> <b> ajoy :- </b> best </div>-----messages-01----->
+           </div>
+      </div>
+
+
+       <footer title="footer">   <!------footer Section------->
+       <h2> Quotes World </h2>          
+      <select title="language switcher">
+           <option> English</option>
+           <option> hindi   </option>
+           <option> Bengali </option>
+           <option> gujrati </option>
+           <option> tamil  </option>
+           <option> telugu  </option>
+           <option> odiya  </option>           
+     </select>
+    <div class="sneha">
+        <a href="about-us.html" target="_self"><p> Terms & privacy </p></a>
+        <a href="about-us.html" target="_self"><p> policy </p></a>
+        <a href="about-us.html" target="_self"><p> 2024® </p></a>
+        <!----<a href="about-us.html" target="_self"><p> Food-factory LLC</p></a>----->
+   </div>
+  </footer>
+     
+        <!----Go To Top Button------>
+     <button id="topButton"> <i class="fa-solid fa-arrow-up" title="top button"></i> </button>
+     <a href="paytm-cash-earning-app.html" id="paytm" class="fa-solid fa-gift fa-bounce" title="GiftBox"> </a>
+    
+	
+   <script>
+           const sidebar = document.getElementById("sidebar");
+	   const overlay = document.getElementById("overlay");
+           const toggleButton = document.getElementById("toggleButton");
+
+      function toggleNav() {
+          sidebar.classList.toggle("active");
+          toggleButton.innerHTML = sidebar.classList.contains("active") ? "&times;" : "&#9776;";
+
+    // Toggle visibility of overlay
+        overlay.classList.toggle("active");
+	      
+    // Add/remove class to body to prevent scrolling
+        document.body.classList.toggle("sidebar-open");
+  };
+
+
+
+
+         //change Navigation background
+   window.addEventListener('scroll', function() {
+       const navbar = document.getElementById('header');
+       const scrolled = window.scrollY;
+
+       if (scrolled > 30) {
+       navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
+     } else {
+       navbar.style.backgroundColor = '#181f1a'; // Change this to the default color
+     }
+  });
+
+
+
+       // Find the active scroll item
+              const activeItem = document.getElementById("active");
+              const scrollContainer = document.querySelector(".scroll-container");
+
+      // Calculate scroll position to center the active item
+              const containerWidth = scrollContainer.offsetWidth;
+              const scrollItemWidth = activeItem.offsetWidth;
+              const scrollItemLeft = activeItem.offsetLeft;
+              const scrollItemCenter = scrollItemLeft - (containerWidth - scrollItemWidth) / 2;
+
+     // Scroll the container to center the active item
+             scrollContainer.scrollLeft = scrollItemCenter;
+
+
+          /* Go To Top Button */
+
+      window.onscroll = function () {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("topButton").style.display = "block";
+  } else {
+    document.getElementById("topButton").style.display = "none";
+  }
+};
+
+// Scroll to the top when the button is clicked
+document.getElementById("topButton").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+   
+   //link click scrolling 
+  document.getElementById("dnl").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;  
+ });
+   
+      
+	  
+	    //telegram share button
+			  
+       document.getElementById('telegramShareBtn').addEventListener('click', function() {
+    // Replace 'your_message' and 'your_url' with your own message and URL
+    var message = encodeURIComponent('Check out this awesome link!');
+    var url = encodeURIComponent('https://example.com');
+
+    var telegramLink = 'https://t.me/share/url?url=' + url + '&text=' + message;
+
+    // Open the Telegram share URL in a new window or tab
+    window.open(telegramLink, '_blank');
+});
+	
+		      //whatsapp share button
+			  
+        document.getElementById("whatsappButton").addEventListener("click", function() {
+        // Replace 'your_text' and 'your_url' with the desired text and URL you want to share
+        var text = "Check out this cool website!";
+        var url = "https://sparrow-gif.github.io/Website-001/";
+
+        // Construct the WhatsApp share URL
+        var whatsappUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(text + " " + url);
+
+        // Open the WhatsApp share window
+        window.open(whatsappUrl, "_blank");
+    });
+	      
+		    //INSTAGRAM share button
+		  
+		   document.getElementById('instagramShareBtn').addEventListener('click', function() {
+             // Replace 'your_caption' and 'your_url' with your own caption and URL
+           var caption = encodeURIComponent('Check out this amazing photo!');
+           var url = encodeURIComponent('https://example.com/image.jpg');
+
+           var instagramLink = 'https://www.instagram.com/share?url=' + url + '&caption=' + caption;
+
+              // Open the Instagram share URL in a new window or tab
+           window.open(instagramLink, '_blank');
+       });
+	 
+	          //twitter share button
+		  
+		  document.getElementById('twitterShareBtn').addEventListener('click', function() {
+    // Replace 'your_text' and 'your_url' with your own tweet text and URL
+    var text = encodeURIComponent('Check out this awesome tweet!');
+    var url = encodeURIComponent('https://example.com');
+
+    var twitterLink = 'https://twitter.com/intent/tweet?text=' + text + '&url=' + url;
+
+    // Open the Twitter share URL in a new window or tab
+    window.open(twitterLink, '_blank');
+});
+	  
+	  
+       //Contact us 
+      document.getElementById('comment-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const commentText = document.getElementById('comment').value;
+  const email = document.getElementById('email').value;
+  if (name && commentText) {
+    addComment(name, commentText, email);
+    document.getElementById('comment-form').reset();
+  } else {
+    alert('Please fill in all fields.');
+  }
+});
+
+function addComment(name, commentText) {
+  const commentsSection = document.getElementById('comments');
+  const commentDiv = document.createElement('div');
+  commentDiv.classList.add('comment');
+  commentDiv.innerHTML = `<strong>${name}:</strong> ${commentText}`;
+  commentsSection.appendChild(commentDiv);
+}; 
+   </script>
+   
+      <script>
+      const form = document.getElementById('myForm');
+      form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const responseData = await fetch('https://script.google.com/macros/s/AKfycbw-d3Eb2-hszre2uCKLnNxHX25lyGYDu32ghI6-15rRi7YGOzA8DA9cBOJNFsmWqSo/exec', {
+        method: 'POST',
+          body: formData
+        });
+    // Handle the response here (if needed)
+	  document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevents the default form submission behavior
+
+            // Show alert
+            window.alert('Form submitted!');
+
+            // Refresh the form
+            document.getElementById('myForm').reset();			
+        });
+		
+		 //Contact us 
+      document.getElementById('myForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const commentText = document.getElementById('msg').value;
+  const email = document.getElementById('email').value;
+  if (name && commentText) {
+    addComment(name, commentText, email);
+    document.getElementById('myForm').reset();
+	 alert("submitted");
+  } else {
+    alert('Please fill in all fields.');
+  }
+});
+
+function addComment(name, commentText) {
+  const commentsSection = document.getElementById('comments');
+  const commentDiv = document.createElement('div');
+  commentDiv.classList.add('comment');
+  commentDiv.innerHTML = `<strong>${name}:</strong> ${commentText}`;
+  commentsSection.appendChild(commentDiv);
+} 
+  });
+</script>
+   
+   </body>
+</html>

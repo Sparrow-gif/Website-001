@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Roboto--Cabin--Open Sans--Lato---Montserrat--Quicksand---PT Sans--Playfair--Display--Domine---->
+<head>
+  <meta charset="utf-8"/>
+  <base href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.jpeg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="robots" content="nofollow, noarchive">
+  <meta name="keywords" content="motivation, inspiration, positive mindset, success, goals, confidence">
+  <meta name="description" content="Discover a powerhouse of motivation quotes at our website, igniting inspiration and fueling success.Unleash your potential with uplifting words that propel you forward. Get ready to embark on a transformative journey – Learn, Achieve, and Conquer with our curated collection of motivational quotes. Elevate your mindset today!">
+  <title> Boost Your Day with Daily Motivation Quotes: Inspire, Energize, and Achieve! </title>
+  <style>
+   * {
+          margin:0px;
+          padding:0px;
+          -webkit-box-sizing:border-box;  
+          box-sizing:border-box;
+          font-family:Roboto;
+          text-transform:capitalize;  
+        }  
+  body.sidebar-open {  overflow: hidden; }
+	  html { background-color:#f0f0f0; 
+		 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+	   }
+   header {
+            background-color: #181f1a;
+            color: white;
+            padding: 0px 10px;
+            position:sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        #navbar {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .navbar-brand h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .navbar-toggler {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+            padding: 10px;
+        }
+        
+        .sidebar {
+            height: calc(100vh - 40px);
+            width: 360px;
+            position: fixed;
+            top: 43px;
+            right: -100%;
+            background-color: #fff;
+            overflow-y: auto;
+            padding-top: 20px; /* Adjusted padding top */
+            transition: 0.5s;
+            z-index: 998;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar.active {
+            right: 0;
+        }
+        
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu li {
+            margin-bottom: 10px;
+        }
+        
+        .menu li a {
+            display: block;
+            padding: 10px 20px;
+            margin:10px 10px;
+            text-decoration: none;
+            color: black;
+            transition: background-color 0.3s;
+            border-radius: 30px;
+            text-align: center; /* Center align the text */
+        }
+        
+        .menu li a:hover {
+            background-color: #2576e8;
+            color: white;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: Center;
+            padding: 0;
+        }
+        
+        .social-links a {
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .social-links a:hover {
+            color: #fff;
+            background-color: #1e62d0;
+            transform: translateY(-5px);
+        }
+        
+        @media (max-width:550px) {
+            .sidebar {
+                width: 100%;
+            }
+        }
+		
+		
+   #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the transparency here */
+  z-index: 997; /* Ensure the overlay is below the sidebar */
+  display: none; /* Initially hidden */
+}
+
+#overlay.active {
+  display: block; /* Display when sidebar is active */
+}
+		
+  .scroll-container {
+        width: 100%;
+        overflow-x: auto;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;        
+        background:white;
+        padding:6px 0px;
+        position:relative ;
+        white-space: nowrap;
+		scroll-snap-type: x mandatory;
+	 }
+ .scroll-container::-webkit-scrollber {
+         display:none;
+      }
+ .scroll-container > .scroll-item {
+         color:dodgerblue;
+		 border:2px solid #ebe6fa;
+         text-align:center;
+         min-width: 100px;
+         text-decoration:none;
+         padding:5px;
+         margin:0px 6px;
+         border-radius:14px;
+         overflow:scroll;
+		 scroll-snap-align:center;
+        }
+	  .scroll-container > .scroll-item::-webkit-scrollbar{ display: none;}
+    .scroll-container > #active {
+        color: white;
+        background:#6e0cf7;
+		 border:none;
+        }
+   .scroll-container > .scroll-item:hover {
+          color: white;
+          background:#6e0cf7;
+		  border:none;
+       }
+   .scroll-container::-webkit-scrollbar{  width:2px; }
+
+   .scroll-container::-webkit-scrollbar-track{  background: ;}
+
+   .scroll-container::-webkit-scrollbar-thumb{
+         /* background-color: #4acf36;
+          border-radius:0px;
+          border:1px none #FFFFFF; */
+           }
+     
+	 
+	  .head-logo > a {
+	       display: inline-block;
+           padding: 10px 10px;
+           text-decoration:none;   
+           font-size:14px;   
+           cursor:pointer;   
+           color:white;  
+           border-radius:50%;
+           margin: 0px 4px ;
+          -webkit-user-select:none;    
+          -moz-user-select:none;    
+          -ms-user-select:none;    
+           user-select:none;  
+          -webkit-transition-duration:0.3s;  
+              -o-transition-duration:0.3s;  
+                 transition-duration:0.3s;
+          -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;  
+         	text-transform:capitalize;			 
+       }
+  .head-logo > a:hover{ -webkit-transform:scale(1.20); -ms-transform:scale(1.20); transform:scale(1.20)}
+   .head-logo > a:nth-child(1) {
+         color:white;
+         background: #266DD3;
+       }
+   .head-logo > a:nth-child(2) {
+         color:white;
+         background: #F75C03 ;
+       }
+   .head-logo > a:nth-child(3) {
+         color:white;
+         background: #7BB2D9 ;
+       }
+   .head-logo > a:nth-child(4) {
+         color:white;
+         background: #31D843 ;
+       }
+   .head-logo > a:nth-child(5) {
+         color:white;
+         background: #F42B03 ;
+       }
+	   
+	 
+	 main {
+	    margin:10px auto;   
+		padding:10px;
+		width:100%;
+		background: ;
+        display: flex;
+        flex-direction: column;
+		box-sizing:border-box;
+	 }
+	main > div {
+	    background: #F1FFFA;
+		padding:25px 30px;		
+	}
+	main > div > .Quotes {
+	     text-align:center;
+		 font-family:Roboto;
+	}
+	main > div > .Quotes::selection {
+                              color: red;
+                              background: yellow;
+                           }
+   main > div > .name {
+	    text-align:right;
+		font-weight: ;
+		font-family:;
+	 }	
+    main > div > .name::selection {
+                              color: red;
+                              background: yellow;
+                           }
+	main > div > .Quotes > span {
+	     font-size:1.30rem;
+		 font-family: ;
+	} 
+   main > img {
+	      min-width:330px;
+              max-width:70%;
+              aspect-ratio: 1/1;
+              margin:20px auto;     
+              border:0px solid black;  
+              border-radius:4px;
+             box-shadow: rgba(255, 255, 255) 0px 7px 29px 0px;
+	   }
+	
+	 footer {
+         margin:0 auto;
+         background:#122029;
+         color:white;    
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         padding:5px;
+         text-transform:capitalize;
+         overflow:hidden;
+         -webkit-user-select:none;
+         -moz-user-select:none;
+         -ms-user-select:none;         
+       } 
+   .sneha {
+        padding:10px;
+        color:white;
+       }
+   .sneha > a{
+        text-decoration:none;
+        color:white;
+        display:block;      
+        margin:3px;  
+        font-size: ; /*14px*/
+        }
+   select {
+        margin:10px;
+        float:right;
+        width:40%;
+	max-width:210px;
+        height:40px;
+        outline:none;
+        border:2px solid #253330; 
+        border-radius:30px;
+        text-align:center;
+        font-size:16px;
+        font-weight:600px;
+        -webkit-transition:all 0.3s;
+        -o-transition:all 0.3s;
+        transition:all 0.3s;
+        background:white;
+        outline:2px solid white; 
+        text-transform:capitalize;
+	cursor:pointer;
+       }
+	   
+	   
+      @media only screen and (max-width: 767px) {
+                                                        /* Styles for small screens here */
+       
+      }
+     @media only screen and (min-width: 768px) {
+                                                        /* Styles for medium screens here */
+                    html {
+			 margin:0 auto;
+			 width:90%;
+	        	}    
+                  					
+      }
+     @media only screen and (min-width:992px) {
+                                                        /* Styles for large screens here */
+			  html {
+	                         margin:0 auto;
+			         max-width:70%;
+			         min-width:990px;
+		        }                                     
+       
+      }
+
+
+          /*  @media(prefers-color-scheme:light) { 
+	         body {
+			     Background:#FFFFFF;
+				 color:#000000;
+			 }
+	  }
+     
+	  @media(prefers-color-scheme:dark) {
+	         body {
+			     Background:#000000;
+				 color:#FFFFFF;
+			 }
+	  } */
+ </style>
+</head>
+<body  oncontextmenu="return false">
+  
+        <header id="header">
+    <nav id="navbar">
+        <div class="navbar-brand">
+            <h1>Quotes World</h1>
+        </div>
+        <button class="navbar-toggler" id="toggleButton" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+    <aside id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="index.html" title="Go to Home"> Home </a></li>
+            <li><a href="about-us.html" title="Learn about us"> About us </a></li>
+            <li><a href="blog-videos.html" title="Explore Blogs"> videos </a></li>
+            <li><a href="poem-sonnet-poetry.html" title="Read Poetry"> books </a></li>
+            <li><a href="web-news.html" title="Discover Web News"> Web News </a></li>
+            <li><a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer"> Life-Style </a></li>
+            <li><a href="https://www.sportskeeda.com" target="_blank" rel="noopener noreferrer"> Cricket </a></li>
+            <li><a href="health-advice.html" title="Get Health Advice"> Health </a></li>
+            <li><a href="contact-us.html" title="Contact us"> Contact us </a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100028875690917&mibextid=2JQ9oc" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/shri.krishna04?igsh=MXY5aWxnbGM0N293bw==" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/paytm_cash_hub" target="_blank" rel="noopener noreferrer" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://whatsapp.com/channel/0029VaNPC4QEVccDcycBlh0r" target="_blank" rel="noopener noreferrer" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://youtube.com/@Wings_dna?si=q_lyk1Tif5t1D-iJ" target="_blank" rel="noopener noreferrer" title="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </aside>
+</header>
+
+	 <!-- Overlay to cover content behind sidebar -->
+        <div id="overlay"></div>
+	
+         <nav class="scroll-container" title="scroll-ber">
+               <a class="scroll-item" id="active" href="motivational-quotes.html" target="_self"> Daily Quotes </a>     
+               <a class="scroll-item" href="index.html" target="_self"> wishdom </a>
+               <a class="scroll-item" href="sri-krishna-stories.html" target="_self"> Karma </a>
+               <a class="scroll-item" href="blog-videos.html" target="_self"> videos </a>
+               <a class="scroll-item" href="poem-sonnet-poetry.html" target="_self"> books </a>               
+               <a class="scroll-item" href="best-educational-websites.html" target="_self"> study </a>
+               <a class="scroll-item" href="best-mobile-games.html" target="_self"> gaming </a>
+               <a class="scroll-item" href="discount-deals.html" target="_self"> Life-Style </a>    
+               <a class="scroll-item" href="movie-sites.html" target="_self"> cinema </a>                                        
+               <a class="scroll-item" href="health-advice.html" target="_self"> health </a>
+               <a class="scroll-item" href="web-news.html" target="_self"> web news </a>                
+               <!----<a class="scroll-item" href="#" target="_self"> More...</a>----->
+          <!-- Add more items as needed -->
+       </nav>
+     
+	  
+	  <article>
+	         <div class="heading" id="heading"style="padding:5px 10px;">
+                   <h1 style="color:#200a57;"> Empower Your Day: Inspirational Quotes for Daily Motivation </h1>
+                   <p> Updated on :jan 16, 2024 </p>
+            </div>
+                             <!-------heading logo------->
+                <div class="head-logo">
+                     <a id="telegramShareBtn" class="fa-brands fa-telegram" title="Telegram" rel="noopener noreferrer"> </a>
+                     <a id="instagramShareBtn" class="fa-brands fa-instagram" title="Instagram" rel="noopener noreferrer"> </a>
+                     <a id="twitterShareBtn" class="fa-brands fa-twitter" title="Twitter" rel="noopener noreferrer"> </a>
+                     <a id="whatsappButton" class="fa-brands fa-whatsapp" title="Whatsapp" rel="noopener noreferrer"> </a>
+                     <a href="#" class="fa-brands fa-youtube" title="YouTube" rel="noopener noreferrer"> </a>
+               </div>			
+	  </article>
+	  
+	        <!-------main content in my webpage--------->
+	  <main>
+	       <div>
+		       <p class="Quotes"> <span>1.</span> "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart." </p>
+			   <p class="name"> - Roy T. Bennett  </p>
+		   </div>
+		       
+			 <img src="TOP/Motive1.webp" alt="motivation" loading="auto">   <!--------motivation images01--------->
+			  
+		   <div>
+		       <p class="Quotes"> <span>2.</span> "Success is stumbling from failure to failure with no loss of enthusiasm." </p>
+			   <p class="name"> - Winston S. Churchill  </p>
+		   </div>
+		       
+			  <img src="TOP/motive2.webp" alt="motivation" loading="auto">   <!--------motivation images02--------->
+			  
+           <div>
+		       <p class="Quotes"> <span>3.</span> "The only way to do great work is to love what you do." </p>
+			   <p class="name"> -Steve Jobs  </p>
+		   </div>
+		       
+			  <img src="TOP/motive3.webp" alt="motivation" loading="lazy">   <!--------motivation images03--------->
+			  
+
+           <div>
+		       <p class="Quotes"> <span>4.</span> "The secret of getting ahead is getting started." </p>
+			   <p class="name"> -Mark Twain  </p>
+		   </div>
+		       
+			  <img src="TOP/motive4.webp" alt="motivation" loading="lazy">   <!--------motivation images04--------->
+			  
+
+           <div>
+		       <p class="Quotes"> <span>5.</span> "It always seems impossible until it is done." </p>
+			   <p class="name"> -Nelson Mandela  </p>
+		   </div>
+		       
+			  <img src="TOP/motive5.webp" alt="motivation" loading="lazy">   <!--------motivation images05--------->
+			  			  
+			 <div>
+		       <p class="Quotes"> <span>6.</span> "The future belongs to those who believe in the beauty of their dreams." </p>
+			   <p class="name"> -Eleanor Roosevelt  </p>
+		   </div>
+		       
+			  <img src="TOP/motive6.webp" alt="motivation" loading="lazy">   <!--------motivation images06--------->
+			  
+		   <div>
+		       <p class="Quotes"> <span>7.</span> "The only limit to our realization of tomorrow will be our doubts of today." </p>
+			   <p class="name"> -Franklin D. Roosevelt  </p>
+		   </div>
+		       
+			  <img src="TOP/motive7.webp" alt="motivation" loading="lazy">   <!--------motivation images07--------->
+			  
+           <div>
+		       <p class="Quotes"> <span>8.</span> "It does not matter how slowly you go as long as you do not stop." </p>
+			   <p class="name"> -Confucius  </p>
+		   </div>
+		       
+			  <img src="TOP/motive8.webp" alt="motivation" loading="lazy">   <!--------motivation images08--------->
+			  
+
+           <div>
+		       <p class="Quotes"> <span>9.</span> "Your time is limited, don't waste it living someone else's life." </p>
+			   <p class="name"> -Steve Jobs </p>
+		   </div>
+		       
+			  <img src="TOP/motive9.webp" alt="motivation" loading="lazy">   <!--------motivation images09-------->
+			  
+
+           <div>
+		       <p class="Quotes"> <span>10.</span> "You are never too old to set another goal or to dream a new dream." </p>
+			   <p class="name"> - C.S. Lewis  </p>
+		   </div>
+		       
+			  <img src="TOP/motive10.webp" alt="motivation" loading="lazy">   <!--------motivation images10--------->
+			  			  			  
+	  </main>
+	 
+	 
+     <footer title="Footer">   <!------footer Section------->
+       <h2> Quotes World </h2>          
+      <select title="language switcher">
+           <option> English</option>
+           <option> hindi   </option>
+           <option> Bengali </option>
+           <option> gujrati </option>
+           <option> tamil  </option>
+           <option> telugu  </option>
+           <option> odiya  </option>           
+     </select>
+    <div class="sneha">
+        <a href="about-us.html" target="_self"><p> Terms & privacy </p></a>
+        <a href="about-us.html" target="_self"><p> policy </p></a>
+        <a href="about-us.html" target="_self"><p> 2024® </p></a>
+	<!------<a href="about-us.html" target="_self"><p> Food-factory LLC</p></a>------->
+   </div>
+  </footer>
+  
+	 
+    <script>
+           const sidebar = document.getElementById("sidebar");
+           const overlay = document.getElementById("overlay");
+           const toggleButton = document.getElementById("toggleButton");
+
+      function toggleNav() {
+          sidebar.classList.toggle("active");
+          toggleButton.innerHTML = sidebar.classList.contains("active") ? "&times;" : "&#9776;";
+
+    // Toggle visibility of overlay
+      overlay.classList.toggle("active");
+
+    // Add/remove class to body to prevent scrolling
+        document.body.classList.toggle("sidebar-open");
+  };
+
+
+
+
+         //change Navigation background
+   window.addEventListener('scroll', function() {
+       const navbar = document.getElementById('header');
+       const scrolled = window.scrollY;
+
+       if (scrolled > 30) {
+       navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
+     } else {
+       navbar.style.backgroundColor = '#181f1a'; // Change this to the default color
+     }
+  });
+
+
+
+       // Find the active scroll item
+              const activeItem = document.getElementById("active");
+              const scrollContainer = document.querySelector(".scroll-container");
+
+      // Calculate scroll position to center the active item
+              const containerWidth = scrollContainer.offsetWidth;
+              const scrollItemWidth = activeItem.offsetWidth;
+              const scrollItemLeft = activeItem.offsetLeft;
+              const scrollItemCenter = scrollItemLeft - (containerWidth - scrollItemWidth) / 2;
+
+     // Scroll the container to center the active item
+             scrollContainer.scrollLeft = scrollItemCenter;
+  
+      
+	       //telegram share button
+			  
+       document.getElementById('telegramShareBtn').addEventListener('click', function() {
+    // Replace 'your_message' and 'your_url' with your own message and URL
+    var message = encodeURIComponent('Check out this awesome link!');
+    var url = encodeURIComponent('https://example.com');
+
+    var telegramLink = 'https://t.me/share/url?url=' + url + '&text=' + message;
+
+    // Open the Telegram share URL in a new window or tab
+    window.open(telegramLink, '_blank');
+});
+	
+		      //whatsapp share button
+			  
+        document.getElementById("whatsappButton").addEventListener("click", function() {
+        // Replace 'your_text' and 'your_url' with the desired text and URL you want to share
+        var text = "Check out this cool website!";
+        var url = "https://sparrow-gif.github.io/Website-001/";
+
+        // Construct the WhatsApp share URL
+        var whatsappUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(text + " " + url);
+
+        // Open the WhatsApp share window
+        window.open(whatsappUrl, "_blank");
+    });
+	      
+		    //INSTAGRAM share button
+		  
+		   document.getElementById('instagramShareBtn').addEventListener('click', function() {
+             // Replace 'your_caption' and 'your_url' with your own caption and URL
+           var caption = encodeURIComponent('Check out this amazing photo!');
+           var url = encodeURIComponent('https://example.com/image.jpg');
+
+           var instagramLink = 'https://www.instagram.com/share?url=' + url + '&caption=' + caption;
+
+              // Open the Instagram share URL in a new window or tab
+           window.open(instagramLink, '_blank');
+       });
+	 
+	          //twitter share button
+		  
+		  document.getElementById('twitterShareBtn').addEventListener('click', function() {
+    // Replace 'your_text' and 'your_url' with your own tweet text and URL
+    var text = encodeURIComponent('Check out this awesome tweet!');
+    var url = encodeURIComponent('https://example.com');
+
+    var twitterLink = 'https://twitter.com/intent/tweet?text=' + text + '&url=' + url;
+
+    // Open the Twitter share URL in a new window or tab
+    window.open(twitterLink, '_blank');
+});
+   </script>
+</body>
+</html>

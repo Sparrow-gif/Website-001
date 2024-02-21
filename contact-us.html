@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us </title>
+    <style>
+
+ *{
+	    margin:0px;
+		padding:0px;
+		-webkit-box-sizing:border-box;
+		        box-sizing:border-box;
+	 }
+	  body {
+    font-family: 'Arial', sans-serif;
+    background-color:#774bde;
+    margin: 0px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+	 background-image:url('') ;
+	 background-repeat:no-repeat;
+	   background-position:center;
+	   background-size:cover;
+}
+
+  .container {
+         padding: 20px;
+         max-width: 420px;
+         background: #ffffff;
+         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+         border-radius: 10px;
+         border: 1px solid rgba( 255, 255, 255, 0.18 );
+      }
+
+   form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+	}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	outline:none;
+}
+
+     form >  input:user-invalid { border:1.50px solid red;}
+	 form >  textarea:user-invalid { border:1.50px solid red;}
+	 
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+   
+       @media only screen and (max-width:480px) {
+                 .container{
+				       width:90%;
+				 }
+      }
+
+       @media only screen and (max-width:767px) { 
+	  
+	  }
+	  
+	  
+	   @media only screen and (min-width:768px) { 
+	   
+	          }
+			  
+	   @media only screen and (min-width:992px) { 
+	   
+	          }
+	   
+	</style>
+</head>
+<body oncontextmenu="return false">
+    <div class="container">
+        <h1 style="padding:25px 0px;">Contact Us</h1>
+		<p> Complete the form below to get in
+            touch with us. We are ready to assist
+            you with help bring your vision to life. </p>
+			<br/> <br/>
+        <form class="contactForm" id="myForm">
+           <label> Name </label>
+          <input type="text" id="name" name="name" placeholder="Name" spellcheck="true" required>
+		  
+		  <label> email </label>
+          <input type="email" id="email" name="email" placeholder="Email" spellcheck="true" required>
+		  
+		  <label> message </label>
+          <textarea id="msg" name="msg" placeholder="message" placeholder="message" rows="6" spellcheck="true" required></textarea>
+		  
+          <button type="submit"> Submit </button>
+      </form>
+    </div>
+	
+    <script>
+	      const form = document.getElementById('myForm');
+      form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const responseData = await fetch('https://script.google.com/macros/s/AKfycbwLLNG7Xmg5FD0D5snWfGJSyf-oA8XU9L1Le9KJ6jWTU_XJflTA-laMKR2F9WAc7RD6/exec', {
+        method: 'POST',
+          body: formData
+		  
+        });
+    // Handle the response here (if needed)
+	   document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevents the default form submission behavior
+
+            // Show alert
+            window.alert('Form submitted!');
+
+            // Refresh the form
+            document.getElementById('myForm').reset();
+			
+			 // Disable the submit button
+      document.getElementById('submitBtn').disabled = true;
+
+      // Enable the submit button after 5 seconds
+      setTimeout(function () {
+        document.getElementById('submitBtn').disabled = false;
+      }, 5000);
+        });
+  });
+  
+	</script>
+</body>
+</html>

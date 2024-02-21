@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Roboto--Cabin--Open Sans--Lato---Montserrat--Quicksand---PT Sans--Playfair--Display--Domine---->
+<head>
+  <meta charset="utf-8"/>
+  <base href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">    
+  <link rel="icon" type="image/x-icon" href="favicon.jpeg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="keywords" content="E-learning platform, Online courses, Exam preparation, Online education, Virtual classrooms">
+  <meta name="description" content="Discover the top 10 educational websites in India on our review platform. Learn and explore with actionable insights to get the most out of your online education journey. From courses to resources, uncover the best tools to enhance your learning experience today!">
+  <meta name="robots" content="nofollow, noarchive">
+  <title> Best Educational Websites in India </title>
+   <style>
+
+     * {
+          margin:0px;
+          padding:0px;
+          -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+          font-family: roboto;
+          text-transform:capitalize;                           
+        }  
+   html {
+       scroll-behavior:smooth;
+       scroll-padding:2.80em;
+       background-color:#f0f0f0;   
+      }
+  body.sidebar-open {  overflow: hidden; }
+   header {
+            background-color: #181f1a;
+            color: white;
+            padding: 0px 10px;
+            position:sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        #navbar {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .navbar-brand h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .navbar-toggler {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+            padding: 10px;
+        }
+        
+        .sidebar {
+            height: calc(100vh - 40px);
+            width: 360px;
+            position: fixed;
+            top: 43px;
+            right: -100%;
+            background-color: #fff;
+            overflow-y: auto;
+            padding-top: 20px; /* Adjusted padding top */
+            transition: 0.5s;
+            z-index: 998;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar.active {
+            right: 0;
+        }
+        
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu li {
+            margin-bottom: 10px;
+        }
+        
+        .menu li a {
+            display: block;
+            padding: 10px 20px;
+            margin:10px 10px;
+            text-decoration: none;
+            color: black;
+            transition: background-color 0.3s;
+            border-radius: 30px;
+            text-align: center; /* Center align the text */
+        }
+        
+        .menu li a:hover {
+            background-color: #2576e8;
+            color: white;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        .social-links a {
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .social-links a:hover {
+            color: #fff;
+            background-color: #1e62d0;
+            transform: translateY(-5px);
+        }
+        
+        @media (max-width:520px) {
+            .sidebar {
+                width: 100%;
+            }
+        }
+		
+	#overlay {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.6); /* Adjust the transparency here */
+         z-index: 997; /* Ensure the overlay is below the sidebar */
+         display: none; /* Initially hidden */
+     }
+
+   #overlay.active {
+          display: block; /* Display when sidebar is active */
+     }
+		
+    .scroll-container {
+          width: 100%;
+          overflow-x: auto;
+          display:-webkit-box;
+          display:-ms-flexbox;
+          display:flex;        
+          background:white;
+          padding:5px;
+          position:relative ;
+          white-space: nowrap;
+	  scroll-snap-type: x mandatory;   
+	 }
+ .scroll-container::-webkit-scrollber {
+         display:none;
+      }
+ .scroll-container > .scroll-item {
+             color:dodgerblue;
+	     border:2px solid #ebe6fa;
+             text-align:center;
+             min-width: 100px;
+             text-decoration:none;
+             padding:5px;
+             margin:0px 6px;
+             border-radius:14px;
+             overflow:scroll;
+	     scroll-snap-align:center;
+		 }
+	  .scroll-container > .scroll-item::-webkit-scrollbar{ display: none;}
+    .scroll-container > #active {
+        color: white;
+        background:#6e0cf7;
+		border:none;
+        }
+   .scroll-container > .scroll-item:hover {
+          color: white;
+          background:#6e0cf7;
+		  border:none;
+       }
+   .scroll-container::-webkit-scrollbar{  width:2px; }
+
+   .scroll-container::-webkit-scrollbar-track{  background: ;}
+
+   .scroll-container::-webkit-scrollbar-thumb{
+         /* background-color: #4acf36;
+          border-radius:0px;
+          border:1px none #FFFFFF; */
+           }
+    #section {
+       position:relative;       
+       margin:0 ;
+       padding:0 ;
+       -webkit-user-select:none;
+          -moz-user-select:none;
+           -ms-user-select:none;
+               user-select:none;
+       -o-object-fit:fill;
+          object-fit:fill;
+       overflow:hidden;
+      }
+ #section >#blur >  h1{
+       font-size:30px;
+       text-transform:uppercase;
+       margin:0 auto ;
+       color: #e3e35f;
+    } 
+ #section > #blur > p {
+       margin-top:20px ;
+       color:white; 
+      font-size:18px;
+     }
+ #section > #background {
+         min-height: 380px;
+         width:100%;
+         background-image:url('EDU/logo.webp');    
+         background-size:cover;
+         background-position:center;
+         background-attachment: ;
+         -webkit-filter:blur(0px) ;
+                 filter:blur(0px) ;
+         -o-object-fit:fill;
+            object-fit:fill;
+         overflow:hidden;
+       }
+  #section > #blur {
+       position:absolute ;
+   /* backdrop-filter:blur(1px) ; */
+       top:50%;
+       left:50%;
+       -webkit-transform:translate(-50%,-50%) ;
+           -ms-transform:translate(-50%,-50%) ;
+               transform:translate(-50%,-50%) ;
+       z-index: 5 ;
+       width:90%;
+    /*   width:50%; */
+       padding: 10px ;  
+    /*  text-align:center;  */
+     /*  border:2px inset white; */
+     /*  border-radius:4px;       */
+     /* font-weight:bold;     */    
+     }
+ #section >  #blur a {
+       display:inline-block;
+       padding:10px ;
+       max-width:60%;
+       min-width:320px;
+       font-size:18px;
+       text-decoration:none;
+       color: White ;
+       background: red;
+       margin-top:20px ;
+       text-align:center;
+       cursor:pointer;
+       -webkit-transition-duration:0.3s;
+            -o-transition-duration:0.3s;
+               transition-duration:0.3s;
+    }
+  #section >  #blur a:hover {
+         -webkit-transform:scale(0.90) ;
+             -ms-transform:scale(0.90) ;
+                 transform:scale(0.90) ;
+         border-radius:10px;
+     }
+  .contest > #banner {
+       /*  background-image:url('image/Spider.jpg'); */
+       /* background-size:cover; */
+       /*  background-position:center; */
+       /*  background-attachment: ; */
+        
+         max-width:612px;
+         margin:10px auto;
+         -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                 box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+       }
+  .contest > #banner > img {
+         width:100%;
+         height:100%;
+         background-size:cover;
+         background-position:center;
+		 -o-object-fit:fill;
+		    object-fit:fill;
+      }
+    #contentable {
+          margin:0 auto ;
+          padding:0px;
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+          width:100% ;
+        }
+   #contentable > h1 {         
+           color: #291769;
+		   font-family:roboto;
+        }
+   #contentable > table{
+         border:1px solid black;
+         padding:0px;
+         width:100%;
+         margin:20px auto;
+         text-align:center;
+         font-family:roboto ;
+		 }
+  table > tr, th, td {
+         border:1px solid green;
+         padding:7px;     
+         font-family: ;
+       }
+  
+  
+     #container {
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         background: ;
+         margin:0 auto ;
+         width:100%;
+         gap:10px 10px ;
+         display:-ms-grid;
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(min(19rem,100%),1fr)) ;      
+          }
+     #container > div {
+            background: #FFFFFF;
+            height:auto ;    
+            padding:5px;     
+            margin:0 auto ;
+            max-width:550px;
+      -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
+                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+         }
+     
+     #container > div > h2{
+           text-indent:0px;
+           padding:5px 0px 3px 0px;
+           color: #29BF12 ;           
+       }
+     #container > div > #des{
+           text-indent:0px;
+           padding:8px 5px;
+           color: #5E2BFF;
+           font-family: ;
+       }
+      #container > div > #hvr {
+            width:100%;
+            min-height:210px;
+            max-height:360px;
+            overflow:hidden;
+        }
+      #container > div > #hvr > img {
+            width:100%;
+            height:100%;       
+            margin:0 auto;    
+            -webkit-transition-duration:0.3s;    
+                 -o-transition-duration:0.3s;    
+                    transition-duration:0.3s;
+            background-size:cover;
+            background-position:center;
+        }
+    #container > div > #hvr > img:hover {
+         -webkit-transform:scale(1.15) ;
+             -ms-transform:scale(1.15) ;
+                 transform:scale(1.15) ;
+       }
+    #container > div > p {
+           font-size:14px ;
+           padding:0px;
+           font-family:roboto;
+           font-weight: ;
+        }
+     .page {
+           padding:10px;
+           border:none;
+           background: #B33951;
+           border-radius:5px;
+           cursor:pointer ;
+           -webkit-animation:scale 1s linear infinite;
+                   animation:scale 1s linear infinite;
+           -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+        }
+     .page > a {
+           text-decoration:none;
+           color:white ;
+        }
+    .recommended-articles {
+             width: 100%;
+             margin: 0 auto;
+             padding:10px  ;   
+             -webkit-box-sizing:border-box;   
+                     box-sizing:border-box;
+			 Display:flex;
+			 -ms-flex-wrap:wrap;
+			     flex-wrap:wrap;
+	     gap:10px;
+	    justify-content:space-evenly ;
+        }
+
+   .article {
+         margin:0 auto;
+         width: 160px;
+         border: 0px solid #ccc;
+         padding:3px ;
+         margin-bottom: 10px;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+         -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+                 box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+		 -webkit-transition-duration:0.3s;
+		      -o-transition-duration:0.3s;
+		         transition-duration:0.3s;
+			 }
+     .article:hover{
+	     -webkit-transform:scale(1.04);
+	         -ms-transform:scale(1.04);
+	             transform:scale(1.04);
+	 }
+   .article img {
+        max-width: 100%;
+        aspect-ratio:1/1;  
+        -o-object-fit: cover;  
+        object-fit: cover;
+	background-position:center;
+     }
+
+     .article h3 {
+           margin-top:10px;
+           -webkit-transition-duration:0.3s;
+                -o-transition-duration:0.3s;
+                   transition-duration:0.3s;
+	    font-family: ;
+	    text-align:center;
+	     font-size:15px;
+           }
+
+      .article h3 a {
+            text-decoration: none;
+            color:#6e14b3;
+            text-align:center;
+         }
+
+     .article h3 a:hover {
+          text-decoration: underline;
+      }
+    #about {
+          margin:0 auto;
+          width:100%;
+          padding:10px;
+          gap:10px;
+          display:-ms-grid;
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;              
+        }
+    #about > div > p {
+           padding:6px;
+           font-family: ;
+           }
+    #about > div > img {
+            height:240px;
+            width:100%;
+	    object-fit:cover;
+         }
+    
+    #askqtn {           
+          margin:0 auto ;
+          padding:14px;
+          -webkit-user-select:none;
+             -moz-user-select:none;
+              -ms-user-select:none;
+                  user-select:none;
+          width:100% ;
+          height:auto;
+          background: ;
+       }
+   #askqtn > .accordion {
+         text-transform:capitalize;
+         background-color:#eee;
+         margin:10px auto;
+         color: #444;
+         cursor: pointer;
+         padding: 18px;
+         width: 100%;
+         border:none;
+         border-radius:8px;
+         text-align: left;
+         outline: none;
+         -webkit-backdrop-filter:blur(20px) ;
+                 backdrop-filter:blur(20px) ;
+         -webkit-transition: 0.4s;
+         -o-transition: 0.4s;
+         transition: 0.4s;
+         -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                 box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+     }
+ #askqtn > .accordion:hover {
+             background: #FFFCF2;
+             color: #FF5A5F;
+           }
+
+     .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+         }
+    .active:after {
+           content: "\2212";
+         }
+
+      .panel {
+           padding: 0 10px;
+           background-color: #FAFFFD;
+           max-height: 0;
+           overflow: hidden;
+	   font-size:14px;
+           -webkit-transition: max-height 0.2s ease-out;
+           -o-transition: max-height 0.2s ease-out;
+           transition: max-height 0.2s ease-out;
+           -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+                   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+           }    
+     .panel > p {
+            padding: 8px 10px;
+            color: ;
+            font-family: ;
+            font-size: ;
+            min-height: ;
+            max-height:260px;
+            overflow:scroll;
+               }
+     .panel > p::-webkit-scrollbar{ display:none; }
+
+
+    footer {     
+         width:100%;         
+         margin:0 auto;
+         background:#122029;
+         color:white;    
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         padding:5px;
+         text-transform:capitalize;
+         overflow:hidden;                       
+       }
+   
+   .sneha {
+        padding:5px;
+        color:white;
+       }
+   .sneha > a{
+        text-decoration:none;
+        color:white;
+        display:block;      
+        margin:3px;  
+        font-size: ;
+        }
+   select {
+        margin:10px;
+        float:right;
+        width:40%;
+		max-width:210px;
+        height:40px;
+        outline:none;
+        border:2px solid #253330; 
+        border-radius:30px;
+        text-align:center;
+        font-size:16px;
+        font-weight:600px;
+        -webkit-transition:all 0.3s;
+        -o-transition:all 0.3s;
+        transition:all 0.3s;
+        background:white;
+        outline:2px solid white; 
+        text-transform:capitalize;
+       }    
+   #topButton {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #FF5400; 
+		  color: white;
+          border: none;
+          border-radius: 50%;
+          padding: 10px 10px;
+          font-size: 16px;
+          cursor: pointer;
+          z-index:9;
+          font-size:1.30rem;
+            }
+    
+
+    @Keyframes scale {
+         50%{ -webkit-transform:scale(0.85); -ms-transform:scale(0.85); transform:scale(0.85); }
+           }
+        
+        
+		    @media only screen and (min-width:600px) { 
+	                 .article { width:220px; }
+	      }
+	  
+	  
+	   @media only screen and (min-width:768px) { 
+	              html {
+			  margin:0 auto;
+			  width:90%;
+			  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				   }
+				 #section > #background {  min-height: 480px;  }
+                #contentable > table{  margin:0 auto; width:80%;}	
+                .article { width:260px; }				
+	   }
+	   
+	   
+	   @media only screen and (min-width:992px) { 
+		       html {
+				   margin:0 auto;
+				   max-width:70%;
+				   min-width:990px;
+			       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				   } 
+              #section > #background {  min-height: 540px;  }				   
+}
+   </style>
+  </head>
+  <body oncontextmenu="return false">
+        <header id="header">
+    <nav id="navbar">
+        <div class="navbar-brand">
+            <h1>Quotes World</h1>
+        </div>
+        <button class="navbar-toggler" id="toggleButton" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+    <aside id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="index.html" title="Go to Home">Home</a></li>
+            <li><a href="about-us.html" title="Learn about us">About us</a></li>
+            <li><a href="blog-videos.html" title="Explore Blogs"> videos </a></li>
+            <li><a href="poem-sonnet-poetry.html" title="Read Poetry"> books </a></li>
+            <li><a href="web-news.html" title="Discover Web News">Web News</a></li>
+            <li><a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer">Life-Style</a></li>
+            <li><a href="https://www.sportskeeda.com" target="_blank" rel="noopener noreferrer">Cricket</a></li>
+            <li><a href="health-advice.html" title="Get Health Advice">Health</a></li>
+            <li><a href="contact-us.html" title="Contact us">Contact us</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100028875690917&mibextid=2JQ9oc" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/shri.krishna04?igsh=MXY5aWxnbGM0N293bw==" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/paytm_cash_hub" target="_blank" rel="noopener noreferrer" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://whatsapp.com/channel/0029VaNPC4QEVccDcycBlh0r" target="_blank" rel="noopener noreferrer" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://youtube.com/@Wings_dna?si=q_lyk1Tif5t1D-iJ" target="_blank" rel="noopener noreferrer" title="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </aside>
+</header>
+
+      <!-- Overlay to cover content behind sidebar -->
+      <div id="overlay"></div>
+
+         <nav class="scroll-container" title="scroll-ber">
+               <a class="scroll-item" href="motivational-quotes.html" target="_self"> Daily Quotes </a>     
+               <a class="scroll-item" href="index.html" target="_self"> wishdom </a>
+               <a class="scroll-item" href="sri-krishna-stories.html" target="_self"> Karma </a>
+               <a class="scroll-item" href="blog-videos.html" target="_self"> videos </a>
+               <a class="scroll-item" href="poem-sonnet-poetry.html" target="_self"> books </a>               
+               <a class="scroll-item" id="active" href="best-educational-websites.html" target="_self"> study </a>
+               <a class="scroll-item" href="best-mobile-games.html" target="_self"> gaming </a>
+               <a class="scroll-item" href="discount-deals.html" target="_self"> life-style </a>    
+               <a class="scroll-item" href="movie-sites.html" target="_self"> cinema </a>                                        
+               <a class="scroll-item" href="health-advice.html" target="_self"> health </a>
+               <a class="scroll-item" href="web-news.html" target="_self"> web news </a>                
+               <!---<a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>----->
+          <!-- Add more items as needed -->
+       </nav>
+          
+                 <!-------100vh background ------>
+        <section id="section">
+          <div id="background">  </div>
+          <div id="blur"> 
+              <h1> unlock learning potential </h1>
+              <p> empower your growth with the best education resources and programs. 
+             </p>
+              <a href="#main" id="soundButton"> Explore Now  </a>
+              
+        </div> 
+     </section>
+           <!-----Main Body------>
+          <main id="main"style="padding:15px;">             <!-------heading------->
+                <div class="heading">
+                     <h1 style="color: ; font-family:roboto;"> best education Websites & platforms in india 2024 </h1>
+                     <p> Updated on : jan 08, 2024 </p>
+               </div>
+                             
+                             <!-------sub-main div------->
+                <div class="contest">
+                     <div id="banner"> <img src="EDU/banner.webp" alt="education"> </div><!-------headind banner------->
+                          
+                     <div id="cont"> <!-------headind paragraph------->
+                          <p class="texts" style="font-family: ; font-size:14px;">  
+                               Welcome to our website, dedicated to revolutionizing education through innovative platforms
+							   and methodologies. Education is the cornerstone of human progress, empowering individuals
+							   to reach their fullest potential and contribute meaningfully to society. In today's digital age,
+							   traditional educational paradigms are evolving rapidly, ushering in a new era of online learning 
+							   and collaborative platforms.
+                    <br/> <br/>
+                              Our platform bridges the gap between learners and knowledge by offering accessible, engaging,
+							  and personalized educational experiences. We believe in the power of technology to democratize
+							  education, making it available to learners of all ages and backgrounds. Whether you're a
+							  student seeking to supplement your classroom learning or a professional looking to upskill, 
+							  our platform provides a diverse range of courses, resources, and interactive tools tailored
+							  to your unique needs.
+                    <br/> <br/>
+                               Join us on our mission to transform education and unlock endless possibilities for 
+							   growth and development. Explore our website and embark on a journey of 
+							   lifelong learning today.
+                         </p>
+                    </div>
+               </div>
+
+                 <!------content table-------->
+               <section id="contentable">
+                     <h1> Here The List of best education Websites </h1>  
+                    <table>
+                       <tr> 
+                          <th scope="col" role="columnheader"> sl. no </th>
+                          <th scope="col" role="columnheader"> site name </th>
+                          <th scope="col" role="columnheader"> link </th>
+                      </tr>
+                       <tr>      <!-------site 01------->
+                          <td> 01 </td>
+                          <td> BYJU'S </td>
+                          <td> <a href="#website1"> Go To </a></td>
+                      </tr>
+                       <tr>      <!-------site 02------->
+                          <td> 02 </td>
+                          <td> Khan Academy </td>
+                          <td> <a href="#website2"> Go To </a></td>
+                      </tr>
+                       <tr>      <!-------site 03------->
+                          <td> 03 </td>
+                          <td> Coursera </td>
+                          <td> <a href="#website3"> Go To </a></td>
+                      </tr>
+                       <tr>      <!-------site 04------->
+                          <td> 04 </td>
+                          <td> Udemy </td>
+                          <td> <a href="#website4"> Go To </a></td>
+                      </tr>
+                       <tr>      <!-------site 05------->
+                          <td> 05 </td>
+                          <td> Meritnation </td>
+                          <td> <a href="#website5"> Go To </a></td>
+                      </tr>
+                       <tr>      <!-------site 06------->
+                          <td> 06 </td>
+                          <td> Vedantu </td>
+                          <td> <a href="#website6"> Go To </a></td>
+                      </tr>
+                       <tr>      <!-------site 07------->
+                          <td> 07 </td>
+                          <td> Toppr </td>
+                          <td> <a href="#website7"> Go To </a></td>
+		    </tr>
+                       <tr>      <!-------site 08------->
+                          <td> 08 </td>
+                          <td> Simplilearn </td>
+                          <td> <a href="#website8"> Go To </a></td>
+                      </tr>
+                       <tr>      <!-------site 09------->
+                          <td> 09 </td>
+                          <td> Unacademy </td>
+                          <td> <a href="#website9"> Go To </a></td>
+                      </tr>
+                       <tr>      <!-------site 10------->
+                          <td> 10 </td>
+                          <td> Educomp Solutions </td>
+                          <td> <a href="#website10"> Go To </a></td>
+                      </tr>
+                </table>
+              </section>
+                
+                
+  <div id="container">      
+       <div id="website1">     <!----Biography 1------->                     
+           <h2> 1) BYJU'S </h2>
+           <div id="hvr"> <img src="EDU/Byjus.webp" alt="education"> </div>
+           <h4 id="des"> Description </h4>
+           <p>
+              While BYJU'S is a popular online learning platform with a comprehensive approach to education,
+              the choice of learning resources is subjective. It's recommended that students explore various
+              platforms, including BYJU'S, to find the one that best suits their learning preferences, goals,
+              and subjects of interest. Each student may have different learning styles, and trying out
+              different platforms can help determine what works best for individual needs.
+           <p/>         
+          <button class="page"> <a href="https://byjus.com/" target="_blank" rel="noopener noreferrer"> Go To Official page </a></button> 
+      </div>
+
+       <div id="website2">  <!-----Biography 2----->
+           <h2> 2) Khan Academy </h2>
+           <div id="hvr"> <img src="EDU/khan.webp" alt="education"> </div>
+           <h4 id="des"> Description </h4>
+           <p>
+             Students use Khan Academy because it helps them learn in an easy and understandable way. It has videos 
+			 and exercises on many subjects like math, science, history, and more. It's like having a teacher explain 
+			 things step by step, but you can pause and rewind anytime you need. Plus, it's free, so anyone with 
+			 internet access can use it. Whether you're struggling with a concept or just want to practice, Khan 
+			 Academy is there to help you improve your skills and succeed in school.
+           <p>         
+           <button class="page"> <a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer"> Go To Official page </a></button> 
+      </div>
+
+       <div id="website3"> <!----Biography 3----->
+           <h2> 3) Coursera </h2>
+           <div id="hvr"> <img src="EDU/coursera.webp" alt="education"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              Coursera is indeed one of the most popular online education platforms. It offers a wide range of courses,
+			  specializations, and degree programs in various subjects, including computer science, business, humanities,
+			  health, and more. Coursera partners with universities and organizations worldwide to provide high-quality
+			  educational content accessible to learners globally. With its flexible learning options, including self-paced
+			  courses, Coursera has become a go-to platform for individuals seeking to enhance their skills or pursue further
+			  education without the constraints of traditional classroom settings.
+          </p>
+          <button class="page"> <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer"> Go To Official page </a></button> 
+      </div>
+
+       <div id="website4"> <!----Biography 4----->
+           <h2> 4) Udemy </h2>
+           <div id="hvr"> <img src="EDU/udemy.webp" alt="education"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              Udemy is indeed one of the most popular online education platforms globally. It offers a vast array of courses 
+			  on various subjects, ranging from technical skills like programming and web development to soft skills like 
+			  communication and leadership. With its user-friendly interface and diverse course offerings, Udemy has 
+			  attracted millions of learners from around the world. However, it's worth noting that while Udemy is popular,
+			  there are also other prominent online education platforms such as Coursera, Khan Academy, and LinkedIn Learning, 
+			  each with its own strengths and focus areas.
+          </p>
+          <button class="page"> <a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer"> Go To Official page </a></button> 
+      </div>
+
+        <div id="website5"> <!----Biography 5----->
+           <h2> 5) Meritnation </h2>
+           <div id="hvr"> <img src="EDU/maritnation.webp" alt="education"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              Students may find Meritnation appealing for various reasons. The platform offers a broad array 
+              of study materials, including interactive lessons, quizzes, and solutions that assist with 
+              homework and exam preparation. Meritnation's coverage spans a diverse range of subjects, 
+              making it a versatile resource for learners. The incorporation of interactive elements, 
+              such as animations and quizzes, contributes to an engaging learning experience.
+              Additionally, the platform may provide personalized learning plans and adaptive assessments,
+              tailoring content to individual learning styles. With a focus on exam preparation 
+              and a user-friendly interface, Meritnation aims to cater to the diverse needs of students.
+              It's important to recognize that preferences vary, and students often choose online
+              learning platforms based on their specific requirements and learning preferences.
+          </p>
+          <button class="page"> <a href="https://www.meritnation.com/" target="_blank" rel="noopener noreferrer"> Go To Official page </a></button> 
+      </div>
+
+       <div id="website6"> <!----Biography 6----->
+           <h2> 6) Vedantu </h2>
+           <div id="hvr"> <img src="EDU/vedantu.webp" alt="education"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              Vedantu is indeed a popular online education platform based in India. It offers live 
+			  interactive classes and personalized tutoring to students from grades 1 to 12, as well
+			  as preparation courses for competitive exams like JEE, NEET, and others. Vedantu provides
+			  a variety of subjects, including mathematics, science, English, and more. It utilizes 
+			  technology to connect students with experienced teachers and provides a flexible learning 
+			  experience. However, please note that popularity may fluctuate over time, so it's a good
+			  idea to check for the latest information to ensure accuracy.
+          </p>
+          <button class="page"> <a href="https://www.vedantu.com/" target="_blank" rel="noopener noreferrer"> Go To Official page </a></button> 
+      </div>
+
+      <div id="website7"> <!----Biography 7----->
+           <h2> 7) Toppr </h2>
+           <div id="hvr"> <img src="EDU/toppr.webp" alt="education"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              Toppr is indeed a popular education platform that offers personalized learning solutions for 
+			  students. It provides a wide range of study materials, practice questions, mock tests, and 
+			  interactive learning modules designed to help students prepare for various entrance exams and 
+			  school curriculum. Toppr's adaptive learning technology tailors the learning experience to
+			  each student's needs, aiming to enhance their understanding and performance in subjects like 
+			  mathematics, science, and more. While it may be considered popular, it's important to note that
+			  the popularity of educational platforms can vary depending on factors such as region,
+			  target audience, and market trends.
+          </p>
+          <button class="page"> <a href="https://www.toppr.com/ask/" target="_blank" rel="noopener noreferrer"> Go To Official page </a></button> 
+      </div>
+
+       <div id="website8"> <!----Biography 8----->
+           <h2> 8) Simplilearn </h2>
+           <div id="hvr"> <img src="EDU/simplilearn.webp" alt="education"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              Simplilearn is indeed a popular online education platform that offers a wide range of courses in various fields 
+			  such as technology, digital marketing, data science, project management, and more. It provides both self-paced
+			  learning and instructor-led training options, catering to the needs of individuals seeking to upskill or reskill 
+			  in their respective industries. Simplilearn's popularity can be attributed to its comprehensive course offerings,
+			  industry-recognized certifications, experienced instructors, and flexible learning options.
+          </p>
+          <button class="page"> <a href="https://www.simplilearn.com/" target="_blank" rel="noopener noreferrer"> Go To Official page </a></button> 
+      </div>
+
+       <div id="website9"> <!----Biography 9----->
+           <h2> 9) Unacademy </h2>
+           <div id="hvr"> <img src="EDU/unacademy.webp" alt="education"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              "Unacademy: Your Ultimate Learning Companion"
+       <br/> <br/>
+               Unacademy is a fantastic education platform that offers a wide range of courses taught by top educators. Whether you're preparing for
+               exams, enhancing your skills, or learning something new just for fun, Unacademy has you covered. With easy-to-follow lessons, interactive 
+			   quizzes, and personalized learning paths, Unacademy makes education accessible to everyone. Join Unacademy today and unlock your full potential!
+          </p>
+          <button class="page"> <a href="https://unacademy.com/" target="_blank" rel="noopener noreferrer"> Go To Official page </a></button> 
+      </div>
+
+      <div id="website10"> <!----Biography 10----->
+           <h2> 10) Educomp Solutions </h2>
+           <div id="hvr"> <img src="EDU/educamp.webp" alt="education"> </div>
+           <h4 id="des"> Description </h4>
+           <p> 
+              "Educomp Solutions: Your Ultimate Education Companion"
+      <br/> <br/>
+               Educomp Solutions is the top-notch platform for all your educational needs. Whether you're a student, teacher, or lifelong learner, Educomp Solutions 
+			   offers a wide range of resources and tools to enhance your learning experience. From interactive lessons and tutorials to personalized study plans
+			   and assessments, Educomp Solutions is here to support you every step of the way on your educational journey. With user-friendly interfaces and 
+			   innovative technology, learning has never been more accessible and enjoyable. Join Educomp Solutions today and unlock your full potential!
+          </p>
+          <button class="page"> <a href="https://www.educomp.com/" target="_blank" rel="noopener noreferrer"> Go To Official page </a></button> 
+      </div>
+    <!-- Add more div elements as needed -->
+  </div>
+
+</main>
+
+   <!----Go To Top Button------>
+       <button id="topButton" class="fa-solid fa-arrow-up" title="topbtn" name="topbtn"> </button>
+       
+   <!----About section------>
+     <section id="about">
+             <div>
+                 <h1 style="color: #291769; font-family:roboto;"> About Us  </h1>
+                 <p>  Education is a leading source for our website suggestions, catering to the needs of students, educators,
+                      and parents alike. Our platform is dedicated to providing valuable resources and recommendations to enhance
+                      the learning experience for all.
+                <br/> <br/>
+                      we are committed to helping individuals make informed decisions about their educational journey. With a focus
+                      on quality and relevance, Education strives to be the go-to destination for reliable and insightful information
+                      on educational websites. 
+                </p>
+            </div>
+     
+             <div>
+                 <img src="EDU/logo.webp" alt="about-education">
+            </div>
+     </section>
+    
+    <!------------------>
+       <section id="askqtn">
+             <h1 style="color: #291769; font-family:roboto;"> FAQ </h1>
+             <!-------accordion 01-------->
+             <button class="accordion"> What are the top 10 education websites? </button>
+             <div class="panel">
+                 <p>The top 10 education websites vary based on factors such as content quality, user interface, and target 
+		    audience. However, some popular choices often include Khan Academy, Coursera.
+                </p>
+            </div>
+                         <!-------accordion 02-------->
+            <button class="accordion"> Are these education websites free to use? </button>
+            <div class="panel">
+                 <p>Most of the top education websites offer both free and paid options. Many provide free access to basic courses 
+			 and materials, while premium features and certifications may require payment. Some platforms operate
+			 on a subscription model, offering unlimited access to their entire catalog for a monthly fee.
+		 </p>
+           </div>
+                           <!-------accordion 03-------->
+            <button class="accordion"> Can I earn certifications or degrees from these websites? </button>
+            <div class="panel">
+                 <p> Yes, several education websites offer certifications or even full degrees upon completion of 
+		     their programs. Platforms like Coursera, edX, and Udemy offer accredited courses with certificates,
+		     while others like LinkedIn Learning provide skill-based certifications recognized by employers.
+		 </p>
+           </div>
+                              <!-------accordion 04-------->
+	    <button class="accordion"> Can I access these education websites on mobile devices? </button>
+            <div class="panel">
+                 <p> Yes, most of these education websites offer mobile apps or mobile-friendly websites, allowing users
+			 to access their content on smartphones and tablets. This enables learners to study on the go and
+			 make the most of their time.
+		 </p>
+           </div>
+                             <!-------accordion 05-------->
+	   <button class="accordion"> How do I get started with these education websites? </button>
+            <div class="panel">
+                 <p> To get started, simply visit the website of your chosen platform and create an account. From there,
+			 you can explore the available courses, enroll in those that interest you, and begin your learning 
+			 journey. Many platforms offer introductory courses or free trials to help you get acquainted with 
+			 their offerings before committing to a paid subscription.
+		 </p>
+           </div>
+    </section>
+
+
+    <!-----Recomended Article Section-------->
+	     <h1 Style="padding:10px; Font-family: ;color:#211b63;"> our Recommended top Articles </h1>
+         <section class="recommended-articles">
+             
+       <!---Artical1----->
+          <div class="article">
+              <img src="INDEX/movie.webp" alt="Article 1 Image" loading="lazy">
+              <h3><a href="movie-sites.html"> Top Movie Download Websites for Quality Entertainment on Demand </a></h3>
+         </div>
+
+     <!---Artical2----->
+          <div class="article">
+             <img src="INDEX/webnews.webp" alt="Article 3 Image" loading="lazy">
+             <h3><a href="web-news.html"> Stay Updated with the Latest Headlines on- web news </a></h3>
+         </div>
+
+      <!---Artical3----->
+          <div class="article">
+             <img src="INDEX/Lod7.webp" alt="Article 2 Image" loading="lazy">
+             <h3><a href="index.html" id="dnl"> Explore enlightening quotes from the Bhagavad Gita by Sri Krishna </a></h3>
+         </div>
+
+     <!---Artical4----->
+          <div class="article">
+             <img src="INDEX/CYBER1.webp" alt="Article 3 Image" loading="lazy">
+             <h3><a href="cyber-security.html"> SecureCyber: Your Trusted Resource for Cyber Security Insights and Solutions </a></h3>
+         </div>
+
+     <!---Artical5----->
+          <div class="article">
+             <img src="INDEX/poetry.webp" alt="Article 4 Image" loading="lazy">
+             <h3><a href="poem-sonnet-poetry.html"> Discover the Beauty of Poetry: Explore Poems, Analysis, and Inspiration Here </a></h3>
+         </div>
+
+    <!---Artical6----->
+          <div class="article">
+             <img src="INDEX/BLOG2.webp" alt="Article 5 Image" loading="lazy">
+             <h3><a href="blog-videos.html"> Explore Engaging Video Blogs: Your Destination for Informative Content </a></h3>
+         </div>
+
+     <!---Artical7----->
+          <div class="article">
+             <img src="INDEX/education.webp" alt="Article 6 Image" loading="lazy">
+             <h3><a href="best-educational-websites.html"> Top 10 useful education Websites for students </a></h3>
+         </div>
+
+    <!---Artical8----->
+          <div class="article">
+             <img src="INDEX/cute.webp" alt="Article 8 Image" loading="lazy">
+             <h3><a href="sri-krishna-stories.html"> Exploring Sri Krishna Stories and Wisdom: Unveiling Divine Tales and Teachings </a></h3>
+         </div>
+		 
+	 <!---Artical9----->
+          <div class="article">
+             <img src="INDEX/loot.webp" alt="Article 9 Image" loading="lazy">
+             <h3><a href="discount-deals.html"> discover unbeatable deals:a diverse range of products at unbeatable price </a></h3>
+         </div>
+		 
+	 <!---Artical10----->
+          <div class="article">
+             <img src="INDEX/banner.webp" alt="Article 10 Image" loading="lazy">
+             <h3><a href="best-mobile-games.html"> Best mobile games in India: discover the best Games, tips, and reviews </a></h3>
+         </div>
+		 
+	 <!---Artical11----->
+          <div class="article">
+             <img src="INDEX/health.webp" alt="Article 11 Image" loading="lazy">
+             <h3><a href="health-advice.html"> discover vital health tips & advice for a thriving lifestyle </a></h3>
+         </div>
+	 <!---Artical12----->
+          <div class="article">
+             <img src="INDEX/cash.webp" alt="Article 12 Image" loading="lazy">
+             <h3><a href="paytm-cash-earning-app.html"> Discover top paytm cash earning apps: maximize your earning Today </a></h3>
+         </div>
+    <!-- You can add more articles using the same structure -->
+  </section>
+   
+         
+    <footer title="Footer">   <!------footer Section------->
+       <h2> Quotes planet </h2>          
+      <select title="language switcher">
+           <option> English</option>
+           <option> hindi   </option>
+           <option> Bengali </option>
+           <option> gujrati </option>
+           <option> tamil  </option>
+           <option> telugu  </option>
+           <option> odiya  </option>           
+     </select>
+     <div class="sneha">
+          <a href="about-us.html" target="_self"><p> Terms & privacy </p></a>
+          <a href="about-us.html" target="_self"><p> policy </p></a>
+		  <a href="about-us.html" target="_self"><p> sitemap </p></a>
+          <a href="about-us.html" target="_self"><p> 2024® </p></a>
+      <!----<a href="about-us.html" target="_self"><p> Quotes planet </p></a>------>
+    </div>
+ </footer>
+             
+   <script>
+          
+		  const overlay = document.getElementById("overlay");
+          const sidebar = document.getElementById("sidebar");
+          const toggleButton = document.getElementById("toggleButton");
+
+      function toggleNav() {
+          sidebar.classList.toggle("active");
+          toggleButton.innerHTML = sidebar.classList.contains("active") ? "&times;" : "&#9776;";
+
+     // Toggle visibility of overlay
+      overlay.classList.toggle("active");
+
+    // Add/remove class to body to prevent scrolling
+        document.body.classList.toggle("sidebar-open");
+  };
+  
+  
+
+      //change Navigation background
+   window.addEventListener('scroll', function() {
+       const navbar = document.getElementById('header');
+       const scrolled = window.scrollY;
+
+       if (scrolled > 30) {
+       navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
+     } else {
+       navbar.style.backgroundColor = '#181f1a'; // Change this to the default color
+     }
+  });
+      
+	  
+	  
+	     // Find the active scroll item
+              const activeItem = document.getElementById("active");
+              const scrollContainer = document.querySelector(".scroll-container");
+
+      // Calculate scroll position to center the active item
+              const containerWidth = scrollContainer.offsetWidth;
+              const scrollItemWidth = activeItem.offsetWidth;
+              const scrollItemLeft = activeItem.offsetLeft;
+              const scrollItemCenter = scrollItemLeft - (containerWidth - scrollItemWidth) / 2;
+
+     // Scroll the container to center the active item
+             scrollContainer.scrollLeft = scrollItemCenter;
+	  
+	  
+        /* Go To Top Button */
+
+      window.onscroll = function () {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("topButton").style.display = "block";
+  } else {
+    document.getElementById("topButton").style.display = "none";
+  }
+};
+
+// Scroll to the top when the button is clicked
+  document.getElementById("topButton").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;  
+});
+   //link click scrolling 
+  document.getElementById("dnl").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;  
+ });
+
+     var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+};
+            
+   </script>
+   </body>
+</html>

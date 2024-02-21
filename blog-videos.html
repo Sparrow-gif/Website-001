@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Roboto--Cabin--Open Sans--Lato---Montserrat--Quicksand---PT Sans--Playfair--Display--Domine---->
+<head>
+  <meta charset="utf-8"/>
+  <base href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Domine:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;600&family=PT+Sans:ital@0;1&family=Playfair+Display:wght@400;500&family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">   
+  <link rel="icon" type="image/x-icon" href="favicon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="nofollow, noarchive">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="keywords" content="Travel vlogs, Food vlogs, Lifestyle vlogs, Fitness vlogs, Tech vlogs, Cooking vlogs">
+  <meta name="description" content="Embark on a captivating journey of self-discovery and knowledge with our dynamic vlog platform! Dive into a world of engaging content where you can learn, discover, and get inspired by a diverse range of topics. Elevate your online experience with our thought-provoking vlogs – your gateway to endless learning and exploration. Subscribe now to unlock a wealth of insights and join a community passionate about knowledge and discovery!">
+  <title> Explore Engaging Video Blogs: Your Destination for Informative Content </title>
+   <style>
+ * {
+          margin:0px;
+          padding:0px;
+          -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+          font-family: Roboto;
+          text-transform:capitalize;                     
+        }  
+  html {
+       scroll-behavior:smooth;
+       scroll-padding:3em;
+       background-color:#f0f0f0; 
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+  body.sidebar-open {  overflow: hidden; }
+   header {
+            background-color: #181f1a;
+            color: white;
+            padding: 0px 10px;
+            position:sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        #navbar {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .navbar-brand h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .navbar-toggler {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+            padding: 10px;
+        }
+        
+        .sidebar {
+            height: calc(100vh - 40px);
+            width: 360px;
+            position: fixed;
+            top: 43px;
+            right: -100%;
+            background-color: #fff;
+            overflow-y: auto;
+            padding-top: 20px; /* Adjusted padding top */
+            transition: 0.5s;
+            z-index: 998;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar.active {
+            right: 0;
+        }
+        
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu li {
+            margin-bottom: 10px;
+        }
+        
+        .menu li a {
+            display: block;
+            padding: 10px 20px;
+            margin:10px 10px;
+            text-decoration: none;
+            color: black;
+            transition: background-color 0.3s;
+            border-radius: 30px;
+            text-align: center; /* Center align the text */
+        }
+        
+        .menu li a:hover {
+            background-color: #2576e8;
+            color: white;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        .social-links a {
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .social-links a:hover {
+            color: #fff;
+            background-color: #1e62d0;
+            transform: translateY(-5px);
+        }
+        
+        @media (max-width:550px) {
+            .sidebar {
+                width: 100%;
+            }
+        }
+		
+		
+    #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the transparency here */
+  z-index: 997; /* Ensure the overlay is below the sidebar */
+  display: none; /* Initially hidden */
+}
+
+#overlay.active {
+  display: block; /* Display when sidebar is active */
+}
+		
+  .scroll-container {
+        width: 100%;
+        overflow-x: auto;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;        
+        background:white;
+        padding:6px 0px;
+        position:relative ;
+        white-space: nowrap;
+		scroll-snap-type: x mandatory;
+	 }
+ .scroll-container::-webkit-scrollber {
+         display:none;
+      }
+ .scroll-container > .scroll-item {
+         color:dodgerblue;
+	 border:2px solid #ebe6fa;
+         text-align:center;
+         min-width: 100px;
+         text-decoration:none;
+         padding:5px;
+         margin: 0px 6px;
+         border-radius:14px;
+         overflow:scroll;
+	scroll-snap-align:center;
+        }
+	  .scroll-container > .scroll-item::-webkit-scrollbar{ display: none;}
+    .scroll-container > #active {
+        color: white;
+        background:#6e0cf7;
+		 border:none;
+        }
+   .scroll-container > .scroll-item:hover {
+          color: white;
+          background:#6e0cf7;
+		  border:none;
+       }
+   .scroll-container::-webkit-scrollbar{  width:2px; }
+
+   .scroll-container::-webkit-scrollbar-track{  background: ;}
+
+   .scroll-container::-webkit-scrollbar-thumb{
+         /* background-color: #4acf36;
+          border-radius:0px;
+          border:1px none #FFFFFF; */
+           }
+   
+     #section {
+       position:relative;       
+       margin:0 ;
+       padding:0 ;
+       -webkit-user-select:none;
+          -moz-user-select:none;
+           -ms-user-select:none;
+               user-select:none;
+       -o-object-fit:fill;
+          object-fit:fill;
+       overflow:hidden;
+      }
+    #section >#blur >  h1{
+          font-size: ;
+          text-transform:uppercase;
+          margin:0 auto ;
+          color: #e3e35f;
+	      font-family: ;
+        } 
+    #section > #blur > p {
+          margin-top:20px ;
+          color:white; 
+          font-size: ;
+       }
+ #section > #background {
+         height: 380px;
+         width:100%;
+         background-image:url('BLOG/BLOG2.jpg');    
+         background-size:cover;
+         background-position:center;
+         background-attachment: ;
+         -webkit-filter:blur(0px) ;
+                 filter:blur(0px) ;
+         -o-object-fit:fill;
+            object-fit:fill;
+         overflow:hidden;
+       }
+  #section > #blur {
+       position:absolute ;
+   /* backdrop-filter:blur(1px) ; */
+       top:45%;
+       left:50%;
+       -webkit-transform:translate(-50%,-50%) ;
+           -ms-transform:translate(-50%,-50%) ;
+               transform:translate(-50%,-50%) ;
+       z-index: 5 ;
+       width:90%;
+    /*   width:50%; */
+       padding: 10px ;  
+    /*  text-align:center;  */
+     /*  border:2px inset white; */
+     /*  border-radius:4px;       */
+     /* font-weight:bold;     */    
+     }
+ #section >  #blur a {
+       display:inline-block;
+       padding:10px ;
+       width:80%;
+	   max-width:210px;
+       font-size: ;
+       text-decoration:none;
+       color: White ;
+       background:red;
+       margin-top:20px ;
+       text-align:center;
+       cursor:pointer;
+       -webkit-transition-duration:0.3s;
+            -o-transition-duration:0.3s;
+               transition-duration:0.3s;
+	    Font-family: ;
+      }
+  #section >  #blur a:hover {
+         -webkit-transform:scale(0.90) ;
+             -ms-transform:scale(0.90) ;
+                 transform:scale(0.90) ;
+         border-radius:10px;
+       }
+    #inttro {
+          margin:0 auto ;
+          padding:10px 6px;
+          background: ;  */#deed9a */
+          font-family: ;
+          font-size: ;
+      }
+     #inttro > #intotext::first-letter{
+            font-size: 200%;
+            color: #8A2BE2;
+      }
+
+
+    #blogvdos {
+	        background-color: ; /*#F9F9ED */
+            margin:0 auto ;
+            padding:10px;
+			Display:flex;
+			flex-wrap: ;
+			justify-content:center;
+			align-items:center;
+			flex-direction:column;
+			gap:15px;
+           }
+   #blogvdos > iframe {
+          width:90%;
+		  aspect-ratio:1/0.60;
+          border:0px solid black;
+          margin:0 auto;
+		  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+		          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+       }
+  
+  
+     .watchmore {padding: 15px 5%;}
+    .watchmore > iframe {
+           width:100%;
+		   aspect-ratio:1/0.80;
+           border:0px solid black;
+           margin:0 auto;
+		  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+		          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+       }
+   .watchmore > div {
+            overflow-x:auto;
+            overflow-y:hidden;
+            background: ;
+            padding:0px 0px;
+            white-space:nowrap;
+      }
+    .watchmore > div > a > img {
+	         width:210px;
+			 aspect-ratio:1/0.60;
+             display:inline-block;
+			 margin:4px 6px;
+             background: linear-gradient(120deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+             background-size: 200% 100%; 
+             animation: loading 1.5s ease-in-out infinite;
+			 border-radius:4px;
+			 outline:none;
+			 border:none;
+        }
+	 
+	@keyframes loading {
+         0% {
+            background-position: 200% 0;
+          }
+        100% {
+            background-position: -200% 0;
+         }
+     }
+  
+      fieldset {
+             padding:10px;
+		     margin:0 auto;
+       }
+     fieldset >  div {
+           display:-webkit-box;
+           display:-ms-flexbox;
+           display:flex;
+          -webkit-box-pack:justify;
+            -ms-flex-pack:justify;
+                justify-content:space-between;
+          -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+          -ms-flex-line-pack:center;
+           align-content:center;
+           padding:20pxpx;
+           margin:0px auto ;
+		   padding:10px;
+		   width:95%;
+           border-bottom:0.80px solid silver;
+         }
+     fieldset >  div > a { 
+         text-decoration: none; 
+         color: black;
+         Font-size: ;
+         cursor:pointer;
+         -webkit-transition-duration:0.3s;
+              -o-transition-duration:0.3s;
+                 transition-duration:0.3s;  
+          font-size:14px;				 
+       }
+    fieldset >  div > a:hover { 
+         text-decoration: underline; 
+         color: ;
+         Font-size:16px;
+         padding:6px;
+      }
+     fieldset >  div > img {
+         -o-object-fit:cover;
+            object-fit:cover;
+         width:80px;
+         height: 60px;
+         border:none;
+         outline:none;
+         border-radius:6px;
+       }
+	  aside >  #blok { display:none;}
+		
+		
+   #ourwork {
+          padding:20px;
+          margin:0 auto ;
+          background: ; /* #5e41f0 */
+          -webkit-user-select:none;
+             -moz-user-select:none;
+              -ms-user-select:none;
+                  user-select:none;
+         }
+   #ourwork > h1 {
+            text-align: ;
+            color: #5e41f0;
+            margin:20px 0px 40px 0px;
+			Font-family: ;
+         }
+   #ourwork > .grid {
+            margin:0 auto ;
+            gap:20px;
+            display:-ms-grid;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr)) ;         
+         }
+   #ourwork > .grid > div {
+           height:auto;
+           width:90%;
+           padding:15px;
+           background: #0e0636;
+           color:#ecebf2 ;
+           font-family: ;
+           margin:20px auto;
+           text-align:center;
+        }
+
+    .aboutus {
+           margin:0 auto ;
+           width:100%;
+           background: ; /* #5e41f0 */
+           padding:20px ;
+           color: ;
+           -webkit-user-select:none;
+              -moz-user-select:none;
+               -ms-user-select:none;
+                   user-select:none;
+				   overflow:hidden;
+         }
+    .aboutus > h1  {
+           margin-bottom:25px;
+           Font-family: ;
+           font-size: ;
+		   color: #5e41f0 ;
+         }
+     .aboutus > p {
+           Font-family: ;
+           font-size: ;
+		   color: ;
+         }
+    .aboutus > iframe {
+	       width:100%;
+		   aspect-ratio:1/0.60;
+           border:0px solid black;
+           margin:0 auto;
+		  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+		          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+	}
+    #gettouch {
+          margin:0 auto ;
+          padding:20px;    
+          background: ;    
+          -webkit-user-select:none;
+          -moz-user-select:none;
+          -ms-user-select:none;      
+          text-transform: capitalize ;    
+       }
+  #gettouch > form {
+        -webkit-user-select:none;
+           -moz-user-select:none;
+            -ms-user-select:none;
+                user-select:none;
+        margin:0 auto ;
+        width:100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap:6px;
+		max-width:550px;
+       }
+   #gettouch > form > h1 {
+         color:#5E239D;
+         font-size: ;
+         font-family: ;
+         font-weight: ;
+       }
+   #gettouch > form > label {
+        width:100%;
+        display:block;
+        Font-family: ;
+        font-size: ;
+      }
+   #gettouch > form >  input {
+        width:100%;
+        padding:8px;
+        font-size: ;
+        display:block;
+        margin:0px auto ;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        Font-family: ;
+		outline:none;
+         }
+		 
+	 #gettouch > form >  input:user-invalid { border:1.50px solid red;}
+	 #gettouch > form >  textarea:user-invalid { border:1.50px solid red;}
+		 
+  #gettouch > form >  textarea {
+        width:100%;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        padding:8px;
+        font-size: ;
+        Font-family: ;
+		outline:none;
+      }
+	  
+  #gettouch > form > .btn {
+        Font-family: ;
+        font-size: ;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        width:80%;
+        margin:10px auto;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        -webkit-transition-duration:0.3s;
+             -o-transition-duration:0.3s;
+                transition-duration:0.3s;      
+         }
+  #gettouch > form > .btn:hover {
+        background-color: #45a049;
+       }
+  #gettouch > form > .btn:active {
+          -webkit-transform:scale(0.90) ;
+              -ms-transform:scale(0.90) ;
+                  transform:scale(0.90) ;
+       }
+  #comments {
+         margin-top: 10px;
+         Font-family: ;
+       }
+   
+  .comment {
+        background-color: ;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        Font-family: ;
+     }
+	  .didit > #community {
+               background-color: ;
+               padding: 7px;
+               margin:10px auto;
+               Font-family: ;
+               overflow:hidden;
+           }
+      .didit {
+          min-height: auto ;
+          max-height: auto ;
+          overflow:auto;
+		  padding:10px;
+       }
+
+    footer {
+         margin:0 auto;
+         background:#122029;
+         color:white;    
+         -webkit-user-select:none;    
+         -moz-user-select:none;    
+         -ms-user-select:none;    
+         user-select:none;  
+         padding:5px;
+         text-transform:capitalize;
+         overflow:hidden;
+         -webkit-user-select:none;
+         -moz-user-select:none;
+         -ms-user-select:none;         
+       }
+   
+   .sneha {
+        padding:10px;
+        color:white;
+       }
+   .sneha > a {
+        text-decoration:none;
+        color:white;
+        display:block;      
+        margin:3px;  
+        font-size:14px
+        }
+   select {
+        margin:10px;
+        float:right;
+        width:40%;
+		max-width:210px;
+        height:40px;
+        outline:none;
+        border:2px solid #253330; 
+        border-radius:30px;
+        text-align:center;
+        font-size:16px;
+        font-weight:600px;
+        -webkit-transition:all 0.3s;
+        -o-transition:all 0.3s;
+        transition:all 0.3s;
+        background:white;
+        outline:2px solid white; 
+        text-transform:capitalize;
+		cursor:pointer;
+       }
+    #topButton {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #ff5400;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          padding: 5px 10px;
+          font-size: 16px;
+          cursor: pointer;
+          z-index:90 ;
+          font-size:1.30rem;
+            }
+      #ytb {          
+          position: fixed;
+          bottom:80px;
+          right: 20px;
+          background-color:red;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          padding: 5px 10px;
+          font-size: 16px;
+          cursor: pointer;
+          z-index:90;
+          font-size:1.30rem;
+          -webkit-user-select:none;
+             -moz-user-select:none;
+              -ms-user-select:none;
+                  user-select:none;
+            }
+
+
+@media only screen and (max-width: 767px) {       
+         #related1  {
+		        display:none;
+		    }
+          #related2  {
+		        display:block;
+		   }
+    }
+	
+          
+	   @media only screen and (min-width:768px) { 
+	           html {
+				   margin:0 auto;
+				   width:90%;
+				   }
+				   
+			   #section > #background {  height: 480px;}
+			   
+			  #section > #blur { 
+                 width:60%;
+                 position:absolute;                 
+                 }
+            
+			 .flow {
+		         display:-webkit-box;
+		         display:-ms-flexbox;
+		         display:flex;
+			     justify-Content:space-evenly;
+			     gap:10px;
+	     	  }				
+       		 .flow > main { width:65%; }
+			 .flow > aside { width:32%; }
+			 
+			  #related1  {
+		        display:block;
+                 }
+             #related2  {
+		        display:none;
+		        }
+				
+      .watchmore {padding: 15px 10%;}
+      .watchmore > iframe {
+           width:100%;
+		   aspect-ratio:1/0.45;
+           border:0px solid black;
+           margin:0 auto;
+		  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+		          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+       }
+		 .watchmore > div > a > img {
+                background-position:center;
+                width:310px;
+                aspect-ratio:1/0.60; 
+				}
+				
+	      .aboutus > iframe {
+	       width:80%;
+		   aspect-ratio:1/0.50;
+		     }			
+	   }
+	   
+	   
+	    @media only screen and (min-width:992px) { 
+		      html {
+	              margin:0 auto;
+			      max-width:70%;
+			      min-width:990px;
+		        }    
+				   
+				    #section > #background {  height: 540px;}
+				   
+              .watchmore > div > a > img {
+                   background-position:center;
+                   width:420px;
+                   aspect-ratio:1/0.60; 
+				}				   
+     		 
+		}
+   </style>
+  </head>
+  <body oncontextmenu="return false">
+         <header id="header">
+    <nav id="navbar">
+        <div class="navbar-brand">
+            <h1>Quotes World</h1>
+        </div>
+        <button class="navbar-toggler" id="toggleButton" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+    <aside id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="index.html" title="Go to Home">Home</a></li>
+            <li><a href="about-us.html" title="Learn about us">About us</a></li>
+            <li><a href="blog-videos.html" title="Explore Blogs">videos</a></li>
+            <li><a href="poem-sonnet-poetry.html" title="Read Poetry">books</a></li>
+            <li><a href="web-news.html" title="Discover Web News">Web News</a></li>
+            <li><a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer">Life-Style</a></li>
+            <li><a href="https://www.sportskeeda.com" target="_blank" rel="noopener noreferrer">Cricket</a></li>
+            <li><a href="health-advice.html" title="Get Health Advice">Health</a></li>
+            <li><a href="contact-us.html" title="Contact us">Contact us</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100028875690917&mibextid=2JQ9oc" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/shri.krishna04?igsh=MXY5aWxnbGM0N293bw==" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/paytm_cash_hub" target="_blank" rel="noopener noreferrer" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://whatsapp.com/channel/0029VaNPC4QEVccDcycBlh0r" target="_blank" rel="noopener noreferrer" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://youtube.com/@Wings_dna?si=q_lyk1Tif5t1D-iJ" target="_blank" rel="noopener noreferrer" title="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </aside>
+</header>
+
+	   <!-- Overlay to cover content behind sidebar -->
+           <div id="overlay"></div>
+	  
+         <nav class="scroll-container" title="scroll-ber">
+               <a class="scroll-item" href="motivational-quotes.html" target="_self"> Daily Quotes </a>     
+               <a class="scroll-item" href="index.html" target="_self"> wishdom </a>
+               <a class="scroll-item" href="sri-krishna-stories.html" target="_self"> Karma </a>
+               <a class="scroll-item" id="active" href="blog-videos.html" target="_self"> videos </a>
+               <a class="scroll-item" href="poem-sonnet-poetry.html" target="_self"> books </a>               
+               <a class="scroll-item" href="best-educational-websites.html" target="_self"> study </a>
+               <a class="scroll-item" href="best-mobile-games.html" target="_self"> gaming </a>
+               <a class="scroll-item" href="discount-deals.html" target="_self"> life-style </a>    
+               <a class="scroll-item" href="movie-sites.html" target="_self"> cinema </a>                                        
+               <a class="scroll-item" href="health-advice.html" target="_self"> health </a>
+               <a class="scroll-item" href="web-news.html" target="_self"> web news </a>                
+               <!---<a class="scroll-item" href="#" target="_self" onclick="notevel()"> More...</a>--->
+          <!-- Add more items as needed -->
+       </nav>
+          
+
+           <!-------100vh background ------>
+        <section id="section">
+          <div id="background">  </div>
+          <div id="blur"> 
+              <h1 style=""> capture your moments </h1>
+              <p> immerse yourself in engrossing stories, thought-provoking insights and 
+		  diverse prespectives with our popular blog
+             </p>
+              <a href="#blogvdos" id="soundButton" title="button"> Explore vlogs  </a>
+        </div> 
+     </section>
+  
+             <!----Blog Introduced Section----->
+     <article id="inttro" title="articles">
+               <p id="intotext" style="font-family: ;">  
+                   Introducing Blog, a dynamic Youtube video creator based in Jhargram, WB.
+                   With a passion for creating engaging and informative content, Blog is 
+                   dedicated to helping businesses and individuals amplify their online
+                   presence through captivating videos. From product reviews and tutorials to 
+                   entertaining vlogs, Blog's expertise lies in delivering visually appealing 
+                   and compelling videos that resonate with audiences. Whether you're looking 
+                   to boost brand awareness, drive traffic, or simply entertain your viewers, 
+                   Blog is your go-to partner for professional and impactful video content creation. 
+                   Elevate your online presence with Blog and unlock the power of visual storytelling today.
+              </p>
+    </article>
+          
+    <section class="flow">		  
+        <main id="blogvdos">            
+            <iframe src="https://www.youtube.com/embed/wgSRVUHLojo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>   </iframe>            
+            <iframe src="https://www.youtube.com/embed/TFBnMxL_K0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>           
+            <iframe src="https://www.youtube.com/embed/KcmrYjC09j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>   </iframe>
+        </main>
+		
+         <aside>
+		         <fieldset style="border:none;" id="related1">
+                <legend style="border:none;"> <h1 Style="color:#3454D1; color:#5e41f0;Font-family:roboto;">  Related posts </h1> </legend>
+           
+                  <div> <!-----Post 1------>
+                       <a href="movie-sites.html"> Top Movie Download Websites for Quality Entertainment on Demand </a>
+                       <img src="INDEX/movie.webp" alt="PaytmCash" loading="lazy">
+                 </div>
+
+                 <div> <!-----Post 2------>
+                      <a href="web-news.html"> Stay Updated with the Latest Headlines on-web news </a>
+                     <img src="INDEX/webnews.webp" alt="PaytmCash" loading="lazy">
+                    </div>
+
+                  <div> <!-----Post 3------>
+                     <a href="index.html"> Explore enlightening quotes from the Bhagavad Gita by Sri Krishna </a>
+                    <img src="INDEX/Lod7.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+
+                  <div> <!-----Post 4------>
+                    <a href="cyber-security.html"> SecureCyber: Your Trusted Resource for Cyber Security Insights and Solutions </a>
+                    <img src="INDEX/CYBER1.webp" alt="PaytmCash" loading="lazy">
+                 </div>
+
+                   <div> <!-----Post 5------>
+                     <a href="poem-sonnet-poetry.html"> Discover the Beauty of Poetry: Explore Poems, Analysis, and Inspiration Here </a>
+                     <img src="INDEX/poetry.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+
+                 <div> <!-----Post 6----->
+                      <a href="blog-videos.html"> Explore Engaging Video Blogs: Your Destination for Informative Content </a>
+                     <img src="INDEX/BLOG2.webp" alt="PaytmCash" loading="lazy">
+                 </div>
+  
+                  <div> <!-----Post 7----->
+                      <a href="best-educational-websites.html"> Top 10 useful education Websites for students </a>
+                      <img src="INDEX/education.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+				
+				   <div> <!-----Post 8----->
+                      <a href="sri-krishna-stories.html"> Exploring Sri Krishna Stories and Wisdom: Unveiling Divine Tales and Teachings </a>
+                      <img src="INDEX/cute.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+				  
+				   <div> <!-----Post 9----->
+                      <a href="discount-deals.html"> Discover unbeatable deals:a diverse range of products at unbeatable price </a>
+                      <img src="INDEX/loot.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+				  
+				  <div> <!-----Post 10----->
+                      <a href="best-mobile-games.html"> Best mobile games in India: discover the best Games, tips, and reviews </a>
+                      <img src="INDEX/banner.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+				  
+				  <div> <!-----Post 11----->
+                      <a href="health-advice.html"> discover vital health tips & advice for a thriving lifestyle </a>
+                      <img src="INDEX/health.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+				  
+				  <div> <!-----Post 12----->
+                      <a href="paytm-cash-earning-app.html"> Discover top paytm cash earning apps: maximize your earning Today </a>
+                      <img src="INDEX/cash.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+             </fieldset>  
+			 
+			 
+		<aside>  <!---------aside section close here ------------>
+    </section>
+	
+	             
+	     <section class="watchmore">
+		           <iframe src="https://www.youtube.com/embed/TFBnMxL_K0Y" title="screen" name="frames" frameborder="0" loading="auto" allowfullscreen>  </iframe>
+				   
+				   <h2 style="color:#200a57; Font-family:roboto;"> Popular Videos </h2>
+				   
+				   <div>
+                       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a>       
+                       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a> 
+		       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a>       
+                       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a> 
+		       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a>       
+                       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a> 
+				  </div>
+				 
+				 <h2 style="color:#200a57; Font-family:roboto;"> gameing Videos </h2>
+				   
+				  <div>
+                       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a>       
+                       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a> 
+		       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a>       
+                       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a> 
+		       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a>       
+                       <a href="#" target="frames"> <img src="#" alt="blogs"> </img> </a>   
+                 </div>
+		 </section>
+		 
+	
+       <section id="ourwork">    <!----our work container------->
+              <h1> Our work </h1>
+              <div class="grid">
+                    <div class="b1">
+                         <h2> Engaging video content creation </h2>
+                         <p> created captivating and informative video content gor a video bloging website,attracting and retaining a large audience </p>
+                   </div>
+                    <div class="b1"> 
+                         <h2> optimized video SEO strategies </h2>
+                         <p> implemented effective SEO technique to optimize video blog posts, resulting in higher visibility and increase organic traffic  </p>
+                   </div>
+                    <div class="b1"> 
+                         <h2> Social media promotion </h2>
+                         <p> developed and executed social media marketing campaigns to promote the video bloging website, increasing brand awareness and user engagement </p>
+                   </div>
+             </div>
+      </section>
+             
+              <!-----about us section-------->
+      <section class="aboutus">
+               <h1 style="color: #5e41f0;"> about Us </h1>
+               <p>   
+                   Welcome to Blog, a leading video blogging website based in kolkata, WB. We are dedicated to providing a platform for individuals and businesses to share 
+                   their stories, ideas, and expertise through engaging and high-quality videos.
+          <br> <br>
+                   With a passion for video content creation, our team of experienced professionals is 
+                   committed to delivering a seamless user experience, inspiring creativity, and fostering a 
+                   vibrant community of content creators and viewers. Whether you're a beginner or an 
+                   established video blogger, Blog offers the tools, resources, and support you need to 
+                   bring your vision to life and connect
+              </p>
+
+            <iframe id="nana" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235994.22918278718!2d86.8356899689507!3d22.451228405975893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d7bcae512b101%3A0xd6cf20a23cf93fab!2sJhargram%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1704776651297!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map"></iframe>
+      </section>
+                
+			
+		
+		<fieldset style="border:none;" id="related2">
+                <legend style="border:none;"> <h1 Style="color:#3454D1; color:#5e41f0;Font-family:roboto;">  Related posts </h1> </legend>
+           
+                 <div> <!-----Post 1------>
+                       <a href="movie-sites.html"> Top Movie Download Websites for Quality Entertainment on Demand </a>
+                       <img src="INDEX/movie.webp" alt="PaytmCash" loading="lazy">
+                 </div>
+
+                 <div> <!-----Post 2------>
+                      <a href="web-news.html"> Stay Updated with the Latest Headlines on-web news </a>
+                     <img src="INDEX/webnews.webp" alt="PaytmCash" loading="lazy">
+                    </div>
+
+                  <div> <!-----Post 3------>
+                     <a href="index.html"> Explore enlightening quotes from the Bhagavad Gita by Sri Krishna </a>
+                    <img src="INDEX/Lod7.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+
+                  <div> <!-----Post 4------>
+                    <a href="cyber-security.html"> SecureCyber: Your Trusted Resource for Cyber Security Insights and Solutions </a>
+                    <img src="INDEX/CYBER1.webp" alt="PaytmCash" loading="lazy">
+                 </div>
+
+                   <div> <!-----Post 5------>
+                     <a href="poem-sonnet-poetry.html"> Discover the Beauty of Poetry: Explore Poems, Analysis, and Inspiration Here </a>
+                     <img src="INDEX/poetry.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+
+                 <div> <!-----Post 6----->
+                      <a href="blog-videos.html"> Explore Engaging Video Blogs: Your Destination for Informative Content </a>
+                     <img src="INDEX/BLOG2.webp" alt="PaytmCash" loading="lazy">
+                 </div>
+  
+                  <div> <!-----Post 7----->
+                      <a href="best-educational-websites.html"> Top 10 useful education Websites for students </a>
+                      <img src="INDEX/education.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+				
+				   <div> <!-----Post 8----->
+                      <a href="sri-krishna-stories.html"> Exploring Sri Krishna Stories and Wisdom: Unveiling Divine Tales and Teachings </a>
+                      <img src="INDEX/cute.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+				  
+				   <div> <!-----Post 9----->
+                      <a href="discount-deals.html"> Discover unbeatable deals:a diverse range of products at unbeatable price </a>
+                      <img src="INDEX/loot.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+				  
+				  <div> <!-----Post 10----->
+                      <a href="best-mobile-games.html"> Best mobile games in India: discover the best Games, tips, and reviews </a>
+                      <img src="INDEX/banner.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+				  
+				  <div> <!-----Post 11----->
+                      <a href="health-advice.html"> discover vital health tips & advice for a thriving lifestyle </a>
+                      <img src="INDEX/health.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+				  
+				  <div> <!-----Post 12----->
+                      <a href="paytm-cash-earning-app.html"> Discover top paytm cash earning apps: maximize your earning Today </a>
+                      <img src="INDEX/cash.webp" alt="PaytmCash" loading="lazy">
+                  </div>
+             </fieldset> 
+				
+				    <!----COMMENT Section------>
+				  <div class="didit" id="blak">
+                       <h3 style="font-family:Roboto; color:202a57;"> Recent Comments  </h3>
+                       <div id="comments"> </div> <!----messages-04----->
+                       <div id="community"> Comments 0 </div> <!----messages-03----->
+                     <!---<div id="community"> <b> sneha:- </b> wows  </div> ---messages-02---->
+                     <!---<div id="community"> <b> ajoy :- </b> best </div>-----messages-01----->
+                 </div>
+
+       <!----Comment Section------->
+        <div id="gettouch" class="comment-section">
+             <form action="#" method="post" id="myForm"> <!--id comment-form--->
+                 <h1> leave a comment </h1>
+                 
+                 <label for ="Name"> Name </label>
+                 <input type="text" id="name" name="name" placeholder="Name" spellcheck="true" required>
+                
+		 <label for ="email"> Email </label>
+                 <input type="email" id="email" name="email" placeholder="Email" spellcheck="true" required>
+                
+		 <label for ="text"> Message </label>
+		 <textarea id="msg" name="msg" rows="6" cols="40" placeholder="Your Comment*" spellcheck="true" required></textarea>
+                 
+                <button class="btn" type="submit"> Submit </button>
+            </form>     
+        </div>
+
+
+
+       <footer title="Footer">   <!------footer Section------->
+       <h2> Quotes World </h2>          
+      <select title="language-Switcher">
+           <option> English</option>
+           <option> hindi   </option>
+           <option> Bengali </option>
+           <option> gujrati </option>
+           <option> tamil  </option>
+           <option> telugu  </option>
+           <option> odiya  </option>           
+     </select>
+    <div class="sneha">
+        <a href="about-us.html" target="_self"><p> Terms & privacy </p></a>
+        <a href="about-us.html" target="_self"><p> policy </p></a>
+        <a href="about-us.html" target="_self"><p> 2024® </p></a>
+       <!---- <a href="about-us.html" target="_self"><p> Food-factory LLC</p></a>------>
+   </div>
+  </footer>
+     
+        <!----Go To Top Button------>     
+     <a href="https://youtube.com/@Wings_dna?si=EDxPSSc30nXrQ5DZ" target="_blank" title="youtube" name="youtube" rel="noopener noreferrer" style="text-decoration:none;color:White;"> <button id="ytb" title="youtube" name="youtube"> <i class="fa-brands fa-youtube"></i> </a> </button> </a>
+     <button id="topButton" title="top-button"> <i class="fa-solid fa-arrow-up"></i> </button>
+
+
+   <script>
+           const sidebar = document.getElementById("sidebar");
+           const overlay = document.getElementById("overlay");
+           const toggleButton = document.getElementById("toggleButton");
+
+      function toggleNav() {
+          sidebar.classList.toggle("active");
+          toggleButton.innerHTML = sidebar.classList.contains("active") ? "&times;" : "&#9776;";
+
+    // Toggle visibility of overlay
+      overlay.classList.toggle("active");
+
+    // Add/remove class to body to prevent scrolling
+        document.body.classList.toggle("sidebar-open");
+  };
+
+
+
+
+         //change Navigation background
+   window.addEventListener('scroll', function() {
+       const navbar = document.getElementById('header');
+       const scrolled = window.scrollY;
+
+       if (scrolled > 30) {
+       navbar.style.backgroundColor = '#01BAEF'; // Change this to the desired color
+     } else {
+       navbar.style.backgroundColor = '#181f1a'; // Change this to the default color
+     }
+  });
+
+
+
+       // Find the active scroll item
+              const activeItem = document.getElementById("active");
+              const scrollContainer = document.querySelector(".scroll-container");
+
+      // Calculate scroll position to center the active item
+              const containerWidth = scrollContainer.offsetWidth;
+              const scrollItemWidth = activeItem.offsetWidth;
+              const scrollItemLeft = activeItem.offsetLeft;
+              const scrollItemCenter = scrollItemLeft - (containerWidth - scrollItemWidth) / 2;
+
+     // Scroll the container to center the active item
+             scrollContainer.scrollLeft = scrollItemCenter;
+   
+
+          /* Go To Top Button */
+
+      window.onscroll = function () {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("topButton").style.display = "block";
+  } else {
+    document.getElementById("topButton").style.display = "none";
+  }
+};
+
+// Scroll to the top when the button is clicked
+document.getElementById("topButton").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+ 
+ 
+            //Contact us 
+      document.getElementById('comment-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const commentText = document.getElementById('comment').value;
+  const email = document.getElementById('email').value;
+  if (name && commentText) {
+    addComment(name, commentText, email);
+    document.getElementById('comment-form').reset();
+	 alert("submitted");
+  } else {
+    alert('Please fill in all fields.');
+  }
+});
+
+function addComment(name, commentText) {
+  const commentsSection = document.getElementById('comments');
+  const commentDiv = document.createElement('div');
+  commentDiv.classList.add('comment');
+  commentDiv.innerHTML = `<strong>${name}:</strong> ${commentText}`;
+  commentsSection.appendChild(commentDiv);
+}  
+   </script>
+   
+    
+	 <script>
+      const form = document.getElementById('myForm');
+      form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const responseData = await fetch('https://script.google.com/macros/s/AKfycbw-d3Eb2-hszre2uCKLnNxHX25lyGYDu32ghI6-15rRi7YGOzA8DA9cBOJNFsmWqSo/exec', {
+        method: 'POST',
+          body: formData
+        });
+    // Handle the response here (if needed)
+	  document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevents the default form submission behavior
+
+            // Show alert
+            window.alert('Form submitted!');
+
+            // Refresh the form
+            document.getElementById('myForm').reset();			
+        });
+		
+		 //Contact us 
+      document.getElementById('myForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const commentText = document.getElementById('msg').value;
+  const email = document.getElementById('email').value;
+  if (name && commentText) {
+    addComment(name, commentText, email);
+    document.getElementById('myForm').reset();
+	 alert("submitted");
+  } else {
+    alert('Please fill in all fields.');
+  }
+});
+
+function addComment(name, commentText) {
+  const commentsSection = document.getElementById('comments');
+  const commentDiv = document.createElement('div');
+  commentDiv.classList.add('comment');
+  commentDiv.innerHTML = `<strong>${name}:</strong> ${commentText}`;
+  commentsSection.appendChild(commentDiv);
+} 
+  });
+</script>
+   
+   </body>
+</html>
